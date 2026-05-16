@@ -1,0 +1,11 @@
+mistralai==2.4.5
+speechmatics-batch
+google-genai>=2.0.1
+fastapi[standard]==0.136.1
+pydantic==2.13.0
+pydantic-ai
+sqlmodel
+httpx
+python-dotenv
+ffmpeg-python
+yt-dlp
