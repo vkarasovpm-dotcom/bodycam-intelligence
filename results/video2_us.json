@@ -1,0 +1,97 @@
+{
+  "audio_file": "recordings/video2.mp3",
+  "jurisdiction": "US",
+  "language": "en",
+  "metadata": {
+    "duration_sec": null,
+    "speaker_count": null
+  },
+  "events": [
+    {
+      "direction": "officer_to_citizen",
+      "category": "rights_warning_violation",
+      "severity": "high",
+      "timestamp": "02:25",
+      "actor_speaker": "S1",
+      "quote": "This point you're detained. You're not free to go.",
+      "quote_speaker": "S1",
+      "regulation": "Miranda v. Arizona 1966",
+      "rationale": "Officer detains the citizen without properly administering Miranda rights initially.",
+      "confidence": 0.85,
+      "routing": "misconduct_review"
+    },
+    {
+      "direction": "neutral",
+      "category": "rights_administered",
+      "severity": "low",
+      "timestamp": "02:25",
+      "actor_speaker": "S1",
+      "quote": "You have the right to remain silent. Anything you say can be used against you in a court of law. You have the right to talk to a lawyer present with you while you're being questioned. You cannot afford to hire a lawyer. One will be appointed to represent you before any questioning if you wish. You can decide at any time to exercise your rights and not answer any questions or make any statements.",
+      "quote_speaker": "S1",
+      "regulation": "Miranda v. Arizona 1966",
+      "rationale": "Officer administers Miranda rights after detaining the citizen.",
+      "confidence": 0.9,
+      "routing": "compliance_archive"
+    },
+    {
+      "direction": "neutral",
+      "category": "radio_communication",
+      "severity": "low",
+      "timestamp": "03:21",
+      "actor_speaker": "S4",
+      "quote": "Alpha 211",
+      "quote_speaker": "S4",
+      "regulation": "N/A",
+      "rationale": "Officer uses radio communication.",
+      "confidence": 0.95,
+      "routing": "compliance_archive"
+    }
+  ],
+  "routing": {
+    "misconduct_review": [
+      {
+        "direction": "officer_to_citizen",
+        "category": "rights_warning_violation",
+        "severity": "high",
+        "timestamp": "02:25",
+        "actor_speaker": "S1",
+        "quote": "This point you're detained. You're not free to go.",
+        "quote_speaker": "S1",
+        "regulation": "Miranda v. Arizona 1966",
+        "rationale": "Officer detains the citizen without properly administering Miranda rights initially.",
+        "confidence": 0.85,
+        "routing": "misconduct_review"
+      }
+    ],
+    "officer_defense": [],
+    "compliance_archive": [
+      {
+        "direction": "neutral",
+        "category": "rights_administered",
+        "severity": "low",
+        "timestamp": "02:25",
+        "actor_speaker": "S1",
+        "quote": "You have the right to remain silent. Anything you say can be used against you in a court of law. You have the right to talk to a lawyer present with you while you're being questioned. You cannot afford to hire a lawyer. One will be appointed to represent you before any questioning if you wish. You can decide at any time to exercise your rights and not answer any questions or make any statements.",
+        "quote_speaker": "S1",
+        "regulation": "Miranda v. Arizona 1966",
+        "rationale": "Officer administers Miranda rights after detaining the citizen.",
+        "confidence": 0.9,
+        "routing": "compliance_archive"
+      },
+      {
+        "direction": "neutral",
+        "category": "radio_communication",
+        "severity": "low",
+        "timestamp": "03:21",
+        "actor_speaker": "S4",
+        "quote": "Alpha 211",
+        "quote_speaker": "S4",
+        "regulation": "N/A",
+        "rationale": "Officer uses radio communication.",
+        "confidence": 0.95,
+        "routing": "compliance_archive"
+      }
+    ],
+    "supervisor_alert": []
+  }
+}

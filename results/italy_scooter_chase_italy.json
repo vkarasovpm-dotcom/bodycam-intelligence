@@ -1,0 +1,123 @@
+{
+  "audio_file": "recordings/italy_scooter_chase.mp3",
+  "jurisdiction": "Italy",
+  "language": "it",
+  "metadata": {
+    "duration_sec": null,
+    "speaker_count": null
+  },
+  "events": [
+    {
+      "direction": "citizen_to_officer",
+      "category": "flight_attempt",
+      "severity": "high",
+      "timestamp": "01:00",
+      "actor_speaker": "S4",
+      "quote": "Mi sta scappando eh",
+      "quote_speaker": "S2",
+      "regulation": "CPP Art. 380-386",
+      "rationale": "The citizen is attempting to flee from the officer, which is a violation of lawful orders.",
+      "confidence": 0.85,
+      "routing": "officer_defense"
+    },
+    {
+      "direction": "neutral",
+      "category": "radio_communication",
+      "severity": "low",
+      "timestamp": "01:00",
+      "actor_speaker": "S2",
+      "quote": "Zero",
+      "quote_speaker": "S2",
+      "regulation": "Legge 121/1981",
+      "rationale": "Officer is communicating via radio, which is standard procedure.",
+      "confidence": 0.9,
+      "routing": "compliance_archive"
+    },
+    {
+      "direction": "officer_to_citizen",
+      "category": "proper_procedure",
+      "severity": "low",
+      "timestamp": "01:54",
+      "actor_speaker": "S2",
+      "quote": "Sei scappato Resistenza all'arresto",
+      "quote_speaker": "S2",
+      "regulation": "CPP Art. 380-386",
+      "rationale": "The officer is informing the citizen of the reason for arrest, which is proper procedure.",
+      "confidence": 0.85,
+      "routing": "compliance_archive"
+    },
+    {
+      "direction": "neutral",
+      "category": "radio_communication",
+      "severity": "low",
+      "timestamp": "02:23",
+      "actor_speaker": "S2",
+      "quote": "Zero Ti confermo il soggetto a cui a terra Ed ho già messo le manette",
+      "quote_speaker": "S2",
+      "regulation": "Legge 121/1981",
+      "rationale": "Officer is communicating via radio, which is standard procedure.",
+      "confidence": 0.9,
+      "routing": "compliance_archive"
+    }
+  ],
+  "routing": {
+    "misconduct_review": [],
+    "officer_defense": [
+      {
+        "direction": "citizen_to_officer",
+        "category": "flight_attempt",
+        "severity": "high",
+        "timestamp": "01:00",
+        "actor_speaker": "S4",
+        "quote": "Mi sta scappando eh",
+        "quote_speaker": "S2",
+        "regulation": "CPP Art. 380-386",
+        "rationale": "The citizen is attempting to flee from the officer, which is a violation of lawful orders.",
+        "confidence": 0.85,
+        "routing": "officer_defense"
+      }
+    ],
+    "compliance_archive": [
+      {
+        "direction": "neutral",
+        "category": "radio_communication",
+        "severity": "low",
+        "timestamp": "01:00",
+        "actor_speaker": "S2",
+        "quote": "Zero",
+        "quote_speaker": "S2",
+        "regulation": "Legge 121/1981",
+        "rationale": "Officer is communicating via radio, which is standard procedure.",
+        "confidence": 0.9,
+        "routing": "compliance_archive"
+      },
+      {
+        "direction": "officer_to_citizen",
+        "category": "proper_procedure",
+        "severity": "low",
+        "timestamp": "01:54",
+        "actor_speaker": "S2",
+        "quote": "Sei scappato Resistenza all'arresto",
+        "quote_speaker": "S2",
+        "regulation": "CPP Art. 380-386",
+        "rationale": "The officer is informing the citizen of the reason for arrest, which is proper procedure.",
+        "confidence": 0.85,
+        "routing": "compliance_archive"
+      },
+      {
+        "direction": "neutral",
+        "category": "radio_communication",
+        "severity": "low",
+        "timestamp": "02:23",
+        "actor_speaker": "S2",
+        "quote": "Zero Ti confermo il soggetto a cui a terra Ed ho già messo le manette",
+        "quote_speaker": "S2",
+        "regulation": "Legge 121/1981",
+        "rationale": "Officer is communicating via radio, which is standard procedure.",
+        "confidence": 0.9,
+        "routing": "compliance_archive"
+      }
+    ],
+    "supervisor_alert": []
+  }
+}

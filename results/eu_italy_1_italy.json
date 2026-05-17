@@ -1,0 +1,122 @@
+{
+  "audio_file": "recordings/eu_italy_1.mp3",
+  "jurisdiction": "Italy",
+  "language": "it",
+  "metadata": {
+    "duration_sec": null,
+    "speaker_count": null
+  },
+  "events": [
+    {
+      "direction": "officer_to_citizen",
+      "category": "proper_procedure",
+      "severity": "low",
+      "timestamp": "00:10",
+      "actor_speaker": "S1",
+      "quote": "Fermo là! Alza le mani!",
+      "quote_speaker": "S1",
+      "regulation": "Legge 121/1981",
+      "rationale": "Standard arrest commands during active arrest are considered proper procedure.",
+      "confidence": 0.9,
+      "routing": "compliance_archive"
+    },
+    {
+      "direction": "officer_to_citizen",
+      "category": "proper_procedure",
+      "severity": "low",
+      "timestamp": "01:17",
+      "actor_speaker": "S1",
+      "quote": "Fermo",
+      "quote_speaker": "S1",
+      "regulation": "Legge 121/1981",
+      "rationale": "Standard arrest commands during active arrest are considered proper procedure.",
+      "confidence": 0.85,
+      "routing": "compliance_archive"
+    },
+    {
+      "direction": "citizen_to_officer",
+      "category": "verbal_threat_specific",
+      "severity": "medium",
+      "timestamp": "02:03",
+      "actor_speaker": "S2",
+      "quote": "Non mi puoi tenere così",
+      "quote_speaker": "S2",
+      "regulation": "Costituzione Art. 13",
+      "rationale": "Citizen protesting the manner of detention, which is protected speech but indicates potential tension.",
+      "confidence": 0.7,
+      "routing": "compliance_archive"
+    },
+    {
+      "direction": "citizen_to_officer",
+      "category": "verbal_threat_specific",
+      "severity": "medium",
+      "timestamp": "03:21",
+      "actor_speaker": "S2",
+      "quote": "Non mi spingere",
+      "quote_speaker": "S2",
+      "regulation": "Costituzione Art. 13",
+      "rationale": "Citizen protesting the use of force, which is protected speech but indicates potential tension.",
+      "confidence": 0.75,
+      "routing": "compliance_archive"
+    }
+  ],
+  "routing": {
+    "misconduct_review": [],
+    "officer_defense": [],
+    "compliance_archive": [
+      {
+        "direction": "officer_to_citizen",
+        "category": "proper_procedure",
+        "severity": "low",
+        "timestamp": "00:10",
+        "actor_speaker": "S1",
+        "quote": "Fermo là! Alza le mani!",
+        "quote_speaker": "S1",
+        "regulation": "Legge 121/1981",
+        "rationale": "Standard arrest commands during active arrest are considered proper procedure.",
+        "confidence": 0.9,
+        "routing": "compliance_archive"
+      },
+      {
+        "direction": "officer_to_citizen",
+        "category": "proper_procedure",
+        "severity": "low",
+        "timestamp": "01:17",
+        "actor_speaker": "S1",
+        "quote": "Fermo",
+        "quote_speaker": "S1",
+        "regulation": "Legge 121/1981",
+        "rationale": "Standard arrest commands during active arrest are considered proper procedure.",
+        "confidence": 0.85,
+        "routing": "compliance_archive"
+      },
+      {
+        "direction": "citizen_to_officer",
+        "category": "verbal_threat_specific",
+        "severity": "medium",
+        "timestamp": "02:03",
+        "actor_speaker": "S2",
+        "quote": "Non mi puoi tenere così",
+        "quote_speaker": "S2",
+        "regulation": "Costituzione Art. 13",
+        "rationale": "Citizen protesting the manner of detention, which is protected speech but indicates potential tension.",
+        "confidence": 0.7,
+        "routing": "compliance_archive"
+      },
+      {
+        "direction": "citizen_to_officer",
+        "category": "verbal_threat_specific",
+        "severity": "medium",
+        "timestamp": "03:21",
+        "actor_speaker": "S2",
+        "quote": "Non mi spingere",
+        "quote_speaker": "S2",
+        "regulation": "Costituzione Art. 13",
+        "rationale": "Citizen protesting the use of force, which is protected speech but indicates potential tension.",
+        "confidence": 0.75,
+        "routing": "compliance_archive"
+      }
+    ],
+    "supervisor_alert": []
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "audio_file": "recordings/italy_domestic_violence.mp3",
+  "jurisdiction": "Italy",
+  "language": "it",
+  "metadata": {
+    "duration_sec": null,
+    "speaker_count": null
+  },
+  "events": [
+    {
+      "direction": "neutral",
+      "category": "radio_communication",
+      "severity": "low",
+      "timestamp": "00:17",
+      "actor_speaker": "S2",
+      "quote": "Zero Scusami D'Amico undici puoi ripetere la nota ossia",
+      "quote_speaker": "S2",
+      "regulation": "Legge 121/1981",
+      "rationale": "Operational radio communication between officers.",
+      "confidence": 0.9,
+      "routing": "compliance_archive"
+    },
+    {
+      "direction": "neutral",
+      "category": "radio_communication",
+      "severity": "low",
+      "timestamp": "00:45",
+      "actor_speaker": "S3",
+      "quote": "Undici sette tre sette Penso che pochi minuti comunque bene ricevuto La Borghese nove uno",
+      "quote_speaker": "S3",
+      "regulation": "Legge 121/1981",
+      "rationale": "Operational radio communication between officers.",
+      "confidence": 0.9,
+      "routing": "compliance_archive"
+    },
+    {
+      "direction": "neutral",
+      "category": "radio_communication",
+      "severity": "low",
+      "timestamp": "01:46",
+      "actor_speaker": "S3",
+      "quote": "Sette la situazione è sotto controllo",
+      "quote_speaker": "S3",
+      "regulation": "Legge 121/1981",
+      "rationale": "Operational radio communication between officers.",
+      "confidence": 0.9,
+      "routing": "compliance_archive"
+    },
+    {
+      "direction": "neutral",
+      "category": "radio_communication",
+      "severity": "low",
+      "timestamp": "01:49",
+      "actor_speaker": "S2",
+      "quote": "Bene meno male per fortuna abbiamo già l'autoradio sul posto",
+      "quote_speaker": "S2",
+      "regulation": "Legge 121/1981",
+      "rationale": "Operational radio communication between officers.",
+      "confidence": 0.9,
+      "routing": "compliance_archive"
+    },
+    {
+      "direction": "neutral",
+      "category": "radio_communication",
+      "severity": "low",
+      "timestamp": "01:55",
+      "actor_speaker": "S3",
+      "quote": "Mi raccomando nove quattro quattro sette Nessuno è raccomandato a causa",
+      "quote_speaker": "S3",
+      "regulation": "Legge 121/1981",
+      "rationale": "Operational radio communication between officers.",
+      "confidence": 0.9,
+      "routing": "compliance_archive"
+    }
+  ],
+  "routing": {
+    "misconduct_review": [],
+    "officer_defense": [],
+    "compliance_archive": [
+      {
+        "direction": "neutral",
+        "category": "radio_communication",
+        "severity": "low",
+        "timestamp": "00:17",
+        "actor_speaker": "S2",
+        "quote": "Zero Scusami D'Amico undici puoi ripetere la nota ossia",
+        "quote_speaker": "S2",
+        "regulation": "Legge 121/1981",
+        "rationale": "Operational radio communication between officers.",
+        "confidence": 0.9,
+        "routing": "compliance_archive"
+      },
+      {
+        "direction": "neutral",
+        "category": "radio_communication",
+        "severity": "low",
+        "timestamp": "00:45",
+        "actor_speaker": "S3",
+        "quote": "Undici sette tre sette Penso che pochi minuti comunque bene ricevuto La Borghese nove uno",
+        "quote_speaker": "S3",
+        "regulation": "Legge 121/1981",
+        "rationale": "Operational radio communication between officers.",
+        "confidence": 0.9,
+        "routing": "compliance_archive"
+      },
+      {
+        "direction": "neutral",
+        "category": "radio_communication",
+        "severity": "low",
+        "timestamp": "01:46",
+        "actor_speaker": "S3",
+        "quote": "Sette la situazione è sotto controllo",
+        "quote_speaker": "S3",
+        "regulation": "Legge 121/1981",
+        "rationale": "Operational radio communication between officers.",
+        "confidence": 0.9,
+        "routing": "compliance_archive"
+      },
+      {
+        "direction": "neutral",
+        "category": "radio_communication",
+        "severity": "low",
+        "timestamp": "01:49",
+        "actor_speaker": "S2",
+        "quote": "Bene meno male per fortuna abbiamo già l'autoradio sul posto",
+        "quote_speaker": "S2",
+        "regulation": "Legge 121/1981",
+        "rationale": "Operational radio communication between officers.",
+        "confidence": 0.9,
+        "routing": "compliance_archive"
+      },
+      {
+        "direction": "neutral",
+        "category": "radio_communication",
+        "severity": "low",
+        "timestamp": "01:55",
+        "actor_speaker": "S3",
+        "quote": "Mi raccomando nove quattro quattro sette Nessuno è raccomandato a causa",
+        "quote_speaker": "S3",
+        "regulation": "Legge 121/1981",
+        "rationale": "Operational radio communication between officers.",
+        "confidence": 0.9,
+        "routing": "compliance_archive"
+      }
+    ],
+    "supervisor_alert": []
+  }
+}

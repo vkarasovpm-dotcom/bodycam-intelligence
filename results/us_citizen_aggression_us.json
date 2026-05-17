@@ -1,0 +1,97 @@
+{
+  "audio_file": "recordings/us_citizen_aggression.mp3",
+  "jurisdiction": "US",
+  "language": "en",
+  "metadata": {
+    "duration_sec": null,
+    "speaker_count": null
+  },
+  "events": [
+    {
+      "direction": "citizen_to_officer",
+      "category": "vehicular_assault",
+      "severity": "critical",
+      "timestamp": "00:04",
+      "actor_speaker": "citizen",
+      "quote": "He's got me in the car",
+      "quote_speaker": "S1",
+      "regulation": "Graham v. Connor 1989",
+      "rationale": "Citizen is using the vehicle to assault the officer by attempting to drive off with the officer in the car.",
+      "confidence": 0.9,
+      "routing": "supervisor_alert"
+    },
+    {
+      "direction": "officer_to_citizen",
+      "category": "proper_procedure",
+      "severity": "low",
+      "timestamp": "00:04",
+      "actor_speaker": "S1",
+      "quote": "Stop the car",
+      "quote_speaker": "S1",
+      "regulation": "Standard arrest procedure",
+      "rationale": "Officer is following proper procedure by commanding the suspect to stop the vehicle.",
+      "confidence": 0.95,
+      "routing": "compliance_archive"
+    },
+    {
+      "direction": "neutral",
+      "category": "radio_communication",
+      "severity": "medium",
+      "timestamp": "00:04",
+      "actor_speaker": "S1",
+      "quote": "21 He's going west on main",
+      "quote_speaker": "S1",
+      "regulation": "Operational communication",
+      "rationale": "Officer is providing operational updates via radio communication.",
+      "confidence": 0.95,
+      "routing": "compliance_archive"
+    }
+  ],
+  "routing": {
+    "misconduct_review": [],
+    "officer_defense": [],
+    "compliance_archive": [
+      {
+        "direction": "officer_to_citizen",
+        "category": "proper_procedure",
+        "severity": "low",
+        "timestamp": "00:04",
+        "actor_speaker": "S1",
+        "quote": "Stop the car",
+        "quote_speaker": "S1",
+        "regulation": "Standard arrest procedure",
+        "rationale": "Officer is following proper procedure by commanding the suspect to stop the vehicle.",
+        "confidence": 0.95,
+        "routing": "compliance_archive"
+      },
+      {
+        "direction": "neutral",
+        "category": "radio_communication",
+        "severity": "medium",
+        "timestamp": "00:04",
+        "actor_speaker": "S1",
+        "quote": "21 He's going west on main",
+        "quote_speaker": "S1",
+        "regulation": "Operational communication",
+        "rationale": "Officer is providing operational updates via radio communication.",
+        "confidence": 0.95,
+        "routing": "compliance_archive"
+      }
+    ],
+    "supervisor_alert": [
+      {
+        "direction": "citizen_to_officer",
+        "category": "vehicular_assault",
+        "severity": "critical",
+        "timestamp": "00:04",
+        "actor_speaker": "citizen",
+        "quote": "He's got me in the car",
+        "quote_speaker": "S1",
+        "regulation": "Graham v. Connor 1989",
+        "rationale": "Citizen is using the vehicle to assault the officer by attempting to drive off with the officer in the car.",
+        "confidence": 0.9,
+        "routing": "supervisor_alert"
+      }
+    ]
+  }
+}

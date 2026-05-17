@@ -1,0 +1,71 @@
+{
+  "audio_file": "recordings/video1.mp3",
+  "jurisdiction": "US",
+  "language": "en",
+  "metadata": {
+    "duration_sec": null,
+    "speaker_count": null
+  },
+  "events": [
+    {
+      "direction": "officer_to_citizen",
+      "category": "proper_procedure",
+      "severity": "medium",
+      "timestamp": "00:23",
+      "actor_speaker": "S1",
+      "quote": "Drop the knife",
+      "quote_speaker": "S1",
+      "regulation": "Graham v. Connor",
+      "rationale": "Officer is giving lawful commands to drop a potential weapon during an active threat.",
+      "confidence": 0.9,
+      "routing": "compliance_archive"
+    },
+    {
+      "direction": "neutral",
+      "category": "radio_communication",
+      "severity": "high",
+      "timestamp": "02:49",
+      "actor_speaker": "S2",
+      "quote": "Shots fired shots fired Shots fired",
+      "quote_speaker": "S2",
+      "regulation": "Operational protocol",
+      "rationale": "Officer is communicating critical information over the radio.",
+      "confidence": 0.95,
+      "routing": "supervisor_alert"
+    }
+  ],
+  "routing": {
+    "misconduct_review": [],
+    "officer_defense": [],
+    "compliance_archive": [
+      {
+        "direction": "officer_to_citizen",
+        "category": "proper_procedure",
+        "severity": "medium",
+        "timestamp": "00:23",
+        "actor_speaker": "S1",
+        "quote": "Drop the knife",
+        "quote_speaker": "S1",
+        "regulation": "Graham v. Connor",
+        "rationale": "Officer is giving lawful commands to drop a potential weapon during an active threat.",
+        "confidence": 0.9,
+        "routing": "compliance_archive"
+      }
+    ],
+    "supervisor_alert": [
+      {
+        "direction": "neutral",
+        "category": "radio_communication",
+        "severity": "high",
+        "timestamp": "02:49",
+        "actor_speaker": "S2",
+        "quote": "Shots fired shots fired Shots fired",
+        "quote_speaker": "S2",
+        "regulation": "Operational protocol",
+        "rationale": "Officer is communicating critical information over the radio.",
+        "confidence": 0.95,
+        "routing": "supervisor_alert"
+      }
+    ]
+  }
+}

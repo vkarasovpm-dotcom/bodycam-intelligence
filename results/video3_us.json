@@ -1,0 +1,70 @@
+{
+  "audio_file": "recordings/video3.mp3",
+  "jurisdiction": "US",
+  "language": "en",
+  "metadata": {
+    "duration_sec": null,
+    "speaker_count": null
+  },
+  "events": [
+    {
+      "direction": "officer_to_citizen",
+      "category": "intimidation_coercion",
+      "severity": "medium",
+      "timestamp": "00:37",
+      "actor_speaker": "S3",
+      "quote": "The fuck out of here. If you get arrested, you...",
+      "quote_speaker": "S3",
+      "regulation": "4th Amendment",
+      "rationale": "The officer's language is aggressive and coercive without clear justification, potentially violating the citizen's rights.",
+      "confidence": 0.85,
+      "routing": "misconduct_review"
+    },
+    {
+      "direction": "officer_to_citizen",
+      "category": "unlawful_detention",
+      "severity": "high",
+      "timestamp": "00:56",
+      "actor_speaker": "S3",
+      "quote": "Hands on your back now",
+      "quote_speaker": "S3",
+      "regulation": "4th Amendment",
+      "rationale": "The officer attempts to detain the citizen without providing a clear reason or probable cause.",
+      "confidence": 0.87,
+      "routing": "misconduct_review"
+    }
+  ],
+  "routing": {
+    "misconduct_review": [
+      {
+        "direction": "officer_to_citizen",
+        "category": "intimidation_coercion",
+        "severity": "medium",
+        "timestamp": "00:37",
+        "actor_speaker": "S3",
+        "quote": "The fuck out of here. If you get arrested, you...",
+        "quote_speaker": "S3",
+        "regulation": "4th Amendment",
+        "rationale": "The officer's language is aggressive and coercive without clear justification, potentially violating the citizen's rights.",
+        "confidence": 0.85,
+        "routing": "misconduct_review"
+      },
+      {
+        "direction": "officer_to_citizen",
+        "category": "unlawful_detention",
+        "severity": "high",
+        "timestamp": "00:56",
+        "actor_speaker": "S3",
+        "quote": "Hands on your back now",
+        "quote_speaker": "S3",
+        "regulation": "4th Amendment",
+        "rationale": "The officer attempts to detain the citizen without providing a clear reason or probable cause.",
+        "confidence": 0.87,
+        "routing": "misconduct_review"
+      }
+    ],
+    "officer_defense": [],
+    "compliance_archive": [],
+    "supervisor_alert": []
+  }
+}
