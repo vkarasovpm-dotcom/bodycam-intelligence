@@ -1,72 +1,191 @@
 {
   "vertical": "police",
   "region": "us",
-  "version": "0.1",
+  "version": "0.3",
   "updated": "2026-05-17",
+  "description": "US law enforcement framework. Sources: US Constitution amendments, Supreme Court precedents, federal statutes (18 U.S.C., 42 U.S.C. § 1983), DOJ guidance, model state penal codes.",
   "rules": [
     {
       "id": "US-4A-STOP",
-      "title": "Fourth Amendment — Unreasonable Seizure",
+      "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
       "source": "U.S. Const. amend. IV; Terry v. Ohio, 392 U.S. 1 (1968)",
-      "summary": "A stop requires reasonable, articulable suspicion of criminal activity. Mere presence or refusal to answer is insufficient.",
+      "summary": "An investigative stop requires reasonable, articulable suspicion of criminal activity. Mere presence in a high-crime area or refusal to answer is insufficient.",
       "triggers": ["stop without cause", "no articulable suspicion", "detention without reason"],
-      "severity": "high"
+      "severity": "high",
+      "subject": "officer",
+      "key_precedents": ["Terry v. Ohio (1968)", "Illinois v. Wardlow (2000)"]
+    },
+    {
+      "id": "US-4A-FRISK",
+      "title": "Terry Frisk — Limited Pat-Down",
+      "source": "Terry v. Ohio, 392 U.S. 1 (1968); Minnesota v. Dickerson, 508 U.S. 366 (1993)",
+      "summary": "A protective frisk is permissible only when officer has reasonable suspicion the subject is armed and dangerous. Search must be limited to outer clothing for weapons; cannot extend to general evidence search ('plain feel' doctrine narrow).",
+      "triggers": ["frisk without suspicion of weapons", "search beyond pat-down", "manipulate pocket contents"],
+      "severity": "medium",
+      "subject": "officer"
+    },
+    {
+      "id": "US-4A-SEARCH",
+      "title": "Fourth Amendment — Warrantless Search",
+      "source": "U.S. Const. amend. IV; Katz v. United States, 389 U.S. 347 (1967)",
+      "summary": "Searches generally require a warrant supported by probable cause. Exceptions: consent, exigent circumstances, search incident to arrest, plain view, automobile exception. Each is narrowly construed.",
+      "triggers": ["search without consent", "warrantless home entry", "pretextual search", "expanded scope"],
+      "severity": "high",
+      "subject": "officer"
     },
     {
       "id": "US-4A-FORCE",
-      "title": "Excessive Force",
+      "title": "Fourth Amendment — Excessive Force",
       "source": "Graham v. Connor, 490 U.S. 386 (1989)",
-      "summary": "Force must be objectively reasonable under the circumstances. Factors: severity of crime, immediate threat, active resistance.",
-      "triggers": ["physical strike", "weapon drawn without threat", "force on compliant subject"],
-      "severity": "critical"
+      "summary": "Use of force must be objectively reasonable under totality of circumstances. Three Graham factors: severity of crime, immediate threat posed by suspect, active resistance or flight. Evaluated from perspective of reasonable officer on scene.",
+      "triggers": ["force without resistance", "disproportionate force", "strike compliant subject", "force on restrained subject"],
+      "severity": "critical",
+      "subject": "officer",
+      "key_precedents": ["Graham v. Connor (1989)", "Tennessee v. Garner (1985)"]
+    },
+    {
+      "id": "US-4A-DEADLY",
+      "title": "Fourth Amendment — Deadly Force",
+      "source": "Tennessee v. Garner, 471 U.S. 1 (1985)",
+      "summary": "Deadly force against a fleeing suspect is permissible only when officer has probable cause to believe suspect poses significant threat of death or serious physical injury to officer or others. Cannot be used merely to prevent escape of non-dangerous suspect.",
+      "triggers": ["shoot fleeing suspect", "deadly force on unarmed", "fire at retreating subject"],
+      "severity": "critical",
+      "subject": "officer"
+    },
+    {
+      "id": "US-4A-ARREST-PC",
+      "title": "Arrest Without Probable Cause",
+      "source": "U.S. Const. amend. IV; Beck v. Ohio, 379 U.S. 89 (1964)",
+      "summary": "A custodial arrest requires probable cause — facts and circumstances sufficient for a reasonable person to believe a crime has been committed by the suspect.",
+      "triggers": ["arrest without stated cause", "detention escalates to arrest", "arrest on hunch"],
+      "severity": "critical",
+      "subject": "officer"
     },
     {
       "id": "US-5A-MIRANDA",
-      "title": "Miranda Warning Required",
+      "title": "Fifth Amendment — Miranda Warning",
       "source": "Miranda v. Arizona, 384 U.S. 436 (1966)",
-      "summary": "Custodial interrogation requires warning of right to silence and counsel before questioning.",
-      "triggers": ["questioning after arrest without warning", "interrogation in custody"],
-      "severity": "high"
+      "summary": "Before custodial interrogation, suspects must be informed: (1) right to remain silent, (2) anything said may be used against them, (3) right to attorney, (4) attorney appointed if cannot afford one. Statements without warning are presumptively inadmissible.",
+      "triggers": ["arrest without warning", "interrogation without Miranda", "questioning in custody", "no rights advised"],
+      "severity": "high",
+      "subject": "officer"
     },
     {
-      "id": "US-TERRY-FRISK",
-      "title": "Terry Frisk Scope",
-      "source": "Terry v. Ohio, 392 U.S. 1 (1968)",
-      "summary": "Pat-down limited to outer clothing for weapons when officer reasonably believes subject is armed and dangerous.",
-      "triggers": ["full search without probable cause", "frisk without weapon suspicion"],
-      "severity": "medium"
+      "id": "US-5A-COERCION",
+      "title": "Fifth Amendment — Coerced Confession",
+      "source": "U.S. Const. amend. V; Brown v. Mississippi, 297 U.S. 278 (1936)",
+      "summary": "Confessions obtained through physical or psychological coercion are inadmissible. Includes threats, prolonged questioning without rest, deprivation, and explicit promises of leniency that overbear free will.",
+      "triggers": ["threats during interrogation", "prolonged questioning", "denied sleep food water", "promise of leniency"],
+      "severity": "critical",
+      "subject": "officer"
+    },
+    {
+      "id": "US-6A-COUNSEL",
+      "title": "Sixth Amendment — Right to Counsel",
+      "source": "U.S. Const. amend. VI; Gideon v. Wainwright, 372 U.S. 335 (1963); Edwards v. Arizona, 451 U.S. 477 (1981)",
+      "summary": "Once a suspect invokes right to counsel, all interrogation must cease until counsel is present or suspect reinitiates. Cannot ignore invocation or use trickery to reopen questioning.",
+      "triggers": ["continue questioning after lawyer request", "ignore invocation", "trick into waiver"],
+      "severity": "high",
+      "subject": "officer"
     },
     {
       "id": "US-1A-SPEECH",
       "title": "First Amendment — Protected Speech",
       "source": "U.S. Const. amend. I; City of Houston v. Hill, 482 U.S. 451 (1987)",
-      "summary": "Verbal criticism of police, recording officers, and refusal to answer are protected. Arrest on this basis alone is unlawful.",
-      "triggers": ["arrest for filming", "arrest for verbal criticism", "retaliation for speech"],
-      "severity": "high"
+      "summary": "Citizens have the right to verbally challenge or criticize police, including with profanity. Non-threatening speech alone cannot be the basis for arrest. 'Fighting words' doctrine narrowly applied.",
+      "triggers": ["arrest for criticism", "retaliation for speech", "silence the camera", "arrest for profanity"],
+      "severity": "low",
+      "subject": "officer"
+    },
+    {
+      "id": "US-1A-RECORD",
+      "title": "First Amendment — Right to Record Police",
+      "source": "U.S. Const. amend. I; Glik v. Cunniffe, 655 F.3d 78 (1st Cir. 2011); Fields v. City of Philadelphia, 862 F.3d 353 (3d Cir. 2017)",
+      "summary": "Citizens have a First Amendment right to record police performing their duties in public. Order to stop recording or seizure of phone without warrant is generally unconstitutional.",
+      "triggers": ["seize phone", "order to stop filming", "block recording"],
+      "severity": "medium",
+      "subject": "officer"
+    },
+    {
+      "id": "US-14A-EQUAL",
+      "title": "Equal Protection — Racial Profiling",
+      "source": "U.S. Const. amend. XIV; Whren v. United States, 517 U.S. 806 (1996) (limits)",
+      "summary": "Selective enforcement based on race or ethnicity violates Equal Protection Clause. Stops, searches, or arrests motivated by race require strict scrutiny and rarely survive.",
+      "triggers": ["selective enforcement by race", "ethnic profile", "racial slur during stop"],
+      "severity": "high",
+      "subject": "officer"
     },
     {
       "id": "US-DEESCALATION",
-      "title": "De-escalation Duty",
-      "source": "DOJ Use-of-Force Policy (2022); IACP Model Policy",
-      "summary": "Officers should use verbal de-escalation, time, distance and cover when feasible before force.",
-      "triggers": ["immediate escalation", "no verbal warning", "shouting before commands"],
-      "severity": "medium"
-    },
-    {
-      "id": "US-ARREST-PC",
-      "title": "Arrest Without Probable Cause",
-      "source": "U.S. Const. amend. IV; Beck v. Ohio, 379 U.S. 89 (1964)",
-      "summary": "Arrest requires probable cause — facts sufficient for a prudent person to believe a crime was committed.",
-      "triggers": ["arrest without stated cause", "handcuffing without basis", "threat of jail without cause"],
-      "severity": "critical"
+      "title": "Duty to De-escalate",
+      "source": "DOJ Consent Decrees (Baltimore 2017, Chicago 2019); PERF Guiding Principles on Use of Force (2016)",
+      "summary": "Officers should attempt de-escalation tactics — verbal calming, distance, time, communication — before applying force when feasible. Failure to attempt de-escalation aggravates excessive force findings.",
+      "triggers": ["no warnings issued", "no de-escalation attempt", "rapid escalation to force", "no time for compliance"],
+      "severity": "medium",
+      "subject": "officer"
     },
     {
       "id": "US-IDENTIFY",
-      "title": "Officer Identification",
-      "source": "State and municipal policy (most US jurisdictions)",
-      "summary": "Officer must identify themselves and state reason for the stop when asked.",
-      "triggers": ["refuses to identify", "refuses to state reason"],
-      "severity": "low"
+      "title": "Officer Identification Requirement",
+      "source": "Department policies (most major PDs); 42 U.S.C. § 1983 accountability principles",
+      "summary": "Officers should identify themselves by name, agency, and badge number when requested by a citizen, absent tactical exigency. Concealment of identification during force is procedural violation.",
+      "triggers": ["refused to identify", "no name or badge given", "cover badge number"],
+      "severity": "low",
+      "subject": "officer"
+    },
+    {
+      "id": "US-MEDICAL",
+      "title": "Duty to Render Medical Aid",
+      "source": "Estelle v. Gamble, 429 U.S. 97 (1976); 8th and 14th Amendments",
+      "summary": "Deliberate indifference to serious medical needs of arrestees or detainees violates the Constitution. Officers must call EMS or render aid when subject shows signs of distress, injury, or medical emergency.",
+      "triggers": ["denied medical aid", "ignore injury", "no EMS called", "subject in distress untreated"],
+      "severity": "high",
+      "subject": "officer"
+    },
+    {
+      "id": "US-CIT-THREAT",
+      "title": "Criminal Threats Against Officer",
+      "source": "18 U.S.C. § 115 (federal); state penal codes (e.g., Cal. Penal Code § 422)",
+      "summary": "A citizen who makes credible threats of death or great bodily injury against a federal officer or family member commits a federal crime. State analogues criminalize true threats against any peace officer.",
+      "triggers": ["I'll kill you", "death threat to officer", "threat of bodily harm", "threat to family"],
+      "severity": "high",
+      "subject": "citizen"
+    },
+    {
+      "id": "US-CIT-ASSAULT",
+      "title": "Assault on a Peace Officer",
+      "source": "18 U.S.C. § 111 (federal); state codes (e.g., Cal. Penal Code § 245(c))",
+      "summary": "Forcibly assaulting, resisting, opposing, impeding, intimidating, or interfering with a federal officer engaged in official duties is a federal felony. State laws criminalize assault and battery on peace officers similarly.",
+      "triggers": ["strike officer", "physical attack on officer", "spit on officer", "kick officer"],
+      "severity": "critical",
+      "subject": "citizen"
+    },
+    {
+      "id": "US-CIT-RESIST",
+      "title": "Resisting Arrest / Obstruction",
+      "source": "State penal codes (e.g., Cal. Penal Code § 148(a)(1); N.Y. Penal Law § 205.30)",
+      "summary": "Willfully resisting, delaying, or obstructing a peace officer in discharge of duties is a misdemeanor. Mere verbal protest is NOT resistance — physical non-compliance is required (tensing, pulling away, going limp).",
+      "triggers": ["pull away from officer", "tense up during cuffing", "go limp", "physical non-compliance"],
+      "severity": "medium",
+      "subject": "citizen"
+    },
+    {
+      "id": "US-CIT-FLEE",
+      "title": "Fleeing or Evading by Vehicle",
+      "source": "State vehicle codes (e.g., Cal. Veh. Code § 2800.1; Tex. Trans. Code § 545.421); federal 18 U.S.C. § 758",
+      "summary": "Willfully fleeing or attempting to elude a peace officer in a motor vehicle after a lawful signal to stop is a criminal offence. Elevated to felony when reckless or causes injury.",
+      "triggers": ["drive away from stop", "flee in vehicle", "evade pursuit", "refuse to stop vehicle"],
+      "severity": "high",
+      "subject": "citizen"
+    },
+    {
+      "id": "US-CIT-OBSTRUCT",
+      "title": "Obstruction of Justice",
+      "source": "18 U.S.C. §§ 1501–1521; state analogues",
+      "summary": "Destroying evidence, providing false identity to law enforcement, or knowingly aiding a suspect's flight constitutes obstruction. Includes lying about identity to officer during lawful stop in states with stop-and-identify statutes.",
+      "triggers": ["destroy evidence", "false name to officer", "lie about identity", "hide suspect"],
+      "severity": "medium",
+      "subject": "citizen"
     }
   ]
 }

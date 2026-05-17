@@ -1,0 +1,795 @@
+[
+  {
+    "rule_id": "EU-ECHR-2",
+    "title": "Right to Life",
+    "summary": "Use of lethal force by state agents must be no more than absolutely necessary in defence of any person from unlawful violence, to effect lawful arrest, or to quell riot. Planning and control of operations must minimise risk to life.",
+    "source": "ECHR Article 2; McCann and Others v United Kingdom (1995), App. no. 18984/91",
+    "severity": "critical",
+    "subject": "officer",
+    "triggers": [
+      "lethal force",
+      "fatal shot",
+      "shoot to kill",
+      "officer fires weapon",
+      "deadly force"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-ECHR-3-TORTURE",
+    "title": "Prohibition of Torture",
+    "summary": "Torture is absolutely prohibited — no derogation permitted even in war or public emergency. The threshold for 'torture' (as opposed to inhuman treatment) is severity of suffering inflicted intentionally for purpose of obtaining information or confession.",
+    "source": "ECHR Article 3; Selmouni v France (1999), App. no. 25803/94 (Grand Chamber)",
+    "severity": "critical",
+    "subject": "officer",
+    "triggers": [
+      "sustained beating",
+      "torture",
+      "extract confession",
+      "beat during interrogation",
+      "waterboarding"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-ECHR-3-INHUMAN",
+    "title": "Inhuman or Degrading Treatment",
+    "summary": "Even a single slap by police to a person under their control violates Article 3 — any recourse to physical force against a person deprived of liberty which has not been made strictly necessary by their own conduct diminishes human dignity. Threat of torture also constitutes inhuman treatment.",
+    "source": "ECHR Article 3; Bouyid v Belgium (2015), App. no. 23380/09 (Grand Chamber)",
+    "severity": "critical",
+    "subject": "officer",
+    "triggers": [
+      "slap detainee",
+      "strike handcuffed",
+      "hit subject in custody",
+      "force against compliant",
+      "threaten torture"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-ECHR-3-CONDITIONS",
+    "title": "Conditions of Detention",
+    "summary": "Detention conditions must respect human dignity. Overcrowding, lack of medical care, denial of food/water/sanitation can amount to degrading treatment regardless of officer intent.",
+    "source": "ECHR Article 3; Kudła v Poland (2000), App. no. 30210/96",
+    "severity": "high",
+    "subject": "officer",
+    "triggers": [
+      "denied medical",
+      "no water in cell",
+      "overcrowded holding",
+      "denied bathroom"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-ECHR-3-INVESTIGATION",
+    "title": "Procedural Duty to Investigate Ill-Treatment",
+    "summary": "When credible allegation of ill-treatment by police is made, state must conduct effective, independent, prompt investigation. Failure to investigate is a separate Article 3 violation.",
+    "source": "ECHR Article 3 (procedural limb); Assenov v Bulgaria (1998), App. no. 24760/94",
+    "severity": "high",
+    "subject": "officer",
+    "triggers": [
+      "complaint dismissed without inquiry",
+      "no investigation opened",
+      "internal whitewash"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-ECHR-5-ARREST",
+    "title": "Right to Liberty — Lawful Arrest",
+    "summary": "Arrest is lawful only on reasonable suspicion of having committed an offence. 'Reasonable suspicion' requires facts or information satisfying an objective observer.",
+    "source": "ECHR Article 5(1)(c); Fox, Campbell and Hartley v UK (1990), App. no. 12244/86",
+    "severity": "high",
+    "subject": "officer",
+    "triggers": [
+      "arrest without grounds",
+      "detention for questioning only",
+      "preventive detention without offence"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-ECHR-5-INFORM",
+    "title": "Right to Be Informed of Arrest Reasons",
+    "summary": "Everyone arrested must be informed promptly, in a language they understand, of the reasons for arrest and any charge. Information must be sufficient to challenge lawfulness.",
+    "source": "ECHR Article 5(2); Conka v Belgium (2002), App. no. 51564/99",
+    "severity": "medium",
+    "subject": "officer",
+    "triggers": [
+      "arrest without explanation",
+      "no reason given",
+      "language barrier ignored"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-ECHR-5-JUDGE",
+    "title": "Prompt Production Before a Judge",
+    "summary": "Arrested person must be brought promptly before a judge. 'Prompt' generally means within 48-96 hours; longer requires exceptional justification.",
+    "source": "ECHR Article 5(3); Brogan v UK (1988), App. no. 11209/84",
+    "severity": "high",
+    "subject": "officer",
+    "triggers": [
+      "held beyond 48h without judge",
+      "incommunicado detention",
+      "delayed arraignment"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-ECHR-6-FAIR",
+    "title": "Right to a Fair Trial — Pre-Trial Phase",
+    "summary": "Fair trial protections extend to pre-trial police interrogation. Statements obtained in violation of Article 6 cannot ground a conviction.",
+    "source": "ECHR Article 6(1); Salduz v Turkey (2008), App. no. 36391/02 (Grand Chamber)",
+    "severity": "high",
+    "subject": "officer",
+    "triggers": [
+      "coerced statement",
+      "trick suspect into confession",
+      "exploit confused detainee"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-ECHR-6-SILENCE",
+    "title": "Right to Silence and Against Self-Incrimination",
+    "summary": "Suspects have the right to remain silent and not contribute to incriminating themselves. Adverse inference from silence is restricted; coercion to speak violates Article 6.",
+    "source": "ECHR Article 6(1); Funke v France (1993); Saunders v UK (1996)",
+    "severity": "high",
+    "subject": "officer",
+    "triggers": [
+      "pressure to speak",
+      "punish silence",
+      "threaten consequences for not talking"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-ECHR-6-LAWYER",
+    "title": "Right of Access to a Lawyer",
+    "summary": "Access to a lawyer must be granted from the first police interrogation. Statements made without lawyer present, absent compelling reasons, are presumptively inadmissible.",
+    "source": "ECHR Article 6(3)(c); Salduz v Turkey (2008), App. no. 36391/02 (Grand Chamber); EU Directive 2013/48/EU",
+    "severity": "high",
+    "subject": "officer",
+    "triggers": [
+      "denied lawyer",
+      "questioning without counsel",
+      "delayed legal access",
+      "discourage calling attorney"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-ECHR-6-INTERPRETER",
+    "title": "Right to an Interpreter",
+    "summary": "A suspect who does not understand the language used must be provided with free interpretation during police interrogation and proceedings. Translation of essential documents is also required.",
+    "source": "ECHR Article 6(3)(e); EU Directive 2010/64/EU on the right to interpretation",
+    "severity": "medium",
+    "subject": "officer",
+    "triggers": [
+      "no interpreter",
+      "questioning in foreign language",
+      "translation refused"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-ECHR-8-PRIVACY",
+    "title": "Right to Respect for Private Life",
+    "summary": "Police interference with private life (searches, surveillance, retention of biometric data) must be lawful, pursue a legitimate aim, and be necessary and proportionate.",
+    "source": "ECHR Article 8; S. and Marper v UK (2008), App. no. 30562/04 (Grand Chamber)",
+    "severity": "medium",
+    "subject": "officer",
+    "triggers": [
+      "warrantless search of home",
+      "indefinite data retention",
+      "covert surveillance without basis"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-ECHR-8-BODYCAM",
+    "title": "Bodycam Recording — Data Protection",
+    "summary": "Body-worn camera recordings constitute personal data processing. Must have legal basis, clear retention policy, subject access rights, and proportionality in deployment. Continuous recording without notice may violate Article 8.",
+    "source": "ECHR Article 8; GDPR Article 6 and Law Enforcement Directive (EU) 2016/680",
+    "severity": "medium",
+    "subject": "officer",
+    "triggers": [
+      "covert recording",
+      "no notice of camera",
+      "indefinite footage retention",
+      "share recording without basis"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-ECHR-10-SPEECH",
+    "title": "Freedom of Expression — Criticism of Police",
+    "summary": "Verbal criticism, insults, or protest against police — even when offensive — is generally protected speech. Arrest as retaliation for protected expression violates Article 10.",
+    "source": "ECHR Article 10; Janowski v Poland (1999), App. no. 25716/94",
+    "severity": "medium",
+    "subject": "officer",
+    "triggers": [
+      "arrest for swearing at officer",
+      "detention for criticism",
+      "silence the camera"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-ECHR-11-ASSEMBLY",
+    "title": "Freedom of Peaceful Assembly",
+    "summary": "Peaceful protesters may not be dispersed or arrested merely for participating in an unauthorised assembly. State must show tolerance toward peaceful gatherings; force is last resort.",
+    "source": "ECHR Article 11; Kudrevičius v Lithuania (2015), App. no. 37553/05 (Grand Chamber)",
+    "severity": "medium",
+    "subject": "officer",
+    "triggers": [
+      "disperse peaceful protest",
+      "kettle protesters",
+      "arrest demonstrators without violence"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-ECHR-14-DISCRIM",
+    "title": "Prohibition of Discrimination",
+    "summary": "Police treatment must not discriminate on grounds of race, ethnicity, religion, gender. Ethnic profiling in stops and searches without objective justification violates Article 14 read with Article 8.",
+    "source": "ECHR Article 14; Timishev v Russia (2005), App. no. 55762/00",
+    "severity": "high",
+    "subject": "officer",
+    "triggers": [
+      "ethnic profile",
+      "selective stop by appearance",
+      "racial slur",
+      "treat differently due to origin"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-ECHR-3-REFOULEMENT",
+    "title": "Non-Refoulement",
+    "summary": "States may not expel, deport, or return any person to a country where there are substantial grounds to believe they face a real risk of torture or inhuman treatment. Applies absolutely, including at maritime borders.",
+    "source": "ECHR Article 3; Saadi v Italy (2008), App. no. 37201/06 (Grand Chamber); Hirsi Jamaa v Italy (2012)",
+    "severity": "critical",
+    "subject": "officer",
+    "triggers": [
+      "return to country of risk",
+      "pushback at sea",
+      "deport asylum seeker",
+      "expel without risk assessment"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-CFR-1-DIGNITY",
+    "title": "Human Dignity — Inviolable",
+    "summary": "Human dignity is inviolable and must be respected and protected. Treats this as foundational principle informing interpretation of all other rights — especially relevant when subject is restrained, vulnerable, or in custody.",
+    "source": "Charter of Fundamental Rights of the EU, Article 1",
+    "severity": "high",
+    "subject": "officer",
+    "triggers": [
+      "mock detainee",
+      "humiliate suspect",
+      "expose unnecessarily",
+      "degrade in public"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-CFR-4-TORTURE",
+    "title": "Prohibition of Torture (Charter)",
+    "summary": "EU institutional restatement of the ECHR Article 3 prohibition. Binds EU bodies and Member States when implementing EU law.",
+    "source": "Charter of Fundamental Rights of the EU, Article 4 (mirrors ECHR Art. 3)",
+    "severity": "critical",
+    "subject": "officer",
+    "triggers": [
+      "torture",
+      "inhuman treatment",
+      "degrading treatment"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-CFR-6-LIBERTY",
+    "title": "Right to Liberty and Security (Charter)",
+    "summary": "Mirrors ECHR Article 5: no arbitrary arrest, lawful procedure required, prompt information of reasons, prompt judicial review.",
+    "source": "Charter of Fundamental Rights of the EU, Article 6",
+    "severity": "high",
+    "subject": "officer",
+    "triggers": [
+      "arbitrary detention",
+      "no judicial oversight"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-UNCAT-1",
+    "title": "UN Convention Against Torture — Definition",
+    "summary": "Defines torture as severe pain or suffering, physical or mental, intentionally inflicted by or with consent of public official, for purpose of obtaining information, punishment, intimidation, or discrimination.",
+    "source": "UN Convention Against Torture (1984), Article 1",
+    "severity": "critical",
+    "subject": "officer",
+    "triggers": [
+      "intentional infliction",
+      "for confession",
+      "to punish suspect"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-PROPORTIONALITY",
+    "title": "Proportionality of Police Use of Force",
+    "summary": "Force used must be strictly proportionate to threat. De-escalation required where feasible. Firearms only when strictly unavoidable for protection of life.",
+    "source": "ECHR Articles 2 and 3; UN Basic Principles on the Use of Force and Firearms (1990); Council of Europe Recommendation Rec(2001)10",
+    "severity": "high",
+    "subject": "officer",
+    "triggers": [
+      "force without warning",
+      "no de-escalation attempted",
+      "rapid escalation",
+      "use weapon against unarmed"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-IDENTIFY",
+    "title": "Officer Identification Requirement",
+    "summary": "Police officers performing duties must be identifiable — by name, badge, or service number — to enable accountability. Removal or concealment of identification during force is a procedural failing.",
+    "source": "Council of Europe European Code of Police Ethics (2001), Article 45; ECHR Article 3 procedural limb (identification enables accountability)",
+    "severity": "medium",
+    "subject": "officer",
+    "triggers": [
+      "refuse to identify",
+      "no badge displayed",
+      "cover badge number",
+      "anonymous officer"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-DEESCALATION",
+    "title": "Duty of De-escalation",
+    "summary": "Law enforcement officials shall, as far as possible, apply non-violent means before resorting to force. Communication, distance, time, and negotiation are required where feasible.",
+    "source": "UN Basic Principles on the Use of Force (1990), Principles 4–5; Council of Europe Code of Police Ethics, Articles 35–37",
+    "severity": "medium",
+    "subject": "officer",
+    "triggers": [
+      "no verbal warnings",
+      "no negotiation attempted",
+      "immediate force",
+      "no time for compliance"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-CIT-THREAT",
+    "title": "Criminal Threats Against Public Official",
+    "summary": "Serious threats of violence against police officers performing official duties are criminal offences across EU jurisdictions, with aggravation when officer is on duty.",
+    "source": "Most EU Member State penal codes (e.g., Italian Codice Penale Art. 612; German StGB §§ 113, 241; French Code Pénal Art. 433-3)",
+    "severity": "high",
+    "subject": "citizen",
+    "triggers": [
+      "I will kill you",
+      "death threat to officer",
+      "threaten harm to family",
+      "ti ammazzo",
+      "je vais te tuer"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-CIT-ASSAULT",
+    "title": "Assault on a Public Official",
+    "summary": "Physical violence against a police officer on duty is criminalised across EU jurisdictions. Includes spitting, striking, and any physical interference with arrest.",
+    "source": "Italian Codice Penale Art. 336–337 (resistenza/violenza a pubblico ufficiale); German StGB § 113; French Code Pénal Art. 433-6",
+    "severity": "critical",
+    "subject": "citizen",
+    "triggers": [
+      "strike officer",
+      "kick officer",
+      "spit on officer",
+      "physical attack"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-CIT-RESIST",
+    "title": "Resistance to Public Official",
+    "summary": "Active physical resistance — distinguished from passive non-compliance or verbal protest — to a public official performing duties is a criminal offence. Verbal protest alone is protected expression.",
+    "source": "Italian Codice Penale Art. 337; analogous statutes across EU Member States",
+    "severity": "medium",
+    "subject": "citizen",
+    "triggers": [
+      "pull away from officer",
+      "tense up during cuffing",
+      "physical non-compliance"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-CIT-FLEE",
+    "title": "Flight from Lawful Stop",
+    "summary": "Failure to stop upon lawful police signal, particularly in a motor vehicle, is a criminal offence aggravated when reckless.",
+    "source": "Member State traffic and criminal codes (e.g., Italian Codice della Strada Art. 192; German StGB § 142 analogues)",
+    "severity": "high",
+    "subject": "citizen",
+    "triggers": [
+      "drive away from stop",
+      "flee in vehicle",
+      "evade pursuit",
+      "refuse to stop vehicle"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "EU-CIT-OBSTRUCT",
+    "title": "Obstruction of Investigation",
+    "summary": "Destroying evidence, lying to investigators about identity, or aiding a suspect's escape constitutes obstruction across EU jurisdictions.",
+    "source": "Member State penal codes (e.g., Italian Codice Penale Art. 378 favoreggiamento; German StGB § 258)",
+    "severity": "medium",
+    "subject": "citizen",
+    "triggers": [
+      "destroy evidence",
+      "false identity",
+      "lie about identity",
+      "hide suspect"
+    ],
+    "region": "eu"
+  },
+  {
+    "rule_id": "IT-COST-13",
+    "title": "Inviolabilità della Libertà Personale",
+    "summary": "La libertà personale è inviolabile. Restrizioni richiedono atto motivato dell'autorità giudiziaria, salvo casi eccezionali di necessità ed urgenza tassativamente indicati dalla legge; la polizia deve convalidare entro 48 ore.",
+    "source": "Costituzione della Repubblica Italiana, Art. 13",
+    "severity": "critical",
+    "subject": "officer",
+    "triggers": [
+      "fermo senza convalida",
+      "detention beyond 48 hours",
+      "arresto senza atto motivato",
+      "detenzione arbitraria"
+    ],
+    "region": "it"
+  },
+  {
+    "rule_id": "IT-COST-13-VIOLENZA",
+    "title": "Punizione di Ogni Violenza Fisica e Morale",
+    "summary": "È punita ogni violenza fisica e morale sulle persone comunque sottoposte a restrizioni di libertà. Norma costituzionale che fonda il reato di tortura (Art. 613-bis c.p., introdotto Legge 110/2017).",
+    "source": "Costituzione della Repubblica Italiana, Art. 13 comma 4",
+    "severity": "critical",
+    "subject": "officer",
+    "triggers": [
+      "violenza su detenuto",
+      "tortura",
+      "abuso fisico in custodia",
+      "morale coercizione"
+    ],
+    "region": "it"
+  },
+  {
+    "rule_id": "IT-COST-14",
+    "title": "Inviolabilità del Domicilio",
+    "summary": "Il domicilio è inviolabile. Ispezioni, perquisizioni e sequestri richiedono mandato dell'autorità giudiziaria, salvo casi tassativi previsti dalla legge (flagranza, fondato sospetto di reato).",
+    "source": "Costituzione della Repubblica Italiana, Art. 14",
+    "severity": "high",
+    "subject": "officer",
+    "triggers": [
+      "perquisizione senza mandato",
+      "ingresso in abitazione",
+      "search without warrant"
+    ],
+    "region": "it"
+  },
+  {
+    "rule_id": "IT-COST-24",
+    "title": "Diritto di Difesa",
+    "summary": "La difesa è diritto inviolabile in ogni stato e grado del procedimento. Si applica fin dal primo atto di polizia giudiziaria che incide sulla libertà personale.",
+    "source": "Costituzione della Repubblica Italiana, Art. 24",
+    "severity": "high",
+    "subject": "officer",
+    "triggers": [
+      "interrogatorio senza difensore",
+      "deny lawyer",
+      "questioning without counsel"
+    ],
+    "region": "it"
+  },
+  {
+    "rule_id": "IT-COST-27",
+    "title": "Presunzione di Non Colpevolezza",
+    "summary": "L'imputato non è considerato colpevole sino alla condanna definitiva. La polizia deve evitare trattamenti che presuppongano colpevolezza prima della sentenza.",
+    "source": "Costituzione della Repubblica Italiana, Art. 27 comma 2",
+    "severity": "medium",
+    "subject": "officer",
+    "triggers": [
+      "treat as guilty",
+      "presunzione di colpevolezza",
+      "public shaming pre-trial"
+    ],
+    "region": "it"
+  },
+  {
+    "rule_id": "IT-CPP-63",
+    "title": "Dichiarazioni Indizianti",
+    "summary": "Se una persona resa dichiarazioni davanti a polizia o pubblico ministero emergono indizi di reità a suo carico, l'autorità interrompe l'esame, avverte che potranno essere svolte indagini nei suoi confronti e la invita a nominare un difensore. Dichiarazioni precedenti sono inutilizzabili.",
+    "source": "Codice di Procedura Penale, Art. 63",
+    "severity": "high",
+    "subject": "officer",
+    "triggers": [
+      "continue questioning after suspicion",
+      "no avvertimento ex art 63",
+      "non avvisato dei diritti"
+    ],
+    "region": "it"
+  },
+  {
+    "rule_id": "IT-CPP-64",
+    "title": "Regole Generali dell'Interrogatorio",
+    "summary": "L'interrogatorio deve svolgersi senza coercizione. Non possono essere usati metodi o tecniche idonei a influire sulla libertà di autodeterminazione o ad alterare la capacità di ricordare e valutare i fatti. L'imputato deve essere avvertito del diritto al silenzio.",
+    "source": "Codice di Procedura Penale, Art. 64",
+    "severity": "high",
+    "subject": "officer",
+    "triggers": [
+      "coercion in questioning",
+      "threat during interrogation",
+      "trick suspect",
+      "no right to silence advised"
+    ],
+    "region": "it"
+  },
+  {
+    "rule_id": "IT-CPP-114",
+    "title": "Divieto di Pubblicazione di Atti e Immagini",
+    "summary": "È vietata la pubblicazione di immagini di persona privata della libertà personale ripresa mentre la stessa si trova sottoposta all'uso di manette o altri mezzi di coercizione fisica, salvo consenso dell'interessato.",
+    "source": "Codice di Procedura Penale, Art. 114",
+    "severity": "medium",
+    "subject": "officer",
+    "triggers": [
+      "release footage of cuffed suspect",
+      "publish image in cuffs",
+      "media access to detainee"
+    ],
+    "region": "it"
+  },
+  {
+    "rule_id": "IT-CPP-188",
+    "title": "Libertà Morale della Persona nell'Atto del Processo",
+    "summary": "Non possono essere utilizzati, neppure con il consenso della persona interessata, metodi o tecniche idonei a influire sulla libertà di autodeterminazione o ad alterare la capacità di ricordare o valutare i fatti.",
+    "source": "Codice di Procedura Penale, Art. 188",
+    "severity": "critical",
+    "subject": "officer",
+    "triggers": [
+      "narcoanalisi",
+      "ipnosi",
+      "drug-assisted interrogation",
+      "sleep deprivation"
+    ],
+    "region": "it"
+  },
+  {
+    "rule_id": "IT-CPP-191",
+    "title": "Prove Illegittimamente Acquisite",
+    "summary": "Le prove acquisite in violazione dei divieti stabiliti dalla legge non possono essere utilizzate. L'inutilizzabilità è rilevabile anche d'ufficio in ogni stato e grado del procedimento.",
+    "source": "Codice di Procedura Penale, Art. 191",
+    "severity": "high",
+    "subject": "officer",
+    "triggers": [
+      "evidence from illegal search",
+      "tainted confession",
+      "coerced statement"
+    ],
+    "region": "it"
+  },
+  {
+    "rule_id": "IT-CPP-352",
+    "title": "Perquisizioni d'Iniziativa della Polizia Giudiziaria",
+    "summary": "Nella flagranza di un reato o nel caso di evasione, gli ufficiali di polizia giudiziaria procedono a perquisizione personale o locale quando hanno fondato motivo di ritenere che siano occultate cose o tracce pertinenti al reato. Atto convalidato dal PM entro 48 ore.",
+    "source": "Codice di Procedura Penale, Art. 352",
+    "severity": "medium",
+    "subject": "officer",
+    "triggers": [
+      "perquisizione senza flagranza",
+      "search without grounds",
+      "no convalida from PM"
+    ],
+    "region": "it"
+  },
+  {
+    "rule_id": "IT-CPP-380",
+    "title": "Arresto Obbligatorio in Flagranza",
+    "summary": "Gli ufficiali e gli agenti di polizia giudiziaria procedono all'arresto di chiunque è colto in flagranza di un delitto non colposo per il quale la legge stabilisce la pena dell'ergastolo o della reclusione non inferiore nel minimo a cinque anni e nel massimo a venti anni.",
+    "source": "Codice di Procedura Penale, Art. 380",
+    "severity": "none",
+    "subject": "officer",
+    "triggers": [
+      "arrest in flagranza",
+      "delitto grave flagrante"
+    ],
+    "region": "it"
+  },
+  {
+    "rule_id": "IT-CPP-385",
+    "title": "Divieto di Arresto in Determinate Circostanze",
+    "summary": "L'arresto o il fermo non è consentito quando, tenuto conto delle circostanze del fatto, appare che esso è stato compiuto nell'adempimento di un dovere o nell'esercizio di una facoltà legittima ovvero in presenza di una causa di non punibilità.",
+    "source": "Codice di Procedura Penale, Art. 385",
+    "severity": "medium",
+    "subject": "officer",
+    "triggers": [
+      "arrest despite cause of non-punishability",
+      "arresto in adempimento dovere"
+    ],
+    "region": "it"
+  },
+  {
+    "rule_id": "IT-CPP-386",
+    "title": "Doveri della PG dopo Arresto",
+    "summary": "Gli ufficiali e gli agenti di polizia giudiziaria che hanno eseguito l'arresto o il fermo o ai quali l'arrestato è stato consegnato ne danno immediata notizia al PM e enunciano all'arrestato la facoltà di nominare un difensore di fiducia. Trasferimento in casa circondariale entro 24 ore.",
+    "source": "Codice di Procedura Penale, Art. 386",
+    "severity": "high",
+    "subject": "officer",
+    "triggers": [
+      "no immediate notice to PM",
+      "not informed of right to counsel",
+      "held beyond 24h without transfer"
+    ],
+    "region": "it"
+  },
+  {
+    "rule_id": "IT-CP-323",
+    "title": "Abuso d'Ufficio",
+    "summary": "Il pubblico ufficiale che, nello svolgimento delle sue funzioni, intenzionalmente procura a sé o ad altri un ingiusto vantaggio patrimoniale o cagiona ad altri un danno ingiusto, è punito con la reclusione.",
+    "source": "Codice Penale, Art. 323",
+    "severity": "high",
+    "subject": "officer",
+    "triggers": [
+      "abuse position",
+      "intentional unfair detention",
+      "vendetta"
+    ],
+    "region": "it"
+  },
+  {
+    "rule_id": "IT-CP-606",
+    "title": "Arresto Illegale",
+    "summary": "Il pubblico ufficiale che procede ad arresto, abusando dei poteri inerenti alle sue funzioni, è punito con la reclusione fino a tre anni.",
+    "source": "Codice Penale, Art. 606",
+    "severity": "critical",
+    "subject": "officer",
+    "triggers": [
+      "unlawful arrest",
+      "arrest without legal basis",
+      "arresto abusivo"
+    ],
+    "region": "it"
+  },
+  {
+    "rule_id": "IT-CP-608",
+    "title": "Abuso di Autorità contro Arrestati o Detenuti",
+    "summary": "Il pubblico ufficiale che sottopone a misure di rigore non consentite dalla legge una persona arrestata o detenuta di cui egli abbia la custodia, è punito.",
+    "source": "Codice Penale, Art. 608",
+    "severity": "high",
+    "subject": "officer",
+    "triggers": [
+      "misure di rigore",
+      "abuse detainee",
+      "punitive treatment in custody"
+    ],
+    "region": "it"
+  },
+  {
+    "rule_id": "IT-CP-610",
+    "title": "Violenza Privata",
+    "summary": "Chiunque, con violenza o minaccia, costringe altri a fare, tollerare od omettere qualche cosa è punito. Si applica quando un agente costringe oltre i limiti del legittimo esercizio della funzione.",
+    "source": "Codice Penale, Art. 610",
+    "severity": "high",
+    "subject": "officer",
+    "triggers": [
+      "force compliance beyond duty",
+      "violenza per estorcere",
+      "coerce action"
+    ],
+    "region": "it"
+  },
+  {
+    "rule_id": "IT-CP-613BIS",
+    "title": "Tortura",
+    "summary": "Chiunque, con violenze o minacce gravi, ovvero agendo con crudeltà, cagiona acute sofferenze fisiche o un verificabile trauma psichico a una persona privata della libertà personale o affidata alla sua custodia. Pena aggravata se commesso da pubblico ufficiale.",
+    "source": "Codice Penale, Art. 613-bis (introdotto Legge 110/2017)",
+    "severity": "critical",
+    "subject": "officer",
+    "triggers": [
+      "tortura",
+      "violenze su detenuto",
+      "trauma psichico inflitto",
+      "cruelty in custody"
+    ],
+    "region": "it"
+  },
+  {
+    "rule_id": "IT-L121-24",
+    "title": "Doveri del Personale della Polizia di Stato",
+    "summary": "Il personale della Polizia di Stato deve adempiere ai propri doveri con disciplina e onore, mantenere condotta irreprensibile, agire con imparzialità. Identificabilità in servizio richiesta salvo missioni speciali autorizzate.",
+    "source": "Legge 1° aprile 1981 n. 121, Art. 24",
+    "severity": "medium",
+    "subject": "officer",
+    "triggers": [
+      "refuse identification",
+      "no badge displayed",
+      "cover service number"
+    ],
+    "region": "it"
+  },
+  {
+    "rule_id": "IT-CIT-336",
+    "title": "Violenza o Minaccia a Pubblico Ufficiale",
+    "summary": "Chiunque usa violenza o minaccia a un pubblico ufficiale o a un incaricato di un pubblico servizio, per costringerlo a fare un atto contrario ai propri doveri o ad omettere un atto del suo ufficio, è punito con la reclusione da sei mesi a cinque anni.",
+    "source": "Codice Penale, Art. 336",
+    "severity": "high",
+    "subject": "citizen",
+    "triggers": [
+      "ti ammazzo",
+      "minaccia a poliziotto",
+      "violence to compel officer",
+      "threat to public official"
+    ],
+    "region": "it"
+  },
+  {
+    "rule_id": "IT-CIT-337",
+    "title": "Resistenza a Pubblico Ufficiale",
+    "summary": "Chiunque usa violenza o minaccia per opporsi a un pubblico ufficiale o ad un incaricato di un pubblico servizio mentre compie un atto di ufficio o di servizio, è punito con la reclusione da sei mesi a cinque anni.",
+    "source": "Codice Penale, Art. 337",
+    "severity": "high",
+    "subject": "citizen",
+    "triggers": [
+      "resist arrest physically",
+      "fight officer",
+      "resistenza attiva"
+    ],
+    "region": "it"
+  },
+  {
+    "rule_id": "IT-CIT-341BIS",
+    "title": "Oltraggio a Pubblico Ufficiale",
+    "summary": "Chiunque, in luogo pubblico o aperto al pubblico e in presenza di più persone, offende l'onore ed il prestigio di un pubblico ufficiale mentre compie un atto del suo ufficio è punito con la reclusione fino a tre anni. Nota: insulti non offensivi in privato sono protetti come libertà di espressione ex Art. 21 Cost.",
+    "source": "Codice Penale, Art. 341-bis (reintrodotto Legge 94/2009)",
+    "severity": "low",
+    "subject": "citizen",
+    "triggers": [
+      "public insult to officer in duty",
+      "oltraggio in pubblico"
+    ],
+    "region": "it"
+  },
+  {
+    "rule_id": "IT-CIT-612",
+    "title": "Minaccia",
+    "summary": "Chiunque minaccia ad altri un ingiusto danno è punito, a querela della persona offesa. Pena aggravata se minaccia è grave o commessa con armi.",
+    "source": "Codice Penale, Art. 612",
+    "severity": "high",
+    "subject": "citizen",
+    "triggers": [
+      "death threat",
+      "minaccia grave",
+      "threat with weapon"
+    ],
+    "region": "it"
+  },
+  {
+    "rule_id": "IT-CIT-189-CDS",
+    "title": "Fuga in Caso di Alt della Polizia Stradale",
+    "summary": "Il conducente che, fatto segnale di alt da agente di polizia stradale, non si ferma, commette illecito amministrativo o penale a seconda delle circostanze. La fuga aggravata (con messa in pericolo di altri utenti) integra reato.",
+    "source": "Codice della Strada, Art. 192; Art. 189 (obblighi in caso di incidente)",
+    "severity": "high",
+    "subject": "citizen",
+    "triggers": [
+      "flee from alt",
+      "drive away from stop",
+      "fuga in auto",
+      "evade polizia"
+    ],
+    "region": "it"
+  }
+]

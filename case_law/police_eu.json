@@ -1,72 +1,283 @@
 {
   "vertical": "police",
   "region": "eu",
-  "version": "0.1",
+  "version": "0.3",
   "updated": "2026-05-17",
+  "description": "European human rights and procedural framework for law enforcement. Sources: European Convention on Human Rights (ECHR), Charter of Fundamental Rights of the EU (CFR), UN Convention Against Torture (UNCAT), key ECtHR Grand Chamber precedents.",
   "rules": [
     {
-      "id": "EU-ECHR-3",
-      "title": "Prohibition of Torture and Inhuman Treatment",
-      "source": "ECHR Art. 3; Bouyid v. Belgium (2015)",
-      "summary": "Any use of force against a person deprived of liberty that is not strictly necessary diminishes human dignity and violates Art. 3.",
-      "triggers": ["force on restrained person", "humiliating treatment", "slap or strike in custody"],
-      "severity": "critical"
+      "id": "EU-ECHR-2",
+      "title": "Right to Life",
+      "source": "ECHR Article 2; McCann and Others v United Kingdom (1995), App. no. 18984/91",
+      "summary": "Use of lethal force by state agents must be no more than absolutely necessary in defence of any person from unlawful violence, to effect lawful arrest, or to quell riot. Planning and control of operations must minimise risk to life.",
+      "triggers": ["lethal force", "fatal shot", "shoot to kill", "officer fires weapon", "deadly force"],
+      "severity": "critical",
+      "subject": "officer",
+      "key_precedents": ["McCann v UK 1995", "Nachova v Bulgaria 2005"]
     },
     {
-      "id": "EU-ECHR-5",
-      "title": "Right to Liberty and Security",
-      "source": "ECHR Art. 5; Saadi v. UK (2008)",
-      "summary": "Detention must be lawful, follow a prescribed procedure, and the person must be informed promptly of the reasons.",
-      "triggers": ["detention without reason given", "unlawful arrest", "no procedural basis"],
-      "severity": "high"
+      "id": "EU-ECHR-3-TORTURE",
+      "title": "Prohibition of Torture",
+      "source": "ECHR Article 3; Selmouni v France (1999), App. no. 25803/94 (Grand Chamber)",
+      "summary": "Torture is absolutely prohibited — no derogation permitted even in war or public emergency. The threshold for 'torture' (as opposed to inhuman treatment) is severity of suffering inflicted intentionally for purpose of obtaining information or confession.",
+      "triggers": ["sustained beating", "torture", "extract confession", "beat during interrogation", "waterboarding"],
+      "severity": "critical",
+      "subject": "officer",
+      "key_precedents": ["Selmouni v France 1999", "Aksoy v Turkey 1996"]
     },
     {
-      "id": "EU-ECHR-6",
-      "title": "Right to a Fair Trial — Pre-trial Rights",
-      "source": "ECHR Art. 6; Salduz v. Turkey (2008)",
-      "summary": "Suspects have the right to legal counsel from the first interrogation and to remain silent.",
-      "triggers": ["questioning without counsel offered", "no right-to-silence advisory"],
-      "severity": "high"
+      "id": "EU-ECHR-3-INHUMAN",
+      "title": "Inhuman or Degrading Treatment",
+      "source": "ECHR Article 3; Bouyid v Belgium (2015), App. no. 23380/09 (Grand Chamber)",
+      "summary": "Even a single slap by police to a person under their control violates Article 3 — any recourse to physical force against a person deprived of liberty which has not been made strictly necessary by their own conduct diminishes human dignity. Threat of torture also constitutes inhuman treatment.",
+      "triggers": ["slap detainee", "strike handcuffed", "hit subject in custody", "force against compliant", "threaten torture"],
+      "severity": "critical",
+      "subject": "officer",
+      "key_precedents": ["Bouyid v Belgium 2015", "Gäfgen v Germany 2010"]
     },
     {
-      "id": "EU-ECHR-8",
-      "title": "Right to Private Life",
-      "source": "ECHR Art. 8; S. and Marper v. UK (2008)",
-      "summary": "Search, seizure of data, and personal interference require legal basis, legitimate aim and proportionality.",
-      "triggers": ["search without warrant", "phone seized without basis", "personal data without basis"],
-      "severity": "medium"
+      "id": "EU-ECHR-3-CONDITIONS",
+      "title": "Conditions of Detention",
+      "source": "ECHR Article 3; Kudła v Poland (2000), App. no. 30210/96",
+      "summary": "Detention conditions must respect human dignity. Overcrowding, lack of medical care, denial of food/water/sanitation can amount to degrading treatment regardless of officer intent.",
+      "triggers": ["denied medical", "no water in cell", "overcrowded holding", "denied bathroom"],
+      "severity": "high",
+      "subject": "officer"
     },
     {
-      "id": "EU-CFR-4",
-      "title": "Charter of Fundamental Rights — Dignity",
-      "source": "EU Charter of Fundamental Rights, Art. 4",
-      "summary": "Inhuman or degrading treatment is absolutely prohibited; mirrors ECHR Art. 3 within EU law.",
-      "triggers": ["degrading language", "humiliation in public"],
-      "severity": "high"
+      "id": "EU-ECHR-3-INVESTIGATION",
+      "title": "Procedural Duty to Investigate Ill-Treatment",
+      "source": "ECHR Article 3 (procedural limb); Assenov v Bulgaria (1998), App. no. 24760/94",
+      "summary": "When credible allegation of ill-treatment by police is made, state must conduct effective, independent, prompt investigation. Failure to investigate is a separate Article 3 violation.",
+      "triggers": ["complaint dismissed without inquiry", "no investigation opened", "internal whitewash"],
+      "severity": "high",
+      "subject": "officer"
     },
     {
-      "id": "EU-PROPORTIONALITY",
-      "title": "Proportionality Principle",
-      "source": "EU general principle; CJEU case law (e.g., Schrems II)",
-      "summary": "Police measures must be appropriate, necessary, and not exceed what is required to achieve the legitimate aim.",
-      "triggers": ["disproportionate force", "excessive measure for minor offense"],
-      "severity": "high"
+      "id": "EU-ECHR-5-ARREST",
+      "title": "Right to Liberty — Lawful Arrest",
+      "source": "ECHR Article 5(1)(c); Fox, Campbell and Hartley v UK (1990), App. no. 12244/86",
+      "summary": "Arrest is lawful only on reasonable suspicion of having committed an offence. 'Reasonable suspicion' requires facts or information satisfying an objective observer.",
+      "triggers": ["arrest without grounds", "detention for questioning only", "preventive detention without offence"],
+      "severity": "high",
+      "subject": "officer"
+    },
+    {
+      "id": "EU-ECHR-5-INFORM",
+      "title": "Right to Be Informed of Arrest Reasons",
+      "source": "ECHR Article 5(2); Conka v Belgium (2002), App. no. 51564/99",
+      "summary": "Everyone arrested must be informed promptly, in a language they understand, of the reasons for arrest and any charge. Information must be sufficient to challenge lawfulness.",
+      "triggers": ["arrest without explanation", "no reason given", "language barrier ignored"],
+      "severity": "medium",
+      "subject": "officer"
+    },
+    {
+      "id": "EU-ECHR-5-JUDGE",
+      "title": "Prompt Production Before a Judge",
+      "source": "ECHR Article 5(3); Brogan v UK (1988), App. no. 11209/84",
+      "summary": "Arrested person must be brought promptly before a judge. 'Prompt' generally means within 48-96 hours; longer requires exceptional justification.",
+      "triggers": ["held beyond 48h without judge", "incommunicado detention", "delayed arraignment"],
+      "severity": "high",
+      "subject": "officer"
+    },
+    {
+      "id": "EU-ECHR-6-FAIR",
+      "title": "Right to a Fair Trial — Pre-Trial Phase",
+      "source": "ECHR Article 6(1); Salduz v Turkey (2008), App. no. 36391/02 (Grand Chamber)",
+      "summary": "Fair trial protections extend to pre-trial police interrogation. Statements obtained in violation of Article 6 cannot ground a conviction.",
+      "triggers": ["coerced statement", "trick suspect into confession", "exploit confused detainee"],
+      "severity": "high",
+      "subject": "officer"
+    },
+    {
+      "id": "EU-ECHR-6-SILENCE",
+      "title": "Right to Silence and Against Self-Incrimination",
+      "source": "ECHR Article 6(1); Funke v France (1993); Saunders v UK (1996)",
+      "summary": "Suspects have the right to remain silent and not contribute to incriminating themselves. Adverse inference from silence is restricted; coercion to speak violates Article 6.",
+      "triggers": ["pressure to speak", "punish silence", "threaten consequences for not talking"],
+      "severity": "high",
+      "subject": "officer"
+    },
+    {
+      "id": "EU-ECHR-6-LAWYER",
+      "title": "Right of Access to a Lawyer",
+      "source": "ECHR Article 6(3)(c); Salduz v Turkey (2008), App. no. 36391/02 (Grand Chamber); EU Directive 2013/48/EU",
+      "summary": "Access to a lawyer must be granted from the first police interrogation. Statements made without lawyer present, absent compelling reasons, are presumptively inadmissible.",
+      "triggers": ["denied lawyer", "questioning without counsel", "delayed legal access", "discourage calling attorney"],
+      "severity": "high",
+      "subject": "officer"
+    },
+    {
+      "id": "EU-ECHR-6-INTERPRETER",
+      "title": "Right to an Interpreter",
+      "source": "ECHR Article 6(3)(e); EU Directive 2010/64/EU on the right to interpretation",
+      "summary": "A suspect who does not understand the language used must be provided with free interpretation during police interrogation and proceedings. Translation of essential documents is also required.",
+      "triggers": ["no interpreter", "questioning in foreign language", "translation refused"],
+      "severity": "medium",
+      "subject": "officer"
+    },
+    {
+      "id": "EU-ECHR-8-PRIVACY",
+      "title": "Right to Respect for Private Life",
+      "source": "ECHR Article 8; S. and Marper v UK (2008), App. no. 30562/04 (Grand Chamber)",
+      "summary": "Police interference with private life (searches, surveillance, retention of biometric data) must be lawful, pursue a legitimate aim, and be necessary and proportionate.",
+      "triggers": ["warrantless search of home", "indefinite data retention", "covert surveillance without basis"],
+      "severity": "medium",
+      "subject": "officer"
+    },
+    {
+      "id": "EU-ECHR-8-BODYCAM",
+      "title": "Bodycam Recording — Data Protection",
+      "source": "ECHR Article 8; GDPR Article 6 and Law Enforcement Directive (EU) 2016/680",
+      "summary": "Body-worn camera recordings constitute personal data processing. Must have legal basis, clear retention policy, subject access rights, and proportionality in deployment. Continuous recording without notice may violate Article 8.",
+      "triggers": ["covert recording", "no notice of camera", "indefinite footage retention", "share recording without basis"],
+      "severity": "medium",
+      "subject": "officer"
+    },
+    {
+      "id": "EU-ECHR-10-SPEECH",
+      "title": "Freedom of Expression — Criticism of Police",
+      "source": "ECHR Article 10; Janowski v Poland (1999), App. no. 25716/94",
+      "summary": "Verbal criticism, insults, or protest against police — even when offensive — is generally protected speech. Arrest as retaliation for protected expression violates Article 10.",
+      "triggers": ["arrest for swearing at officer", "detention for criticism", "silence the camera"],
+      "severity": "medium",
+      "subject": "officer"
+    },
+    {
+      "id": "EU-ECHR-11-ASSEMBLY",
+      "title": "Freedom of Peaceful Assembly",
+      "source": "ECHR Article 11; Kudrevičius v Lithuania (2015), App. no. 37553/05 (Grand Chamber)",
+      "summary": "Peaceful protesters may not be dispersed or arrested merely for participating in an unauthorised assembly. State must show tolerance toward peaceful gatherings; force is last resort.",
+      "triggers": ["disperse peaceful protest", "kettle protesters", "arrest demonstrators without violence"],
+      "severity": "medium",
+      "subject": "officer"
+    },
+    {
+      "id": "EU-ECHR-14-DISCRIM",
+      "title": "Prohibition of Discrimination",
+      "source": "ECHR Article 14; Timishev v Russia (2005), App. no. 55762/00",
+      "summary": "Police treatment must not discriminate on grounds of race, ethnicity, religion, gender. Ethnic profiling in stops and searches without objective justification violates Article 14 read with Article 8.",
+      "triggers": ["ethnic profile", "selective stop by appearance", "racial slur", "treat differently due to origin"],
+      "severity": "high",
+      "subject": "officer"
+    },
+    {
+      "id": "EU-ECHR-3-REFOULEMENT",
+      "title": "Non-Refoulement",
+      "source": "ECHR Article 3; Saadi v Italy (2008), App. no. 37201/06 (Grand Chamber); Hirsi Jamaa v Italy (2012)",
+      "summary": "States may not expel, deport, or return any person to a country where there are substantial grounds to believe they face a real risk of torture or inhuman treatment. Applies absolutely, including at maritime borders.",
+      "triggers": ["return to country of risk", "pushback at sea", "deport asylum seeker", "expel without risk assessment"],
+      "severity": "critical",
+      "subject": "officer",
+      "key_precedents": ["Saadi v Italy 2008", "Hirsi Jamaa v Italy 2012"]
+    },
+    {
+      "id": "EU-CFR-1-DIGNITY",
+      "title": "Human Dignity — Inviolable",
+      "source": "Charter of Fundamental Rights of the EU, Article 1",
+      "summary": "Human dignity is inviolable and must be respected and protected. Treats this as foundational principle informing interpretation of all other rights — especially relevant when subject is restrained, vulnerable, or in custody.",
+      "triggers": ["mock detainee", "humiliate suspect", "expose unnecessarily", "degrade in public"],
+      "severity": "high",
+      "subject": "officer"
+    },
+    {
+      "id": "EU-CFR-4-TORTURE",
+      "title": "Prohibition of Torture (Charter)",
+      "source": "Charter of Fundamental Rights of the EU, Article 4 (mirrors ECHR Art. 3)",
+      "summary": "EU institutional restatement of the ECHR Article 3 prohibition. Binds EU bodies and Member States when implementing EU law.",
+      "triggers": ["torture", "inhuman treatment", "degrading treatment"],
+      "severity": "critical",
+      "subject": "officer"
+    },
+    {
+      "id": "EU-CFR-6-LIBERTY",
+      "title": "Right to Liberty and Security (Charter)",
+      "source": "Charter of Fundamental Rights of the EU, Article 6",
+      "summary": "Mirrors ECHR Article 5: no arbitrary arrest, lawful procedure required, prompt information of reasons, prompt judicial review.",
+      "triggers": ["arbitrary detention", "no judicial oversight"],
+      "severity": "high",
+      "subject": "officer"
     },
     {
       "id": "EU-UNCAT-1",
-      "title": "UN Convention Against Torture",
-      "source": "UN CAT Art. 1, 16",
-      "summary": "Public officials must not inflict severe pain or suffering for punishment, intimidation, or any reason based on discrimination.",
-      "triggers": ["punishment beyond procedure", "intimidation tactics"],
-      "severity": "critical"
+      "title": "UN Convention Against Torture — Definition",
+      "source": "UN Convention Against Torture (1984), Article 1",
+      "summary": "Defines torture as severe pain or suffering, physical or mental, intentionally inflicted by or with consent of public official, for purpose of obtaining information, punishment, intimidation, or discrimination.",
+      "triggers": ["intentional infliction", "for confession", "to punish suspect"],
+      "severity": "critical",
+      "subject": "officer"
     },
     {
-      "id": "EU-IT-CPP-385",
-      "title": "Italian CPP Art. 385 — Conditions of Arrest",
-      "source": "Codice di Procedura Penale, Art. 385",
-      "summary": "Arrest in flagrante delicto requires the act to be currently in commission or immediately after; otherwise it is unlawful.",
-      "triggers": ["arrest hours after alleged act", "no flagrancy", "post-fact arrest without warrant"],
-      "severity": "high"
+      "id": "EU-PROPORTIONALITY",
+      "title": "Proportionality of Police Use of Force",
+      "source": "ECHR Articles 2 and 3; UN Basic Principles on the Use of Force and Firearms (1990); Council of Europe Recommendation Rec(2001)10",
+      "summary": "Force used must be strictly proportionate to threat. De-escalation required where feasible. Firearms only when strictly unavoidable for protection of life.",
+      "triggers": ["force without warning", "no de-escalation attempted", "rapid escalation", "use weapon against unarmed"],
+      "severity": "high",
+      "subject": "officer"
+    },
+    {
+      "id": "EU-IDENTIFY",
+      "title": "Officer Identification Requirement",
+      "source": "Council of Europe European Code of Police Ethics (2001), Article 45; ECHR Article 3 procedural limb (identification enables accountability)",
+      "summary": "Police officers performing duties must be identifiable — by name, badge, or service number — to enable accountability. Removal or concealment of identification during force is a procedural failing.",
+      "triggers": ["refuse to identify", "no badge displayed", "cover badge number", "anonymous officer"],
+      "severity": "medium",
+      "subject": "officer"
+    },
+    {
+      "id": "EU-DEESCALATION",
+      "title": "Duty of De-escalation",
+      "source": "UN Basic Principles on the Use of Force (1990), Principles 4–5; Council of Europe Code of Police Ethics, Articles 35–37",
+      "summary": "Law enforcement officials shall, as far as possible, apply non-violent means before resorting to force. Communication, distance, time, and negotiation are required where feasible.",
+      "triggers": ["no verbal warnings", "no negotiation attempted", "immediate force", "no time for compliance"],
+      "severity": "medium",
+      "subject": "officer"
+    },
+    {
+      "id": "EU-CIT-THREAT",
+      "title": "Criminal Threats Against Public Official",
+      "source": "Most EU Member State penal codes (e.g., Italian Codice Penale Art. 612; German StGB §§ 113, 241; French Code Pénal Art. 433-3)",
+      "summary": "Serious threats of violence against police officers performing official duties are criminal offences across EU jurisdictions, with aggravation when officer is on duty.",
+      "triggers": ["I will kill you", "death threat to officer", "threaten harm to family", "ti ammazzo", "je vais te tuer"],
+      "severity": "high",
+      "subject": "citizen"
+    },
+    {
+      "id": "EU-CIT-ASSAULT",
+      "title": "Assault on a Public Official",
+      "source": "Italian Codice Penale Art. 336–337 (resistenza/violenza a pubblico ufficiale); German StGB § 113; French Code Pénal Art. 433-6",
+      "summary": "Physical violence against a police officer on duty is criminalised across EU jurisdictions. Includes spitting, striking, and any physical interference with arrest.",
+      "triggers": ["strike officer", "kick officer", "spit on officer", "physical attack"],
+      "severity": "critical",
+      "subject": "citizen"
+    },
+    {
+      "id": "EU-CIT-RESIST",
+      "title": "Resistance to Public Official",
+      "source": "Italian Codice Penale Art. 337; analogous statutes across EU Member States",
+      "summary": "Active physical resistance — distinguished from passive non-compliance or verbal protest — to a public official performing duties is a criminal offence. Verbal protest alone is protected expression.",
+      "triggers": ["pull away from officer", "tense up during cuffing", "physical non-compliance"],
+      "severity": "medium",
+      "subject": "citizen"
+    },
+    {
+      "id": "EU-CIT-FLEE",
+      "title": "Flight from Lawful Stop",
+      "source": "Member State traffic and criminal codes (e.g., Italian Codice della Strada Art. 192; German StGB § 142 analogues)",
+      "summary": "Failure to stop upon lawful police signal, particularly in a motor vehicle, is a criminal offence aggravated when reckless.",
+      "triggers": ["drive away from stop", "flee in vehicle", "evade pursuit", "refuse to stop vehicle"],
+      "severity": "high",
+      "subject": "citizen"
+    },
+    {
+      "id": "EU-CIT-OBSTRUCT",
+      "title": "Obstruction of Investigation",
+      "source": "Member State penal codes (e.g., Italian Codice Penale Art. 378 favoreggiamento; German StGB § 258)",
+      "summary": "Destroying evidence, lying to investigators about identity, or aiding a suspect's escape constitutes obstruction across EU jurisdictions.",
+      "triggers": ["destroy evidence", "false identity", "lie about identity", "hide suspect"],
+      "severity": "medium",
+      "subject": "citizen"
     }
   ]
 }
