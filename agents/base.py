@@ -128,6 +128,7 @@ MODELS = {
     "router":          "google/gemma-4-E4B-it",
     "prosecution":     "openai/gpt-oss-120b",
     "prosecution_alt": "google/gemma-4-26B-A4B-it",
+    "rapid":           "openai/gpt-oss-20b",
     "defense":         "google/gemma-4-31B-it",
     "defense_alt":     "openai/gpt-oss-20b",
     "ensemble":        "meta-llama/Llama-3.1-8B-Instruct",

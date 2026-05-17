@@ -5,6 +5,9 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional
 
+from contextlib import asynccontextmanager
+import logging
+
 from fastapi import FastAPI, UploadFile, File, Form, BackgroundTasks, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from sqlmodel import Session, select
@@ -12,10 +15,38 @@ from sqlmodel import Session, select
 from models import Job, init_db, engine, get_session
 from pipeline import run_pipeline
 
+log = logging.getLogger("sentinel.main")
+
 UPLOAD_DIR = Path("recordings")
 UPLOAD_DIR.mkdir(exist_ok=True)
 
-app = FastAPI(title="SENTINEL — Bidirectional Police Accountability API")
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Startup warmup: DB init + retrieval index/embedder pre-load.
+
+    Without this, the first /api/live request pays a ~6-9s cold start
+    (downloads MiniLM weights + loads FAISS). After warmup all routes are warm.
+    """
+    init_db()
+    log.info("[warmup] starting retrieval warmup (MiniLM + FAISS indexes)")
+    try:
+        from agents.base import Trace
+        from agents.retrieval_agent import RetrievalAgent
+        warm_trace = Trace()
+        retr = RetrievalAgent(trace=warm_trace)
+        for region in ("us", "eu", "it"):
+            retr.search("warmup query", region=region, top_k=1)
+        log.info("[warmup] retrieval ready for regions: us, eu, it")
+    except Exception as e:
+        log.warning(f"[warmup] retrieval warmup failed: {e}")
+    yield
+    # No teardown needed
+
+
+app = FastAPI(
+    title="SENTINEL — Bidirectional Police Accountability API",
+    lifespan=lifespan,
+)
 
 app.add_middleware(
     CORSMiddleware,
@@ -23,11 +54,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-
-@app.on_event("startup")
-def on_startup():
-    init_db()
 
 
 async def process_job(job_id: int):
