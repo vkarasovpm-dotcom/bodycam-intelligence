@@ -1,8 +1,0 @@
-venv/
-.env
-recordings/
-transcripts/
-results/
-__pycache__/
-*.db
-*.mp4
