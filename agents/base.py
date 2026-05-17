@@ -7,6 +7,12 @@ import logging
 from typing import Any, Callable, Optional
 from dataclasses import dataclass, asdict, field
 
+from dotenv import load_dotenv
+load_dotenv(dotenv_path="/opt/sentinel/.env")
+
+from dotenv import load_dotenv
+load_dotenv(dotenv_path="/opt/sentinel/.env")
+
 logger = logging.getLogger("sentinel.agent")
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(name)s] %(message)s")
 
@@ -103,9 +109,11 @@ def featherless_client():
     )
 
 def gemini_client():
-    """Google Gemini client."""
+    """Google Gemini client via Vertex AI (uses ADC + GCP_PROJECT_ID)."""
     from google import genai
-    return genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
+    project = os.environ.get("GCP_PROJECT_ID", "project-0620148a-da18-45ef-a21")
+    location = os.environ.get("GCP_LOCATION", "global")
+    return genai.Client(vertexai=True, project=project, location=location)
 
 def mistral_client():
     """Mistral fallback client."""
@@ -116,14 +124,20 @@ def mistral_client():
 # ============ MODEL ROSTER (Featherless, non-Chinese, May 2026) ============
 
 MODELS = {
-
-    "router":      "google/gemma-4-E4B-it",          # 4B fast, classification
-    "prosecution": "google/gemma-4-26B-A4B-it",      # 26B MoE strong reasoning
-    "defense":     "google/gemma-4-31B-it",          # 31B different family for diversity
-    "routing":     "openai/gpt-oss-20b",             # OSS 20B, decision routing
-    "ensemble":    "meta-llama/Llama-3.1-8B-Instruct",  # Llama for ensemble vote
-    # Gemini — direct API
-    "judge":       "gemini-3-pro-preview",
-    "vision":      "gemini-3-pro-preview",  # vision in same model
-    "fallback":    "gemini-2.5-flash",      # cheap fallback
+    # Featherless (OpenAI-compatible inference) — all verified non-Chinese, Warm
+    "router":          "google/gemma-4-E4B-it",
+    "prosecution":     "openai/gpt-oss-120b",
+    "prosecution_alt": "google/gemma-4-26B-A4B-it",
+    "defense":         "google/gemma-4-31B-it",
+    "defense_alt":     "openai/gpt-oss-20b",
+    "ensemble":        "meta-llama/Llama-3.1-8B-Instruct",
+    "routing":         "google/gemma-4-E4B-it",
+    
+    # Gemini (Google AI Studio direct API)
+    "judge":    "gemini-3.1-pro-preview",
+    "vision":   "gemini-3.1-pro-preview",
+    "fallback": "gemini-3.1-flash-lite",
+    
+    # Mistral (legacy v1 + tertiary fallback)
+    "legacy":   "mistral-large-latest",
 }

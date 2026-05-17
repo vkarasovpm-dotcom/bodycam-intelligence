@@ -3,4 +3,6 @@
 __pycache__/
 *.db
 recordings/
-venv/
+venv/*.bak
+*.bak.*
+results/

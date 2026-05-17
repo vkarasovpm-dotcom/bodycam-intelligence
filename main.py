@@ -173,3 +173,198 @@ def get_audit_events(job_id: int, session: Session = Depends(get_session)):
 @app.get("/")
 def health():
     return {"job_id": job.id, "status": "pending", "filename": file.filename, "vertical": vertical}
+
+
+
+# ============ COUNCIL ENDPOINTS (v2 — adversarial pipeline) ============
+
+from pipeline_v2 import run_council
+import json as _json
+
+
+def _process_council_sync(job_id: int) -> None:
+    """Background runner: launches pipeline_v2 as a subprocess.
+
+    We use a subprocess instead of calling run_council() in-process because
+    speechmatics-rt's async client hangs when launched inside FastAPI's
+    BackgroundTasks threadpool (event-loop conflict). Subprocess fully
+    isolates the event loop and matches the proven CLI execution path.
+    """
+    import subprocess
+    import sys
+    import os as _os
+    from models import Job, engine
+    from sqlmodel import Session
+    from datetime import datetime as _dt
+
+    with Session(engine) as s:
+        job = s.get(Job, job_id)
+        if job is None:
+            return
+        job.council_status = "running"
+        job.council_started_at = _dt.utcnow()
+        job.council_error = None
+        s.add(job); s.commit(); s.refresh(job)
+        audio_path = job.file_path
+        region = (job.jurisdiction or "US").lower()
+        if region == "italy":
+            region = "eu"
+        vertical = job.vertical or "police"
+        language = job.language or "en"
+
+    log_path = Path("results/council") / f"{job_id}_council.log"
+    log_path.parent.mkdir(parents=True, exist_ok=True)
+
+    try:
+        cmd = [
+            sys.executable, "-m", "pipeline_v2",
+            audio_path, region, vertical, language,
+        ]
+        with log_path.open("w", encoding="utf-8") as logf:
+            proc = subprocess.run(
+                cmd,
+                cwd="/opt/sentinel",
+                stdout=logf,
+                stderr=subprocess.STDOUT,
+                timeout=600,
+                env=_os.environ.copy(),
+            )
+
+        stem = Path(audio_path).stem
+        src_path = Path("results/council") / f"{stem}_council.json"
+        stable_path = Path("results/council") / f"{job_id}_council.json"
+        if src_path.exists():
+            stable_path.write_text(src_path.read_text(encoding="utf-8"), encoding="utf-8")
+            report = _json.loads(stable_path.read_text(encoding="utf-8"))
+        else:
+            report = None
+
+        with Session(engine) as s:
+            job = s.get(Job, job_id)
+            if job is None:
+                return
+            if proc.returncode != 0 or report is None:
+                job.council_status = "error"
+                tail = ""
+                try:
+                    tail = log_path.read_text(encoding="utf-8")[-500:]
+                except Exception:
+                    pass
+                job.council_error = f"subprocess rc={proc.returncode}; tail: {tail}"[:800]
+            else:
+                job.council_status = "done" if report.get("status") == "ok" else "error"
+                job.council_path = str(stable_path)
+                job.council_headline = (report.get("verdict") or {}).get("headline")
+                job.council_verdict = (report.get("verdict") or {}).get("overall_verdict")
+                job.council_severity = (report.get("verdict") or {}).get("overall_severity")
+                job.council_wall_sec = report.get("wall_sec")
+                if report.get("error"):
+                    job.council_error = report["error"]
+            job.council_completed_at = _dt.utcnow()
+            s.add(job); s.commit()
+
+    except subprocess.TimeoutExpired:
+        with Session(engine) as s:
+            job = s.get(Job, job_id)
+            if job:
+                job.council_status = "error"
+                job.council_error = "subprocess timeout after 600s"
+                job.council_completed_at = _dt.utcnow()
+                s.add(job); s.commit()
+    except Exception as e:
+        import traceback
+        tb = traceback.format_exc()
+        print(f"[council job={job_id}] EXCEPTION:\n{tb}", flush=True)
+        with Session(engine) as s:
+            job = s.get(Job, job_id)
+            if job:
+                job.council_status = "error"
+                job.council_error = (str(e) + " :: " + tb[-400:])[:800]
+                job.council_completed_at = _dt.utcnow()
+                s.add(job); s.commit()
+
+
+@app.post("/api/audit/{job_id}/council/run")
+def council_run(job_id: int, background_tasks: BackgroundTasks,
+                session: Session = Depends(get_session)):
+    """Launch the 4-agent adversarial council for an existing audit."""
+    job = session.get(Job, job_id)
+    if job is None:
+        raise HTTPException(404, "job not found")
+    if not Path(job.file_path).exists():
+        raise HTTPException(400, f"audio file missing: {job.file_path}")
+    if job.council_status == "running":
+        from datetime import datetime as _dt, timedelta as _td
+        started = job.council_started_at
+        if started and (_dt.utcnow() - started) < _td(minutes=5):
+            return {"job_id": job_id, "council_status": "running",
+                    "message": "already in progress",
+                    "started_at": started.isoformat()}
+        # else: treat as stale, fall through to restart
+
+    background_tasks.add_task(_process_council_sync, job_id)
+    return {"job_id": job_id, "council_status": "queued"}
+
+
+@app.get("/api/audit/{job_id}/council")
+def council_get(job_id: int, session: Session = Depends(get_session)):
+    """Return the full CouncilReport JSON for a job (if available)."""
+    job = session.get(Job, job_id)
+    if job is None:
+        raise HTTPException(404, "job not found")
+
+    payload: dict = {
+        "job_id": job_id,
+        "filename": job.filename,
+        "council_status": job.council_status,
+        "council_headline": job.council_headline,
+        "council_verdict": job.council_verdict,
+        "council_severity": job.council_severity,
+        "council_wall_sec": job.council_wall_sec,
+        "council_started_at": job.council_started_at.isoformat() if job.council_started_at else None,
+        "council_completed_at": job.council_completed_at.isoformat() if job.council_completed_at else None,
+        "council_error": job.council_error,
+        "report": None,
+    }
+    if job.council_path and Path(job.council_path).exists():
+        try:
+            payload["report"] = _json.loads(Path(job.council_path).read_text(encoding="utf-8"))
+        except Exception as e:
+            payload["report_error"] = str(e)[:200]
+    return payload
+
+
+@app.get("/api/audit/{job_id}/council/trace")
+def council_trace(job_id: int, session: Session = Depends(get_session)):
+    """Return only the merged trace events (for Reasoning Trace UI tab)."""
+    job = session.get(Job, job_id)
+    if job is None:
+        raise HTTPException(404, "job not found")
+    if not job.council_path or not Path(job.council_path).exists():
+        return {"job_id": job_id, "council_status": job.council_status, "trace": []}
+    data = _json.loads(Path(job.council_path).read_text(encoding="utf-8"))
+    return {"job_id": job_id,
+            "council_status": job.council_status,
+            "trace": data.get("trace", [])}
+
+
+@app.get("/api/audit/council/list")
+def council_list(session: Session = Depends(get_session)):
+    """List all jobs that have a council run (any status)."""
+    rows = session.exec(
+        select(Job).where(Job.council_status != "not_run").order_by(Job.id.desc())
+    ).all()
+    return [
+        {
+            "job_id": j.id,
+            "filename": j.filename,
+            "jurisdiction": j.jurisdiction,
+            "vertical": j.vertical,
+            "council_status": j.council_status,
+            "council_headline": j.council_headline,
+            "council_verdict": j.council_verdict,
+            "council_severity": j.council_severity,
+            "council_wall_sec": j.council_wall_sec,
+        }
+        for j in rows
+    ]

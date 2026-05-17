@@ -1,0 +1,72 @@
+{
+  "vertical": "police",
+  "region": "eu",
+  "version": "0.1",
+  "updated": "2026-05-17",
+  "rules": [
+    {
+      "id": "EU-ECHR-3",
+      "title": "Prohibition of Torture and Inhuman Treatment",
+      "source": "ECHR Art. 3; Bouyid v. Belgium (2015)",
+      "summary": "Any use of force against a person deprived of liberty that is not strictly necessary diminishes human dignity and violates Art. 3.",
+      "triggers": ["force on restrained person", "humiliating treatment", "slap or strike in custody"],
+      "severity": "critical"
+    },
+    {
+      "id": "EU-ECHR-5",
+      "title": "Right to Liberty and Security",
+      "source": "ECHR Art. 5; Saadi v. UK (2008)",
+      "summary": "Detention must be lawful, follow a prescribed procedure, and the person must be informed promptly of the reasons.",
+      "triggers": ["detention without reason given", "unlawful arrest", "no procedural basis"],
+      "severity": "high"
+    },
+    {
+      "id": "EU-ECHR-6",
+      "title": "Right to a Fair Trial — Pre-trial Rights",
+      "source": "ECHR Art. 6; Salduz v. Turkey (2008)",
+      "summary": "Suspects have the right to legal counsel from the first interrogation and to remain silent.",
+      "triggers": ["questioning without counsel offered", "no right-to-silence advisory"],
+      "severity": "high"
+    },
+    {
+      "id": "EU-ECHR-8",
+      "title": "Right to Private Life",
+      "source": "ECHR Art. 8; S. and Marper v. UK (2008)",
+      "summary": "Search, seizure of data, and personal interference require legal basis, legitimate aim and proportionality.",
+      "triggers": ["search without warrant", "phone seized without basis", "personal data without basis"],
+      "severity": "medium"
+    },
+    {
+      "id": "EU-CFR-4",
+      "title": "Charter of Fundamental Rights — Dignity",
+      "source": "EU Charter of Fundamental Rights, Art. 4",
+      "summary": "Inhuman or degrading treatment is absolutely prohibited; mirrors ECHR Art. 3 within EU law.",
+      "triggers": ["degrading language", "humiliation in public"],
+      "severity": "high"
+    },
+    {
+      "id": "EU-PROPORTIONALITY",
+      "title": "Proportionality Principle",
+      "source": "EU general principle; CJEU case law (e.g., Schrems II)",
+      "summary": "Police measures must be appropriate, necessary, and not exceed what is required to achieve the legitimate aim.",
+      "triggers": ["disproportionate force", "excessive measure for minor offense"],
+      "severity": "high"
+    },
+    {
+      "id": "EU-UNCAT-1",
+      "title": "UN Convention Against Torture",
+      "source": "UN CAT Art. 1, 16",
+      "summary": "Public officials must not inflict severe pain or suffering for punishment, intimidation, or any reason based on discrimination.",
+      "triggers": ["punishment beyond procedure", "intimidation tactics"],
+      "severity": "critical"
+    },
+    {
+      "id": "EU-IT-CPP-385",
+      "title": "Italian CPP Art. 385 — Conditions of Arrest",
+      "source": "Codice di Procedura Penale, Art. 385",
+      "summary": "Arrest in flagrante delicto requires the act to be currently in commission or immediately after; otherwise it is unlawful.",
+      "triggers": ["arrest hours after alleged act", "no flagrancy", "post-fact arrest without warrant"],
+      "severity": "high"
+    }
+  ]
+}

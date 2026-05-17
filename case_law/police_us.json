@@ -1,0 +1,72 @@
+{
+  "vertical": "police",
+  "region": "us",
+  "version": "0.1",
+  "updated": "2026-05-17",
+  "rules": [
+    {
+      "id": "US-4A-STOP",
+      "title": "Fourth Amendment — Unreasonable Seizure",
+      "source": "U.S. Const. amend. IV; Terry v. Ohio, 392 U.S. 1 (1968)",
+      "summary": "A stop requires reasonable, articulable suspicion of criminal activity. Mere presence or refusal to answer is insufficient.",
+      "triggers": ["stop without cause", "no articulable suspicion", "detention without reason"],
+      "severity": "high"
+    },
+    {
+      "id": "US-4A-FORCE",
+      "title": "Excessive Force",
+      "source": "Graham v. Connor, 490 U.S. 386 (1989)",
+      "summary": "Force must be objectively reasonable under the circumstances. Factors: severity of crime, immediate threat, active resistance.",
+      "triggers": ["physical strike", "weapon drawn without threat", "force on compliant subject"],
+      "severity": "critical"
+    },
+    {
+      "id": "US-5A-MIRANDA",
+      "title": "Miranda Warning Required",
+      "source": "Miranda v. Arizona, 384 U.S. 436 (1966)",
+      "summary": "Custodial interrogation requires warning of right to silence and counsel before questioning.",
+      "triggers": ["questioning after arrest without warning", "interrogation in custody"],
+      "severity": "high"
+    },
+    {
+      "id": "US-TERRY-FRISK",
+      "title": "Terry Frisk Scope",
+      "source": "Terry v. Ohio, 392 U.S. 1 (1968)",
+      "summary": "Pat-down limited to outer clothing for weapons when officer reasonably believes subject is armed and dangerous.",
+      "triggers": ["full search without probable cause", "frisk without weapon suspicion"],
+      "severity": "medium"
+    },
+    {
+      "id": "US-1A-SPEECH",
+      "title": "First Amendment — Protected Speech",
+      "source": "U.S. Const. amend. I; City of Houston v. Hill, 482 U.S. 451 (1987)",
+      "summary": "Verbal criticism of police, recording officers, and refusal to answer are protected. Arrest on this basis alone is unlawful.",
+      "triggers": ["arrest for filming", "arrest for verbal criticism", "retaliation for speech"],
+      "severity": "high"
+    },
+    {
+      "id": "US-DEESCALATION",
+      "title": "De-escalation Duty",
+      "source": "DOJ Use-of-Force Policy (2022); IACP Model Policy",
+      "summary": "Officers should use verbal de-escalation, time, distance and cover when feasible before force.",
+      "triggers": ["immediate escalation", "no verbal warning", "shouting before commands"],
+      "severity": "medium"
+    },
+    {
+      "id": "US-ARREST-PC",
+      "title": "Arrest Without Probable Cause",
+      "source": "U.S. Const. amend. IV; Beck v. Ohio, 379 U.S. 89 (1964)",
+      "summary": "Arrest requires probable cause — facts sufficient for a prudent person to believe a crime was committed.",
+      "triggers": ["arrest without stated cause", "handcuffing without basis", "threat of jail without cause"],
+      "severity": "critical"
+    },
+    {
+      "id": "US-IDENTIFY",
+      "title": "Officer Identification",
+      "source": "State and municipal policy (most US jurisdictions)",
+      "summary": "Officer must identify themselves and state reason for the stop when asked.",
+      "triggers": ["refuses to identify", "refuses to state reason"],
+      "severity": "low"
+    }
+  ]
+}

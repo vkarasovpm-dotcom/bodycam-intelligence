@@ -31,6 +31,17 @@ class Job(SQLModel, table=True):
     # Full result JSON (for /events endpoint)
     result_data: Optional[dict] = Field(default=None, sa_column=Column(JSON))
 
+    # Council pipeline (v2 — adversarial 4-agent)
+    council_status: str = Field(default="not_run")        # not_run | running | done | error
+    council_path: Optional[str] = None                    # path to results/council/{id}_council.json
+    council_headline: Optional[str] = None                # cached for list view
+    council_verdict: Optional[str] = None                 # officer_justified | officer_at_fault | mixed | inconclusive
+    council_severity: Optional[str] = None                # none | low | medium | high | critical
+    council_wall_sec: Optional[float] = None
+    council_started_at: Optional[datetime] = None
+    council_completed_at: Optional[datetime] = None
+    council_error: Optional[str] = None
+
 
 DATABASE_URL = "sqlite:///bodycam.db"
 engine = create_engine(DATABASE_URL, echo=False, connect_args={"check_same_thread": False})
