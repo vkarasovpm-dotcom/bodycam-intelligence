@@ -1,0 +1,93 @@
+2026-05-17 19:08:57,169 [sentinel.agent] [council] pipeline_start {'audio': 'italy_domestic_violence.mp3', 'region': '--jurisdiction', 'vertical': 'it'}
+2026-05-17 19:08:57,169 [sentinel.agent] [transcription] session_start {'file': 'italy_domestic_violence.mp3', 'language': 'en', 'target_language': None, 'translation': False, 'sentiment': True, 'summary': True, 'topics': True, 'realtime_factor': 8.0}
+2026-05-17 19:08:57,499 [sentinel.agent] [transcription] audio_decoded {'bytes': 12667322, 'duration_sec': 395.85}
+2026-05-17 19:08:58,534 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 13, 'start': 2.0}
+2026-05-17 19:08:58,802 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 3, 'start': 2.72}
+2026-05-17 19:08:58,959 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 1, 'start': 3.0}
+2026-05-17 19:08:59,106 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 8, 'start': 3.12}
+2026-05-17 19:08:59,248 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 13, 'start': 3.76}
+2026-05-17 19:08:59,527 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 9, 'start': 4.52}
+2026-05-17 19:08:59,668 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 6, 'start': 4.92}
+2026-05-17 19:08:59,798 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 5, 'start': 5.28}
+2026-05-17 19:08:59,965 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 8, 'start': 5.56}
+2026-05-17 19:09:00,076 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 6, 'start': 5.96}
+2026-05-17 19:09:00,284 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 10, 'start': 6.28}
+2026-05-17 19:09:00,452 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 7, 'start': 6.88}
+2026-05-17 19:09:00,553 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 3, 'start': 7.36}
+2026-05-17 19:09:00,699 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 9, 'start': 7.56}
+2026-05-17 19:09:00,816 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 8, 'start': 8.04}
+2026-05-17 19:09:00,999 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 9, 'start': 8.52}
+2026-05-17 19:09:01,211 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 1, 'start': 9.12}
+2026-05-17 19:09:02,056 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 5, 'start': 12.44}
+2026-05-17 19:09:02,284 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 14, 'start': 12.72}
+2026-05-17 19:09:02,589 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 7, 'start': 13.64}
+2026-05-17 19:09:02,766 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 8, 'start': 14.08}
+2026-05-17 19:09:03,107 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 2, 'start': 14.68}
+2026-05-17 19:09:03,177 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 9, 'start': 14.8}
+2026-05-17 19:09:04,389 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 6, 'start': 18.92}
+2026-05-17 19:09:04,558 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 8, 'start': 19.28}
+2026-05-17 19:09:04,644 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 1, 'start': 19.64}
+2026-05-17 19:09:09,854 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S3', 'chars': 4, 'start': 35.12}
+2026-05-17 19:09:11,272 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S3', 'chars': 3, 'start': 39.0}
+2026-05-17 19:09:24,006 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S4', 'chars': 1, 'start': 77.68}
+2026-05-17 19:09:24,109 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S4', 'chars': 6, 'start': 77.84}
+2026-05-17 19:09:24,222 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S4', 'chars': 3, 'start': 78.88}
+2026-05-17 19:09:25,109 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S4', 'chars': 13, 'start': 81.04}
+2026-05-17 19:09:25,347 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S4', 'chars': 4, 'start': 81.92}
+2026-05-17 19:09:25,520 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S4', 'chars': 2, 'start': 82.36}
+2026-05-17 19:09:25,662 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S4', 'chars': 4, 'start': 82.52}
+2026-05-17 19:09:28,425 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S5', 'chars': 6, 'start': 91.68}
+2026-05-17 19:09:29,761 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S6', 'chars': 2, 'start': 95.6}
+2026-05-17 19:09:29,877 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S6', 'chars': 1, 'start': 95.68}
+2026-05-17 19:09:31,522 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S4', 'chars': 2, 'start': 101.0}
+2026-05-17 19:09:31,648 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S4', 'chars': 1, 'start': 101.08}
+2026-05-17 19:09:32,271 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S4', 'chars': 2, 'start': 103.16}
+2026-05-17 19:09:32,381 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S4', 'chars': 7, 'start': 103.24}
+2026-05-17 19:09:32,511 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S4', 'chars': 1, 'start': 103.88}
+2026-05-17 19:09:32,744 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S4', 'chars': 1, 'start': 103.92}
+2026-05-17 19:09:34,878 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 8, 'start': 110.36}
+2026-05-17 19:09:35,033 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 2, 'start': 111.44}
+2026-05-17 19:09:35,142 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 1, 'start': 111.52}
+2026-05-17 19:09:36,445 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S4', 'chars': 8, 'start': 115.28}
+2026-05-17 19:09:36,995 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 1, 'start': 117.2}
+2026-05-17 19:09:37,092 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 1, 'start': 117.24}
+2026-05-17 19:09:45,435 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S6', 'chars': 1, 'start': 141.68}
+2026-05-17 19:09:45,561 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S6', 'chars': 1, 'start': 141.72}
+2026-05-17 19:09:57,999 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 3, 'start': 175.16}
+2026-05-17 19:09:58,131 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 9, 'start': 175.36}
+2026-05-17 19:09:58,459 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 4, 'start': 176.52}
+2026-05-17 19:09:59,101 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 4, 'start': 177.68}
+2026-05-17 19:10:00,066 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 8, 'start': 179.88}
+2026-05-17 19:10:00,193 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 4, 'start': 180.68}
+2026-05-17 19:10:00,377 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 5, 'start': 181.0}
+2026-05-17 19:10:00,620 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 6, 'start': 182.0}
+2026-05-17 19:10:05,696 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S4', 'chars': 2, 'start': 196.2}
+2026-05-17 19:10:06,205 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S7', 'chars': 3, 'start': 197.12}
+2026-05-17 19:10:06,314 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S7', 'chars': 1, 'start': 197.2}
+2026-05-17 19:10:08,183 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 9, 'start': 202.16}
+2026-05-17 19:10:08,375 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 3, 'start': 203.16}
+2026-05-17 19:10:10,514 [sentinel.agent] [transcription] rt_pass_complete {'utterances': 65, 'speakers': 7, 'wall_sec': 73.01}
+2026-05-17 19:10:10,621 [sentinel.agent] [transcription] batch_pass_start {'sentiment': True, 'summary': True, 'topics': True}
+2026-05-17 19:10:20,930 [speechmatics.batch._async_client] Job completed (job_id=xbq55kwd10, polls=3)
+2026-05-17 19:10:20,953 [sentinel.agent] [transcription] sentiment_applied {'segments': 24, 'tagged_utterances': 7}
+2026-05-17 19:10:20,954 [sentinel.agent] [transcription] summary_received {'chars': 357}
+2026-05-17 19:10:20,954 [sentinel.agent] [transcription] topics_detected {'topics': ['News & Politics']}
+2026-05-17 19:10:20,954 [sentinel.agent] [transcription] batch_pass_complete {'wall_sec': 10.44}
+2026-05-17 19:10:20,956 [sentinel.agent] [council] transcription_done {'utterances': 65, 'speakers': 7}
+2026-05-17 19:10:21,462 [sentinel.agent] [prosecution] session_start {'region': '--jurisdiction', 'vertical': 'it'}
+2026-05-17 19:10:21,462 [sentinel.agent] [prosecution] rule_pack_missing {'error': 'Rule pack not found: /opt/sentinel/case_law/it_--jurisdiction.json'}
+2026-05-17 19:10:21,462 [sentinel.agent] [council] prosecution_failed {'error': 'Rule pack not found: /opt/sentinel/case_law/it_--jurisdiction.json'}
+
+[council] Running on recordings/italy_domestic_violence.mp3 (region=--jurisdiction, vertical=it)...
+
+
+======================================================================
+COUNCIL REPORT — italy_domestic_violence.mp3
+======================================================================
+Status:           partial
+Duration:         395.9s
+Wall clock:       0.0s
+Error:            prosecution: Rule pack not found: /opt/sentinel/case_law/it_--jurisdiction.json
+
+Trace events:     76
+Saved to:         results/council/italy_domestic_violence_council.json

@@ -1,0 +1,579 @@
+{
+  "session_id": "us_aggression",
+  "region": "us",
+  "vertical": "police",
+  "meta": {
+    "session_id": "us_aggression",
+    "region": "us",
+    "vertical": "police",
+    "started_at": 1779083733.405534,
+    "transcript_path": "results/council/1_council.json",
+    "total_utterances": 9
+  },
+  "rapid_alerts": [],
+  "deep_violations": [
+    {
+      "rule_id": "US-4A-STOP",
+      "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
+      "source": "U.S. Const. amend. IV; Terry v. Ohio, 392 U.S. 1 (1968)",
+      "severity": "high",
+      "cited_utterances": [
+        0,
+        1,
+        7,
+        8
+      ],
+      "rationale": "The officer repeatedly commanded \"Stop the car\" and \"Get out of the car\" (utterances 0,1,7,8) without stating any articulable suspicion, meeting the trigger for an unlawful investigative stop.",
+      "confidence": 0.86
+    },
+    {
+      "rule_id": "US-4A-ARREST-PC",
+      "title": "Arrest Without Probable Cause",
+      "source": "U.S. Const. amend. IV; Beck v. Ohio, 379 U.S. 89 (1964)",
+      "severity": "critical",
+      "cited_utterances": [
+        0,
+        1,
+        5,
+        7,
+        8
+      ],
+      "rationale": "The same series of commands effectively placed the occupant in custody and signaled an intent to arrest, yet no probable cause or factual basis for arrest was provided, violating the arrest requirement.",
+      "confidence": 0.81
+    },
+    {
+      "rule_id": "US-DEESCALATION",
+      "title": "Duty to De-escalate",
+      "source": "DOJ Consent Decrees (Baltimore 2017, Chicago 2019); PERF Guiding Principles on Use of Force (2016)",
+      "severity": "medium",
+      "cited_utterances": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8
+      ],
+      "rationale": "Throughout the encounter the officer employed aggressive, repetitive commands and never attempted verbal calming, offering only a single \"Calm down!\" (utterance 6) which is insufficient to satisfy the mandated de‑escalation duty.",
+      "confidence": 0.74
+    }
+  ],
+  "rebuttals": [
+    {
+      "challenges_rule_id": "US-4A-STOP",
+      "stance": "rebut",
+      "counter_argument": "The stop was not arbitrary; the officer explicitly notes in utterance [0] that the subject 'has taken off' from the vape shop, indicating a flight response or evasion of a lawful order, which constitutes reasonable suspicion for an investigative stop.",
+      "counter_utterances": [
+        0
+      ],
+      "proposed_severity_adjustment": "high → null",
+      "confidence": 0.9
+    },
+    {
+      "challenges_rule_id": "US-4A-ARREST-PC",
+      "stance": "mitigate",
+      "counter_argument": "The commands to exit the vehicle were tactical measures to secure a suspect who had already attempted to flee. The transition to arrest is supported by the subject's initial evasion and the officer's need to prevent further flight (utterance [7]).",
+      "counter_utterances": [
+        0,
+        7
+      ],
+      "proposed_severity_adjustment": "critical → medium",
+      "confidence": 0.7
+    },
+    {
+      "challenges_rule_id": "US-DEESCALATION",
+      "stance": "rebut",
+      "counter_argument": "De-escalation is not required when a suspect is actively fleeing or posing an immediate tactical risk. The officer's commands were necessary to ensure the vehicle was safely parked and the officer was not 'driven off' (utterance [7]), making traditional verbal calming infeasible.",
+      "counter_utterances": [
+        0,
+        7
+      ],
+      "proposed_severity_adjustment": "medium → null",
+      "confidence": 0.85
+    }
+  ],
+  "verdict_timeline": [
+    {
+      "at_t": 114.49237816200184,
+      "reason": "session_end",
+      "wall_ms": 23589,
+      "overall_verdict": "officer_justified",
+      "overall_severity": "none",
+      "headline": "Officer's actions were justified based on the suspect's flight and the immediate need to secure a running vehicle.",
+      "summary": "The prosecution alleges an unlawful stop, unlawful arrest, and failure to de-escalate. However, the transcript reveals the officer was responding to a suspect who had just fled ('taken off') from a location, providing reasonable suspicion for the initial stop. The officer's threat of jail was a conditional warning against further flight or injury to the officer ('Don't try and drive me off'), not an immediate baseless arrest. Furthermore, the dynamic nature of a fleeing suspect in a running vehicle necessitated immediate, authoritative commands for safety, rendering standard de-escalation tactics temporarily unfeasible.",
+      "rulings": [
+        {
+          "rule_id": "US-4A-STOP",
+          "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The officer explicitly states to dispatch that the subject 'has taken off' from the vape shop in utterance 0. Flight from a scene or an officer provides articulable reasonable suspicion to conduct an investigatory stop. Therefore, the stop was legally justified and not arbitrary.",
+          "key_utterances": [
+            0
+          ],
+          "prosecution_weight": 0.2,
+          "defense_weight": 0.9,
+          "confidence": 0.95
+        },
+        {
+          "rule_id": "US-4A-ARREST-PC",
+          "title": "Arrest Without Probable Cause",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The officer's statement about going to jail in utterance 8 is directly tied to the preceding command 'Don't try and drive me off, buddy' in utterance 7. This functions as a warning of the consequences of further flight or assaulting an officer with a vehicle, rather than an immediate, formal custodial arrest without probable cause.",
+          "key_utterances": [
+            7,
+            8
+          ],
+          "prosecution_weight": 0.1,
+          "defense_weight": 0.9,
+          "confidence": 0.95
+        },
+        {
+          "rule_id": "US-DEESCALATION",
+          "title": "Duty to De-escalate",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The prosecution incorrectly attributes the phrase 'Calm down!' to the officer, when the transcript shows the suspect (S2) said it in utterance 6. More importantly, the suspect was in a running vehicle and had already fled once. Authoritative commands to secure the vehicle were necessary to prevent the suspect from driving off and potentially dragging the officer, making immediate de-escalation tactically inappropriate.",
+          "key_utterances": [
+            6,
+            7
+          ],
+          "prosecution_weight": 0.1,
+          "defense_weight": 0.95,
+          "confidence": 0.95
+        }
+      ],
+      "n_violations": 3,
+      "n_rebuttals": 3
+    },
+    {
+      "at_t": 215.1378987749922,
+      "reason": "session_end",
+      "wall_ms": 21844,
+      "overall_verdict": "officer_justified",
+      "overall_severity": "low",
+      "headline": "Officer's actions were justified by the suspect's active flight and the immediate safety risk posed by the vehicle.",
+      "summary": "The audit reveals that the officer was responding to a suspect who had fled from a vape shop, establishing reasonable suspicion for the initial stop. The forceful commands to exit the vehicle were tactically necessary to prevent the suspect from driving away and potentially dragging the officer. Because the situation involved active evasion and an immediate threat to officer safety, standard de-escalation protocols were not feasible. The allegations against the officer are largely dismissed, with the arrest allegation mitigated to reflect the tactical nature of the detention.",
+      "rulings": [
+        {
+          "rule_id": "US-4A-STOP",
+          "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The officer clearly articulated to dispatch that the subject had 'taken off' from the vape shop (utterance 0). Unprovoked flight or evasion provides reasonable suspicion for an investigative stop, invalidating the prosecution's claim that the stop was arbitrary.",
+          "key_utterances": [
+            0
+          ],
+          "prosecution_weight": 0.1,
+          "defense_weight": 0.9,
+          "confidence": 0.95
+        },
+        {
+          "rule_id": "US-4A-ARREST-PC",
+          "title": "Arrest Without Probable Cause",
+          "verdict": "violation_mitigated",
+          "final_severity": "low",
+          "reasoning": "Ordering a suspect out of a vehicle during a lawful stop is permitted for officer safety (Pennsylvania v. Mimms). While the officer mentions jail (utterance 8), it is framed as a consequence if the suspect attempts to 'drive off' with the officer (utterance 7), making this a high-risk detention rather than an immediate, baseless arrest.",
+          "key_utterances": [
+            0,
+            7,
+            8
+          ],
+          "prosecution_weight": 0.3,
+          "defense_weight": 0.7,
+          "confidence": 0.85
+        },
+        {
+          "rule_id": "US-DEESCALATION",
+          "title": "Duty to De-escalate",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The suspect was actively fleeing in a running vehicle and posed an immediate risk of dragging the officer, as evidenced by the officer's command 'Don't try and drive me off' (utterance 7). In such dynamic, high-risk situations, immediate tactical commands take precedence over verbal de-escalation.",
+          "key_utterances": [
+            0,
+            7
+          ],
+          "prosecution_weight": 0.1,
+          "defense_weight": 0.9,
+          "confidence": 0.9
+        }
+      ],
+      "n_violations": 3,
+      "n_rebuttals": 3
+    }
+  ],
+  "final_verdict": {
+    "at_t": 215.1378987749922,
+    "reason": "session_end",
+    "wall_ms": 21844,
+    "overall_verdict": "officer_justified",
+    "overall_severity": "low",
+    "headline": "Officer's actions were justified by the suspect's active flight and the immediate safety risk posed by the vehicle.",
+    "summary": "The audit reveals that the officer was responding to a suspect who had fled from a vape shop, establishing reasonable suspicion for the initial stop. The forceful commands to exit the vehicle were tactically necessary to prevent the suspect from driving away and potentially dragging the officer. Because the situation involved active evasion and an immediate threat to officer safety, standard de-escalation protocols were not feasible. The allegations against the officer are largely dismissed, with the arrest allegation mitigated to reflect the tactical nature of the detention.",
+    "rulings": [
+      {
+        "rule_id": "US-4A-STOP",
+        "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
+        "verdict": "violation_dismissed",
+        "final_severity": "none",
+        "reasoning": "The officer clearly articulated to dispatch that the subject had 'taken off' from the vape shop (utterance 0). Unprovoked flight or evasion provides reasonable suspicion for an investigative stop, invalidating the prosecution's claim that the stop was arbitrary.",
+        "key_utterances": [
+          0
+        ],
+        "prosecution_weight": 0.1,
+        "defense_weight": 0.9,
+        "confidence": 0.95
+      },
+      {
+        "rule_id": "US-4A-ARREST-PC",
+        "title": "Arrest Without Probable Cause",
+        "verdict": "violation_mitigated",
+        "final_severity": "low",
+        "reasoning": "Ordering a suspect out of a vehicle during a lawful stop is permitted for officer safety (Pennsylvania v. Mimms). While the officer mentions jail (utterance 8), it is framed as a consequence if the suspect attempts to 'drive off' with the officer (utterance 7), making this a high-risk detention rather than an immediate, baseless arrest.",
+        "key_utterances": [
+          0,
+          7,
+          8
+        ],
+        "prosecution_weight": 0.3,
+        "defense_weight": 0.7,
+        "confidence": 0.85
+      },
+      {
+        "rule_id": "US-DEESCALATION",
+        "title": "Duty to De-escalate",
+        "verdict": "violation_dismissed",
+        "final_severity": "none",
+        "reasoning": "The suspect was actively fleeing in a running vehicle and posed an immediate risk of dragging the officer, as evidenced by the officer's command 'Don't try and drive me off' (utterance 7). In such dynamic, high-risk situations, immediate tactical commands take precedence over verbal de-escalation.",
+        "key_utterances": [
+          0,
+          7
+        ],
+        "prosecution_weight": 0.1,
+        "defense_weight": 0.9,
+        "confidence": 0.9
+      }
+    ],
+    "n_violations": 3,
+    "n_rebuttals": 3
+  },
+  "events": [
+    {
+      "t": 0.0010888749966397882,
+      "kind": "utterance",
+      "text": "21. Can you show me out with that vehicle at the vape shop? He's taken off. Hey! Stop! Stop! Stop!",
+      "speaker": "S1",
+      "t_start": 4.64,
+      "t_end": 11.0,
+      "utt_index": 0
+    },
+    {
+      "t": 12.026953123000567,
+      "kind": "router_skip",
+      "utt_index": 0,
+      "classification": "escalation",
+      "reason": "prosecution_no_alert",
+      "atom_ms": 12025
+    },
+    {
+      "t": 12.026974502994562,
+      "kind": "utterance",
+      "text": "Stop the car! Get out! Get out of the car! All right, get out!",
+      "speaker": "S1",
+      "t_start": 12.2,
+      "t_end": 16.24,
+      "utt_index": 1
+    },
+    {
+      "t": 13.969019479001872,
+      "kind": "router_skip",
+      "utt_index": 1,
+      "classification": "escalation",
+      "reason": "prosecution_no_alert",
+      "atom_ms": 1942
+    },
+    {
+      "t": 13.969035689995508,
+      "kind": "utterance",
+      "text": "All right, let him go! Get out! Oh! I'm getting out. Hang on.",
+      "speaker": "S2",
+      "t_start": 16.44,
+      "t_end": 19.64,
+      "utt_index": 2
+    },
+    {
+      "t": 16.037389441000414,
+      "kind": "router_skip",
+      "utt_index": 2,
+      "classification": "escalation",
+      "reason": "prosecution_no_alert",
+      "atom_ms": 2068
+    },
+    {
+      "t": 16.037403608002933,
+      "kind": "utterance",
+      "text": "21 have. Me! Start another car. I got trouble. Hey!",
+      "speaker": "S1",
+      "t_start": 20.2,
+      "t_end": 23.2,
+      "utt_index": 3
+    },
+    {
+      "t": 18.05086645699339,
+      "kind": "router_skip",
+      "utt_index": 3,
+      "classification": "none",
+      "confidence": 0.85
+    },
+    {
+      "t": 18.05088072399667,
+      "kind": "utterance",
+      "text": "Get out! I'm glad to get. Get. Out! Come!",
+      "speaker": "S2",
+      "t_start": 23.24,
+      "t_end": 26.0,
+      "utt_index": 4
+    },
+    {
+      "t": 20.93750116600131,
+      "kind": "router_skip",
+      "utt_index": 4,
+      "classification": "escalation",
+      "reason": "prosecution_no_alert",
+      "atom_ms": 2886
+    },
+    {
+      "t": 20.937514321994968,
+      "kind": "utterance",
+      "text": "Get out!",
+      "speaker": "S1",
+      "t_start": 26.04,
+      "t_end": 26.44,
+      "utt_index": 5
+    },
+    {
+      "t": 20.93759530299576,
+      "kind": "router_skip",
+      "utt_index": 5,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 20.9375996710005,
+      "kind": "utterance",
+      "text": "Calm down!",
+      "speaker": "S2",
+      "t_start": 26.48,
+      "t_end": 26.92,
+      "utt_index": 6
+    },
+    {
+      "t": 21.65159669899731,
+      "kind": "router_skip",
+      "utt_index": 6,
+      "classification": "de_escalation",
+      "reason": "prosecution_no_alert",
+      "atom_ms": 713
+    },
+    {
+      "t": 21.6516089719953,
+      "kind": "utterance",
+      "text": "Put it in Park. Put it in park. Put your foot on the brake and put it in park. Don't try and drive me off, buddy. You're",
+      "speaker": "S1",
+      "t_start": 27.08,
+      "t_end": 33.0,
+      "utt_index": 7
+    },
+    {
+      "t": 24.248186400000122,
+      "kind": "router_skip",
+      "utt_index": 7,
+      "classification": "escalation",
+      "reason": "prosecution_no_alert",
+      "atom_ms": 2596
+    },
+    {
+      "t": 24.248209152996424,
+      "kind": "utterance",
+      "text": "gonna go to jail. You're gonna go right to jail.",
+      "speaker": "S1",
+      "t_start": 33.0,
+      "t_end": 35.56,
+      "utt_index": 8
+    },
+    {
+      "t": 26.895947149998392,
+      "kind": "router_skip",
+      "utt_index": 8,
+      "classification": "escalation",
+      "reason": "prosecution_no_alert",
+      "atom_ms": 2647
+    },
+    {
+      "t": 26.895964673996787,
+      "kind": "session_finalizing"
+    },
+    {
+      "t": 26.895969332006644,
+      "kind": "deep_scan_started",
+      "triggers": [
+        "session_end"
+      ],
+      "utterances": 9
+    },
+    {
+      "t": 90.9024804100045,
+      "kind": "deep_scan_completed",
+      "wall_ms": 64006,
+      "violations": 3,
+      "rebuttals": 3,
+      "prosecution_verdict": "violations_found",
+      "overall_severity": "critical"
+    },
+    {
+      "t": 114.49239128699992,
+      "kind": "verdict_update",
+      "at_t": 114.49237816200184,
+      "reason": "session_end",
+      "wall_ms": 23589,
+      "overall_verdict": "officer_justified",
+      "overall_severity": "none",
+      "headline": "Officer's actions were justified based on the suspect's flight and the immediate need to secure a running vehicle.",
+      "summary": "The prosecution alleges an unlawful stop, unlawful arrest, and failure to de-escalate. However, the transcript reveals the officer was responding to a suspect who had just fled ('taken off') from a location, providing reasonable suspicion for the initial stop. The officer's threat of jail was a conditional warning against further flight or injury to the officer ('Don't try and drive me off'), not an immediate baseless arrest. Furthermore, the dynamic nature of a fleeing suspect in a running vehicle necessitated immediate, authoritative commands for safety, rendering standard de-escalation tactics temporarily unfeasible.",
+      "rulings": [
+        {
+          "rule_id": "US-4A-STOP",
+          "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The officer explicitly states to dispatch that the subject 'has taken off' from the vape shop in utterance 0. Flight from a scene or an officer provides articulable reasonable suspicion to conduct an investigatory stop. Therefore, the stop was legally justified and not arbitrary.",
+          "key_utterances": [
+            0
+          ],
+          "prosecution_weight": 0.2,
+          "defense_weight": 0.9,
+          "confidence": 0.95
+        },
+        {
+          "rule_id": "US-4A-ARREST-PC",
+          "title": "Arrest Without Probable Cause",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The officer's statement about going to jail in utterance 8 is directly tied to the preceding command 'Don't try and drive me off, buddy' in utterance 7. This functions as a warning of the consequences of further flight or assaulting an officer with a vehicle, rather than an immediate, formal custodial arrest without probable cause.",
+          "key_utterances": [
+            7,
+            8
+          ],
+          "prosecution_weight": 0.1,
+          "defense_weight": 0.9,
+          "confidence": 0.95
+        },
+        {
+          "rule_id": "US-DEESCALATION",
+          "title": "Duty to De-escalate",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The prosecution incorrectly attributes the phrase 'Calm down!' to the officer, when the transcript shows the suspect (S2) said it in utterance 6. More importantly, the suspect was in a running vehicle and had already fled once. Authoritative commands to secure the vehicle were necessary to prevent the suspect from driving off and potentially dragging the officer, making immediate de-escalation tactically inappropriate.",
+          "key_utterances": [
+            6,
+            7
+          ],
+          "prosecution_weight": 0.1,
+          "defense_weight": 0.95,
+          "confidence": 0.95
+        }
+      ],
+      "n_violations": 3,
+      "n_rebuttals": 3
+    },
+    {
+      "t": 114.49252140099998,
+      "kind": "session_finalizing"
+    },
+    {
+      "t": 114.49252898599661,
+      "kind": "deep_scan_started",
+      "triggers": [
+        "session_end"
+      ],
+      "utterances": 9
+    },
+    {
+      "t": 193.29330520299845,
+      "kind": "deep_scan_completed",
+      "wall_ms": 78800,
+      "violations": 3,
+      "rebuttals": 3,
+      "prosecution_verdict": "violations_found",
+      "overall_severity": "high"
+    },
+    {
+      "t": 215.13790337300452,
+      "kind": "verdict_update",
+      "at_t": 215.1378987749922,
+      "reason": "session_end",
+      "wall_ms": 21844,
+      "overall_verdict": "officer_justified",
+      "overall_severity": "low",
+      "headline": "Officer's actions were justified by the suspect's active flight and the immediate safety risk posed by the vehicle.",
+      "summary": "The audit reveals that the officer was responding to a suspect who had fled from a vape shop, establishing reasonable suspicion for the initial stop. The forceful commands to exit the vehicle were tactically necessary to prevent the suspect from driving away and potentially dragging the officer. Because the situation involved active evasion and an immediate threat to officer safety, standard de-escalation protocols were not feasible. The allegations against the officer are largely dismissed, with the arrest allegation mitigated to reflect the tactical nature of the detention.",
+      "rulings": [
+        {
+          "rule_id": "US-4A-STOP",
+          "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The officer clearly articulated to dispatch that the subject had 'taken off' from the vape shop (utterance 0). Unprovoked flight or evasion provides reasonable suspicion for an investigative stop, invalidating the prosecution's claim that the stop was arbitrary.",
+          "key_utterances": [
+            0
+          ],
+          "prosecution_weight": 0.1,
+          "defense_weight": 0.9,
+          "confidence": 0.95
+        },
+        {
+          "rule_id": "US-4A-ARREST-PC",
+          "title": "Arrest Without Probable Cause",
+          "verdict": "violation_mitigated",
+          "final_severity": "low",
+          "reasoning": "Ordering a suspect out of a vehicle during a lawful stop is permitted for officer safety (Pennsylvania v. Mimms). While the officer mentions jail (utterance 8), it is framed as a consequence if the suspect attempts to 'drive off' with the officer (utterance 7), making this a high-risk detention rather than an immediate, baseless arrest.",
+          "key_utterances": [
+            0,
+            7,
+            8
+          ],
+          "prosecution_weight": 0.3,
+          "defense_weight": 0.7,
+          "confidence": 0.85
+        },
+        {
+          "rule_id": "US-DEESCALATION",
+          "title": "Duty to De-escalate",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The suspect was actively fleeing in a running vehicle and posed an immediate risk of dragging the officer, as evidenced by the officer's command 'Don't try and drive me off' (utterance 7). In such dynamic, high-risk situations, immediate tactical commands take precedence over verbal de-escalation.",
+          "key_utterances": [
+            0,
+            7
+          ],
+          "prosecution_weight": 0.1,
+          "defense_weight": 0.9,
+          "confidence": 0.9
+        }
+      ],
+      "n_violations": 3,
+      "n_rebuttals": 3
+    }
+  ],
+  "stats": {
+    "total_utterances": 9,
+    "rapid_alerts": 0,
+    "deep_violations": 3,
+    "rebuttals": 3,
+    "verdict_snapshots": 2,
+    "router_skips": 9
+  }
+}

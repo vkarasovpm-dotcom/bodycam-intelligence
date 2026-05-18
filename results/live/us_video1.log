@@ -1,0 +1,221 @@
+2026-05-18 08:16:30,633 [sentinel.agent] [replay_transcription] loaded 23 utterances from video1_violation_council.json
+2026-05-18 08:16:32,185 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:16:33,237 [sentinel.agent] [router] classified {'stage': 'llm', 'classification': 'none', 'confidence': 0.95, 'latency_ms': 2604.2, 'query_rewrite': "Officer discussing potential location of a subject's phone."}
+2026-05-18 08:16:33,237 [sentinel.agent] [router] classified {'stage': 'keyword', 'classification': 'none', 'confidence': 0.75, 'latency_ms': 0.0, 'matched_keywords': []}
+2026-05-18 08:16:33,616 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:16:34,613 [sentinel.agent] [router] classified {'stage': 'llm', 'classification': 'none', 'confidence': 0.95, 'latency_ms': 1375.5, 'query_rewrite': 'Routine communication regarding location data acquisition.'}
+2026-05-18 08:16:34,875 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:16:35,921 [sentinel.agent] [router] classified {'stage': 'llm', 'classification': 'escalation', 'confidence': 0.95, 'latency_ms': 1308.3, 'query_rewrite': 'Officer issuing command to drop weapon during confrontation'}
+2026-05-18 08:16:36,002 [faiss.loader] Loading faiss with AVX2 support.
+2026-05-18 08:16:36,045 [faiss.loader] Successfully loaded faiss with AVX2 support.
+2026-05-18 08:16:36,048 [sentinel.agent] [retrieval] index_loaded {'region': 'us', 'rules': 20, 'load_ms': 126.6}
+2026-05-18 08:16:39,284 [sentence_transformers.base.model] No device provided, using cpu
+2026-05-18 08:16:39,400 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 08:16:39,405 [httpx] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-18 08:16:39,501 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-18 08:16:39,501 [huggingface_hub.utils._http] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-18 08:16:39,505 [httpx] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-18 08:16:39,506 [sentence_transformers.base.model] Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-18 08:16:39,609 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 08:16:39,614 [httpx] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-18 08:16:39,710 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 08:16:39,715 [httpx] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-05-18 08:16:39,813 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 08:16:39,817 [httpx] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-18 08:16:39,914 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 08:16:39,918 [httpx] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-18 08:16:40,034 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-18 08:16:40,135 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 08:16:40,140 [httpx] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+[precompute] transcript : results/council/video1_violation_council.json
+[precompute] session_id : us_video1
+[precompute] region     : us
+[precompute] output     : results/live/us_video1_session.json
+[precompute] skip_judge : False
+[precompute] skip_deep  : False
+[precompute] audio_file : recordings/video1_violation.mp4
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 5708.87it/s]
+2026-05-18 08:16:40,326 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-18 08:16:40,429 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-18 08:16:40,533 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-18 08:16:40,636 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-18 08:16:40,733 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 08:16:40,738 [httpx] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-18 08:16:40,836 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 08:16:40,841 [httpx] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-18 08:16:40,943 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 08:16:40,948 [httpx] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-18 08:16:41,045 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 08:16:41,050 [httpx] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-18 08:16:41,150 [httpx] HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-18 08:16:41,252 [httpx] HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-18 08:16:41,381 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 08:16:41,387 [httpx] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-18 08:16:41,487 [httpx] HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-05-18 08:16:41,503 [sentinel.agent] [retrieval] search {'region': 'us', 'query': 'Officer issuing command to drop weapon during confrontation', 'top_k': 3, 'returned': 3, 'subject_filter': None, 'latency_ms': 5581.0, 'top_hit': 'US-DEESCALATION', 'top_score': 0.511}
+2026-05-18 08:16:41,503 [sentinel.agent] [rapid_prosecution] retrieved {'query': 'Officer issuing command to drop weapon during confrontation', 'top_hits': [{'rule_id': 'US-DEESCALATION', 'score': 0.511}, {'rule_id': 'US-CIT-ASSAULT', 'score': 0.484}, {'rule_id': 'US-4A-FORCE', 'score': 0.469}]}
+2026-05-18 08:16:42,562 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:16:42,857 [sentinel.agent] [rapid_prosecution] no_alert {'raw_chars': 15}
+2026-05-18 08:16:43,429 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:16:44,480 [sentinel.agent] [router] classified {'stage': 'llm', 'classification': 'escalation', 'confidence': 0.95, 'latency_ms': 1622.6, 'query_rewrite': 'Officer issuing command to surrender weapon during confrontation'}
+2026-05-18 08:16:44,491 [sentinel.agent] [retrieval] search {'region': 'us', 'query': 'Officer issuing command to surrender weapon during confrontation', 'top_k': 3, 'returned': 3, 'subject_filter': None, 'latency_ms': 10.8, 'top_hit': 'US-CIT-ASSAULT', 'top_score': 0.484}
+2026-05-18 08:16:44,491 [sentinel.agent] [rapid_prosecution] retrieved {'query': 'Officer issuing command to surrender weapon during confrontation', 'top_hits': [{'rule_id': 'US-CIT-ASSAULT', 'score': 0.484}, {'rule_id': 'US-DEESCALATION', 'score': 0.481}, {'rule_id': 'US-CIT-RESIST', 'score': 0.458}]}
+2026-05-18 08:16:44,790 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:16:45,086 [sentinel.agent] [rapid_prosecution] no_alert {'raw_chars': 15}
+2026-05-18 08:16:45,351 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:16:46,430 [sentinel.agent] [router] classified {'stage': 'llm', 'classification': 'escalation', 'confidence': 0.95, 'latency_ms': 1343.4, 'query_rewrite': 'Officer issuing repeated command to surrender weapon during confrontation'}
+2026-05-18 08:16:46,441 [sentinel.agent] [retrieval] search {'region': 'us', 'query': 'Officer issuing repeated command to surrender weapon during confrontation', 'top_k': 3, 'returned': 3, 'subject_filter': None, 'latency_ms': 10.8, 'top_hit': 'US-DEESCALATION', 'top_score': 0.488}
+2026-05-18 08:16:46,441 [sentinel.agent] [rapid_prosecution] retrieved {'query': 'Officer issuing repeated command to surrender weapon during confrontation', 'top_hits': [{'rule_id': 'US-DEESCALATION', 'score': 0.488}, {'rule_id': 'US-CIT-ASSAULT', 'score': 0.471}, {'rule_id': 'US-CIT-RESIST', 'score': 0.453}]}
+2026-05-18 08:16:46,725 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:16:47,023 [sentinel.agent] [rapid_prosecution] no_alert {'raw_chars': 15}
+2026-05-18 08:16:47,289 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:16:48,364 [sentinel.agent] [router] classified {'stage': 'llm', 'classification': 'escalation', 'confidence': 0.95, 'latency_ms': 1341.2, 'query_rewrite': 'Officer issuing repeated commands to surrender weapon during confrontation'}
+2026-05-18 08:16:48,376 [sentinel.agent] [retrieval] search {'region': 'us', 'query': 'Officer issuing repeated commands to surrender weapon during confrontation', 'top_k': 3, 'returned': 3, 'subject_filter': None, 'latency_ms': 11.4, 'top_hit': 'US-DEESCALATION', 'top_score': 0.514}
+2026-05-18 08:16:48,376 [sentinel.agent] [rapid_prosecution] retrieved {'query': 'Officer issuing repeated commands to surrender weapon during confrontation', 'top_hits': [{'rule_id': 'US-DEESCALATION', 'score': 0.514}, {'rule_id': 'US-CIT-ASSAULT', 'score': 0.486}, {'rule_id': 'US-CIT-RESIST', 'score': 0.474}]}
+2026-05-18 08:16:48,674 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:16:48,971 [sentinel.agent] [rapid_prosecution] no_alert {'raw_chars': 15}
+2026-05-18 08:16:49,240 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:16:50,320 [sentinel.agent] [router] classified {'stage': 'llm', 'classification': 'escalation', 'confidence': 0.95, 'latency_ms': 1348.9, 'query_rewrite': 'Officer issuing repeated commands to surrender weapon during confrontation'}
+2026-05-18 08:16:50,333 [sentinel.agent] [retrieval] search {'region': 'us', 'query': 'Officer issuing repeated commands to surrender weapon during confrontation', 'top_k': 3, 'returned': 3, 'subject_filter': None, 'latency_ms': 13.1, 'top_hit': 'US-DEESCALATION', 'top_score': 0.514}
+2026-05-18 08:16:50,333 [sentinel.agent] [rapid_prosecution] retrieved {'query': 'Officer issuing repeated commands to surrender weapon during confrontation', 'top_hits': [{'rule_id': 'US-DEESCALATION', 'score': 0.514}, {'rule_id': 'US-CIT-ASSAULT', 'score': 0.486}, {'rule_id': 'US-CIT-RESIST', 'score': 0.474}]}
+2026-05-18 08:16:50,622 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:16:50,918 [sentinel.agent] [rapid_prosecution] no_alert {'raw_chars': 15}
+2026-05-18 08:16:51,179 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:16:52,229 [sentinel.agent] [router] classified {'stage': 'llm', 'classification': 'escalation', 'confidence': 0.95, 'latency_ms': 1311.5, 'query_rewrite': 'Officer issuing repeated commands to a subject holding a weapon'}
+2026-05-18 08:16:52,241 [sentinel.agent] [retrieval] search {'region': 'us', 'query': 'Officer issuing repeated commands to a subject holding a weapon', 'top_k': 3, 'returned': 3, 'subject_filter': None, 'latency_ms': 11.8, 'top_hit': 'US-CIT-ASSAULT', 'top_score': 0.487}
+2026-05-18 08:16:52,242 [sentinel.agent] [rapid_prosecution] retrieved {'query': 'Officer issuing repeated commands to a subject holding a weapon', 'top_hits': [{'rule_id': 'US-CIT-ASSAULT', 'score': 0.487}, {'rule_id': 'US-DEESCALATION', 'score': 0.465}, {'rule_id': 'US-4A-FORCE', 'score': 0.459}]}
+2026-05-18 08:16:52,528 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:16:53,158 [sentinel.agent] [rapid_prosecution] no_alert {'raw_chars': 15}
+2026-05-18 08:16:53,424 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:16:54,473 [sentinel.agent] [router] classified {'stage': 'llm', 'classification': 'escalation', 'confidence': 0.95, 'latency_ms': 1314.9, 'query_rewrite': 'Officer issuing repeated commands to a subject holding a weapon'}
+2026-05-18 08:16:54,484 [sentinel.agent] [retrieval] search {'region': 'us', 'query': 'Officer issuing repeated commands to a subject holding a weapon', 'top_k': 3, 'returned': 3, 'subject_filter': None, 'latency_ms': 10.3, 'top_hit': 'US-CIT-ASSAULT', 'top_score': 0.487}
+2026-05-18 08:16:54,484 [sentinel.agent] [rapid_prosecution] retrieved {'query': 'Officer issuing repeated commands to a subject holding a weapon', 'top_hits': [{'rule_id': 'US-CIT-ASSAULT', 'score': 0.487}, {'rule_id': 'US-DEESCALATION', 'score': 0.465}, {'rule_id': 'US-4A-FORCE', 'score': 0.459}]}
+2026-05-18 08:16:54,786 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:16:55,082 [sentinel.agent] [rapid_prosecution] no_alert {'raw_chars': 15}
+2026-05-18 08:16:55,348 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:16:56,402 [sentinel.agent] [router] classified {'stage': 'llm', 'classification': 'escalation', 'confidence': 0.95, 'latency_ms': 1320.0, 'query_rewrite': 'Officer issuing repeated commands to a subject holding a weapon'}
+2026-05-18 08:16:56,415 [sentinel.agent] [retrieval] search {'region': 'us', 'query': 'Officer issuing repeated commands to a subject holding a weapon', 'top_k': 3, 'returned': 3, 'subject_filter': None, 'latency_ms': 12.2, 'top_hit': 'US-CIT-ASSAULT', 'top_score': 0.487}
+2026-05-18 08:16:56,415 [sentinel.agent] [rapid_prosecution] retrieved {'query': 'Officer issuing repeated commands to a subject holding a weapon', 'top_hits': [{'rule_id': 'US-CIT-ASSAULT', 'score': 0.487}, {'rule_id': 'US-DEESCALATION', 'score': 0.465}, {'rule_id': 'US-4A-FORCE', 'score': 0.459}]}
+2026-05-18 08:16:56,711 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:16:57,008 [sentinel.agent] [rapid_prosecution] no_alert {'raw_chars': 15}
+2026-05-18 08:16:57,266 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:16:58,314 [sentinel.agent] [router] classified {'stage': 'llm', 'classification': 'escalation', 'confidence': 0.95, 'latency_ms': 1306.1, 'query_rewrite': 'Officer issuing repeated commands to a subject to surrender weapon'}
+2026-05-18 08:16:58,327 [sentinel.agent] [retrieval] search {'region': 'us', 'query': 'Officer issuing repeated commands to a subject to surrender weapon', 'top_k': 3, 'returned': 3, 'subject_filter': None, 'latency_ms': 12.1, 'top_hit': 'US-DEESCALATION', 'top_score': 0.478}
+2026-05-18 08:16:58,327 [sentinel.agent] [rapid_prosecution] retrieved {'query': 'Officer issuing repeated commands to a subject to surrender weapon', 'top_hits': [{'rule_id': 'US-DEESCALATION', 'score': 0.478}, {'rule_id': 'US-CIT-RESIST', 'score': 0.45}, {'rule_id': 'US-CIT-ASSAULT', 'score': 0.447}]}
+2026-05-18 08:16:58,627 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:16:58,922 [sentinel.agent] [rapid_prosecution] no_alert {'raw_chars': 15}
+2026-05-18 08:16:58,922 [sentinel.agent] [router] classified {'stage': 'trivial', 'classification': 'none', 'confidence': 0.95, 'latency_ms': 0.0, 'matched_keywords': []}
+2026-05-18 08:16:58,923 [sentinel.agent] [router] classified {'stage': 'keyword', 'classification': 'none', 'confidence': 0.75, 'latency_ms': 0.0, 'matched_keywords': []}
+2026-05-18 08:16:59,209 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:17:00,354 [sentinel.agent] [router] classified {'stage': 'llm', 'classification': 'escalation', 'confidence': 0.95, 'latency_ms': 1431.5, 'query_rewrite': 'Officer issuing repeated commands to a subject holding a weapon'}
+2026-05-18 08:17:00,367 [sentinel.agent] [retrieval] search {'region': 'us', 'query': 'Officer issuing repeated commands to a subject holding a weapon', 'top_k': 3, 'returned': 3, 'subject_filter': None, 'latency_ms': 12.5, 'top_hit': 'US-CIT-ASSAULT', 'top_score': 0.487}
+2026-05-18 08:17:00,367 [sentinel.agent] [rapid_prosecution] retrieved {'query': 'Officer issuing repeated commands to a subject holding a weapon', 'top_hits': [{'rule_id': 'US-CIT-ASSAULT', 'score': 0.487}, {'rule_id': 'US-DEESCALATION', 'score': 0.465}, {'rule_id': 'US-4A-FORCE', 'score': 0.459}]}
+2026-05-18 08:17:00,658 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:17:00,954 [sentinel.agent] [rapid_prosecution] no_alert {'raw_chars': 15}
+2026-05-18 08:17:00,954 [sentinel.agent] [router] classified {'stage': 'trivial', 'classification': 'none', 'confidence': 0.95, 'latency_ms': 0.0, 'matched_keywords': []}
+2026-05-18 08:17:00,954 [sentinel.agent] [router] classified {'stage': 'keyword', 'classification': 'none', 'confidence': 0.75, 'latency_ms': 0.0, 'matched_keywords': []}
+2026-05-18 08:17:00,954 [sentinel.agent] [router] classified {'stage': 'trivial', 'classification': 'none', 'confidence': 0.95, 'latency_ms': 0.0, 'matched_keywords': []}
+2026-05-18 08:17:01,218 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:17:02,209 [sentinel.agent] [router] classified {'stage': 'llm', 'classification': 'none', 'confidence': 0.95, 'latency_ms': 1254.6, 'query_rewrite': 'Officer directing backup units to a specific location.'}
+2026-05-18 08:17:02,471 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:17:03,496 [sentinel.agent] [router] classified {'stage': 'llm', 'classification': 'escalation', 'confidence': 0.95, 'latency_ms': 1286.9, 'query_rewrite': 'Officer issuing command to disarm actively threatening subject'}
+2026-05-18 08:17:03,509 [sentinel.agent] [retrieval] search {'region': 'us', 'query': 'Officer issuing command to disarm actively threatening subject', 'top_k': 3, 'returned': 3, 'subject_filter': None, 'latency_ms': 12.5, 'top_hit': 'US-DEESCALATION', 'top_score': 0.593}
+2026-05-18 08:17:03,509 [sentinel.agent] [rapid_prosecution] retrieved {'query': 'Officer issuing command to disarm actively threatening subject', 'top_hits': [{'rule_id': 'US-DEESCALATION', 'score': 0.593}, {'rule_id': 'US-CIT-ASSAULT', 'score': 0.539}, {'rule_id': 'US-CIT-THREAT', 'score': 0.52}]}
+2026-05-18 08:17:03,804 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:17:04,100 [sentinel.agent] [rapid_prosecution] no_alert {'raw_chars': 15}
+2026-05-18 08:17:04,359 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:17:05,407 [sentinel.agent] [router] classified {'stage': 'llm', 'classification': 'escalation', 'confidence': 0.95, 'latency_ms': 1306.7, 'query_rewrite': 'Officer issuing command to surrender weapon during confrontation'}
+2026-05-18 08:17:05,419 [sentinel.agent] [retrieval] search {'region': 'us', 'query': 'Officer issuing command to surrender weapon during confrontation', 'top_k': 3, 'returned': 3, 'subject_filter': None, 'latency_ms': 11.6, 'top_hit': 'US-CIT-ASSAULT', 'top_score': 0.484}
+2026-05-18 08:17:05,419 [sentinel.agent] [rapid_prosecution] retrieved {'query': 'Officer issuing command to surrender weapon during confrontation', 'top_hits': [{'rule_id': 'US-CIT-ASSAULT', 'score': 0.484}, {'rule_id': 'US-DEESCALATION', 'score': 0.481}, {'rule_id': 'US-CIT-RESIST', 'score': 0.458}]}
+2026-05-18 08:17:05,718 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:17:06,013 [sentinel.agent] [rapid_prosecution] no_alert {'raw_chars': 15}
+2026-05-18 08:17:06,293 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:17:07,404 [sentinel.agent] [router] classified {'stage': 'llm', 'classification': 'escalation', 'confidence': 0.95, 'latency_ms': 1390.8, 'query_rewrite': 'Officer deploying taser during active confrontation or compliance issue'}
+2026-05-18 08:17:07,417 [sentinel.agent] [retrieval] search {'region': 'us', 'query': 'Officer deploying taser during active confrontation or compliance issue', 'top_k': 3, 'returned': 3, 'subject_filter': None, 'latency_ms': 12.9, 'top_hit': 'US-DEESCALATION', 'top_score': 0.568}
+2026-05-18 08:17:07,417 [sentinel.agent] [rapid_prosecution] retrieved {'query': 'Officer deploying taser during active confrontation or compliance issue', 'top_hits': [{'rule_id': 'US-DEESCALATION', 'score': 0.568}, {'rule_id': 'US-CIT-ASSAULT', 'score': 0.564}, {'rule_id': 'US-CIT-RESIST', 'score': 0.474}]}
+2026-05-18 08:17:07,734 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:17:08,028 [sentinel.agent] [rapid_prosecution] no_alert {'raw_chars': 15}
+2026-05-18 08:17:08,288 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:17:09,309 [sentinel.agent] [router] classified {'stage': 'llm', 'classification': 'escalation', 'confidence': 0.95, 'latency_ms': 1280.6, 'query_rewrite': 'Officer issuing forceful command to disarm armed subject'}
+2026-05-18 08:17:09,322 [sentinel.agent] [retrieval] search {'region': 'us', 'query': 'Officer issuing forceful command to disarm armed subject', 'top_k': 3, 'returned': 3, 'subject_filter': None, 'latency_ms': 12.4, 'top_hit': 'US-DEESCALATION', 'top_score': 0.564}
+2026-05-18 08:17:09,322 [sentinel.agent] [rapid_prosecution] retrieved {'query': 'Officer issuing forceful command to disarm armed subject', 'top_hits': [{'rule_id': 'US-DEESCALATION', 'score': 0.564}, {'rule_id': 'US-CIT-ASSAULT', 'score': 0.529}, {'rule_id': 'US-4A-FORCE', 'score': 0.528}]}
+2026-05-18 08:17:09,621 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:17:09,917 [sentinel.agent] [rapid_prosecution] no_alert {'raw_chars': 15}
+2026-05-18 08:17:10,859 [google_genai._api_client] The user provided project/location will take precedence over the Vertex AI API key from the environment variable.
+2026-05-18 08:17:10,875 [sentinel.pipeline_live] [us_video1] vision started on recordings/video1_violation.mp4
+2026-05-18 08:17:10,876 [sentinel.agent] [vision] session_start {'video': 'recordings/video1_violation.mp4'}
+2026-05-18 08:17:12,482 [sentinel.agent] [vision] gcs_cached {'uri': 'gs://sentinel-bodycam-0620148a/video1_violation.mp4', 'size_mb': 19.4}
+2026-05-18 08:17:12,483 [google_genai.models] AFC is enabled with max remote calls: 10.
+2026-05-18 08:17:38,712 [httpx] HTTP Request: POST https://aiplatform.googleapis.com/v1beta1/projects/project-0620148a-da18-45ef-a21/locations/global/publishers/google/models/gemini-3.1-pro-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-18 08:17:38,714 [sentinel.agent] [vision] call_gemini-3.1-pro-preview {'status': 'ok'}
+2026-05-18 08:17:38,714 [sentinel.agent] [vision] model_response {'model': 'gemini-3.1-pro-preview', 'chars': 1995}
+2026-05-18 08:17:38,762 [sentinel.agent] [vision] session_complete {'model': 'gemini-3.1-pro-preview', 'force_observed': True, 'restraints_visible': False, 'weapons_drawn': True, 'key_moments': 6, 'wall_ms': 27887.0}
+2026-05-18 08:17:38,763 [sentinel.pipeline_live] [us_video1] vision done: force=True restraints=False
+2026-05-18 08:17:38,776 [sentinel.agent] [prosecution] session_start {'region': 'us', 'vertical': 'police'}
+2026-05-18 08:17:38,776 [sentinel.agent] [prosecution] rule_pack_loaded {'rules': 20, 'version': '0.3'}
+2026-05-18 08:17:38,776 [sentinel.agent] [prosecution] visual_context_injected {'chars': 1526}
+2026-05-18 08:17:38,776 [sentinel.agent] [prosecution] prompt_built {'transcript_chars': 1210, 'rules_count': 20}
+2026-05-18 08:17:38,776 [sentinel.agent] [prosecution] model_call {'model': 'openai/gpt-oss-120b'}
+2026-05-18 08:17:39,542 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:18:31,788 [sentinel.agent] [prosecution] call_gpt-oss-120b {'status': 'ok'}
+2026-05-18 08:18:31,788 [sentinel.agent] [prosecution] model_response {'model': 'openai/gpt-oss-120b', 'chars': 2232}
+2026-05-18 08:18:31,788 [sentinel.agent] [prosecution] violations_parsed {'count': 3}
+2026-05-18 08:18:31,788 [sentinel.agent] [prosecution] session_complete {'violations': 3, 'verdict': 'violations_found'}
+2026-05-18 08:18:31,789 [sentinel.agent] [defense] session_start {'region': 'us', 'vertical': 'police'}
+2026-05-18 08:18:31,789 [sentinel.agent] [defense] rule_pack_loaded {'rules': 20, 'violations_to_rebut': 3}
+2026-05-18 08:18:31,789 [sentinel.agent] [defense] visual_context_injected {'chars': 1526}
+2026-05-18 08:18:31,789 [sentinel.agent] [defense] prompt_built {'transcript_chars': 1210, 'violations_count': 3}
+2026-05-18 08:18:32,857 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:19:01,168 [sentinel.agent] [defense] call_gemma-4-31B {'status': 'ok'}
+2026-05-18 08:19:01,169 [sentinel.agent] [defense] model_response {'model': 'google/gemma-4-31B-it', 'chars': 1981}
+2026-05-18 08:19:01,169 [sentinel.agent] [defense] rebuttals_parsed {'count': 3}
+2026-05-18 08:19:01,169 [sentinel.agent] [defense] session_complete {'rebuttals': 3}
+2026-05-18 08:19:01,169 [sentinel.agent] [prosecution] session_start {'region': 'us', 'vertical': 'police'}
+2026-05-18 08:19:01,170 [sentinel.agent] [prosecution] rule_pack_loaded {'rules': 20, 'version': '0.3'}
+2026-05-18 08:19:01,170 [sentinel.agent] [prosecution] visual_context_injected {'chars': 1526}
+2026-05-18 08:19:01,170 [sentinel.agent] [prosecution] prompt_built {'transcript_chars': 1210, 'rules_count': 20}
+2026-05-18 08:19:01,170 [sentinel.agent] [prosecution] model_call {'model': 'openai/gpt-oss-120b'}
+2026-05-18 08:19:01,632 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:19:03,674 [google_genai._api_client] The user provided project/location will take precedence over the Vertex AI API key from the environment variable.
+2026-05-18 08:19:03,689 [sentinel.agent] [judge] session_start {'region': 'us', 'vertical': 'police'}
+2026-05-18 08:19:03,689 [sentinel.agent] [judge] visual_context_injected {'chars': 1526}
+2026-05-18 08:19:03,689 [sentinel.agent] [judge] prompt_built {'transcript_chars': 1210, 'violations': 3, 'rebuttals': 3}
+2026-05-18 08:19:03,690 [google_genai.models] AFC is enabled with max remote calls: 10.
+2026-05-18 08:19:22,368 [httpx] HTTP Request: POST https://aiplatform.googleapis.com/v1beta1/projects/project-0620148a-da18-45ef-a21/locations/global/publishers/google/models/gemini-3.1-pro-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-18 08:19:22,369 [sentinel.agent] [judge] call_gemini-3.1-pro {'status': 'ok'}
+2026-05-18 08:19:22,370 [sentinel.agent] [judge] model_response {'model': 'gemini-3.1-pro-preview', 'chars': 2755}
+2026-05-18 08:19:22,370 [sentinel.agent] [judge] rulings_parsed {'count': 3}
+2026-05-18 08:19:22,370 [sentinel.agent] [judge] session_complete {'overall_verdict': 'officer_justified', 'rulings': 3}
+2026-05-18 08:19:42,955 [sentinel.agent] [prosecution] call_gpt-oss-120b {'status': 'ok'}
+2026-05-18 08:19:42,955 [sentinel.agent] [prosecution] model_response {'model': 'openai/gpt-oss-120b', 'chars': 2115}
+2026-05-18 08:19:42,955 [sentinel.agent] [prosecution] violations_parsed {'count': 3}
+2026-05-18 08:19:42,955 [sentinel.agent] [prosecution] session_complete {'violations': 3, 'verdict': 'violations_found'}
+2026-05-18 08:19:42,956 [sentinel.agent] [defense] session_start {'region': 'us', 'vertical': 'police'}
+2026-05-18 08:19:42,956 [sentinel.agent] [defense] rule_pack_loaded {'rules': 20, 'violations_to_rebut': 3}
+2026-05-18 08:19:42,956 [sentinel.agent] [defense] visual_context_injected {'chars': 1526}
+2026-05-18 08:19:42,956 [sentinel.agent] [defense] prompt_built {'transcript_chars': 1210, 'violations_count': 3}
+2026-05-18 08:19:43,699 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:20:12,132 [sentinel.agent] [defense] call_gemma-4-31B {'status': 'ok'}
+2026-05-18 08:20:12,132 [sentinel.agent] [defense] model_response {'model': 'google/gemma-4-31B-it', 'chars': 1869}
+2026-05-18 08:20:12,132 [sentinel.agent] [defense] rebuttals_parsed {'count': 3}
+2026-05-18 08:20:12,132 [sentinel.agent] [defense] session_complete {'rebuttals': 3}
+2026-05-18 08:20:12,133 [sentinel.agent] [judge] session_start {'region': 'us', 'vertical': 'police'}
+2026-05-18 08:20:12,133 [sentinel.agent] [judge] visual_context_injected {'chars': 1526}
+2026-05-18 08:20:12,133 [sentinel.agent] [judge] prompt_built {'transcript_chars': 1210, 'violations': 3, 'rebuttals': 3}
+2026-05-18 08:20:12,133 [google_genai.models] AFC is enabled with max remote calls: 10.
+2026-05-18 08:20:27,402 [httpx] HTTP Request: POST https://aiplatform.googleapis.com/v1beta1/projects/project-0620148a-da18-45ef-a21/locations/global/publishers/google/models/gemini-3.1-pro-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-18 08:20:27,403 [sentinel.agent] [judge] call_gemini-3.1-pro {'status': 'ok'}
+2026-05-18 08:20:27,403 [sentinel.agent] [judge] model_response {'model': 'gemini-3.1-pro-preview', 'chars': 2441}
+2026-05-18 08:20:27,403 [sentinel.agent] [judge] rulings_parsed {'count': 3}
+2026-05-18 08:20:27,404 [sentinel.agent] [judge] session_complete {'overall_verdict': 'officer_justified', 'rulings': 3}
+2026-05-18 08:20:27,405 [sentinel.pipeline_live] [us_video1] session saved → results/live/us_video1_session.json
+
+[precompute] DONE
+  utterances        : 23
+  rapid_alerts      : 0
+  deep_violations   : 3
+  rebuttals         : 3
+  verdict_snapshots : 2
+  saved to          : results/live/us_video1_session.json  (32,411 bytes)

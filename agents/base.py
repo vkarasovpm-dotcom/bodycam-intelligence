@@ -142,3 +142,60 @@ MODELS = {
     # Mistral (legacy v1 + tertiary fallback)
     "legacy":   "mistral-large-latest",
 }
+
+# ---------------------------------------------------------------------------
+# Visual context formatting (used by Prosecution / Defense / Judge prompts)
+# ---------------------------------------------------------------------------
+
+def format_visual_context(vc: dict | None) -> str:
+    """Render a VisualContext dict as a prompt-ready block.
+
+    Returns "" if no visual_context is available (so prompts stay clean
+    when running audio-only).
+    """
+    if not vc or not isinstance(vc, dict):
+        return ""
+
+    lines = ["=== VISUAL CONTEXT (from bodycam video analysis by Gemini Vision) ==="]
+    lines.append(
+        f"Subjects: {vc.get('subjects_visible', '?')}, "
+        f"Officers: {vc.get('officers_visible', '?')}, "
+        f"Environment: {vc.get('environment', 'unknown')}, "
+        f"Subject compliance: {vc.get('subject_compliance', 'unknown')}"
+    )
+    if vc.get("restraints_visible"):
+        t = vc.get("restraints_timing")
+        lines.append(
+            f"RESTRAINTS VISIBLE: handcuffs/restraints applied"
+            + (f" at t={t:.1f}s" if isinstance(t, (int, float)) else "")
+        )
+    if vc.get("weapons_drawn_by_officer"):
+        lines.append(f"OFFICER WEAPON DRAWN: {vc.get('weapon_type', 'unspecified')}")
+    if vc.get("subject_armed"):
+        lines.append("SUBJECT ARMED: weapon visible on subject")
+    if vc.get("force_observed"):
+        lines.append(f"FORCE OBSERVED: {vc.get('force_description', '(no description)')}")
+    if vc.get("injuries_visible"):
+        lines.append("INJURIES VISIBLE")
+
+    om = vc.get("officer_misconduct_indicators") or []
+    cv = vc.get("citizen_violation_indicators") or []
+    if om:
+        lines.append("Officer misconduct indicators: " + "; ".join(str(x) for x in om))
+    if cv:
+        lines.append("Citizen violation indicators: " + "; ".join(str(x) for x in cv))
+
+    km = vc.get("key_moments") or []
+    if km:
+        lines.append("Key visual moments (t_seconds | significance | description):")
+        for m in km[:15]:
+            lines.append(
+                f"  [{float(m.get('t_seconds', 0)):6.1f}s] {m.get('significance','neutral'):20s} | {m.get('description','')}"
+            )
+
+    summary = vc.get("summary")
+    if summary:
+        lines.append(f"Visual summary: {summary}")
+
+    lines.append("=== END VISUAL CONTEXT ===\n")
+    return "\n".join(lines) + "\n"

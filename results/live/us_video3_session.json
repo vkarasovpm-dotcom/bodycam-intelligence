@@ -1,0 +1,355 @@
+{
+  "session_id": "us_video3",
+  "region": "us",
+  "vertical": "police",
+  "meta": {
+    "session_id": "us_video3",
+    "region": "us",
+    "vertical": "police",
+    "started_at": 1779092190.642497,
+    "transcript_path": "results/council/video3_borderline_council.json",
+    "total_utterances": 4
+  },
+  "rapid_alerts": [],
+  "visual_context": {
+    "video_path": "recordings/video3_borderline.mp4",
+    "duration_sec": 58.688,
+    "subjects_visible": 1,
+    "officers_visible": 2,
+    "environment": "residential trailer park",
+    "restraints_visible": false,
+    "restraints_timing": null,
+    "weapons_drawn_by_officer": false,
+    "weapon_type": "null",
+    "subject_armed": false,
+    "force_observed": true,
+    "force_description": "Officer lunges and grabs the subject or camera, causing the camera to fall to the ground.",
+    "injuries_visible": false,
+    "subject_compliance": "mixed",
+    "officer_misconduct_indicators": [
+      "Aggressive posturing and yelling",
+      "Use of profanity",
+      "Threatening arrest for filming in public",
+      "Physical contact initiated over verbal dispute"
+    ],
+    "citizen_violation_indicators": [
+      "Use of profanity towards officer",
+      "Refusal to obey command to leave the area"
+    ],
+    "key_moments": [
+      {
+        "t_seconds": 0.0,
+        "description": "Officer yells at subject, threatening arrest for following them.",
+        "significance": "concerning"
+      },
+      {
+        "t_seconds": 15.0,
+        "description": "Subject questions a sergeant about their presence and jurisdiction.",
+        "significance": "neutral"
+      },
+      {
+        "t_seconds": 29.0,
+        "description": "Officer commands subject to go in her house; she refuses.",
+        "significance": "neutral"
+      },
+      {
+        "t_seconds": 37.0,
+        "description": "Officer uses profanity and threatens arrest if subject does not leave.",
+        "significance": "concerning"
+      },
+      {
+        "t_seconds": 40.0,
+        "description": "Officer aggressively walks towards subject, repeatedly threatening arrest.",
+        "significance": "concerning"
+      },
+      {
+        "t_seconds": 55.0,
+        "description": "Officer lunges at subject, orders hands behind back, and camera falls.",
+        "significance": "concerning"
+      }
+    ],
+    "summary": "A resident films police officers in her neighborhood. An officer repeatedly orders her to leave and threatens arrest for following them. The situation escalates when the officer aggressively approaches and physically grabs the subject, ending the recording.",
+    "model_used": "gemini-3.1-pro-preview",
+    "latency_ms": 30787.0
+  },
+  "deep_violations": [
+    {
+      "rule_id": "US-1A-RECORD",
+      "title": "First Amendment — Right to Record Police",
+      "source": "U.S. Const. amend. I; Glik v. Cunniffe, 655 F.3d 78 (1st Cir. 2011); Fields v. City of Philadelphia, 862 F.3d 353 (3d Cir. 2017)",
+      "severity": "medium",
+      "cited_utterances": [
+        0,
+        3
+      ],
+      "rationale": "At utterance [0] the officer tells the subject she is \"not allowed to follow\" and issues a warning, effectively ordering her to stop filming. The subject’s reply at [3] asserts her intent to record. This constitutes an impermissible attempt to chill protected recording activity.",
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "US-4A-STOP",
+      "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
+      "source": "U.S. Const. amend. IV; Terry v. Ohio, 392 U.S. 1 (1968)",
+      "severity": "high",
+      "cited_utterances": [
+        0
+      ],
+      "rationale": "The officer initiates a detention by demanding the citizen stop following/presumably filming without articulating any specific suspicion of wrongdoing, which fails the reasonable suspicion standard for a Terry stop.",
+      "confidence": 0.62
+    }
+  ],
+  "rebuttals": [
+    {
+      "challenges_rule_id": "US-1A-RECORD",
+      "stance": "rebut",
+      "counter_argument": "The officer's statement at [0] specifically prohibits 'following' the officers, not the act of recording itself. There is a critical legal distinction between the right to record from a stationary or reasonable distance and the right to follow officers, which can be construed as interference or a safety risk.",
+      "counter_utterances": [
+        0
+      ],
+      "proposed_severity_adjustment": "medium → low",
+      "confidence": 0.8
+    },
+    {
+      "challenges_rule_id": "US-4A-STOP",
+      "stance": "rebut",
+      "counter_argument": "A verbal warning that a subject is 'not allowed to follow' does not automatically constitute a custodial seizure or a Terry stop. The subject remained free to leave or move away, and the officer's warning was a preventative measure to ensure the safety of the scene, not an investigative detention based on suspected criminal activity.",
+      "counter_utterances": [
+        0
+      ],
+      "proposed_severity_adjustment": "high → low",
+      "confidence": 0.7
+    }
+  ],
+  "verdict_timeline": [
+    {
+      "at_t": 134.36482710699784,
+      "reason": "session_end",
+      "wall_ms": 23995,
+      "overall_verdict": "officer_at_fault",
+      "overall_severity": "high",
+      "headline": "Officer unlawfully detained a citizen and used physical force to suppress her First Amendment right to record.",
+      "summary": "The visual evidence and transcript indicate the officer aggressively confronted a resident who was recording police activity in her neighborhood. Despite the defense's claim that the officer was merely managing a perimeter, the officer ordered the subject into her house, threatened arrest, and ultimately lunged at her to effectuate a physical seizure. These actions lack reasonable suspicion and clearly violate the subject's First Amendment right to record and Fourth Amendment right against unreasonable seizure.",
+      "rulings": [
+        {
+          "rule_id": "US-1A-RECORD",
+          "title": "First Amendment — Right to Record Police",
+          "verdict": "violation_upheld",
+          "final_severity": "high",
+          "reasoning": "The defense argues the officer only prohibited 'following,' not recording. However, the visual context reveals the officer ordered the subject into her house, repeatedly threatened arrest, and ultimately lunged at her, causing the camera to fall. This demonstrates a clear intent to suppress the subject's First Amendment right to record in a public space, escalating far beyond a simple warning about proximity.",
+          "key_utterances": [
+            0,
+            3
+          ],
+          "prosecution_weight": 0.85,
+          "defense_weight": 0.15,
+          "confidence": 0.95
+        },
+        {
+          "rule_id": "US-4A-STOP",
+          "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
+          "verdict": "violation_upheld",
+          "final_severity": "high",
+          "reasoning": "The defense contends that a verbal warning does not constitute a seizure. While utterance [0] alone may not be a full Terry stop, the visual context confirms the encounter escalated to an actual physical seizure when the officer lunged at the subject and ordered her hands behind her back. There is no articulated reasonable suspicion of a crime to justify this physical detention.",
+          "key_utterances": [
+            0
+          ],
+          "prosecution_weight": 0.9,
+          "defense_weight": 0.1,
+          "confidence": 0.95
+        }
+      ],
+      "n_violations": 2,
+      "n_rebuttals": 2
+    }
+  ],
+  "final_verdict": {
+    "at_t": 134.36482710699784,
+    "reason": "session_end",
+    "wall_ms": 23995,
+    "overall_verdict": "officer_at_fault",
+    "overall_severity": "high",
+    "headline": "Officer unlawfully detained a citizen and used physical force to suppress her First Amendment right to record.",
+    "summary": "The visual evidence and transcript indicate the officer aggressively confronted a resident who was recording police activity in her neighborhood. Despite the defense's claim that the officer was merely managing a perimeter, the officer ordered the subject into her house, threatened arrest, and ultimately lunged at her to effectuate a physical seizure. These actions lack reasonable suspicion and clearly violate the subject's First Amendment right to record and Fourth Amendment right against unreasonable seizure.",
+    "rulings": [
+      {
+        "rule_id": "US-1A-RECORD",
+        "title": "First Amendment — Right to Record Police",
+        "verdict": "violation_upheld",
+        "final_severity": "high",
+        "reasoning": "The defense argues the officer only prohibited 'following,' not recording. However, the visual context reveals the officer ordered the subject into her house, repeatedly threatened arrest, and ultimately lunged at her, causing the camera to fall. This demonstrates a clear intent to suppress the subject's First Amendment right to record in a public space, escalating far beyond a simple warning about proximity.",
+        "key_utterances": [
+          0,
+          3
+        ],
+        "prosecution_weight": 0.85,
+        "defense_weight": 0.15,
+        "confidence": 0.95
+      },
+      {
+        "rule_id": "US-4A-STOP",
+        "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
+        "verdict": "violation_upheld",
+        "final_severity": "high",
+        "reasoning": "The defense contends that a verbal warning does not constitute a seizure. While utterance [0] alone may not be a full Terry stop, the visual context confirms the encounter escalated to an actual physical seizure when the officer lunged at the subject and ordered her hands behind her back. There is no articulated reasonable suspicion of a crime to justify this physical detention.",
+        "key_utterances": [
+          0
+        ],
+        "prosecution_weight": 0.9,
+        "defense_weight": 0.1,
+        "confidence": 0.95
+      }
+    ],
+    "n_violations": 2,
+    "n_rebuttals": 2
+  },
+  "events": [
+    {
+      "t": 0.0008967250032583252,
+      "kind": "utterance",
+      "text": "Fair warning you keep following us. You're not allowed to follow. Now you're following. Understand?",
+      "speaker": "S1",
+      "t_start": 0.84,
+      "t_end": 5.32,
+      "utt_index": 0
+    },
+    {
+      "t": 9.78293369099265,
+      "kind": "router_skip",
+      "utt_index": 0,
+      "classification": "escalation",
+      "reason": "prosecution_no_alert",
+      "atom_ms": 9782
+    },
+    {
+      "t": 9.78295148399775,
+      "kind": "utterance",
+      "text": "A resident, Sue Stiegler, noticed the officers from her home because police officers did not normally patrol her neighborhood. Miss Stiegler decided to monitor",
+      "speaker": "S2",
+      "t_start": 5.96,
+      "t_end": 13.76,
+      "utt_index": 1
+    },
+    {
+      "t": 10.982235057992511,
+      "kind": "router_skip",
+      "utt_index": 1,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 10.982249585998943,
+      "kind": "utterance",
+      "text": "and film their actions.",
+      "speaker": "S2",
+      "t_start": 13.76,
+      "t_end": 15.36,
+      "utt_index": 2
+    },
+    {
+      "t": 10.982321921997936,
+      "kind": "router_skip",
+      "utt_index": 2,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 10.982326780998847,
+      "kind": "utterance",
+      "text": "By recording me. Why not? You're in my. You're in my park with no jurisdiction. So I'm just curious to know. You don't have any",
+      "speaker": "S3",
+      "t_start": 15.4,
+      "t_end": 22.2,
+      "utt_index": 3
+    },
+    {
+      "t": 12.253961937996792,
+      "kind": "router_skip",
+      "utt_index": 3,
+      "classification": "none",
+      "confidence": 0.9
+    },
+    {
+      "t": 12.253978127992013,
+      "kind": "session_finalizing"
+    },
+    {
+      "t": 12.253982025998994,
+      "kind": "deep_scan_started",
+      "triggers": [
+        "session_end"
+      ],
+      "utterances": 4
+    },
+    {
+      "t": 44.00393940000504,
+      "kind": "visual_context_ready",
+      "force_observed": true,
+      "restraints_visible": false,
+      "restraints_timing": null,
+      "weapons_drawn": false,
+      "subject_compliance": "mixed",
+      "key_moments": 6,
+      "summary": "A resident films police officers in her neighborhood. An officer repeatedly orders her to leave and threatens arrest for following them. The situation escalates when the officer aggressively approache",
+      "model_used": "gemini-3.1-pro-preview",
+      "latency_ms": 30787.0
+    },
+    {
+      "t": 110.3689702989941,
+      "kind": "deep_scan_completed",
+      "wall_ms": 66363,
+      "violations": 2,
+      "rebuttals": 2,
+      "prosecution_verdict": "violations_found",
+      "overall_severity": "high"
+    },
+    {
+      "t": 134.36483363900334,
+      "kind": "verdict_update",
+      "at_t": 134.36482710699784,
+      "reason": "session_end",
+      "wall_ms": 23995,
+      "overall_verdict": "officer_at_fault",
+      "overall_severity": "high",
+      "headline": "Officer unlawfully detained a citizen and used physical force to suppress her First Amendment right to record.",
+      "summary": "The visual evidence and transcript indicate the officer aggressively confronted a resident who was recording police activity in her neighborhood. Despite the defense's claim that the officer was merely managing a perimeter, the officer ordered the subject into her house, threatened arrest, and ultimately lunged at her to effectuate a physical seizure. These actions lack reasonable suspicion and clearly violate the subject's First Amendment right to record and Fourth Amendment right against unreasonable seizure.",
+      "rulings": [
+        {
+          "rule_id": "US-1A-RECORD",
+          "title": "First Amendment — Right to Record Police",
+          "verdict": "violation_upheld",
+          "final_severity": "high",
+          "reasoning": "The defense argues the officer only prohibited 'following,' not recording. However, the visual context reveals the officer ordered the subject into her house, repeatedly threatened arrest, and ultimately lunged at her, causing the camera to fall. This demonstrates a clear intent to suppress the subject's First Amendment right to record in a public space, escalating far beyond a simple warning about proximity.",
+          "key_utterances": [
+            0,
+            3
+          ],
+          "prosecution_weight": 0.85,
+          "defense_weight": 0.15,
+          "confidence": 0.95
+        },
+        {
+          "rule_id": "US-4A-STOP",
+          "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
+          "verdict": "violation_upheld",
+          "final_severity": "high",
+          "reasoning": "The defense contends that a verbal warning does not constitute a seizure. While utterance [0] alone may not be a full Terry stop, the visual context confirms the encounter escalated to an actual physical seizure when the officer lunged at the subject and ordered her hands behind her back. There is no articulated reasonable suspicion of a crime to justify this physical detention.",
+          "key_utterances": [
+            0
+          ],
+          "prosecution_weight": 0.9,
+          "defense_weight": 0.1,
+          "confidence": 0.95
+        }
+      ],
+      "n_violations": 2,
+      "n_rebuttals": 2
+    }
+  ],
+  "stats": {
+    "total_utterances": 4,
+    "rapid_alerts": 0,
+    "deep_violations": 2,
+    "rebuttals": 2,
+    "verdict_snapshots": 1,
+    "router_skips": 4
+  }
+}

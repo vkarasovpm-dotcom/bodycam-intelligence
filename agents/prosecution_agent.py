@@ -21,6 +21,7 @@ from agents.base import (
     featherless_client,
     with_fallback,
     MODELS,
+    format_visual_context,
 )
 
 CASE_LAW_DIR = Path(__file__).resolve().parent.parent / "case_law"
@@ -191,7 +192,11 @@ class ProsecutionAgent:
 
         transcript_text = _format_transcript(utterances)
         rules_text = _format_rules(pack["rules"])
+        visual_block = format_visual_context(transcription_result.get("visual_context"))
         user_prompt = _build_user_prompt(transcript_text, rules_text, self.region, summary)
+        if visual_block:
+            user_prompt = visual_block + user_prompt
+            self.trace.emit("prosecution", "visual_context_injected", data={"chars": len(visual_block)})
         self.trace.emit("prosecution", "prompt_built", data={"transcript_chars": len(transcript_text), "rules_count": len(pack["rules"])})
 
         # Call model with fallback

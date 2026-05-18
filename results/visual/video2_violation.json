@@ -1,0 +1,60 @@
+{
+  "video_path": "recordings/video2_violation.mp4",
+  "duration_sec": 620.948027,
+  "subjects_visible": 2,
+  "officers_visible": 4,
+  "environment": "daytime, roadside",
+  "restraints_visible": true,
+  "restraints_timing": 30.0,
+  "weapons_drawn_by_officer": false,
+  "weapon_type": null,
+  "subject_armed": false,
+  "force_observed": false,
+  "force_description": "",
+  "injuries_visible": false,
+  "subject_compliance": "compliant",
+  "officer_misconduct_indicators": [],
+  "citizen_violation_indicators": [
+    "suspected drugs found in vehicle"
+  ],
+  "key_moments": [
+    {
+      "t_seconds": 30.0,
+      "description": "Male subject is seen in handcuffs.",
+      "significance": "neutral"
+    },
+    {
+      "t_seconds": 45.0,
+      "description": "Officer finds suspected drugs in the vehicle.",
+      "significance": "violation_indicator"
+    },
+    {
+      "t_seconds": 128.0,
+      "description": "Officer conducts a pat-down search of the male subject.",
+      "significance": "neutral"
+    },
+    {
+      "t_seconds": 155.0,
+      "description": "Officer reads Miranda rights to the male subject.",
+      "significance": "neutral"
+    },
+    {
+      "t_seconds": 190.0,
+      "description": "Male subject is placed in the patrol car.",
+      "significance": "neutral"
+    },
+    {
+      "t_seconds": 215.0,
+      "description": "Female subject is seen in handcuffs.",
+      "significance": "neutral"
+    },
+    {
+      "t_seconds": 258.0,
+      "description": "Officer begins searching the trunk of the vehicle.",
+      "significance": "neutral"
+    }
+  ],
+  "summary": "The video shows a traffic stop where multiple officers are present. A male subject is detained in handcuffs while officers search the vehicle, finding suspected narcotics in the center console. The male subject is searched, read his Miranda rights, and placed in a patrol car. A female subject is also detained in handcuffs, and officers proceed to search the trunk of the vehicle.",
+  "model_used": "gemini-3.1-pro-preview",
+  "latency_ms": 32451.0
+}

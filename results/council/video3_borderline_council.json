@@ -1,0 +1,1900 @@
+{
+  "audio_file": "recordings/video3_borderline.mp4",
+  "region": "us",
+  "vertical": "police",
+  "duration_sec": 58.688,
+  "wall_sec": 142.65,
+  "transcription": {
+    "language": "en",
+    "target_language": null,
+    "utterances": [
+      {
+        "speaker": "S1",
+        "text": "Fair",
+        "start": 0.84,
+        "end": 1.08,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "warning you",
+        "start": 1.12,
+        "end": 1.68,
+        "translation": null,
+        "sentiment": "positive",
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "keep",
+        "start": 1.68,
+        "end": 1.8,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "following",
+        "start": 1.8,
+        "end": 2.28,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "us.",
+        "start": 2.28,
+        "end": 2.6,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "You're not allowed",
+        "start": 2.8,
+        "end": 3.48,
+        "translation": null,
+        "sentiment": "negative",
+        "confidence": 0.7666666666666666
+      },
+      {
+        "speaker": "S1",
+        "text": "to",
+        "start": 3.48,
+        "end": 3.56,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "follow. Now",
+        "start": 3.56,
+        "end": 4.2,
+        "translation": null,
+        "sentiment": "positive",
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "you're following",
+        "start": 4.2,
+        "end": 4.6,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": ". Understand",
+        "start": 4.6,
+        "end": 5.32,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.985
+      },
+      {
+        "speaker": "S1",
+        "text": "?",
+        "start": 5.32,
+        "end": 5.32,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "A",
+        "start": 5.96,
+        "end": 6.0,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.87
+      },
+      {
+        "speaker": "S2",
+        "text": "resident,",
+        "start": 6.0,
+        "end": 6.48,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.765
+      },
+      {
+        "speaker": "S2",
+        "text": "Sue",
+        "start": 6.48,
+        "end": 6.8,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "Stiegler",
+        "start": 6.84,
+        "end": 7.4,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.95
+      },
+      {
+        "speaker": "S2",
+        "text": ", noticed the",
+        "start": 7.44,
+        "end": 8.0,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "officers",
+        "start": 8.0,
+        "end": 8.44,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "from her",
+        "start": 8.44,
+        "end": 8.84,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "home",
+        "start": 8.84,
+        "end": 9.28,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "because",
+        "start": 9.28,
+        "end": 9.64,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "police",
+        "start": 9.68,
+        "end": 10.0,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "officers did",
+        "start": 10.0,
+        "end": 10.6,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "not",
+        "start": 10.6,
+        "end": 10.84,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "normally",
+        "start": 10.84,
+        "end": 11.28,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "patrol her",
+        "start": 11.28,
+        "end": 11.76,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "neighborhood. Miss",
+        "start": 11.76,
+        "end": 12.44,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "Stiegler",
+        "start": 12.44,
+        "end": 12.84,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "decided",
+        "start": 12.84,
+        "end": 13.2,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "to",
+        "start": 13.2,
+        "end": 13.28,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "monitor",
+        "start": 13.32,
+        "end": 13.76,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "and film",
+        "start": 13.76,
+        "end": 14.32,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "their",
+        "start": 14.32,
+        "end": 14.64,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "actions.",
+        "start": 14.64,
+        "end": 15.36,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S3",
+        "text": "By recording",
+        "start": 15.4,
+        "end": 16.04,
+        "translation": null,
+        "sentiment": "negative",
+        "confidence": 0.995
+      },
+      {
+        "speaker": "S3",
+        "text": "me.",
+        "start": 16.04,
+        "end": 16.32,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S3",
+        "text": "Why not?",
+        "start": 16.36,
+        "end": 16.84,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S3",
+        "text": "You're",
+        "start": 16.88,
+        "end": 17.08,
+        "translation": null,
+        "sentiment": "neutral",
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S3",
+        "text": "in",
+        "start": 17.08,
+        "end": 17.24,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S3",
+        "text": "my. You're",
+        "start": 17.24,
+        "end": 17.88,
+        "translation": null,
+        "sentiment": "neutral",
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S3",
+        "text": "in my",
+        "start": 17.88,
+        "end": 18.2,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S3",
+        "text": "park",
+        "start": 18.2,
+        "end": 18.48,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S3",
+        "text": "with no",
+        "start": 18.48,
+        "end": 18.76,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S3",
+        "text": "jurisdiction.",
+        "start": 18.76,
+        "end": 19.6,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S3",
+        "text": "So",
+        "start": 19.84,
+        "end": 19.96,
+        "translation": null,
+        "sentiment": "neutral",
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S3",
+        "text": "I'm just",
+        "start": 19.96,
+        "end": 20.32,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S3",
+        "text": "curious to",
+        "start": 20.32,
+        "end": 20.96,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S3",
+        "text": "know.",
+        "start": 20.96,
+        "end": 21.32,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S3",
+        "text": "You don't",
+        "start": 21.6,
+        "end": 21.88,
+        "translation": null,
+        "sentiment": "negative",
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S3",
+        "text": "have any",
+        "start": 21.88,
+        "end": 22.2,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      }
+    ],
+    "speakers": [
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "summary": "- Local resident Sue Stiegler films police officers patrolling her neighborhood, questioning their jurisdiction.\n- Police officers warn Sue Stiegler about arrest and order her to leave, escalating the confrontation.\n- Sue Stiegler references prior interactions with the officers' sergeant during the encounter.",
+    "topics": [
+      "News & Politics"
+    ],
+    "raw_text": "[S1] Fair\n[S1] warning you\n[S1] keep\n[S1] following\n[S1] us.\n[S1] You're not allowed\n[S1] to\n[S1] follow. Now\n[S1] you're following\n[S1] . Understand\n[S1] ?\n[S2] A\n[S2] resident,\n[S2] Sue\n[S2] Stiegler\n[S2] , noticed the\n[S2] officers\n[S2] from her\n[S2] home\n[S2] because\n[S2] police\n[S2] officers did\n[S2] not\n[S2] normally\n[S2] patrol her\n[S2] neighborhood. Miss\n[S2] Stiegler\n[S2] decided\n[S2] to\n[S2] monitor\n[S2] and film\n[S2] their\n[S2] actions.\n[S3] By recording\n[S3] me.\n[S3] Why not?\n[S3] You're\n[S3] in\n[S3] my. You're\n[S3] in my\n[S3] park\n[S3] with no\n[S3] jurisdiction.\n[S3] So\n[S3] I'm just\n[S3] curious to\n[S3] know.\n[S3] You don't\n[S3] have any",
+    "duration_sec": 58.688
+  },
+  "prosecution": {
+    "region": "us",
+    "vertical": "police",
+    "verdict": "violations_found",
+    "overall_severity": "high",
+    "violations": [
+      {
+        "rule_id": "US-1A-RECORD",
+        "title": "First Amendment — Right to Record Police",
+        "source": "U.S. Const. amend. I; Glik v. Cunniffe, 655 F.3d 78 (1st Cir. 2011); Fields v. City of Philadelphia, 862 F.3d 353 (3d Cir. 2017)",
+        "severity": "medium",
+        "cited_utterances": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48
+        ],
+        "rationale": "Officer repeatedly tells the resident she is \"not allowed to follow\" and orders her to stop, while the resident is plainly recording police activity in a public space, implicating the protected right to record.",
+        "confidence": 0.88
+      },
+      {
+        "rule_id": "US-4A-STOP",
+        "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
+        "source": "U.S. Const. amend. IV; Terry v. Ohio, 392 U.S. 1 (1968)",
+        "severity": "high",
+        "cited_utterances": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "rationale": "The officer detains the resident by demanding she cease following and filming despite no articulable suspicion of criminal conduct, satisfying the elements of an unlawful investigative stop.",
+        "confidence": 0.92
+      },
+      {
+        "rule_id": "US-DEESCALATION",
+        "title": "Duty to De-escalate",
+        "source": "DOJ Consent Decrees (Baltimore 2017, Chicago 2019); PERF Guiding Principles on Use of Force (2016)",
+        "severity": "medium",
+        "cited_utterances": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "rationale": "The officer immediately issues a hostile command without any verbal calming, explanation, or attempt to reduce tension, breaching the department’s de‑escalation obligations.",
+        "confidence": 0.81
+      },
+      {
+        "rule_id": "US-IDENTIFY",
+        "title": "Officer Identification Requirement",
+        "source": "Department policies (most major PDs); 42 U.S.C. § 1983 accountability principles",
+        "severity": "low",
+        "cited_utterances": [],
+        "rationale": "Throughout the exchange the officer never provides name, badge number, or agency affiliation, contrary to standard identification requirements.",
+        "confidence": 0.65
+      }
+    ],
+    "summary": "The officer ordered the resident to cease filming and to stop following without any articulable suspicion, violating her First Amendment right to record and constituting an unreasonable seizure. The interaction lacked any de‑escalation effort and the officer failed to identify himself.",
+    "model_used": "openai/gpt-oss-120b",
+    "trace": [
+      {
+        "agent": "prosecution",
+        "action": "session_start",
+        "data": {
+          "region": "us",
+          "vertical": "police"
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779091449.1923287
+      },
+      {
+        "agent": "prosecution",
+        "action": "rule_pack_loaded",
+        "data": {
+          "rules": 20,
+          "version": "0.3"
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779091449.1925986
+      },
+      {
+        "agent": "prosecution",
+        "action": "prompt_built",
+        "data": {
+          "transcript_chars": 1518,
+          "rules_count": 20
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779091449.1927822
+      },
+      {
+        "agent": "prosecution",
+        "action": "model_call",
+        "data": {
+          "model": "openai/gpt-oss-120b"
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779091449.192811
+      },
+      {
+        "agent": "prosecution",
+        "action": "call_gpt-oss-120b",
+        "data": {
+          "status": "ok"
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779091508.1495159
+      },
+      {
+        "agent": "prosecution",
+        "action": "model_response",
+        "data": {
+          "model": "openai/gpt-oss-120b",
+          "chars": 2527
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779091508.1496336
+      },
+      {
+        "agent": "prosecution",
+        "action": "violations_parsed",
+        "data": {
+          "count": 4
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779091508.149716
+      },
+      {
+        "agent": "prosecution",
+        "action": "session_complete",
+        "data": {
+          "violations": 4,
+          "verdict": "violations_found"
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779091508.1497838
+      }
+    ]
+  },
+  "defense": {
+    "region": "us",
+    "vertical": "police",
+    "overall_defense_summary": "The officer's commands were directed at the act of 'following' the officers, which can be interpreted as a safety or operational concern, rather than a prohibition on recording. There is no evidence of a custodial detention or a failure to identify based on a formal request.",
+    "rebuttals": [
+      {
+        "challenges_rule_id": "US-1A-RECORD",
+        "stance": "rebut",
+        "counter_argument": "The officer's warnings specifically target the act of 'following' [3, 5, 7, 8], not the act of recording. The right to record does not grant a citizen an absolute right to follow officers closely during an active patrol or operation, as this may interfere with police duties.",
+        "counter_utterances": [
+          3,
+          5,
+          7,
+          8
+        ],
+        "proposed_severity_adjustment": "medium → low",
+        "confidence": 0.7
+      },
+      {
+        "challenges_rule_id": "US-4A-STOP",
+        "stance": "rebut",
+        "counter_argument": "A warning to stop following is not necessarily a seizure. The transcript does not show the officer physically restraining the resident or using force to prevent her movement; it is a verbal directive to maintain distance for operational safety.",
+        "counter_utterances": [
+          1,
+          5,
+          7
+        ],
+        "proposed_severity_adjustment": "high → low",
+        "confidence": 0.6
+      },
+      {
+        "challenges_rule_id": "US-DEESCALATION",
+        "stance": "mitigate",
+        "counter_argument": "The officer's tone is firm, but the resident is actively challenging the officers' jurisdiction [42] and following them. In such a context, clear and direct commands are often necessary to establish boundaries and ensure officer safety.",
+        "counter_utterances": [
+          42
+        ],
+        "proposed_severity_adjustment": "medium → low",
+        "confidence": 0.5
+      },
+      {
+        "challenges_rule_id": "US-IDENTIFY",
+        "stance": "rebut",
+        "counter_argument": "The transcript contains no evidence that the resident requested the officer's name, badge number, or agency. Identification is typically required upon request; the officer is not required to volunteer this information spontaneously.",
+        "counter_utterances": [],
+        "proposed_severity_adjustment": "low → null",
+        "confidence": 0.9
+      }
+    ],
+    "model_used": "google/gemma-4-31B-it",
+    "trace": [
+      {
+        "agent": "defense",
+        "action": "session_start",
+        "data": {
+          "region": "us",
+          "vertical": "police"
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779091508.1548102
+      },
+      {
+        "agent": "defense",
+        "action": "rule_pack_loaded",
+        "data": {
+          "rules": 20,
+          "violations_to_rebut": 4
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779091508.1550696
+      },
+      {
+        "agent": "defense",
+        "action": "prompt_built",
+        "data": {
+          "transcript_chars": 1518,
+          "violations_count": 4
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779091508.1552253
+      },
+      {
+        "agent": "defense",
+        "action": "call_gemma-4-31B",
+        "data": {
+          "status": "ok"
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779091540.2856297
+      },
+      {
+        "agent": "defense",
+        "action": "model_response",
+        "data": {
+          "model": "google/gemma-4-31B-it",
+          "chars": 2224
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779091540.2857485
+      },
+      {
+        "agent": "defense",
+        "action": "rebuttals_parsed",
+        "data": {
+          "count": 4
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779091540.2859468
+      },
+      {
+        "agent": "defense",
+        "action": "session_complete",
+        "data": {
+          "rebuttals": 4
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779091540.286029
+      }
+    ]
+  },
+  "verdict": {
+    "region": "us",
+    "vertical": "police",
+    "overall_verdict": "mixed",
+    "overall_severity": "low",
+    "headline": "Officer's commands restricted movement but did not constitute a seizure or explicit recording ban.",
+    "summary": "The officer ordered a recording resident to stop following them in a public park. While this command did not amount to a Fourth Amendment seizure, it marginally implicated the resident's First Amendment right to observe and record police activity in a public space. Allegations of failure to de-escalate and identify were dismissed, as the officer's tone was merely firm and no identification was requested.",
+    "rulings": [
+      {
+        "rule_id": "US-1A-RECORD",
+        "title": "First Amendment — Right to Record Police",
+        "verdict": "violation_mitigated",
+        "final_severity": "low",
+        "reasoning": "The officer explicitly ordered the resident to stop following, not to stop recording. However, arbitrarily restricting a citizen's movement in a public park while they are attempting to observe police activity can infringe on First Amendment rights if there is no legitimate interference concern.",
+        "key_utterances": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "prosecution_weight": 0.4,
+        "defense_weight": 0.6,
+        "confidence": 0.85
+      },
+      {
+        "rule_id": "US-4A-STOP",
+        "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
+        "verdict": "violation_dismissed",
+        "final_severity": "none",
+        "reasoning": "A command to stop following officers does not constitute a Fourth Amendment seizure. It does not restrain the resident's liberty to leave or remain where she is, meaning no unlawful investigative stop occurred.",
+        "key_utterances": [
+          5,
+          7
+        ],
+        "prosecution_weight": 0.1,
+        "defense_weight": 0.9,
+        "confidence": 0.95
+      },
+      {
+        "rule_id": "US-DEESCALATION",
+        "title": "Duty to De-escalate",
+        "verdict": "violation_dismissed",
+        "final_severity": "none",
+        "reasoning": "The officer's command was firm and direct but did not constitute an escalation requiring specific de-escalation tactics. Setting boundaries for operational safety is a standard practice and not inherently hostile.",
+        "key_utterances": [
+          1,
+          5,
+          9
+        ],
+        "prosecution_weight": 0.2,
+        "defense_weight": 0.8,
+        "confidence": 0.9
+      },
+      {
+        "rule_id": "US-IDENTIFY",
+        "title": "Officer Identification Requirement",
+        "verdict": "violation_dismissed",
+        "final_severity": "none",
+        "reasoning": "There is no evidence in the transcript that the resident requested the officer's name or badge number. Officers are generally not required to spontaneously provide this information without a request or formal enforcement action.",
+        "key_utterances": [],
+        "prosecution_weight": 0.0,
+        "defense_weight": 1.0,
+        "confidence": 0.95
+      }
+    ],
+    "model_used": "gemini-3.1-pro-preview",
+    "trace": [
+      {
+        "agent": "judge",
+        "action": "session_start",
+        "data": {
+          "region": "us",
+          "vertical": "police"
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779091541.037402
+      },
+      {
+        "agent": "judge",
+        "action": "prompt_built",
+        "data": {
+          "transcript_chars": 1518,
+          "violations": 4,
+          "rebuttals": 4
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779091541.0375853
+      },
+      {
+        "agent": "judge",
+        "action": "call_gemini-3.1-pro",
+        "data": {
+          "status": "ok"
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779091570.8580022
+      },
+      {
+        "agent": "judge",
+        "action": "model_response",
+        "data": {
+          "model": "gemini-3.1-pro-preview",
+          "chars": 2826
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779091570.8580875
+      },
+      {
+        "agent": "judge",
+        "action": "rulings_parsed",
+        "data": {
+          "count": 4
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779091570.8581653
+      },
+      {
+        "agent": "judge",
+        "action": "session_complete",
+        "data": {
+          "overall_verdict": "mixed",
+          "rulings": 4
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779091570.8582346
+      }
+    ]
+  },
+  "trace": [
+    {
+      "agent": "council",
+      "action": "pipeline_start",
+      "data": {
+        "audio": "video3_borderline.mp4",
+        "region": "us",
+        "vertical": "police"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091428.2130725
+    },
+    {
+      "agent": "council",
+      "action": "vision_failed",
+      "data": {
+        "error": "name 'os' is not defined"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091448.696588
+    },
+    {
+      "agent": "transcription",
+      "action": "session_start",
+      "data": {
+        "file": "video3_borderline.mp4",
+        "language": "en",
+        "target_language": null,
+        "translation": false,
+        "sentiment": true,
+        "summary": true,
+        "topics": true,
+        "realtime_factor": 8.0
+      },
+      "reasoning": "Hybrid pipeline: Speechmatics RT (diarization+translation+partials) + Batch (sentiment+summary+topics) — all 6 sponsor features in one job.",
+      "video_timestamp": null,
+      "ts_unix": 1779091428.2147882
+    },
+    {
+      "agent": "transcription",
+      "action": "audio_decoded",
+      "data": {
+        "bytes": 1878016,
+        "duration_sec": 58.69
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091428.3654914
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 4,
+        "start": 0.84
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091429.203508
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 11,
+        "start": 1.12
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091429.3290415
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 4,
+        "start": 1.68
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091429.488826
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 9,
+        "start": 1.8
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091429.6480448
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 3,
+        "start": 2.28
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091429.8360617
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 18,
+        "start": 2.8
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091430.1749384
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 2,
+        "start": 3.48
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091430.3215072
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 11,
+        "start": 3.56
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091430.4405038
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 16,
+        "start": 4.2
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091430.61278
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 12,
+        "start": 4.6
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091431.0078666
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 1,
+        "start": 5.32
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091431.1527622
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 1,
+        "start": 5.96
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091431.2711112
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 9,
+        "start": 6.0
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091431.6200507
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 3,
+        "start": 6.48
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091431.8121574
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 8,
+        "start": 6.84
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091431.9620876
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 13,
+        "start": 7.44
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091432.3627353
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 8,
+        "start": 8.0
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091432.51711
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 8,
+        "start": 8.44
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091432.6847234
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 4,
+        "start": 8.84
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091432.8196824
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 7,
+        "start": 9.28
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091433.0151281
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 6,
+        "start": 9.68
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091433.1401298
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 12,
+        "start": 10.0
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091433.427131
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 3,
+        "start": 10.6
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091433.5771213
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 8,
+        "start": 10.84
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091433.7087893
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 10,
+        "start": 11.28
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091433.8563235
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 18,
+        "start": 11.76
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091434.1808333
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 8,
+        "start": 12.44
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091434.3725448
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 7,
+        "start": 12.84
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091434.5505383
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 2,
+        "start": 13.2
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091434.7031531
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 7,
+        "start": 13.32
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091434.7906466
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 8,
+        "start": 13.76
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091434.9274359
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 5,
+        "start": 14.32
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091435.023693
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 8,
+        "start": 14.64
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091435.249487
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S3",
+        "chars": 12,
+        "start": 15.4
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091435.519415
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S3",
+        "chars": 3,
+        "start": 16.04
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091435.6391811
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S3",
+        "chars": 8,
+        "start": 16.36
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091435.7376878
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S3",
+        "chars": 6,
+        "start": 16.88
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091435.8586955
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S3",
+        "chars": 2,
+        "start": 17.08
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091436.0064278
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S3",
+        "chars": 10,
+        "start": 17.24
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091436.1727653
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S3",
+        "chars": 5,
+        "start": 17.88
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091436.367858
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S3",
+        "chars": 4,
+        "start": 18.2
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091436.5143275
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S3",
+        "chars": 7,
+        "start": 18.48
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091436.6325064
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S3",
+        "chars": 13,
+        "start": 18.76
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091436.954267
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S3",
+        "chars": 2,
+        "start": 19.84
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091437.1486502
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S3",
+        "chars": 8,
+        "start": 19.96
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091437.2526248
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S3",
+        "chars": 10,
+        "start": 20.32
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091437.577588
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S3",
+        "chars": 5,
+        "start": 20.96
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091437.771165
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S3",
+        "chars": 9,
+        "start": 21.6
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091437.9199011
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S3",
+        "chars": 8,
+        "start": 21.88
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091438.0776138
+    },
+    {
+      "agent": "transcription",
+      "action": "rt_pass_complete",
+      "data": {
+        "utterances": 49,
+        "speakers": 3,
+        "wall_sec": 9.77
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091438.1347706
+    },
+    {
+      "agent": "transcription",
+      "action": "batch_pass_start",
+      "data": {
+        "sentiment": true,
+        "summary": true,
+        "topics": true
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091438.2400947
+    },
+    {
+      "agent": "transcription",
+      "action": "sentiment_applied",
+      "data": {
+        "segments": 34,
+        "tagged_utterances": 8
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091448.6954954
+    },
+    {
+      "agent": "transcription",
+      "action": "summary_received",
+      "data": {
+        "chars": 310
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091448.6955776
+    },
+    {
+      "agent": "transcription",
+      "action": "topics_detected",
+      "data": {
+        "topics": [
+          "News & Politics"
+        ]
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091448.6956112
+    },
+    {
+      "agent": "transcription",
+      "action": "batch_pass_complete",
+      "data": {
+        "wall_sec": 10.56
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091448.695681
+    },
+    {
+      "agent": "council",
+      "action": "transcription_done",
+      "data": {
+        "utterances": 49,
+        "speakers": 3,
+        "visual_context": false
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091448.6973147
+    },
+    {
+      "agent": "prosecution",
+      "action": "session_start",
+      "data": {
+        "region": "us",
+        "vertical": "police"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091449.1923287
+    },
+    {
+      "agent": "prosecution",
+      "action": "rule_pack_loaded",
+      "data": {
+        "rules": 20,
+        "version": "0.3"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091449.1925986
+    },
+    {
+      "agent": "prosecution",
+      "action": "prompt_built",
+      "data": {
+        "transcript_chars": 1518,
+        "rules_count": 20
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091449.1927822
+    },
+    {
+      "agent": "prosecution",
+      "action": "model_call",
+      "data": {
+        "model": "openai/gpt-oss-120b"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091449.192811
+    },
+    {
+      "agent": "prosecution",
+      "action": "call_gpt-oss-120b",
+      "data": {
+        "status": "ok"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091508.1495159
+    },
+    {
+      "agent": "prosecution",
+      "action": "model_response",
+      "data": {
+        "model": "openai/gpt-oss-120b",
+        "chars": 2527
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091508.1496336
+    },
+    {
+      "agent": "prosecution",
+      "action": "violations_parsed",
+      "data": {
+        "count": 4
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091508.149716
+    },
+    {
+      "agent": "prosecution",
+      "action": "session_complete",
+      "data": {
+        "violations": 4,
+        "verdict": "violations_found"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091508.1497838
+    },
+    {
+      "agent": "council",
+      "action": "prosecution_done",
+      "data": {
+        "violations": 4,
+        "verdict": "violations_found"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091508.1499104
+    },
+    {
+      "agent": "defense",
+      "action": "session_start",
+      "data": {
+        "region": "us",
+        "vertical": "police"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091508.1548102
+    },
+    {
+      "agent": "defense",
+      "action": "rule_pack_loaded",
+      "data": {
+        "rules": 20,
+        "violations_to_rebut": 4
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091508.1550696
+    },
+    {
+      "agent": "defense",
+      "action": "prompt_built",
+      "data": {
+        "transcript_chars": 1518,
+        "violations_count": 4
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091508.1552253
+    },
+    {
+      "agent": "defense",
+      "action": "call_gemma-4-31B",
+      "data": {
+        "status": "ok"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091540.2856297
+    },
+    {
+      "agent": "defense",
+      "action": "model_response",
+      "data": {
+        "model": "google/gemma-4-31B-it",
+        "chars": 2224
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091540.2857485
+    },
+    {
+      "agent": "defense",
+      "action": "rebuttals_parsed",
+      "data": {
+        "count": 4
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091540.2859468
+    },
+    {
+      "agent": "defense",
+      "action": "session_complete",
+      "data": {
+        "rebuttals": 4
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091540.286029
+    },
+    {
+      "agent": "council",
+      "action": "defense_done",
+      "data": {
+        "rebuttals": 4
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091540.2861605
+    },
+    {
+      "agent": "judge",
+      "action": "session_start",
+      "data": {
+        "region": "us",
+        "vertical": "police"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091541.037402
+    },
+    {
+      "agent": "judge",
+      "action": "prompt_built",
+      "data": {
+        "transcript_chars": 1518,
+        "violations": 4,
+        "rebuttals": 4
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091541.0375853
+    },
+    {
+      "agent": "judge",
+      "action": "call_gemini-3.1-pro",
+      "data": {
+        "status": "ok"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091570.8580022
+    },
+    {
+      "agent": "judge",
+      "action": "model_response",
+      "data": {
+        "model": "gemini-3.1-pro-preview",
+        "chars": 2826
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091570.8580875
+    },
+    {
+      "agent": "judge",
+      "action": "rulings_parsed",
+      "data": {
+        "count": 4
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091570.8581653
+    },
+    {
+      "agent": "judge",
+      "action": "session_complete",
+      "data": {
+        "overall_verdict": "mixed",
+        "rulings": 4
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091570.8582346
+    },
+    {
+      "agent": "council",
+      "action": "judge_done",
+      "data": {
+        "overall_verdict": "mixed",
+        "overall_severity": "low",
+        "rulings": 4
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091570.8583324
+    },
+    {
+      "agent": "council",
+      "action": "pipeline_complete",
+      "data": {
+        "wall_sec": 142.65,
+        "status": "ok"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779091570.858367
+    }
+  ],
+  "status": "ok",
+  "error": null
+}

@@ -394,3 +394,213 @@ def council_list(session: Session = Depends(get_session)):
         }
         for j in rows
     ]
+
+
+# ---------------------------------------------------------------------------
+# LIVE REPLAY — Server-Sent Events
+# ---------------------------------------------------------------------------
+# Streams a precomputed session.json back to the frontend, replaying events
+# in real time according to their original "t" timestamps. The frontend can
+# attach to GET /api/live/replay/{session_id} as an EventSource and receive
+# utterance / rapid_alert / deep_scan_* / verdict_update events live.
+# ---------------------------------------------------------------------------
+
+import json as _sse_json
+import os as _sse_os
+from fastapi.responses import StreamingResponse as _StreamingResponse
+
+LIVE_DIR = Path("results/live")
+
+
+@app.get("/api/live/sessions")
+async def list_live_sessions():
+    """List all precomputed live sessions available for replay."""
+    if not LIVE_DIR.exists():
+        return {"sessions": []}
+    sessions = []
+    for p in sorted(LIVE_DIR.glob("*_session.json")):
+        try:
+            d = _sse_json.loads(p.read_text())
+            stats = d.get("stats", {})
+            fv = d.get("final_verdict") or {}
+            sessions.append({
+                "session_id": d.get("session_id"),
+                "region": d.get("region"),
+                "file": p.name,
+                "size_bytes": p.stat().st_size,
+                "utterances": stats.get("total_utterances"),
+                "rapid_alerts": stats.get("rapid_alerts"),
+                "deep_violations": stats.get("deep_violations"),
+                "rebuttals": stats.get("rebuttals"),
+                "final_verdict": fv.get("overall_verdict"),
+                "final_severity": fv.get("overall_severity"),
+                "headline": fv.get("headline"),
+            })
+        except Exception as e:
+            sessions.append({"file": p.name, "error": str(e)})
+    return {"sessions": sessions}
+
+
+@app.get("/api/live/replay/{session_id}")
+async def replay_session(session_id: str, speed: float = 1.0, real_time: bool = True):
+    """
+    Stream a precomputed session as SSE.
+
+    Query params:
+        speed     : playback multiplier (1.0 = real time, 4.0 = 4x faster). Default 1.0.
+        real_time : if False, dump all events back-to-back (good for fast demos
+                    and unit testing the frontend). Default True.
+
+    Event format:
+        event: <kind>
+        data: <json>
+
+    Kinds emitted: session_start, utterance, rapid_alert, router_skip,
+    deep_scan_started, deep_scan_completed, verdict_update, session_end.
+    """
+    path = LIVE_DIR / f"{session_id}_session.json"
+    if not path.exists():
+        raise HTTPException(404, f"session not found: {session_id}")
+
+    try:
+        data = _sse_json.loads(path.read_text())
+    except Exception as e:
+        raise HTTPException(500, f"failed to parse session: {e}")
+
+    events = data.get("events", []) or []
+    # Sort by t just in case
+    events = sorted(events, key=lambda e: e.get("t", 0.0))
+
+    async def gen():
+        # session_start envelope
+        start_payload = {
+            "session_id": data.get("session_id"),
+            "region": data.get("region"),
+            "vertical": data.get("vertical"),
+            "n_events": len(events),
+            "stats": data.get("stats", {}),
+        }
+        yield f"event: session_start\ndata: {_sse_json.dumps(start_payload)}\n\n"
+
+        last_t = 0.0
+        wall_start = asyncio.get_event_loop().time()
+
+        for evt in events:
+            t = float(evt.get("t", 0.0))
+
+            if real_time and speed > 0:
+                # Pace events to their original timestamps (scaled by speed)
+                target_wall = wall_start + (t / max(speed, 0.01))
+                now = asyncio.get_event_loop().time()
+                delay = target_wall - now
+                if delay > 0:
+                    await asyncio.sleep(min(delay, 30.0))  # cap at 30s safeguard
+
+            kind = evt.get("kind", "event")
+            payload = _sse_json.dumps(evt, ensure_ascii=False)
+            yield f"event: {kind}\ndata: {payload}\n\n"
+            last_t = t
+
+        # Final verdict envelope (frontend convenience — same as last verdict_update)
+        final = data.get("final_verdict")
+        if final:
+            yield f"event: final_verdict\ndata: {_sse_json.dumps(final, ensure_ascii=False)}\n\n"
+
+        end_payload = {
+            "session_id": data.get("session_id"),
+            "last_t": last_t,
+            "n_events_emitted": len(events),
+        }
+        yield f"event: session_end\ndata: {_sse_json.dumps(end_payload)}\n\n"
+
+    headers = {
+        "Cache-Control": "no-cache",
+        "X-Accel-Buffering": "no",  # disable nginx/caddy buffering
+        "Connection": "keep-alive",
+    }
+    return _StreamingResponse(gen(), media_type="text/event-stream", headers=headers)
+
+
+# ---------------------------------------------------------------------------
+# LIVE REPLAY — Server-Sent Events
+# ---------------------------------------------------------------------------
+import json as _sse_json
+from fastapi.responses import StreamingResponse as _StreamingResponse
+
+LIVE_DIR = Path("results/live")
+
+
+@app.get("/api/live/sessions")
+async def list_live_sessions():
+    """List all precomputed live sessions available for replay."""
+    if not LIVE_DIR.exists():
+        return {"sessions": []}
+    sessions = []
+    for p in sorted(LIVE_DIR.glob("*_session.json")):
+        try:
+            d = _sse_json.loads(p.read_text())
+            stats = d.get("stats", {})
+            fv = d.get("final_verdict") or {}
+            sessions.append({
+                "session_id": d.get("session_id"),
+                "region": d.get("region"),
+                "file": p.name,
+                "size_bytes": p.stat().st_size,
+                "utterances": stats.get("total_utterances"),
+                "rapid_alerts": stats.get("rapid_alerts"),
+                "deep_violations": stats.get("deep_violations"),
+                "rebuttals": stats.get("rebuttals"),
+                "final_verdict": fv.get("overall_verdict"),
+                "final_severity": fv.get("overall_severity"),
+                "headline": fv.get("headline"),
+            })
+        except Exception as e:
+            sessions.append({"file": p.name, "error": str(e)})
+    return {"sessions": sessions}
+
+
+@app.get("/api/live/replay/{session_id}")
+async def replay_session(session_id: str, speed: float = 1.0, real_time: bool = True):
+    """Stream a precomputed session as Server-Sent Events."""
+    path = LIVE_DIR / f"{session_id}_session.json"
+    if not path.exists():
+        raise HTTPException(404, f"session not found: {session_id}")
+    try:
+        data = _sse_json.loads(path.read_text())
+    except Exception as e:
+        raise HTTPException(500, f"failed to parse session: {e}")
+
+    events = sorted(data.get("events", []) or [], key=lambda e: e.get("t", 0.0))
+
+    async def gen():
+        start_payload = {
+            "session_id": data.get("session_id"),
+            "region": data.get("region"),
+            "vertical": data.get("vertical"),
+            "n_events": len(events),
+            "stats": data.get("stats", {}),
+        }
+        yield f"event: session_start\ndata: {_sse_json.dumps(start_payload)}\n\n"
+
+        last_t = 0.0
+        wall_start = asyncio.get_event_loop().time()
+        for evt in events:
+            t = float(evt.get("t", 0.0))
+            if real_time and speed > 0:
+                target_wall = wall_start + (t / max(speed, 0.01))
+                now = asyncio.get_event_loop().time()
+                delay = target_wall - now
+                if delay > 0:
+                    await asyncio.sleep(min(delay, 30.0))
+            kind = evt.get("kind", "event")
+            payload = _sse_json.dumps(evt, ensure_ascii=False)
+            yield f"event: {kind}\ndata: {payload}\n\n"
+            last_t = t
+
+        final = data.get("final_verdict")
+        if final:
+            yield f"event: final_verdict\ndata: {_sse_json.dumps(final, ensure_ascii=False)}\n\n"
+        yield f"event: session_end\ndata: {_sse_json.dumps({'session_id': data.get('session_id'), 'last_t': last_t, 'n_events_emitted': len(events)})}\n\n"
+
+    headers = {"Cache-Control": "no-cache", "X-Accel-Buffering": "no", "Connection": "keep-alive"}
+    return _StreamingResponse(gen(), media_type="text/event-stream", headers=headers)

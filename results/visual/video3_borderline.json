@@ -1,0 +1,59 @@
+{
+  "video_path": "recordings/video3_borderline.mp4",
+  "duration_sec": 58.688,
+  "subjects_visible": 1,
+  "officers_visible": 2,
+  "environment": "residential street",
+  "restraints_visible": false,
+  "restraints_timing": null,
+  "weapons_drawn_by_officer": false,
+  "weapon_type": null,
+  "subject_armed": false,
+  "force_observed": true,
+  "force_description": "Officer lunges at the subject and initiates physical contact at the end of the video.",
+  "injuries_visible": false,
+  "subject_compliance": "mixed",
+  "officer_misconduct_indicators": [
+    "Aggressive posturing",
+    "Use of profanity",
+    "Arrest potentially in retaliation for filming/First Amendment activity"
+  ],
+  "citizen_violation_indicators": [
+    "Following officers during an active scene (potential interference)"
+  ],
+  "key_moments": [
+    {
+      "t_seconds": 0.0,
+      "description": "Officer aggressively warns the subject to stop following them or face arrest.",
+      "significance": "concerning"
+    },
+    {
+      "t_seconds": 15.0,
+      "description": "Subject questions a sergeant about their presence and jurisdiction.",
+      "significance": "neutral"
+    },
+    {
+      "t_seconds": 29.0,
+      "description": "Officer yells at the subject to go into her house.",
+      "significance": "concerning"
+    },
+    {
+      "t_seconds": 37.0,
+      "description": "Officer uses profanity and tells the subject to leave or be arrested.",
+      "significance": "concerning"
+    },
+    {
+      "t_seconds": 41.0,
+      "description": "Officer rapidly approaches the subject, repeatedly threatening arrest.",
+      "significance": "concerning"
+    },
+    {
+      "t_seconds": 56.0,
+      "description": "Officer lunges at the subject, ordering hands behind back, initiating physical contact.",
+      "significance": "concerning"
+    }
+  ],
+  "summary": "A citizen films police officers in her neighborhood, questioning their presence. One officer becomes highly agitated, repeatedly threatening arrest and using profanity while demanding she go inside. The video ends with the officer aggressively lunging at the citizen to initiate an arrest.",
+  "model_used": "gemini-3.1-pro-preview",
+  "latency_ms": 26570.0
+}

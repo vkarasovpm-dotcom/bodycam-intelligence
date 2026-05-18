@@ -1,0 +1,4451 @@
+{
+  "audio_file": "recordings/video2_violation.mp4",
+  "region": "us",
+  "vertical": "police",
+  "duration_sec": 620.9480625,
+  "wall_sec": 217.59,
+  "transcription": {
+    "language": "en",
+    "target_language": null,
+    "utterances": [
+      {
+        "speaker": "S1",
+        "text": "Uh.",
+        "start": 32.64,
+        "end": 32.96,
+        "translation": null,
+        "sentiment": "neutral",
+        "confidence": 0.855
+      },
+      {
+        "speaker": "S1",
+        "text": "I've been a.",
+        "start": 33.36,
+        "end": 33.68,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.745
+      },
+      {
+        "speaker": "S1",
+        "text": "Put one on",
+        "start": 34.4,
+        "end": 34.88,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.8666666666666667
+      },
+      {
+        "speaker": "S1",
+        "text": "him.",
+        "start": 34.88,
+        "end": 35.4,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "All right.",
+        "start": 38.44,
+        "end": 38.76,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.9066666666666666
+      },
+      {
+        "speaker": "S1",
+        "text": "Huh.",
+        "start": 40.28,
+        "end": 40.52,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.745
+      },
+      {
+        "speaker": "S1",
+        "text": "I don't know.",
+        "start": 41.44,
+        "end": 41.96,
+        "translation": null,
+        "sentiment": "negative",
+        "confidence": 0.895
+      },
+      {
+        "speaker": "S1",
+        "text": "What? I got",
+        "start": 42.96,
+        "end": 43.4,
+        "translation": null,
+        "sentiment": "neutral",
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "all this",
+        "start": 43.4,
+        "end": 43.72,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "out of the",
+        "start": 43.72,
+        "end": 44.2,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.9933333333333333
+      },
+      {
+        "speaker": "S1",
+        "text": "center",
+        "start": 44.24,
+        "end": 44.48,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.79
+      },
+      {
+        "speaker": "S1",
+        "text": "console",
+        "start": 44.48,
+        "end": 44.88,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": ", hidden",
+        "start": 44.96,
+        "end": 45.24,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "under",
+        "start": 45.24,
+        "end": 45.44,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "here.",
+        "start": 45.44,
+        "end": 45.72,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "I don't",
+        "start": 49.6,
+        "end": 49.88,
+        "translation": null,
+        "sentiment": "negative",
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "know what",
+        "start": 49.92,
+        "end": 50.28,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "this",
+        "start": 50.28,
+        "end": 50.48,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "is. Kind",
+        "start": 50.48,
+        "end": 51.04,
+        "translation": null,
+        "sentiment": "negative",
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "of looks",
+        "start": 51.12,
+        "end": 51.36,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "like a",
+        "start": 51.36,
+        "end": 51.76,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "carfentanyl.",
+        "start": 51.8,
+        "end": 52.56,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "Yeah,",
+        "start": 52.88,
+        "end": 53.44,
+        "translation": null,
+        "sentiment": "negative",
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "like that.",
+        "start": 53.52,
+        "end": 53.84,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "Great.",
+        "start": 53.84,
+        "end": 54.2,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.76
+      },
+      {
+        "speaker": "S1",
+        "text": "It's",
+        "start": 54.8,
+        "end": 54.96,
+        "translation": null,
+        "sentiment": "negative",
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "like",
+        "start": 54.96,
+        "end": 55.16,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "gray",
+        "start": 55.2,
+        "end": 55.52,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.81
+      },
+      {
+        "speaker": "S1",
+        "text": "death.",
+        "start": 55.56,
+        "end": 55.96,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "Here, you",
+        "start": 56.64,
+        "end": 56.96,
+        "translation": null,
+        "sentiment": "negative",
+        "confidence": 0.9766666666666667
+      },
+      {
+        "speaker": "S1",
+        "text": "got",
+        "start": 56.96,
+        "end": 57.32,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "meth.",
+        "start": 58.04,
+        "end": 58.68,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "Big old",
+        "start": 60.4,
+        "end": 60.76,
+        "translation": null,
+        "sentiment": "negative",
+        "confidence": 0.9299999999999999
+      },
+      {
+        "speaker": "S1",
+        "text": "meth",
+        "start": 60.76,
+        "end": 61.0,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "chunks",
+        "start": 61.0,
+        "end": 61.56,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": ". Heroin.",
+        "start": 62.04,
+        "end": 62.48,
+        "translation": null,
+        "sentiment": "neutral",
+        "confidence": 0.9966666666666667
+      },
+      {
+        "speaker": "S1",
+        "text": "In",
+        "start": 62.48,
+        "end": 62.76,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.47
+      },
+      {
+        "speaker": "S1",
+        "text": "a",
+        "start": 62.8,
+        "end": 62.96,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "funnel.",
+        "start": 62.96,
+        "end": 63.4,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.72
+      },
+      {
+        "speaker": "S1",
+        "text": "All right,",
+        "start": 64.32,
+        "end": 64.6,
+        "translation": null,
+        "sentiment": "positive",
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "I'll.",
+        "start": 64.6,
+        "end": 64.76,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.94
+      },
+      {
+        "speaker": "S1",
+        "text": "Know",
+        "start": 65.76,
+        "end": 66.04,
+        "translation": null,
+        "sentiment": "neutral",
+        "confidence": 0.5
+      },
+      {
+        "speaker": "S1",
+        "text": "he needs",
+        "start": 66.08,
+        "end": 66.52,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.985
+      },
+      {
+        "speaker": "S1",
+        "text": "full",
+        "start": 66.52,
+        "end": 66.72,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "search.",
+        "start": 66.72,
+        "end": 67.08,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "Full search?",
+        "start": 67.12,
+        "end": 67.56,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "Yeah,",
+        "start": 67.6,
+        "end": 67.84,
+        "translation": null,
+        "sentiment": "negative",
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "he's",
+        "start": 67.84,
+        "end": 68.08,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "clenching his butt.",
+        "start": 68.08,
+        "end": 68.68,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.9825
+      },
+      {
+        "speaker": "S1",
+        "text": "He's",
+        "start": 68.8,
+        "end": 68.96,
+        "translation": null,
+        "sentiment": "neutral",
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "already",
+        "start": 68.96,
+        "end": 69.24,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "searched him,",
+        "start": 69.24,
+        "end": 69.6,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "but he,",
+        "start": 69.6,
+        "end": 70.0,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "uh.",
+        "start": 70.04,
+        "end": 70.28,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.94
+      },
+      {
+        "speaker": "S1",
+        "text": "I think he's",
+        "start": 71.56,
+        "end": 71.92,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "got",
+        "start": 71.92,
+        "end": 72.04,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "something up.",
+        "start": 72.04,
+        "end": 72.68,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.9466666666666667
+      },
+      {
+        "speaker": "S1",
+        "text": "Car",
+        "start": 75.8,
+        "end": 76.08,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.59
+      },
+      {
+        "speaker": "S1",
+        "text": ".",
+        "start": 76.08,
+        "end": 76.08,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "Just one second.",
+        "start": 76.92,
+        "end": 77.68,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.9199999999999999
+      },
+      {
+        "speaker": "S2",
+        "text": "So I",
+        "start": 98.48,
+        "end": 98.72,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.845
+      },
+      {
+        "speaker": "S2",
+        "text": "asked him. Do you",
+        "start": 98.72,
+        "end": 99.28,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.992
+      },
+      {
+        "speaker": "S2",
+        "text": "have",
+        "start": 99.28,
+        "end": 99.4,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "anything on you?",
+        "start": 99.4,
+        "end": 99.96,
+        "translation": null,
+        "sentiment": "negative",
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "Hurt me?",
+        "start": 100.64,
+        "end": 100.92,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "Anything.",
+        "start": 100.92,
+        "end": 101.44,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.995
+      },
+      {
+        "speaker": "S2",
+        "text": "Anything.",
+        "start": 101.96,
+        "end": 102.44,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.815
+      },
+      {
+        "speaker": "S2",
+        "text": "In",
+        "start": 102.44,
+        "end": 102.52,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.84
+      },
+      {
+        "speaker": "S2",
+        "text": ".",
+        "start": 102.52,
+        "end": 102.52,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "You",
+        "start": 104.2,
+        "end": 104.28,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "got anything",
+        "start": 104.28,
+        "end": 104.68,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "on you?",
+        "start": 104.68,
+        "end": 104.92,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "Hurt me.",
+        "start": 106.4,
+        "end": 106.8,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.9033333333333333
+      },
+      {
+        "speaker": "S1",
+        "text": "Got anything?",
+        "start": 106.96,
+        "end": 107.48,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.9966666666666667
+      },
+      {
+        "speaker": "S1",
+        "text": "Concealed",
+        "start": 107.48,
+        "end": 107.84,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.76
+      },
+      {
+        "speaker": "S1",
+        "text": "inside",
+        "start": 107.84,
+        "end": 108.2,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": ". You",
+        "start": 108.2,
+        "end": 108.4,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "know",
+        "start": 108.44,
+        "end": 108.96,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": ".",
+        "start": 108.96,
+        "end": 108.96,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "Okay, let me search.",
+        "start": 125.84,
+        "end": 126.56,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.9516666666666667
+      },
+      {
+        "speaker": "S1",
+        "text": "You.",
+        "start": 126.56,
+        "end": 126.68,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.735
+      },
+      {
+        "speaker": "S1",
+        "text": "I know.",
+        "start": 139.76,
+        "end": 140.16,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.9933333333333333
+      },
+      {
+        "speaker": "S3",
+        "text": "Like there",
+        "start": 140.24,
+        "end": 140.6,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.6799999999999999
+      },
+      {
+        "speaker": "S3",
+        "text": ".",
+        "start": 140.6,
+        "end": 140.6,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "That",
+        "start": 145.16,
+        "end": 145.36,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.77
+      },
+      {
+        "speaker": "S1",
+        "text": "ain't your",
+        "start": 145.36,
+        "end": 145.64,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.765
+      },
+      {
+        "speaker": "S1",
+        "text": "underwear. Yeah.",
+        "start": 145.64,
+        "end": 146.72,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.96
+      },
+      {
+        "speaker": "S1",
+        "text": "All right,",
+        "start": 150.48,
+        "end": 150.76,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "listen,",
+        "start": 150.76,
+        "end": 151.04,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "Kyle.",
+        "start": 151.04,
+        "end": 151.32,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.7849999999999999
+      },
+      {
+        "speaker": "S1",
+        "text": "Any",
+        "start": 151.76,
+        "end": 151.96,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "questions? I gotta",
+        "start": 151.96,
+        "end": 152.48,
+        "translation": null,
+        "sentiment": "neutral",
+        "confidence": 0.895
+      },
+      {
+        "speaker": "S1",
+        "text": "read your",
+        "start": 152.52,
+        "end": 152.8,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "rights.",
+        "start": 152.8,
+        "end": 153.16,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "So you know what they",
+        "start": 153.52,
+        "end": 154.0,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.908
+      },
+      {
+        "speaker": "S1",
+        "text": "are. All",
+        "start": 154.0,
+        "end": 154.32,
+        "translation": null,
+        "sentiment": "negative",
+        "confidence": 0.9533333333333333
+      },
+      {
+        "speaker": "S1",
+        "text": "right.",
+        "start": 154.32,
+        "end": 154.64,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.9650000000000001
+      },
+      {
+        "speaker": "S1",
+        "text": "Just point",
+        "start": 155.0,
+        "end": 155.36,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.9450000000000001
+      },
+      {
+        "speaker": "S1",
+        "text": "entertain",
+        "start": 155.36,
+        "end": 155.76,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": ". You're not",
+        "start": 155.76,
+        "end": 156.04,
+        "translation": null,
+        "sentiment": "negative",
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "free to go.",
+        "start": 156.04,
+        "end": 156.4,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "Alright? You have",
+        "start": 156.4,
+        "end": 156.84,
+        "translation": null,
+        "sentiment": "neutral",
+        "confidence": 0.92
+      },
+      {
+        "speaker": "S1",
+        "text": "right to",
+        "start": 156.88,
+        "end": 157.08,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "remain",
+        "start": 157.08,
+        "end": 157.32,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "silent. Anything",
+        "start": 157.32,
+        "end": 157.96,
+        "translation": null,
+        "sentiment": "neutral",
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "you say",
+        "start": 157.96,
+        "end": 158.32,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "can and will",
+        "start": 158.32,
+        "end": 158.68,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "be used",
+        "start": 158.68,
+        "end": 158.92,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "against you in",
+        "start": 158.92,
+        "end": 159.36,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "a court of",
+        "start": 159.36,
+        "end": 159.68,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "law.",
+        "start": 159.68,
+        "end": 159.92,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "You have",
+        "start": 160.24,
+        "end": 160.48,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "the right to",
+        "start": 160.48,
+        "end": 160.8,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "talk to a",
+        "start": 160.8,
+        "end": 161.16,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "lawyer and",
+        "start": 161.16,
+        "end": 161.52,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.96
+      },
+      {
+        "speaker": "S1",
+        "text": "have him or her.",
+        "start": 161.52,
+        "end": 162.04,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "With you",
+        "start": 162.32,
+        "end": 162.56,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "while you're",
+        "start": 162.6,
+        "end": 162.84,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "being",
+        "start": 162.84,
+        "end": 163.12,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "questioned.",
+        "start": 163.12,
+        "end": 163.6,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "You",
+        "start": 163.84,
+        "end": 163.96,
+        "translation": null,
+        "sentiment": "negative",
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "cannot",
+        "start": 163.96,
+        "end": 164.24,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "afford to hire a",
+        "start": 164.24,
+        "end": 164.8,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "lawyer.",
+        "start": 164.8,
+        "end": 165.08,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "One will be appointed to represent",
+        "start": 165.08,
+        "end": 166.24,
+        "translation": null,
+        "sentiment": "neutral",
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "you before",
+        "start": 166.24,
+        "end": 166.56,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "any",
+        "start": 166.56,
+        "end": 166.72,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "questioning. If",
+        "start": 166.72,
+        "end": 167.28,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "you wish, you",
+        "start": 167.28,
+        "end": 167.68,
+        "translation": null,
+        "sentiment": "neutral",
+        "confidence": 0.9875
+      },
+      {
+        "speaker": "S1",
+        "text": "can",
+        "start": 167.68,
+        "end": 167.84,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "decide at any",
+        "start": 167.84,
+        "end": 168.36,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.98
+      },
+      {
+        "speaker": "S1",
+        "text": "time.",
+        "start": 168.36,
+        "end": 168.6,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "Exercise",
+        "start": 168.6,
+        "end": 169.08,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "your",
+        "start": 169.08,
+        "end": 169.32,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "rights and not",
+        "start": 169.32,
+        "end": 169.76,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "answer any",
+        "start": 169.76,
+        "end": 170.16,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "questions",
+        "start": 170.16,
+        "end": 170.48,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "or make",
+        "start": 170.48,
+        "end": 170.76,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "any",
+        "start": 170.76,
+        "end": 170.96,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "statements",
+        "start": 170.96,
+        "end": 171.52,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": ". Do you",
+        "start": 172.0,
+        "end": 172.2,
+        "translation": null,
+        "sentiment": "positive",
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "understand?",
+        "start": 172.2,
+        "end": 172.6,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "Each of these",
+        "start": 172.6,
+        "end": 173.04,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "rights over",
+        "start": 173.04,
+        "end": 173.44,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.8049999999999999
+      },
+      {
+        "speaker": "S1",
+        "text": "20th?",
+        "start": 173.44,
+        "end": 173.96,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.9299999999999999
+      },
+      {
+        "speaker": "S1",
+        "text": "Yes.",
+        "start": 174.0,
+        "end": 174.4,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "Okay.",
+        "start": 174.48,
+        "end": 174.92,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "All right. Have a",
+        "start": 175.16,
+        "end": 175.56,
+        "translation": null,
+        "sentiment": "neutral",
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "seat in the",
+        "start": 175.56,
+        "end": 175.88,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.9500000000000001
+      },
+      {
+        "speaker": "S1",
+        "text": "car.",
+        "start": 175.88,
+        "end": 176.24,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "I",
+        "start": 176.48,
+        "end": 176.56,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "got a bunch",
+        "start": 176.56,
+        "end": 177.0,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.9533333333333333
+      },
+      {
+        "speaker": "S1",
+        "text": "of",
+        "start": 177.0,
+        "end": 177.08,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "testing and stuff.",
+        "start": 177.08,
+        "end": 177.76,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S1",
+        "text": "I got the",
+        "start": 177.76,
+        "end": 178.08,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.82
+      },
+      {
+        "speaker": "S1",
+        "text": "new.",
+        "start": 178.08,
+        "end": 178.4,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.875
+      },
+      {
+        "speaker": "S2",
+        "text": "Is it going up for.",
+        "start": 189.92,
+        "end": 190.64,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.6849999999999999
+      },
+      {
+        "speaker": "S2",
+        "text": "You.",
+        "start": 190.64,
+        "end": 190.8,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.895
+      },
+      {
+        "speaker": "S2",
+        "text": "All",
+        "start": 192.08,
+        "end": 192.16,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.84
+      },
+      {
+        "speaker": "S2",
+        "text": "right,",
+        "start": 192.16,
+        "end": 192.28,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.95
+      },
+      {
+        "speaker": "S2",
+        "text": "give me a second.",
+        "start": 192.28,
+        "end": 192.88,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "I",
+        "start": 195.68,
+        "end": 195.76,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.67
+      },
+      {
+        "speaker": "S2",
+        "text": ".",
+        "start": 195.76,
+        "end": 195.76,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "Try to",
+        "start": 196.52,
+        "end": 196.84,
+        "translation": null,
+        "sentiment": "neutral",
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "stick your",
+        "start": 196.84,
+        "end": 197.16,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "face",
+        "start": 197.16,
+        "end": 197.44,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "close to",
+        "start": 197.44,
+        "end": 197.84,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "here, bro.",
+        "start": 197.84,
+        "end": 198.28,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.9825
+      },
+      {
+        "speaker": "S2",
+        "text": "That's the",
+        "start": 199.4,
+        "end": 199.72,
+        "translation": null,
+        "sentiment": "positive",
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "best I",
+        "start": 199.72,
+        "end": 200.0,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "can do,",
+        "start": 200.0,
+        "end": 200.32,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "man.",
+        "start": 200.36,
+        "end": 200.72,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 1.0
+      },
+      {
+        "speaker": "S2",
+        "text": "Oh.",
+        "start": 201.88,
+        "end": 202.2,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.775
+      },
+      {
+        "speaker": "S3",
+        "text": "I got off of",
+        "start": 202.52,
+        "end": 203.12,
+        "translation": null,
+        "sentiment": "neutral",
+        "confidence": 0.7875
+      },
+      {
+        "speaker": "S3",
+        "text": "211. Got",
+        "start": 203.12,
+        "end": 204.0,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.82
+      },
+      {
+        "speaker": "S3",
+        "text": "check.",
+        "start": 204.08,
+        "end": 204.48,
+        "translation": null,
+        "sentiment": null,
+        "confidence": 0.825
+      },
+      {
+        "speaker": "S2",
+        "text": "I'll try.",
+        "start": 207.44,
+        "end": 207.8,
+        "translation": null,
+        "sentiment": "positive",
+        "confidence": 0.9933333333333333
+      }
+    ],
+    "speakers": [
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "summary": "- Officers discovered suspected carfentanyl, meth, heroin, and drug paraphernalia (funnel) in a vehicle's center console.\n- Individual named Kyle was detained, read Miranda rights, and questioned about concealed items and responsibility for the vehicle.\n- Reference to another individual (possibly female) with a bag containing possible cocaine and tattoo supplies; transport and search procedures discussed among officers.",
+    "topics": [
+      "News & Politics"
+    ],
+    "raw_text": "[S1] Uh.\n[S1] I've been a.\n[S1] Put one on\n[S1] him.\n[S1] All right.\n[S1] Huh.\n[S1] I don't know.\n[S1] What? I got\n[S1] all this\n[S1] out of the\n[S1] center\n[S1] console\n[S1] , hidden\n[S1] under\n[S1] here.\n[S1] I don't\n[S1] know what\n[S1] this\n[S1] is. Kind\n[S1] of looks\n[S1] like a\n[S1] carfentanyl.\n[S1] Yeah,\n[S1] like that.\n[S1] Great.\n[S1] It's\n[S1] like\n[S1] gray\n[S1] death.\n[S1] Here, you\n[S1] got\n[S1] meth.\n[S1] Big old\n[S1] meth\n[S1] chunks\n[S1] . Heroin.\n[S1] In\n[S1] a\n[S1] funnel.\n[S1] All right,\n[S1] I'll.\n[S1] Know\n[S1] he needs\n[S1] full\n[S1] search.\n[S1] Full search?\n[S1] Yeah,\n[S1] he's\n[S1] clenching his butt.\n[S1] He's\n[S1] already\n[S1] searched him,\n[S1] but he,\n[S1] uh.\n[S1] I think he's\n[S1] got\n[S1] something up.\n[S1] Car\n[S1] .\n[S1] Just one second.\n[S2] So I\n[S2] asked him. Do you\n[S2] have\n[S2] anything on you?\n[S2] Hurt me?\n[S2] Anything.\n[S2] Anything.\n[S2] In\n[S2] .\n[S1] You\n[S1] got anything\n[S1] on you?\n[S1] Hurt me.\n[S1] Got anything?\n[S1] Concealed\n[S1] inside\n[S1] . You\n[S1] know\n[S1] .\n[S1] Okay, let me search.\n[S1] You.\n[S1] I know.\n[S3] Like there\n[S3] .\n[S1] That\n[S1] ain't your\n[S1] underwear. Yeah.\n[S1] All right,\n[S1] listen,\n[S1] Kyle.\n[S1] Any\n[S1] questions? I gotta\n[S1] read your\n[S1] rights.\n[S1] So you know what they\n[S1] are. All\n[S1] right.\n[S1] Just point\n[S1] entertain\n[S1] . You're not\n[S1] free to go.\n[S1] Alright? You have\n[S1] right to\n[S1] remain\n[S1] silent. Anything\n[S1] you say\n[S1] can and will\n[S1] be used\n[S1] against you in\n[S1] a court of\n[S1] law.\n[S1] You have\n[S1] the right to\n[S1] talk to a\n[S1] lawyer and\n[S1] have him or her.\n[S1] With you\n[S1] while you're\n[S1] being\n[S1] questioned.\n[S1] You\n[S1] cannot\n[S1] afford to hire a\n[S1] lawyer.\n[S1] One will be appointed to represent\n[S1] you before\n[S1] any\n[S1] questioning. If\n[S1] you wish, you\n[S1] can\n[S1] decide at any\n[S1] time.\n[S1] Exercise\n[S1] your\n[S1] rights and not\n[S1] answer any\n[S1] questions\n[S1] or make\n[S1] any\n[S1] statements\n[S1] . Do you\n[S1] understand?\n[S1] Each of these\n[S1] rights over\n[S1] 20th?\n[S1] Yes.\n[S1] Okay.\n[S1] All right. Have a\n[S1] seat in the\n[S1] car.\n[S1] I\n[S1] got a bunch\n[S1] of\n[S1] testing and stuff.\n[S1] I got the\n[S1] new.\n[S2] Is it going up for.\n[S2] You.\n[S2] All\n[S2] right,\n[S2] give me a second.\n[S2] I\n[S2] .\n[S2] Try to\n[S2] stick your\n[S2] face\n[S2] close to\n[S2] here, bro.\n[S2] That's the\n[S2] best I\n[S2] can do,\n[S2] man.\n[S2] Oh.\n[S3] I got off of\n[S3] 211. Got\n[S3] check.\n[S2] I'll try.",
+    "duration_sec": 620.9480625
+  },
+  "prosecution": {
+    "region": "us",
+    "vertical": "police",
+    "verdict": "violations_found",
+    "overall_severity": "high",
+    "violations": [
+      {
+        "rule_id": "US-5A-MIRANDA",
+        "title": "Fifth Amendment — Miranda Warning",
+        "source": "Miranda v. Arizona, 384 U.S. 436 (1966)",
+        "severity": "high",
+        "cited_utterances": [
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78
+        ],
+        "rationale": "Before informing Kyle of his Miranda rights (utterances 92‑110), the officer repeatedly asked him whether he possessed any items, weapons, or contraband (utterances 61‑78). These questions constitute custodial interrogation and therefore required a prior Miranda warning, which was not given.",
+        "confidence": 0.86
+      }
+    ],
+    "summary": "The officer conducted custodial interrogation regarding concealed contraband before administering a proper Miranda warning, violating the Fifth Amendment requirement.",
+    "model_used": "openai/gpt-oss-120b",
+    "trace": [
+      {
+        "agent": "prosecution",
+        "action": "session_start",
+        "data": {
+          "region": "us",
+          "vertical": "police"
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779085497.026352
+      },
+      {
+        "agent": "prosecution",
+        "action": "rule_pack_loaded",
+        "data": {
+          "rules": 20,
+          "version": "0.3"
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779085497.0265982
+      },
+      {
+        "agent": "prosecution",
+        "action": "prompt_built",
+        "data": {
+          "transcript_chars": 5707,
+          "rules_count": 20
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779085497.0268524
+      },
+      {
+        "agent": "prosecution",
+        "action": "model_call",
+        "data": {
+          "model": "openai/gpt-oss-120b"
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779085497.0268893
+      },
+      {
+        "agent": "prosecution",
+        "action": "call_gpt-oss-120b",
+        "data": {
+          "status": "ok"
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779085541.4923143
+      },
+      {
+        "agent": "prosecution",
+        "action": "model_response",
+        "data": {
+          "model": "openai/gpt-oss-120b",
+          "chars": 894
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779085541.4924366
+      },
+      {
+        "agent": "prosecution",
+        "action": "violations_parsed",
+        "data": {
+          "count": 1
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779085541.4924982
+      },
+      {
+        "agent": "prosecution",
+        "action": "session_complete",
+        "data": {
+          "violations": 1,
+          "verdict": "violations_found"
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779085541.4925663
+      }
+    ]
+  },
+  "defense": {
+    "region": "us",
+    "vertical": "police",
+    "overall_defense_summary": "The officers' inquiries were focused on immediate officer safety and the execution of a lawful search, not the elicitation of incriminating statements for prosecution. These questions fall under the public safety exception or are non-interrogatory in nature, as they pertain to the immediate physical search of the suspect.",
+    "rebuttals": [
+      {
+        "challenges_rule_id": "US-5A-MIRANDA",
+        "stance": "rebut",
+        "counter_argument": "The questions asked in utterances 61-78 were not 'interrogations' designed to elicit incriminating evidence of a crime, but were safety-related inquiries regarding weapons or items that could harm officers during a physical search. Under the public safety exception and general search protocols, asking if a subject has weapons or concealed items before a search is permissible without Miranda warnings.",
+        "counter_utterances": [
+          61,
+          63,
+          64,
+          70,
+          72,
+          74
+        ],
+        "proposed_severity_adjustment": "high → null",
+        "confidence": 0.85
+      }
+    ],
+    "model_used": "google/gemma-4-31B-it",
+    "trace": [
+      {
+        "agent": "defense",
+        "action": "session_start",
+        "data": {
+          "region": "us",
+          "vertical": "police"
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779085541.4977891
+      },
+      {
+        "agent": "defense",
+        "action": "rule_pack_loaded",
+        "data": {
+          "rules": 20,
+          "violations_to_rebut": 1
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779085541.4980757
+      },
+      {
+        "agent": "defense",
+        "action": "prompt_built",
+        "data": {
+          "transcript_chars": 5707,
+          "violations_count": 1
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779085541.4983544
+      },
+      {
+        "agent": "defense",
+        "action": "call_gemma-4-31B",
+        "data": {
+          "status": "ok"
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779085560.942735
+      },
+      {
+        "agent": "defense",
+        "action": "model_response",
+        "data": {
+          "model": "google/gemma-4-31B-it",
+          "chars": 1083
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779085560.9428656
+      },
+      {
+        "agent": "defense",
+        "action": "rebuttals_parsed",
+        "data": {
+          "count": 1
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779085560.9429226
+      },
+      {
+        "agent": "defense",
+        "action": "session_complete",
+        "data": {
+          "rebuttals": 1
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779085560.9430115
+      }
+    ]
+  },
+  "verdict": {
+    "region": "us",
+    "vertical": "police",
+    "overall_verdict": "officer_justified",
+    "overall_severity": "none",
+    "headline": "Officer's pre-search safety questions did not violate Miranda requirements.",
+    "summary": "The prosecution alleged that the officer violated the Fifth Amendment by asking the suspect about concealed items before reading Miranda rights. However, the transcript shows the officer specifically asked if the suspect had anything that could 'hurt' him immediately prior to a physical search. These questions fall under established officer safety exceptions and do not constitute an interrogation designed to elicit incriminating statements. The officer subsequently administered a full and proper Miranda warning before further questioning.",
+    "rulings": [
+      {
+        "rule_id": "US-5A-MIRANDA",
+        "title": "Fifth Amendment — Miranda Warning",
+        "verdict": "violation_dismissed",
+        "final_severity": "none",
+        "reasoning": "The utterances cited by the prosecution (61-78) clearly show the officers asking 'Do you have anything on you? Hurt me?' immediately before stating 'Okay, let me search you.' This is a standard, legally permissible safety inquiry prior to a physical search, not an interrogation designed to elicit testimonial evidence. Therefore, the defense successfully rebuts the allegation.",
+        "key_utterances": [
+          63,
+          64,
+          70,
+          71,
+          72,
+          79
+        ],
+        "prosecution_weight": 0.1,
+        "defense_weight": 0.9,
+        "confidence": 0.95
+      }
+    ],
+    "model_used": "gemini-3.1-pro-preview",
+    "trace": [
+      {
+        "agent": "judge",
+        "action": "session_start",
+        "data": {
+          "region": "us",
+          "vertical": "police"
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779085561.6656208
+      },
+      {
+        "agent": "judge",
+        "action": "prompt_built",
+        "data": {
+          "transcript_chars": 5707,
+          "violations": 1,
+          "rebuttals": 1
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779085561.665882
+      },
+      {
+        "agent": "judge",
+        "action": "call_gemini-3.1-pro",
+        "data": {
+          "status": "ok"
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779085573.2939994
+      },
+      {
+        "agent": "judge",
+        "action": "model_response",
+        "data": {
+          "model": "gemini-3.1-pro-preview",
+          "chars": 1468
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779085573.2940779
+      },
+      {
+        "agent": "judge",
+        "action": "rulings_parsed",
+        "data": {
+          "count": 1
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779085573.294144
+      },
+      {
+        "agent": "judge",
+        "action": "session_complete",
+        "data": {
+          "overall_verdict": "officer_justified",
+          "rulings": 1
+        },
+        "reasoning": null,
+        "video_timestamp": null,
+        "ts_unix": 1779085573.29421
+      }
+    ]
+  },
+  "trace": [
+    {
+      "agent": "council",
+      "action": "pipeline_start",
+      "data": {
+        "audio": "video2_violation.mp4",
+        "region": "us",
+        "vertical": "police"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085355.7057142
+    },
+    {
+      "agent": "transcription",
+      "action": "session_start",
+      "data": {
+        "file": "video2_violation.mp4",
+        "language": "en",
+        "target_language": null,
+        "translation": false,
+        "sentiment": true,
+        "summary": true,
+        "topics": true,
+        "realtime_factor": 8.0
+      },
+      "reasoning": "Hybrid pipeline: Speechmatics RT (diarization+translation+partials) + Batch (sentiment+summary+topics) — all 6 sponsor features in one job.",
+      "video_timestamp": null,
+      "ts_unix": 1779085355.7062132
+    },
+    {
+      "agent": "transcription",
+      "action": "audio_decoded",
+      "data": {
+        "bytes": 19870338,
+        "duration_sec": 620.95
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085356.5298545
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 3,
+        "start": 32.64
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085372.0828419
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 12,
+        "start": 33.36
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085372.4547563
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 10,
+        "start": 34.4
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085373.4261696
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 4,
+        "start": 34.88
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085373.632224
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 10,
+        "start": 38.44
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085375.4441345
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 4,
+        "start": 40.28
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085376.2600274
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 13,
+        "start": 41.44
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085376.9932866
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 11,
+        "start": 42.96
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085377.9383576
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 8,
+        "start": 43.4
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085378.1829925
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 10,
+        "start": 43.72
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085378.3507404
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 6,
+        "start": 44.24
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085378.5303063
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 7,
+        "start": 44.48
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085378.763656
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 8,
+        "start": 44.96
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085378.9002438
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 5,
+        "start": 45.24
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085379.1183228
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 5,
+        "start": 45.44
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085379.252963
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 7,
+        "start": 49.6
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085381.088338
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 9,
+        "start": 49.92
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085381.2702134
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 4,
+        "start": 50.28
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085381.4233615
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 8,
+        "start": 50.48
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085381.625564
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 8,
+        "start": 51.12
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085381.7636425
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 6,
+        "start": 51.36
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085381.9653647
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 12,
+        "start": 51.8
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085382.476837
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 5,
+        "start": 52.88
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085382.8582592
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 10,
+        "start": 53.52
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085383.0699463
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 6,
+        "start": 53.84
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085383.27037
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 4,
+        "start": 54.8
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085383.6968179
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 4,
+        "start": 54.96
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085383.9968398
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 4,
+        "start": 55.2
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085384.2258775
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 6,
+        "start": 55.56
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085384.375859
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 9,
+        "start": 56.64
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085384.9893584
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 3,
+        "start": 56.96
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085385.1246667
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 5,
+        "start": 58.04
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085385.7935965
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 7,
+        "start": 60.4
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085386.9833329
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 4,
+        "start": 60.76
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085387.2839236
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 6,
+        "start": 61.0
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085387.75676
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 9,
+        "start": 62.04
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085387.9893253
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 2,
+        "start": 62.48
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085388.425341
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 1,
+        "start": 62.8
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085388.6726737
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 7,
+        "start": 62.96
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085388.880002
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 10,
+        "start": 64.32
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085389.6524973
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 5,
+        "start": 64.6
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085389.8557456
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 4,
+        "start": 65.76
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085390.5650156
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 8,
+        "start": 66.08
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085390.7534726
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 4,
+        "start": 66.52
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085390.9606714
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 7,
+        "start": 66.72
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085391.1548793
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 12,
+        "start": 67.12
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085391.3693004
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 5,
+        "start": 67.6
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085391.543106
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 4,
+        "start": 67.84
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085391.799412
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 19,
+        "start": 68.08
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085391.9606078
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 4,
+        "start": 68.8
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085392.1957703
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 7,
+        "start": 68.96
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085392.3979218
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 13,
+        "start": 69.24
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085392.5553308
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 7,
+        "start": 69.6
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085392.7525234
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 3,
+        "start": 70.04
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085393.1570725
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 12,
+        "start": 71.56
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085393.6162627
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 3,
+        "start": 71.92
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085393.8064523
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 13,
+        "start": 72.04
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085393.988964
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 3,
+        "start": 75.8
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085395.771227
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 1,
+        "start": 76.08
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085396.04356
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 16,
+        "start": 76.92
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085396.630891
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 4,
+        "start": 98.48
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085407.6293597
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 17,
+        "start": 98.72
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085407.8288262
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 4,
+        "start": 99.28
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085408.0631058
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 16,
+        "start": 99.4
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085408.306771
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 8,
+        "start": 100.64
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085408.9791224
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 9,
+        "start": 100.92
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085409.184195
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 9,
+        "start": 101.96
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085409.5680141
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 2,
+        "start": 102.44
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085409.7555048
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 1,
+        "start": 102.52
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085409.9151874
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 3,
+        "start": 104.2
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085410.7431586
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 12,
+        "start": 104.28
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085410.9227498
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 7,
+        "start": 104.68
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085411.1754115
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 8,
+        "start": 106.4
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085412.2464743
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 13,
+        "start": 106.96
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085412.3745666
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 9,
+        "start": 107.48
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085412.7241137
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 6,
+        "start": 107.84
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085412.928636
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 5,
+        "start": 108.2
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085413.0660355
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 4,
+        "start": 108.44
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085413.2685585
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 1,
+        "start": 108.96
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085413.4500482
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 20,
+        "start": 125.84
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085422.0405128
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 4,
+        "start": 126.56
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085422.4090889
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 7,
+        "start": 139.76
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085430.0039124
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S3",
+        "chars": 10,
+        "start": 140.24
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085430.4443798
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S3",
+        "chars": 1,
+        "start": 140.6
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085430.6377666
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 4,
+        "start": 145.16
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085433.011729
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 10,
+        "start": 145.36
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085433.2105224
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 16,
+        "start": 145.64
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085433.62016
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 10,
+        "start": 150.48
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085435.7513518
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 7,
+        "start": 150.76
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085435.985903
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 5,
+        "start": 151.04
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085436.2242935
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 3,
+        "start": 151.76
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085436.6699085
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 18,
+        "start": 151.96
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085436.9119604
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 9,
+        "start": 152.52
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085437.0705624
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 7,
+        "start": 152.8
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085437.2530096
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 21,
+        "start": 153.52
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085437.6847212
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 8,
+        "start": 154.0
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085437.9222093
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 6,
+        "start": 154.32
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085438.124946
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 10,
+        "start": 155.0
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085438.6039505
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 9,
+        "start": 155.36
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085438.8190684
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 12,
+        "start": 155.76
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085439.042064
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 11,
+        "start": 156.04
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085439.2850468
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 17,
+        "start": 156.4
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085439.4601483
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 8,
+        "start": 156.88
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085439.6681085
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 6,
+        "start": 157.08
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085439.8211145
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 16,
+        "start": 157.32
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085440.040613
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 7,
+        "start": 157.96
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085440.2739048
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 12,
+        "start": 158.32
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085440.4758751
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 7,
+        "start": 158.68
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085440.6439211
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 14,
+        "start": 158.92
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085440.8580554
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 10,
+        "start": 159.36
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085441.023014
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 4,
+        "start": 159.68
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085441.2627525
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 8,
+        "start": 160.24
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085441.5036025
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 12,
+        "start": 160.48
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085441.7106457
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 9,
+        "start": 160.8
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085441.877782
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 10,
+        "start": 161.16
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085442.1293123
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 16,
+        "start": 161.52
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085442.3914409
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 8,
+        "start": 162.32
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085442.7695003
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 12,
+        "start": 162.6
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085442.9880507
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 5,
+        "start": 162.84
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085443.16336
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 11,
+        "start": 163.12
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085443.4331338
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 3,
+        "start": 163.84
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085443.6564243
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 6,
+        "start": 163.96
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085443.8557065
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 16,
+        "start": 164.24
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085444.0430331
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 7,
+        "start": 164.8
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085444.249093
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 34,
+        "start": 165.08
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085444.8574758
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 10,
+        "start": 166.24
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085445.0989916
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 3,
+        "start": 166.56
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085445.2916288
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 15,
+        "start": 166.72
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085445.5308802
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 13,
+        "start": 167.28
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085445.7228508
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 3,
+        "start": 167.68
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085445.8907466
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 13,
+        "start": 167.84
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085446.1058657
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 5,
+        "start": 168.36
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085446.3017964
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 8,
+        "start": 168.6
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085446.51307
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 4,
+        "start": 169.08
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085446.684358
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 14,
+        "start": 169.32
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085446.966495
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 10,
+        "start": 169.76
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085447.171537
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 9,
+        "start": 170.16
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085447.4127586
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 7,
+        "start": 170.48
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085447.6301217
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 3,
+        "start": 170.76
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085447.8678458
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 10,
+        "start": 170.96
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085448.083933
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 8,
+        "start": 172.0
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085448.4342268
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 11,
+        "start": 172.2
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085448.7192147
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 13,
+        "start": 172.6
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085448.945659
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 11,
+        "start": 173.04
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085449.1472635
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 5,
+        "start": 173.44
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085449.626219
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 4,
+        "start": 174.0
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085449.9095988
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 5,
+        "start": 174.48
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085450.369901
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 17,
+        "start": 175.16
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085450.6059122
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 11,
+        "start": 175.56
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085450.7731056
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 4,
+        "start": 175.88
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085451.0012455
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 1,
+        "start": 176.48
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085451.2372184
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 11,
+        "start": 176.56
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085451.4153025
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 2,
+        "start": 177.0
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085451.6088858
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 18,
+        "start": 177.08
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085451.837731
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 9,
+        "start": 177.76
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085452.063689
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S1",
+        "chars": 4,
+        "start": 178.08
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085452.467013
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 19,
+        "start": 189.92
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085458.3236685
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 4,
+        "start": 190.64
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085458.73438
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 3,
+        "start": 192.08
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085459.3007252
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 6,
+        "start": 192.16
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085459.5380757
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 17,
+        "start": 192.28
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085459.7205296
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 1,
+        "start": 195.68
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085461.107785
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 1,
+        "start": 195.76
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085461.252768
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 6,
+        "start": 196.52
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085461.65337
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 10,
+        "start": 196.84
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085461.797691
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 4,
+        "start": 197.16
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085461.9892247
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 8,
+        "start": 197.44
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085462.201714
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 10,
+        "start": 197.84
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085462.360869
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 10,
+        "start": 199.4
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085462.9747756
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 6,
+        "start": 199.72
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085463.1485114
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 7,
+        "start": 200.0
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085463.3111608
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 4,
+        "start": 200.36
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085463.461902
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 3,
+        "start": 201.88
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085464.1778853
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S3",
+        "chars": 12,
+        "start": 202.52
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085465.063954
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S3",
+        "chars": 8,
+        "start": 203.12
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085465.2911143
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S3",
+        "chars": 6,
+        "start": 204.08
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085465.4514601
+    },
+    {
+      "agent": "transcription",
+      "action": "utterance_finalized",
+      "data": {
+        "speaker": "S2",
+        "chars": 9,
+        "start": 207.44
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085467.3504481
+    },
+    {
+      "agent": "transcription",
+      "action": "rt_pass_complete",
+      "data": {
+        "utterances": 177,
+        "speakers": 3,
+        "wall_sec": 123.59
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085480.1167269
+    },
+    {
+      "agent": "transcription",
+      "action": "batch_pass_start",
+      "data": {
+        "sentiment": true,
+        "summary": true,
+        "topics": true
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085480.2133024
+    },
+    {
+      "agent": "transcription",
+      "action": "sentiment_applied",
+      "data": {
+        "segments": 76,
+        "tagged_utterances": 29
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085496.5143511
+    },
+    {
+      "agent": "transcription",
+      "action": "summary_received",
+      "data": {
+        "chars": 423
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085496.5144606
+    },
+    {
+      "agent": "transcription",
+      "action": "topics_detected",
+      "data": {
+        "topics": [
+          "News & Politics"
+        ]
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085496.5144966
+    },
+    {
+      "agent": "transcription",
+      "action": "batch_pass_complete",
+      "data": {
+        "wall_sec": 16.4
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085496.514653
+    },
+    {
+      "agent": "council",
+      "action": "transcription_done",
+      "data": {
+        "utterances": 177,
+        "speakers": 3
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085496.5183573
+    },
+    {
+      "agent": "prosecution",
+      "action": "session_start",
+      "data": {
+        "region": "us",
+        "vertical": "police"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085497.026352
+    },
+    {
+      "agent": "prosecution",
+      "action": "rule_pack_loaded",
+      "data": {
+        "rules": 20,
+        "version": "0.3"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085497.0265982
+    },
+    {
+      "agent": "prosecution",
+      "action": "prompt_built",
+      "data": {
+        "transcript_chars": 5707,
+        "rules_count": 20
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085497.0268524
+    },
+    {
+      "agent": "prosecution",
+      "action": "model_call",
+      "data": {
+        "model": "openai/gpt-oss-120b"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085497.0268893
+    },
+    {
+      "agent": "prosecution",
+      "action": "call_gpt-oss-120b",
+      "data": {
+        "status": "ok"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085541.4923143
+    },
+    {
+      "agent": "prosecution",
+      "action": "model_response",
+      "data": {
+        "model": "openai/gpt-oss-120b",
+        "chars": 894
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085541.4924366
+    },
+    {
+      "agent": "prosecution",
+      "action": "violations_parsed",
+      "data": {
+        "count": 1
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085541.4924982
+    },
+    {
+      "agent": "prosecution",
+      "action": "session_complete",
+      "data": {
+        "violations": 1,
+        "verdict": "violations_found"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085541.4925663
+    },
+    {
+      "agent": "council",
+      "action": "prosecution_done",
+      "data": {
+        "violations": 1,
+        "verdict": "violations_found"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085541.492682
+    },
+    {
+      "agent": "defense",
+      "action": "session_start",
+      "data": {
+        "region": "us",
+        "vertical": "police"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085541.4977891
+    },
+    {
+      "agent": "defense",
+      "action": "rule_pack_loaded",
+      "data": {
+        "rules": 20,
+        "violations_to_rebut": 1
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085541.4980757
+    },
+    {
+      "agent": "defense",
+      "action": "prompt_built",
+      "data": {
+        "transcript_chars": 5707,
+        "violations_count": 1
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085541.4983544
+    },
+    {
+      "agent": "defense",
+      "action": "call_gemma-4-31B",
+      "data": {
+        "status": "ok"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085560.942735
+    },
+    {
+      "agent": "defense",
+      "action": "model_response",
+      "data": {
+        "model": "google/gemma-4-31B-it",
+        "chars": 1083
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085560.9428656
+    },
+    {
+      "agent": "defense",
+      "action": "rebuttals_parsed",
+      "data": {
+        "count": 1
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085560.9429226
+    },
+    {
+      "agent": "defense",
+      "action": "session_complete",
+      "data": {
+        "rebuttals": 1
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085560.9430115
+    },
+    {
+      "agent": "council",
+      "action": "defense_done",
+      "data": {
+        "rebuttals": 1
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085560.9431417
+    },
+    {
+      "agent": "judge",
+      "action": "session_start",
+      "data": {
+        "region": "us",
+        "vertical": "police"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085561.6656208
+    },
+    {
+      "agent": "judge",
+      "action": "prompt_built",
+      "data": {
+        "transcript_chars": 5707,
+        "violations": 1,
+        "rebuttals": 1
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085561.665882
+    },
+    {
+      "agent": "judge",
+      "action": "call_gemini-3.1-pro",
+      "data": {
+        "status": "ok"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085573.2939994
+    },
+    {
+      "agent": "judge",
+      "action": "model_response",
+      "data": {
+        "model": "gemini-3.1-pro-preview",
+        "chars": 1468
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085573.2940779
+    },
+    {
+      "agent": "judge",
+      "action": "rulings_parsed",
+      "data": {
+        "count": 1
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085573.294144
+    },
+    {
+      "agent": "judge",
+      "action": "session_complete",
+      "data": {
+        "overall_verdict": "officer_justified",
+        "rulings": 1
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085573.29421
+    },
+    {
+      "agent": "council",
+      "action": "judge_done",
+      "data": {
+        "overall_verdict": "officer_justified",
+        "overall_severity": "none",
+        "rulings": 1
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085573.2942986
+    },
+    {
+      "agent": "council",
+      "action": "pipeline_complete",
+      "data": {
+        "wall_sec": 217.59,
+        "status": "ok"
+      },
+      "reasoning": null,
+      "video_timestamp": null,
+      "ts_unix": 1779085573.2943318
+    }
+  ],
+  "status": "ok",
+  "error": null
+}

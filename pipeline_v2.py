@@ -42,6 +42,48 @@ class CouncilReport:
         return asdict(self)
 
 
+
+def _maybe_run_vision(audio_path: Path, merged_trace) -> dict | None:
+    """If a sibling .mp4 exists for the audio, run VisualContextAgent.
+    Returns visual_context dict or None.
+    Controlled by env SENTINEL_VISION (default: "1" = on).
+    """
+    if os.environ.get("SENTINEL_VISION", "1") not in ("1", "true", "yes", "on"):
+        return None
+    # Look for a video sibling: same stem, .mp4
+    candidates = [
+        audio_path.with_suffix(".mp4"),
+        audio_path.parent / (audio_path.stem + ".mp4"),
+    ]
+    video_path = next((p for p in candidates if p.exists()), None)
+    if not video_path:
+        # If the audio path IS already a video, use it directly
+        if audio_path.suffix.lower() in (".mp4", ".mov", ".mkv"):
+            video_path = audio_path
+        else:
+            merged_trace.emit("council", "vision_skipped", data={"reason": "no_video_sibling"})
+            return None
+    try:
+        from agents.visual_context_agent import VisualContextAgent
+        vision_trace = Trace()
+        agent = VisualContextAgent(trace=vision_trace)
+        merged_trace.emit("council", "vision_start", data={"video": str(video_path)})
+        ctx = agent.run(str(video_path))
+        for ev in vision_trace.to_list():
+            merged_trace._events.append(_dict_to_event(ev))
+        merged_trace.emit("council", "vision_done", data={
+            "force_observed": ctx.force_observed,
+            "restraints_visible": ctx.restraints_visible,
+            "weapons_drawn": ctx.weapons_drawn_by_officer,
+            "key_moments": len(ctx.key_moments),
+            "model": ctx.model_used,
+        })
+        return ctx.to_dict()
+    except Exception as e:
+        merged_trace.emit("council", "vision_failed", data={"error": str(e)[:300]})
+        return None
+
+
 def run_council(audio_path: str | Path,
                 region: str = "us",
                 vertical: str = "police",
@@ -69,8 +111,11 @@ def run_council(audio_path: str | Path,
         wall_sec=0.0,
     )
 
-    # ----- 1. Transcription -----
+    # ----- 1. Transcription + Vision (parallel via threads) -----
+    visual_context_dict: dict | None = None
     try:
+        from concurrent.futures import ThreadPoolExecutor
+
         trans_trace = Trace()
         trans_agent = TranscriptionAgent(
             trace=trans_trace,
@@ -80,14 +125,34 @@ def run_council(audio_path: str | Path,
             enable_topics=True,
             realtime_factor=8.0,
         )
-        trans_result = asyncio.run(trans_agent.transcribe_file(str(audio_path)))
+
+        def _run_transcription():
+            return asyncio.run(trans_agent.transcribe_file(str(audio_path)))
+
+        def _run_vision():
+            return _maybe_run_vision(audio_path, merged_trace)
+
+        with ThreadPoolExecutor(max_workers=2) as pool:
+            fut_trans = pool.submit(_run_transcription)
+            fut_vision = pool.submit(_run_vision)
+            trans_result = fut_trans.result()
+            try:
+                visual_context_dict = fut_vision.result()
+            except Exception as e:
+                merged_trace.emit("council", "vision_failed", data={"error": str(e)[:300]})
+                visual_context_dict = None
+
         report.transcription = asdict(trans_result)
+        # Inject visual_context into transcription dict so Prosecution/Defense/Judge see it
+        if visual_context_dict:
+            report.transcription["visual_context"] = visual_context_dict
         report.duration_sec = trans_result.duration_sec
         for ev in trans_trace.to_list():
             merged_trace._events.append(_dict_to_event(ev))
         merged_trace.emit("council", "transcription_done",
                           data={"utterances": len(trans_result.utterances),
-                                "speakers": len(trans_result.speakers)})
+                                "speakers": len(trans_result.speakers),
+                                "visual_context": bool(visual_context_dict)})
     except Exception as e:
         merged_trace.emit("council", "transcription_failed", data={"error": str(e)[:300]})
         report.status = "failed"

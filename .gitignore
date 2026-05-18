@@ -1,8 +1,33 @@
+# Secrets
 .env
+.env.local
+
+# OS
 .DS_Store
+
+# Python
 __pycache__/
-*.db
-recordings/
-venv/*.bak
+*.pyc
+*.pyo
+venv/
+*.egg-info/
+
+# Backups (any suffix)
+*.bak
+*.bak_*
 *.bak.*
-results/
+
+# Databases
+*.db
+*.sqlite
+
+# Large media (videos & raw audio)
+recordings/
+
+# Runtime — ignore logs and ad-hoc files, but keep demo JSONs
+results/*.log
+results/*.json
+results/standard/
+results/uvicorn.log
+
+# Keep curated demo data under results/{live,council,visual}/ — they're tracked

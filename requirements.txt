@@ -1,11 +1,33 @@
-mistralai==2.4.5
-speechmatics-batch
-google-genai>=2.0.1
+# --- Core API & async ---
 fastapi[standard]==0.136.1
+uvicorn==0.47.0
+starlette==1.0.0
+sse-starlette==3.4.4
+anyio==4.13.0
+aiofiles==25.1.0
+httpx
 pydantic==2.13.0
 pydantic-ai
 sqlmodel
-httpx
 python-dotenv
+
+# --- Speech-to-text ---
+speechmatics-batch
+# speechmatics realtime SDK (WebSocket streaming) — used in main.py
+speechmatics-python
+
+# --- LLM clients ---
+mistralai==2.4.5
+google-genai>=2.3.0
+google-auth==2.53.0
+google-cloud-storage
+
+# --- Retrieval (FAISS over rule packs) ---
+sentence-transformers==5.5.0
+faiss-cpu==1.13.2
+numpy==2.4.5
+tiktoken==0.13.0
+
+# --- Media ---
 ffmpeg-python
 yt-dlp

@@ -1,0 +1,109 @@
+2026-05-18 08:03:48,213 [sentinel.agent] [council] pipeline_start {'audio': 'video3_borderline.mp4', 'region': 'us', 'vertical': 'police'}
+2026-05-18 08:03:48,214 [sentinel.agent] [transcription] session_start {'file': 'video3_borderline.mp4', 'language': 'en', 'target_language': None, 'translation': False, 'sentiment': True, 'summary': True, 'topics': True, 'realtime_factor': 8.0}
+2026-05-18 08:03:48,365 [sentinel.agent] [transcription] audio_decoded {'bytes': 1878016, 'duration_sec': 58.69}
+2026-05-18 08:03:49,203 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 4, 'start': 0.84}
+2026-05-18 08:03:49,329 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 11, 'start': 1.12}
+2026-05-18 08:03:49,488 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 4, 'start': 1.68}
+2026-05-18 08:03:49,648 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 9, 'start': 1.8}
+2026-05-18 08:03:49,836 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 3, 'start': 2.28}
+2026-05-18 08:03:50,174 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 18, 'start': 2.8}
+2026-05-18 08:03:50,321 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 2, 'start': 3.48}
+2026-05-18 08:03:50,440 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 11, 'start': 3.56}
+2026-05-18 08:03:50,612 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 16, 'start': 4.2}
+2026-05-18 08:03:51,007 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 12, 'start': 4.6}
+2026-05-18 08:03:51,152 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S1', 'chars': 1, 'start': 5.32}
+2026-05-18 08:03:51,271 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 1, 'start': 5.96}
+2026-05-18 08:03:51,620 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 9, 'start': 6.0}
+2026-05-18 08:03:51,812 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 3, 'start': 6.48}
+2026-05-18 08:03:51,962 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 8, 'start': 6.84}
+2026-05-18 08:03:52,362 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 13, 'start': 7.44}
+2026-05-18 08:03:52,517 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 8, 'start': 8.0}
+2026-05-18 08:03:52,684 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 8, 'start': 8.44}
+2026-05-18 08:03:52,819 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 4, 'start': 8.84}
+2026-05-18 08:03:53,015 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 7, 'start': 9.28}
+2026-05-18 08:03:53,140 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 6, 'start': 9.68}
+2026-05-18 08:03:53,427 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 12, 'start': 10.0}
+2026-05-18 08:03:53,577 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 3, 'start': 10.6}
+2026-05-18 08:03:53,708 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 8, 'start': 10.84}
+2026-05-18 08:03:53,856 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 10, 'start': 11.28}
+2026-05-18 08:03:54,180 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 18, 'start': 11.76}
+2026-05-18 08:03:54,372 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 8, 'start': 12.44}
+2026-05-18 08:03:54,550 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 7, 'start': 12.84}
+2026-05-18 08:03:54,703 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 2, 'start': 13.2}
+2026-05-18 08:03:54,790 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 7, 'start': 13.32}
+2026-05-18 08:03:54,927 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 8, 'start': 13.76}
+2026-05-18 08:03:55,023 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 5, 'start': 14.32}
+2026-05-18 08:03:55,249 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S2', 'chars': 8, 'start': 14.64}
+2026-05-18 08:03:55,519 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S3', 'chars': 12, 'start': 15.4}
+2026-05-18 08:03:55,639 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S3', 'chars': 3, 'start': 16.04}
+2026-05-18 08:03:55,737 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S3', 'chars': 8, 'start': 16.36}
+2026-05-18 08:03:55,858 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S3', 'chars': 6, 'start': 16.88}
+2026-05-18 08:03:56,006 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S3', 'chars': 2, 'start': 17.08}
+2026-05-18 08:03:56,172 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S3', 'chars': 10, 'start': 17.24}
+2026-05-18 08:03:56,367 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S3', 'chars': 5, 'start': 17.88}
+2026-05-18 08:03:56,514 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S3', 'chars': 4, 'start': 18.2}
+2026-05-18 08:03:56,632 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S3', 'chars': 7, 'start': 18.48}
+2026-05-18 08:03:56,954 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S3', 'chars': 13, 'start': 18.76}
+2026-05-18 08:03:57,148 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S3', 'chars': 2, 'start': 19.84}
+2026-05-18 08:03:57,252 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S3', 'chars': 8, 'start': 19.96}
+2026-05-18 08:03:57,577 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S3', 'chars': 10, 'start': 20.32}
+2026-05-18 08:03:57,771 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S3', 'chars': 5, 'start': 20.96}
+2026-05-18 08:03:57,919 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S3', 'chars': 9, 'start': 21.6}
+2026-05-18 08:03:58,077 [sentinel.agent] [transcription] utterance_finalized {'speaker': 'S3', 'chars': 8, 'start': 21.88}
+2026-05-18 08:03:58,134 [sentinel.agent] [transcription] rt_pass_complete {'utterances': 49, 'speakers': 3, 'wall_sec': 9.77}
+2026-05-18 08:03:58,240 [sentinel.agent] [transcription] batch_pass_start {'sentiment': True, 'summary': True, 'topics': True}
+2026-05-18 08:04:08,656 [speechmatics.batch._async_client] Job completed (job_id=ogzwucpe3m, polls=3)
+2026-05-18 08:04:08,695 [sentinel.agent] [transcription] sentiment_applied {'segments': 34, 'tagged_utterances': 8}
+2026-05-18 08:04:08,695 [sentinel.agent] [transcription] summary_received {'chars': 310}
+2026-05-18 08:04:08,695 [sentinel.agent] [transcription] topics_detected {'topics': ['News & Politics']}
+2026-05-18 08:04:08,695 [sentinel.agent] [transcription] batch_pass_complete {'wall_sec': 10.56}
+2026-05-18 08:04:08,696 [sentinel.agent] [council] vision_failed {'error': "name 'os' is not defined"}
+2026-05-18 08:04:08,697 [sentinel.agent] [council] transcription_done {'utterances': 49, 'speakers': 3, 'visual_context': False}
+2026-05-18 08:04:09,192 [sentinel.agent] [prosecution] session_start {'region': 'us', 'vertical': 'police'}
+2026-05-18 08:04:09,192 [sentinel.agent] [prosecution] rule_pack_loaded {'rules': 20, 'version': '0.3'}
+2026-05-18 08:04:09,192 [sentinel.agent] [PROSECUTION] NO visual_block (transcription_result.visual_context=False)
+2026-05-18 08:04:09,192 [sentinel.agent] [prosecution] prompt_built {'transcript_chars': 1518, 'rules_count': 20}
+2026-05-18 08:04:09,192 [sentinel.agent] [prosecution] model_call {'model': 'openai/gpt-oss-120b'}
+2026-05-18 08:04:10,198 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:05:08,149 [sentinel.agent] [prosecution] call_gpt-oss-120b {'status': 'ok'}
+2026-05-18 08:05:08,149 [sentinel.agent] [prosecution] model_response {'model': 'openai/gpt-oss-120b', 'chars': 2527}
+2026-05-18 08:05:08,149 [sentinel.agent] [prosecution] violations_parsed {'count': 4}
+2026-05-18 08:05:08,149 [sentinel.agent] [prosecution] session_complete {'violations': 4, 'verdict': 'violations_found'}
+2026-05-18 08:05:08,149 [sentinel.agent] [council] prosecution_done {'violations': 4, 'verdict': 'violations_found'}
+2026-05-18 08:05:08,154 [sentinel.agent] [defense] session_start {'region': 'us', 'vertical': 'police'}
+2026-05-18 08:05:08,155 [sentinel.agent] [defense] rule_pack_loaded {'rules': 20, 'violations_to_rebut': 4}
+2026-05-18 08:05:08,155 [sentinel.agent] [defense] prompt_built {'transcript_chars': 1518, 'violations_count': 4}
+2026-05-18 08:05:08,937 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:05:40,285 [sentinel.agent] [defense] call_gemma-4-31B {'status': 'ok'}
+2026-05-18 08:05:40,285 [sentinel.agent] [defense] model_response {'model': 'google/gemma-4-31B-it', 'chars': 2224}
+2026-05-18 08:05:40,285 [sentinel.agent] [defense] rebuttals_parsed {'count': 4}
+2026-05-18 08:05:40,286 [sentinel.agent] [defense] session_complete {'rebuttals': 4}
+2026-05-18 08:05:40,286 [sentinel.agent] [council] defense_done {'rebuttals': 4}
+2026-05-18 08:05:41,022 [google_genai._api_client] The user provided project/location will take precedence over the Vertex AI API key from the environment variable.
+2026-05-18 08:05:41,037 [sentinel.agent] [judge] session_start {'region': 'us', 'vertical': 'police'}
+2026-05-18 08:05:41,037 [sentinel.agent] [judge] prompt_built {'transcript_chars': 1518, 'violations': 4, 'rebuttals': 4}
+2026-05-18 08:05:41,037 [google_genai.models] AFC is enabled with max remote calls: 10.
+2026-05-18 08:06:10,855 [httpx] HTTP Request: POST https://aiplatform.googleapis.com/v1beta1/projects/project-0620148a-da18-45ef-a21/locations/global/publishers/google/models/gemini-3.1-pro-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-18 08:06:10,858 [sentinel.agent] [judge] call_gemini-3.1-pro {'status': 'ok'}
+2026-05-18 08:06:10,858 [sentinel.agent] [judge] model_response {'model': 'gemini-3.1-pro-preview', 'chars': 2826}
+2026-05-18 08:06:10,858 [sentinel.agent] [judge] rulings_parsed {'count': 4}
+2026-05-18 08:06:10,858 [sentinel.agent] [judge] session_complete {'overall_verdict': 'mixed', 'rulings': 4}
+2026-05-18 08:06:10,858 [sentinel.agent] [council] judge_done {'overall_verdict': 'mixed', 'overall_severity': 'low', 'rulings': 4}
+2026-05-18 08:06:10,858 [sentinel.agent] [council] pipeline_complete {'wall_sec': 142.65, 'status': 'ok'}
+
+[council] Running on recordings/video3_borderline.mp4 (region=us, vertical=police)...
+
+
+======================================================================
+COUNCIL REPORT — video3_borderline.mp4
+======================================================================
+Status:           ok
+Duration:         58.7s
+Wall clock:       142.7s
+Prosecution:      4 violations, verdict=violations_found
+Defense:          4 rebuttals
+Judge:            mixed (severity=low)
+Headline:         Officer's commands restricted movement but did not constitute a seizure or explicit recording ban.
+
+Trace events:     85
+Saved to:         results/council/video3_borderline_council.json

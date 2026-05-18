@@ -20,6 +20,7 @@ from agents.base import (
     featherless_client,
     with_fallback,
     MODELS,
+    format_visual_context,
 )
 from agents.prosecution_agent import _format_transcript, _load_rule_pack
 
@@ -177,8 +178,12 @@ class DefenseAgent:
         transcript_text = _format_transcript(utterances)
         violations_text = _format_violations(violations)
         rules_text = _format_rules(pack["rules"])
+        visual_block = format_visual_context(transcription_result.get("visual_context")) if isinstance(transcription_result, dict) else ""
         user_prompt = _build_user_prompt(transcript_text, violations_text, rules_text,
                                          self.region, summary, pros_summary)
+        if visual_block:
+            user_prompt = visual_block + user_prompt
+            self.trace.emit("defense", "visual_context_injected", data={"chars": len(visual_block)})
         self.trace.emit("defense", "prompt_built",
                         data={"transcript_chars": len(transcript_text),
                               "violations_count": len(violations)})

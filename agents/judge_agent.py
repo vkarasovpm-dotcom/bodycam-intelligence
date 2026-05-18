@@ -15,7 +15,7 @@ import sys
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
 
-from agents.base import Trace, gemini_client, with_fallback, MODELS
+from agents.base import format_visual_context, Trace, gemini_client, with_fallback, MODELS
 from agents.prosecution_agent import _format_transcript
 
 
@@ -204,8 +204,12 @@ class JudgeAgent:
         transcript_text = _format_transcript(utterances)
         violations_text = _format_violations(violations)
         rebuttals_text = _format_rebuttals(rebuttals)
+        visual_block = format_visual_context(transcription_result.get("visual_context")) if isinstance(transcription_result, dict) else ""
         user_prompt = _build_user_prompt(transcript_text, violations_text, rebuttals_text,
                                          self.region, summary, pros_summary, def_summary)
+        if visual_block:
+            user_prompt = visual_block + user_prompt
+            self.trace.emit("judge", "visual_context_injected", data={"chars": len(visual_block)})
         self.trace.emit("judge", "prompt_built",
                         data={"transcript_chars": len(transcript_text),
                               "violations": len(violations),

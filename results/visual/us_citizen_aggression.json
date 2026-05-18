@@ -1,0 +1,57 @@
+{
+  "video_path": "recordings/us_citizen_aggression.mp4",
+  "duration_sec": 84.776054,
+  "subjects_visible": 4,
+  "officers_visible": 2,
+  "environment": "nighttime parking lot",
+  "restraints_visible": false,
+  "restraints_timing": null,
+  "weapons_drawn_by_officer": false,
+  "weapon_type": "null",
+  "subject_armed": false,
+  "force_observed": true,
+  "force_description": "Officer reaches into vehicle; driver accelerates, dragging officer.",
+  "injuries_visible": false,
+  "subject_compliance": "fleeing",
+  "officer_misconduct_indicators": [],
+  "citizen_violation_indicators": [
+    "fleeing police",
+    "reckless endangerment",
+    "dragging officer with vehicle"
+  ],
+  "key_moments": [
+    {
+      "t_seconds": 10.0,
+      "description": "Officer approaches vehicle and repeatedly orders driver to get out.",
+      "significance": "neutral"
+    },
+    {
+      "t_seconds": 24.0,
+      "description": "Officer reaches into the vehicle cabin while continuing to order the driver out.",
+      "significance": "neutral"
+    },
+    {
+      "t_seconds": 31.0,
+      "description": "Driver accelerates the vehicle while the officer is partially inside.",
+      "significance": "violation_indicator"
+    },
+    {
+      "t_seconds": 38.0,
+      "description": "Officer is dragged by the moving vehicle, yelling for the driver to stop.",
+      "significance": "concerning"
+    },
+    {
+      "t_seconds": 51.0,
+      "description": "Officer separates from the fleeing vehicle and falls to the ground.",
+      "significance": "neutral"
+    },
+    {
+      "t_seconds": 77.0,
+      "description": "Officer radios dispatch, reporting the vehicle fled with him on it and stating he is okay.",
+      "significance": "neutral"
+    }
+  ],
+  "summary": "An officer approaches a parked vehicle and orders the driver to exit. The driver refuses, and as the officer reaches into the vehicle, the driver accelerates. The officer is dragged a short distance before falling to the ground as the vehicle flees the scene.",
+  "model_used": "gemini-3.1-pro-preview",
+  "latency_ms": 30019.0
+}

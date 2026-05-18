@@ -1,0 +1,108 @@
+2026-05-18 08:16:30,643 [sentinel.agent] [replay_transcription] loaded 4 utterances from video3_borderline_council.json
+2026-05-18 08:16:32,314 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:16:33,730 [sentinel.agent] [router] classified {'stage': 'llm', 'classification': 'escalation', 'confidence': 0.95, 'latency_ms': 3087.1, 'query_rewrite': 'Officer issuing warning regarding prohibited surveillance or following behavior.'}
+2026-05-18 08:16:33,772 [faiss.loader] Loading faiss with AVX2 support.
+2026-05-18 08:16:33,812 [faiss.loader] Successfully loaded faiss with AVX2 support.
+2026-05-18 08:16:33,816 [sentinel.agent] [retrieval] index_loaded {'region': 'us', 'rules': 20, 'load_ms': 85.5}
+2026-05-18 08:16:37,065 [sentence_transformers.base.model] No device provided, using cpu
+2026-05-18 08:16:37,185 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-18 08:16:37,185 [huggingface_hub.utils._http] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-18 08:16:37,190 [httpx] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-18 08:16:37,286 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 08:16:37,291 [httpx] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-18 08:16:37,292 [sentence_transformers.base.model] Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-18 08:16:37,388 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 08:16:37,397 [httpx] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-18 08:16:37,498 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 08:16:37,503 [httpx] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-05-18 08:16:37,599 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 08:16:37,604 [httpx] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-18 08:16:37,701 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 08:16:37,710 [httpx] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-18 08:16:37,811 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-18 08:16:37,908 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 08:16:37,913 [httpx] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+[precompute] transcript : results/council/video3_borderline_council.json
+[precompute] session_id : us_video3
+[precompute] region     : us
+[precompute] output     : results/live/us_video3_session.json
+[precompute] skip_judge : False
+[precompute] skip_deep  : False
+[precompute] audio_file : recordings/video3_borderline.mp4
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 6259.43it/s]
+2026-05-18 08:16:38,099 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-18 08:16:38,232 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-18 08:16:38,352 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-18 08:16:38,453 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-18 08:16:38,551 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 08:16:38,557 [httpx] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-18 08:16:38,665 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 08:16:38,670 [httpx] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-18 08:16:38,768 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 08:16:38,773 [httpx] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-18 08:16:38,878 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 08:16:38,883 [httpx] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-18 08:16:38,985 [httpx] HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-18 08:16:39,085 [httpx] HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-18 08:16:39,211 [httpx] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 08:16:39,217 [httpx] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-18 08:16:39,458 [httpx] HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-05-18 08:16:39,476 [sentinel.agent] [retrieval] search {'region': 'us', 'query': 'Officer issuing warning regarding prohibited surveillance or following behavior.', 'top_k': 3, 'returned': 3, 'subject_filter': None, 'latency_ms': 5746.1, 'top_hit': 'US-5A-MIRANDA', 'top_score': 0.496}
+2026-05-18 08:16:39,477 [sentinel.agent] [rapid_prosecution] retrieved {'query': 'Officer issuing warning regarding prohibited surveillance or following behavior.', 'top_hits': [{'rule_id': 'US-5A-MIRANDA', 'score': 0.496}, {'rule_id': 'US-CIT-THREAT', 'score': 0.495}, {'rule_id': 'US-1A-RECORD', 'score': 0.484}]}
+2026-05-18 08:16:40,130 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:16:40,425 [sentinel.agent] [rapid_prosecution] no_alert {'raw_chars': 15}
+2026-05-18 08:16:40,694 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:16:41,624 [sentinel.agent] [router] classified {'stage': 'llm', 'classification': 'none', 'confidence': 0.95, 'latency_ms': 1199.1, 'query_rewrite': 'Citizen observing police activity from private residence'}
+2026-05-18 08:16:41,624 [sentinel.agent] [router] classified {'stage': 'keyword', 'classification': 'none', 'confidence': 0.75, 'latency_ms': 0.0, 'matched_keywords': []}
+2026-05-18 08:16:41,899 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:16:42,896 [sentinel.agent] [router] classified {'stage': 'llm', 'classification': 'none', 'confidence': 0.9, 'latency_ms': 1271.5, 'query_rewrite': 'Citizen questioning officer jurisdiction while recording police activity'}
+2026-05-18 08:16:43,838 [google_genai._api_client] The user provided project/location will take precedence over the Vertex AI API key from the environment variable.
+2026-05-18 08:16:43,858 [sentinel.pipeline_live] [us_video3] vision started on recordings/video3_borderline.mp4
+2026-05-18 08:16:43,858 [sentinel.agent] [vision] session_start {'video': 'recordings/video3_borderline.mp4'}
+2026-05-18 08:16:45,462 [sentinel.agent] [vision] gcs_cached {'uri': 'gs://sentinel-bodycam-0620148a/video3_borderline.mp4', 'size_mb': 4.2}
+2026-05-18 08:16:45,462 [google_genai.models] AFC is enabled with max remote calls: 10.
+2026-05-18 08:17:14,596 [httpx] HTTP Request: POST https://aiplatform.googleapis.com/v1beta1/projects/project-0620148a-da18-45ef-a21/locations/global/publishers/google/models/gemini-3.1-pro-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-18 08:17:14,597 [sentinel.agent] [vision] call_gemini-3.1-pro-preview {'status': 'ok'}
+2026-05-18 08:17:14,597 [sentinel.agent] [vision] model_response {'model': 'gemini-3.1-pro-preview', 'chars': 2065}
+2026-05-18 08:17:14,645 [sentinel.agent] [vision] session_complete {'model': 'gemini-3.1-pro-preview', 'force_observed': True, 'restraints_visible': False, 'weapons_drawn': False, 'key_moments': 6, 'wall_ms': 30787.0}
+2026-05-18 08:17:14,646 [sentinel.pipeline_live] [us_video3] vision done: force=True restraints=False
+2026-05-18 08:17:14,661 [sentinel.agent] [prosecution] session_start {'region': 'us', 'vertical': 'police'}
+2026-05-18 08:17:14,661 [sentinel.agent] [prosecution] rule_pack_loaded {'rules': 20, 'version': '0.3'}
+2026-05-18 08:17:14,662 [sentinel.agent] [prosecution] visual_context_injected {'chars': 1526}
+2026-05-18 08:17:14,662 [sentinel.agent] [prosecution] prompt_built {'transcript_chars': 531, 'rules_count': 20}
+2026-05-18 08:17:14,662 [sentinel.agent] [prosecution] model_call {'model': 'openai/gpt-oss-120b'}
+2026-05-18 08:17:15,396 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:18:01,816 [sentinel.agent] [prosecution] call_gpt-oss-120b {'status': 'ok'}
+2026-05-18 08:18:01,816 [sentinel.agent] [prosecution] model_response {'model': 'openai/gpt-oss-120b', 'chars': 1478}
+2026-05-18 08:18:01,816 [sentinel.agent] [prosecution] violations_parsed {'count': 2}
+2026-05-18 08:18:01,816 [sentinel.agent] [prosecution] session_complete {'violations': 2, 'verdict': 'violations_found'}
+2026-05-18 08:18:01,817 [sentinel.agent] [defense] session_start {'region': 'us', 'vertical': 'police'}
+2026-05-18 08:18:01,817 [sentinel.agent] [defense] rule_pack_loaded {'rules': 20, 'violations_to_rebut': 2}
+2026-05-18 08:18:01,817 [sentinel.agent] [defense] visual_context_injected {'chars': 1526}
+2026-05-18 08:18:01,817 [sentinel.agent] [defense] prompt_built {'transcript_chars': 531, 'violations_count': 2}
+2026-05-18 08:18:02,782 [httpx] HTTP Request: POST https://api.featherless.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 08:18:21,010 [sentinel.agent] [defense] call_gemma-4-31B {'status': 'ok'}
+2026-05-18 08:18:21,010 [sentinel.agent] [defense] model_response {'model': 'google/gemma-4-31B-it', 'chars': 1473}
+2026-05-18 08:18:21,011 [sentinel.agent] [defense] rebuttals_parsed {'count': 2}
+2026-05-18 08:18:21,011 [sentinel.agent] [defense] session_complete {'rebuttals': 2}
+2026-05-18 08:18:21,013 [google_genai._api_client] The user provided project/location will take precedence over the Vertex AI API key from the environment variable.
+2026-05-18 08:18:21,029 [sentinel.agent] [judge] session_start {'region': 'us', 'vertical': 'police'}
+2026-05-18 08:18:21,029 [sentinel.agent] [judge] visual_context_injected {'chars': 1526}
+2026-05-18 08:18:21,029 [sentinel.agent] [judge] prompt_built {'transcript_chars': 531, 'violations': 2, 'rebuttals': 2}
+2026-05-18 08:18:21,029 [google_genai.models] AFC is enabled with max remote calls: 10.
+2026-05-18 08:18:45,005 [httpx] HTTP Request: POST https://aiplatform.googleapis.com/v1beta1/projects/project-0620148a-da18-45ef-a21/locations/global/publishers/google/models/gemini-3.1-pro-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-18 08:18:45,006 [sentinel.agent] [judge] call_gemini-3.1-pro {'status': 'ok'}
+2026-05-18 08:18:45,006 [sentinel.agent] [judge] model_response {'model': 'gemini-3.1-pro-preview', 'chars': 2183}
+2026-05-18 08:18:45,007 [sentinel.agent] [judge] rulings_parsed {'count': 2}
+2026-05-18 08:18:45,007 [sentinel.agent] [judge] session_complete {'overall_verdict': 'officer_at_fault', 'rulings': 2}
+2026-05-18 08:18:45,007 [sentinel.pipeline_live] [us_video3] session saved → results/live/us_video3_session.json
+
+[precompute] DONE
+  utterances        : 4
+  rapid_alerts      : 0
+  deep_violations   : 2
+  rebuttals         : 2
+  verdict_snapshots : 1
+  saved to          : results/live/us_video3_session.json  (15,562 bytes)
