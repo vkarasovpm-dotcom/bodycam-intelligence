@@ -1,0 +1,283 @@
+{
+  "session_id": "us_video3",
+  "region": "us",
+  "vertical": "police",
+  "meta": {
+    "session_id": "us_video3",
+    "region": "us",
+    "vertical": "police",
+    "started_at": 1779169789.654434,
+    "transcript_path": "results/council/video3_borderline_council.json",
+    "total_utterances": 4
+  },
+  "rapid_alerts": [],
+  "visual_context": null,
+  "deep_violations": [
+    {
+      "rule_id": "US-4A-STOP",
+      "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
+      "source": "U.S. Const. amend. IV; Terry v. Ohio, 392 U.S. 1 (1968)",
+      "severity": "high",
+      "cited_utterances": [
+        0
+      ],
+      "rationale": "Officer S1 tells the individual \"Fair warning you keep following us. You're not allowed to follow,\" indicating a detention without stating any specific, articulable suspicion of criminal conduct, which is required for a lawful investigative stop.",
+      "confidence": 0.85
+    },
+    {
+      "rule_id": "US-1A-RECORD",
+      "title": "First Amendment — Right to Record Police",
+      "source": "U.S. Const. amend. I; Glik v. Cunniffe, 655 F.3d 78 (1st Cir. 2011); Fields v. City of Philadelphia, 862 F.3d 353 (3d Cir. 2017)",
+      "severity": "medium",
+      "cited_utterances": [
+        0,
+        3
+      ],
+      "rationale": "Officer S1’s admonition effectively attempts to prohibit the citizen from continuing to follow and record the police, infringing the protected right to document police actions in public.",
+      "confidence": 0.75
+    }
+  ],
+  "rebuttals": [
+    {
+      "challenges_rule_id": "US-4A-STOP",
+      "stance": "rebut",
+      "counter_argument": "A warning that a certain behavior (following officers) is not allowed does not automatically constitute a 'seizure' under the Fourth Amendment. The officer did not physically restrain the individual or command them to stop in their tracks, but rather issued a 'fair warning' about the nature of their conduct.",
+      "counter_utterances": [
+        0
+      ],
+      "proposed_severity_adjustment": "high → low",
+      "confidence": 0.7
+    },
+    {
+      "challenges_rule_id": "US-1A-RECORD",
+      "stance": "rebut",
+      "counter_argument": "The officer's statement 'You're not allowed to follow' refers to the physical act of following officers, not the act of recording. At no point in the transcript does the officer order the citizen to stop filming or attempt to seize the recording device.",
+      "counter_utterances": [
+        0,
+        3
+      ],
+      "proposed_severity_adjustment": "medium → null",
+      "confidence": 0.9
+    }
+  ],
+  "verdict_timeline": [
+    {
+      "at_t": 84.0504613959929,
+      "reason": "session_end",
+      "wall_ms": 20390,
+      "overall_verdict": "mixed",
+      "overall_severity": "low",
+      "headline": "Officer improperly restricted the citizen's movement to prevent observation, but did not effectuate a Fourth Amendment seizure.",
+      "summary": "The officer's command that the citizen was 'not allowed to follow' restricted the citizen's ability to observe and record police activity in a public park, infringing on First Amendment rights. However, the defense correctly notes that this command did not constitute a Fourth Amendment seizure, as the citizen was not detained or prevented from leaving. Therefore, the Fourth Amendment charge is dismissed, while the First Amendment charge is mitigated due to the lack of an explicit order to stop recording.",
+      "rulings": [
+        {
+          "rule_id": "US-4A-STOP",
+          "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "A Fourth Amendment seizure occurs when a reasonable person would not feel free to leave or terminate the encounter. The officer's command in utterance 0 not to follow the police does not constitute a detention; rather, it implicitly directs the citizen to go elsewhere. The defense successfully rebuts the claim of a seizure.",
+          "key_utterances": [
+            0
+          ],
+          "prosecution_weight": 0.2,
+          "defense_weight": 0.9,
+          "confidence": 0.95
+        },
+        {
+          "rule_id": "US-1A-RECORD",
+          "title": "First Amendment — Right to Record Police",
+          "verdict": "violation_mitigated",
+          "final_severity": "low",
+          "reasoning": "While the officer did not explicitly order the citizen to stop recording, prohibiting the citizen from following the officers in a public space without articulating how they were interfering effectively restricts their First Amendment right to observe and record. The violation is mitigated because no physical seizure of the device or explicit ban on filming occurred.",
+          "key_utterances": [
+            0,
+            3
+          ],
+          "prosecution_weight": 0.7,
+          "defense_weight": 0.5,
+          "confidence": 0.85
+        }
+      ],
+      "n_violations": 2,
+      "n_rebuttals": 2
+    }
+  ],
+  "final_verdict": {
+    "at_t": 84.0504613959929,
+    "reason": "session_end",
+    "wall_ms": 20390,
+    "overall_verdict": "mixed",
+    "overall_severity": "low",
+    "headline": "Officer improperly restricted the citizen's movement to prevent observation, but did not effectuate a Fourth Amendment seizure.",
+    "summary": "The officer's command that the citizen was 'not allowed to follow' restricted the citizen's ability to observe and record police activity in a public park, infringing on First Amendment rights. However, the defense correctly notes that this command did not constitute a Fourth Amendment seizure, as the citizen was not detained or prevented from leaving. Therefore, the Fourth Amendment charge is dismissed, while the First Amendment charge is mitigated due to the lack of an explicit order to stop recording.",
+    "rulings": [
+      {
+        "rule_id": "US-4A-STOP",
+        "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
+        "verdict": "violation_dismissed",
+        "final_severity": "none",
+        "reasoning": "A Fourth Amendment seizure occurs when a reasonable person would not feel free to leave or terminate the encounter. The officer's command in utterance 0 not to follow the police does not constitute a detention; rather, it implicitly directs the citizen to go elsewhere. The defense successfully rebuts the claim of a seizure.",
+        "key_utterances": [
+          0
+        ],
+        "prosecution_weight": 0.2,
+        "defense_weight": 0.9,
+        "confidence": 0.95
+      },
+      {
+        "rule_id": "US-1A-RECORD",
+        "title": "First Amendment — Right to Record Police",
+        "verdict": "violation_mitigated",
+        "final_severity": "low",
+        "reasoning": "While the officer did not explicitly order the citizen to stop recording, prohibiting the citizen from following the officers in a public space without articulating how they were interfering effectively restricts their First Amendment right to observe and record. The violation is mitigated because no physical seizure of the device or explicit ban on filming occurred.",
+        "key_utterances": [
+          0,
+          3
+        ],
+        "prosecution_weight": 0.7,
+        "defense_weight": 0.5,
+        "confidence": 0.85
+      }
+    ],
+    "n_violations": 2,
+    "n_rebuttals": 2
+  },
+  "events": [
+    {
+      "t": 0.0011718409950844944,
+      "kind": "utterance",
+      "text": "Fair warning you keep following us. You're not allowed to follow. Now you're following. Understand?",
+      "speaker": "S1",
+      "t_start": 0.84,
+      "t_end": 5.32,
+      "utt_index": 0
+    },
+    {
+      "t": 8.647204453998711,
+      "kind": "router_skip",
+      "utt_index": 0,
+      "classification": "escalation",
+      "reason": "prosecution_no_alert",
+      "atom_ms": 8646
+    },
+    {
+      "t": 8.647228929999983,
+      "kind": "utterance",
+      "text": "A resident, Sue Stiegler, noticed the officers from her home because police officers did not normally patrol her neighborhood. Miss Stiegler decided to monitor",
+      "speaker": "S2",
+      "t_start": 5.96,
+      "t_end": 13.76,
+      "utt_index": 1
+    },
+    {
+      "t": 10.180580741987797,
+      "kind": "router_skip",
+      "utt_index": 1,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 10.180594377976377,
+      "kind": "utterance",
+      "text": "and film their actions.",
+      "speaker": "S2",
+      "t_start": 13.76,
+      "t_end": 15.36,
+      "utt_index": 2
+    },
+    {
+      "t": 10.180699705000734,
+      "kind": "router_skip",
+      "utt_index": 2,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 10.180704924976453,
+      "kind": "utterance",
+      "text": "By recording me. Why not? You're in my. You're in my park with no jurisdiction. So I'm just curious to know. You don't have any",
+      "speaker": "S3",
+      "t_start": 15.4,
+      "t_end": 22.2,
+      "utt_index": 3
+    },
+    {
+      "t": 11.475309332978213,
+      "kind": "router_skip",
+      "utt_index": 3,
+      "classification": "none",
+      "confidence": 0.9
+    },
+    {
+      "t": 11.475323779974133,
+      "kind": "session_finalizing"
+    },
+    {
+      "t": 11.475328478991287,
+      "kind": "deep_scan_started",
+      "triggers": [
+        "session_end"
+      ],
+      "utterances": 4
+    },
+    {
+      "t": 63.659716053982265,
+      "kind": "deep_scan_completed",
+      "wall_ms": 52184,
+      "violations": 2,
+      "rebuttals": 2,
+      "prosecution_verdict": "violations_found",
+      "overall_severity": "high"
+    },
+    {
+      "t": 84.0504675169941,
+      "kind": "verdict_update",
+      "at_t": 84.0504613959929,
+      "reason": "session_end",
+      "wall_ms": 20390,
+      "overall_verdict": "mixed",
+      "overall_severity": "low",
+      "headline": "Officer improperly restricted the citizen's movement to prevent observation, but did not effectuate a Fourth Amendment seizure.",
+      "summary": "The officer's command that the citizen was 'not allowed to follow' restricted the citizen's ability to observe and record police activity in a public park, infringing on First Amendment rights. However, the defense correctly notes that this command did not constitute a Fourth Amendment seizure, as the citizen was not detained or prevented from leaving. Therefore, the Fourth Amendment charge is dismissed, while the First Amendment charge is mitigated due to the lack of an explicit order to stop recording.",
+      "rulings": [
+        {
+          "rule_id": "US-4A-STOP",
+          "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "A Fourth Amendment seizure occurs when a reasonable person would not feel free to leave or terminate the encounter. The officer's command in utterance 0 not to follow the police does not constitute a detention; rather, it implicitly directs the citizen to go elsewhere. The defense successfully rebuts the claim of a seizure.",
+          "key_utterances": [
+            0
+          ],
+          "prosecution_weight": 0.2,
+          "defense_weight": 0.9,
+          "confidence": 0.95
+        },
+        {
+          "rule_id": "US-1A-RECORD",
+          "title": "First Amendment — Right to Record Police",
+          "verdict": "violation_mitigated",
+          "final_severity": "low",
+          "reasoning": "While the officer did not explicitly order the citizen to stop recording, prohibiting the citizen from following the officers in a public space without articulating how they were interfering effectively restricts their First Amendment right to observe and record. The violation is mitigated because no physical seizure of the device or explicit ban on filming occurred.",
+          "key_utterances": [
+            0,
+            3
+          ],
+          "prosecution_weight": 0.7,
+          "defense_weight": 0.5,
+          "confidence": 0.85
+        }
+      ],
+      "n_violations": 2,
+      "n_rebuttals": 2
+    }
+  ],
+  "stats": {
+    "total_utterances": 4,
+    "rapid_alerts": 0,
+    "deep_violations": 2,
+    "rebuttals": 2,
+    "verdict_snapshots": 1,
+    "router_skips": 4
+  }
+}

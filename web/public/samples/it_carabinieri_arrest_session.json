@@ -1,0 +1,1803 @@
+{
+  "session_id": "it_carabinieri_arrest",
+  "region": "it",
+  "vertical": "police",
+  "meta": {
+    "session_id": "it_carabinieri_arrest",
+    "region": "it",
+    "vertical": "police",
+    "started_at": 1779180750.102444,
+    "transcript_path": "results/standard/it_carabinieri_arrest_transcript.json",
+    "total_utterances": 40
+  },
+  "rapid_alerts": [
+    {
+      "rule_id": "EU-DEESCALATION",
+      "rule_title": "Duty of De-escalation",
+      "rule_source": "UN Basic Principles on the Use of Force (1990), Principles 4–5; Council of Europe Code of Police Ethics, Articles 35–37",
+      "severity": "medium",
+      "subject": "officer",
+      "confidence": 0.85,
+      "one_liner": "Officer uses aggressive, commanding language ('Do what I say', 'Shut up') instead of de-escalation techniques.",
+      "triggering_quote": "Fai quello che dico io. Vito Io. Zitto.",
+      "classification": "officer_violation",
+      "region": "it",
+      "retrieval_scores": [
+        {
+          "rule_id": "EU-DEESCALATION",
+          "score": 0.563
+        },
+        {
+          "rule_id": "EU-CIT-ASSAULT",
+          "score": 0.534
+        },
+        {
+          "rule_id": "EU-CIT-THREAT",
+          "score": 0.518
+        }
+      ],
+      "model_used": "google/gemma-4-26B-A4B-it",
+      "latency_ms": 3419.2,
+      "utt_index": 28,
+      "t_utterance": 133.31,
+      "atom_ms": 4681
+    }
+  ],
+  "visual_context": {
+    "video_path": "recordings/eu/it_carabinieri_arrest.mp4",
+    "duration_sec": 370.358277,
+    "subjects_visible": 1,
+    "officers_visible": 2,
+    "environment": "urban street at night, commercial building interior",
+    "restraints_visible": true,
+    "restraints_timing": 24.0,
+    "weapons_drawn_by_officer": true,
+    "weapon_type": "firearm",
+    "subject_armed": false,
+    "force_observed": true,
+    "force_description": "Officer pushes the subject to the ground to apply handcuffs.",
+    "injuries_visible": false,
+    "subject_compliance": "mixed",
+    "officer_misconduct_indicators": [],
+    "citizen_violation_indicators": [
+      "suspected burglary or trespassing"
+    ],
+    "key_moments": [
+      {
+        "t_seconds": 10.0,
+        "description": "Officer confronts subject on the street, ordering him to raise his hands.",
+        "significance": "neutral"
+      },
+      {
+        "t_seconds": 24.0,
+        "description": "Officer forces the subject to the ground to apply handcuffs after delayed compliance.",
+        "significance": "concerning"
+      },
+      {
+        "t_seconds": 39.0,
+        "description": "Officer enters a dark commercial building to conduct a search.",
+        "significance": "neutral"
+      },
+      {
+        "t_seconds": 84.0,
+        "description": "Officer briefly exits; subject is seen handcuffed on the ground with another officer.",
+        "significance": "neutral"
+      },
+      {
+        "t_seconds": 235.0,
+        "description": "Officer draws his firearm while searching the interior of the building.",
+        "significance": "neutral"
+      },
+      {
+        "t_seconds": 327.0,
+        "description": "Officer exits the building after completing the search.",
+        "significance": "neutral"
+      }
+    ],
+    "summary": "Officers apprehend a suspect on the street at night, forcing him to the ground and handcuffing him. The officers then conduct a thorough search of a nearby dark commercial building, with one officer drawing a firearm during the search. The suspect remains compliant and handcuffed outside during the search.",
+    "model_used": "gemini-3.1-pro-preview",
+    "latency_ms": 38318.0
+  },
+  "deep_violations": [
+    {
+      "rule_id": "IT-COST-13",
+      "title": "Inviolabilità della Libertà Personale",
+      "source": "Costituzione della Repubblica Italiana, Art. 13",
+      "severity": "critical",
+      "cited_utterances": [
+        4,
+        28
+      ],
+      "rationale": "Officer S1 orders the suspect to lie on the ground and later says \"Fai quello che dico io\", indicating a forcible arrest without any shown judicial authorization or exigent circumstance, violating the inviolability of personal freedom.",
+      "confidence": 0.72
+    },
+    {
+      "rule_id": "IT-COST-13-VIOLENZA",
+      "title": "Punizione di Ogni Violenza Fisica e Morale",
+      "source": "Costituzione della Repubblica Italiana, Art. 13 comma 4",
+      "severity": "critical",
+      "cited_utterances": [
+        4,
+        26,
+        27,
+        28
+      ],
+      "rationale": "The transcript records the officer pushing the suspect to the ground and issuing threatening commands, which constitute physical and moral violence against a person already restrained.",
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "IT-COST-24",
+      "title": "Diritto di Difesa",
+      "source": "Costituzione della Repubblica Italiana, Art. 24",
+      "severity": "high",
+      "cited_utterances": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "rationale": "Throughout the interaction there is no mention of the suspect being warned of his right to counsel or of his right to remain silent, violating the guaranteed right of defense from the first police act affecting liberty.",
+      "confidence": 0.88
+    },
+    {
+      "rule_id": "IT-CPP-64",
+      "title": "Regole Generali dell'Interrogatorio",
+      "source": "Codice di Procedura Penale, Art. 64",
+      "severity": "high",
+      "cited_utterances": [
+        28,
+        26,
+        27
+      ],
+      "rationale": "The officer uses coercive language such as \"Fai quello che dico io\" and threatens the suspect's ability to move, constituting prohibited intimidation during questioning.",
+      "confidence": 0.71
+    },
+    {
+      "rule_id": "IT-CPP-386",
+      "title": "Doveri della PG dopo Arresto",
+      "source": "Codice di Procedura Penale, Art. 386",
+      "severity": "high",
+      "cited_utterances": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "rationale": "No indication is given that the officers notified the Public Prosecutor nor informed the detained individual of his right to appoint a lawyer, contrary to Article 386 requirements.",
+      "confidence": 0.79
+    },
+    {
+      "rule_id": "IT-CP-606",
+      "title": "Arresto Illegale",
+      "source": "Codice Penale, Art. 606",
+      "severity": "critical",
+      "cited_utterances": [
+        4,
+        28
+      ],
+      "rationale": "The suspect appears to be arrested solely based on vague suspicion of burglary/trespassing without a warrant, judicial order, or evident flagrant situation, meeting the criteria for an unlawful arrest.",
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "IT-CPP-352",
+      "title": "Perquisizioni d'Iniziativa della Polizia Giudiziaria",
+      "source": "Codice di Procedura Penale, Art. 352",
+      "severity": "medium",
+      "cited_utterances": [
+        38,
+        39
+      ],
+      "rationale": "Officers enter a dark commercial building to conduct a search without any recorded warrant or immediate flagrant circumstance, potentially violating the procedural requirements for investigative searches.",
+      "confidence": 0.58
+    }
+  ],
+  "rebuttals": [
+    {
+      "challenges_rule_id": "IT-COST-13",
+      "stance": "rebut",
+      "counter_argument": "The restriction of liberty was a necessary and urgent measure to secure a suspect in a potential crime scene (burglary/trespassing). Under Italian law, police may act in cases of necessity and urgency, provided the act is validated within 48 hours.",
+      "counter_utterances": [
+        4,
+        10
+      ],
+      "proposed_severity_adjustment": "critical → low",
+      "confidence": 0.8
+    },
+    {
+      "challenges_rule_id": "IT-COST-13-VIOLENZA",
+      "stance": "mitigate",
+      "counter_argument": "The physical force used (pushing to the ground) was a tactical response to delayed compliance during a high-stress arrest at night. It does not reach the threshold of 'violence' or 'torture' as defined by Art. 613-bis c.p., but was a proportional means of restraint.",
+      "counter_utterances": [
+        4,
+        28
+      ],
+      "proposed_severity_adjustment": "critical → low",
+      "confidence": 0.7
+    },
+    {
+      "challenges_rule_id": "IT-COST-24",
+      "stance": "mitigate",
+      "counter_argument": "The right to defense is guaranteed throughout the proceeding; however, tactical securing of a suspect in the field is a preliminary safety measure. The failure to recite rights in the first seconds of a tactical apprehension does not constitute a total denial of the right to defense.",
+      "counter_utterances": [],
+      "proposed_severity_adjustment": "high → medium",
+      "confidence": 0.6
+    },
+    {
+      "challenges_rule_id": "IT-CPP-64",
+      "stance": "rebut",
+      "counter_argument": "The interaction was a tactical apprehension, not a formal interrogation. Commands like 'Fai quello che dico io' are standard operational directives to ensure officer safety and suspect compliance, not coercive techniques to alter a statement.",
+      "counter_utterances": [
+        28
+      ],
+      "proposed_severity_adjustment": "high → null",
+      "confidence": 0.9
+    },
+    {
+      "challenges_rule_id": "IT-CPP-386",
+      "stance": "mitigate",
+      "counter_argument": "The footage captures the immediate tactical phase of the arrest. Notification to the PM and the right to counsel are duties that follow the securing of the suspect and are typically completed upon arrival at the station or during formal booking.",
+      "counter_utterances": [],
+      "proposed_severity_adjustment": "high → medium",
+      "confidence": 0.7
+    },
+    {
+      "challenges_rule_id": "IT-CP-606",
+      "stance": "rebut",
+      "counter_argument": "The arrest was based on suspected burglary/trespassing in a commercial building at night, which constitutes a 'fondato sospetto' (founded suspicion) or potential flagrancy, justifying the arrest under the officers' police powers.",
+      "counter_utterances": [
+        29,
+        38
+      ],
+      "proposed_severity_adjustment": "critical → null",
+      "confidence": 0.75
+    },
+    {
+      "challenges_rule_id": "IT-CPP-352",
+      "stance": "rebut",
+      "counter_argument": "The search of the building was conducted in the context of a suspected crime in progress (flagranza), allowing police to search for evidence or accomplices without a prior warrant under Art. 352 CPP.",
+      "counter_utterances": [
+        38
+      ],
+      "proposed_severity_adjustment": "medium → null",
+      "confidence": 0.85
+    }
+  ],
+  "verdict_timeline": [
+    {
+      "at_t": 48.393451768992236,
+      "reason": "debounced",
+      "wall_ms": 13561,
+      "overall_verdict": "officer_at_fault",
+      "overall_severity": "medium",
+      "headline": "Officer failed to de-escalate and used aggressive language towards a compliant suspect.",
+      "summary": "The prosecution alleged that the officer violated the duty of de-escalation by using aggressive and commanding language. The transcript confirms that while the suspect was compliant and repeatedly stated they were not trying to flee, the officer responded with dismissive ('Perché sì') and aggressive ('Fai quello che dico io. Zitto') language. In the absence of any defense rebuttal, the prosecution's claim is fully supported by the evidence.",
+      "rulings": [
+        {
+          "rule_id": "EU-DEESCALATION",
+          "title": "Duty of De-escalation",
+          "verdict": "violation_upheld",
+          "final_severity": "medium",
+          "reasoning": "The officer responded to a calm and compliant suspect with aggressive commands ('Zitto', 'Fai quello che dico io') and dismissive answers ('Perché sì'). Without any defense rebuttal, the prosecution's assertion that the officer failed to employ de-escalation techniques is upheld.",
+          "key_utterances": [
+            23,
+            25,
+            26,
+            27,
+            28
+          ],
+          "prosecution_weight": 0.95,
+          "defense_weight": 0.0,
+          "confidence": 0.95
+        }
+      ],
+      "n_violations": 1,
+      "n_rebuttals": 0
+    },
+    {
+      "at_t": 153.88890034498763,
+      "reason": "debounced",
+      "wall_ms": 3027,
+      "overall_verdict": "mixed",
+      "overall_severity": "low",
+      "headline": "Officers acted within tactical norms for suspect apprehension, though communication standards were suboptimal.",
+      "summary": "The physical force used to secure the suspect was consistent with standard police procedures for a high-risk night-time apprehension involving suspected burglary. While the officer's tone was aggressive, it did not cross the threshold into criminal violence or private violence under Italian law. The lack of immediate Miranda-style warnings is mitigated by the operational necessity of securing the scene before formal processing.",
+      "rulings": [
+        {
+          "rule_id": "IT-COST-13-VIOLENZA",
+          "title": "Punizione di Ogni Violenza Fisica e Morale",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The physical force applied at t=24.0s was a necessary tactical maneuver to secure a suspect who exhibited delayed compliance in a high-risk environment. It does not constitute prohibited violence, but rather a standard use of force for apprehension.",
+          "key_utterances": [
+            4
+          ],
+          "prosecution_weight": 0.4,
+          "defense_weight": 0.85,
+          "confidence": 0.8
+        },
+        {
+          "rule_id": "IT-CP-610",
+          "title": "Violenza Privata",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The commands issued were within the scope of legitimate police authority during an arrest. There is no evidence of private violence, as the officer was acting in an official capacity to maintain control of the scene.",
+          "key_utterances": [
+            4,
+            28
+          ],
+          "prosecution_weight": 0.3,
+          "defense_weight": 0.8,
+          "confidence": 0.75
+        },
+        {
+          "rule_id": "IT-COST-24",
+          "title": "Diritto di Difesa",
+          "verdict": "violation_mitigated",
+          "final_severity": "low",
+          "reasoning": "While the suspect was not immediately informed of his rights, this occurred during the initial 'securing' phase of a dynamic field operation. The violation is mitigated by the immediate need to search the building for potential accomplices or threats.",
+          "key_utterances": [],
+          "prosecution_weight": 0.6,
+          "defense_weight": 0.6,
+          "confidence": 0.65
+        },
+        {
+          "rule_id": "EU-DEESCALATION",
+          "title": "Duty of De-escalation",
+          "verdict": "violation_upheld",
+          "final_severity": "low",
+          "reasoning": "The officer's language in utterance 28 ('Fai quello che dico io', 'Zitto') is unnecessarily aggressive and fails to meet professional standards for de-escalation, even in a high-stress situation.",
+          "key_utterances": [
+            28
+          ],
+          "prosecution_weight": 0.85,
+          "defense_weight": 0.4,
+          "confidence": 0.8
+        }
+      ],
+      "n_violations": 4,
+      "n_rebuttals": 3
+    },
+    {
+      "at_t": 284.13795084299636,
+      "reason": "session_end",
+      "wall_ms": 4854,
+      "overall_verdict": "mixed",
+      "overall_severity": "medium",
+      "headline": "Officers acted within tactical necessity for apprehension but exhibited unprofessional communication and procedural delays.",
+      "summary": "The officers' use of force and initial detention were justified by the exigencies of a suspected burglary in progress. However, the officer's verbal conduct was unnecessarily aggressive, and the failure to provide timely procedural notifications remains a point of concern. While the tactical search was legally permissible under the circumstances, the lack of professional de-escalation is noted.",
+      "rulings": [
+        {
+          "rule_id": "IT-COST-13",
+          "title": "Inviolabilità della Libertà Personale",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The detention was a necessary tactical measure in response to a suspected crime in progress. Under Italian law, police possess the authority to restrict liberty in urgent situations, subject to later validation.",
+          "key_utterances": [
+            4,
+            10
+          ],
+          "prosecution_weight": 0.4,
+          "defense_weight": 0.8,
+          "confidence": 0.85
+        },
+        {
+          "rule_id": "IT-COST-13-VIOLENZA",
+          "title": "Punizione di Ogni Violenza Fisica e Morale",
+          "verdict": "violation_mitigated",
+          "final_severity": "low",
+          "reasoning": "The physical force applied was consistent with standard restraint techniques for a non-compliant suspect. While the officer's tone was harsh, it did not reach the threshold of criminal violence or torture.",
+          "key_utterances": [
+            4,
+            26,
+            27,
+            28
+          ],
+          "prosecution_weight": 0.5,
+          "defense_weight": 0.7,
+          "confidence": 0.75
+        },
+        {
+          "rule_id": "IT-COST-24",
+          "title": "Diritto di Difesa",
+          "verdict": "violation_mitigated",
+          "final_severity": "low",
+          "reasoning": "While rights were not read immediately, the incident was in the initial tactical phase. The delay is common in field apprehensions, though officers should aim to inform suspects as soon as the scene is secured.",
+          "key_utterances": [
+            0,
+            39
+          ],
+          "prosecution_weight": 0.6,
+          "defense_weight": 0.6,
+          "confidence": 0.7
+        },
+        {
+          "rule_id": "IT-CPP-64",
+          "title": "Regole Generali dell'Interrogatorio",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The interaction was a tactical apprehension rather than a formal interrogation. Commands issued were for scene control and safety, not for eliciting a confession.",
+          "key_utterances": [
+            28
+          ],
+          "prosecution_weight": 0.3,
+          "defense_weight": 0.9,
+          "confidence": 0.85
+        },
+        {
+          "rule_id": "IT-CPP-386",
+          "title": "Doveri della PG dopo Arresto",
+          "verdict": "violation_mitigated",
+          "final_severity": "low",
+          "reasoning": "Procedural notifications are required, but the footage captures only the immediate field response. The violation is mitigated by the fact that the scene was still active and not yet at the booking stage.",
+          "key_utterances": [
+            0,
+            39
+          ],
+          "prosecution_weight": 0.7,
+          "defense_weight": 0.5,
+          "confidence": 0.7
+        },
+        {
+          "rule_id": "IT-CP-606",
+          "title": "Arresto Illegale",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The officers had reasonable suspicion of a crime in progress (burglary), which provides sufficient legal basis for an initial detention and investigation.",
+          "key_utterances": [
+            29,
+            38
+          ],
+          "prosecution_weight": 0.4,
+          "defense_weight": 0.8,
+          "confidence": 0.8
+        },
+        {
+          "rule_id": "IT-CPP-352",
+          "title": "Perquisizioni d'Iniziativa della Polizia Giudiziaria",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The search of the building was conducted under the 'flagranza' (in-the-act) doctrine, which allows for immediate investigative searches without a prior warrant.",
+          "key_utterances": [
+            38
+          ],
+          "prosecution_weight": 0.3,
+          "defense_weight": 0.9,
+          "confidence": 0.9
+        },
+        {
+          "rule_id": "EU-DEESCALATION",
+          "title": "Duty of De-escalation",
+          "verdict": "violation_upheld",
+          "final_severity": "medium",
+          "reasoning": "The officer's language was unnecessarily aggressive and failed to meet professional standards for de-escalation, even in a high-stress environment.",
+          "key_utterances": [
+            28
+          ],
+          "prosecution_weight": 0.9,
+          "defense_weight": 0.3,
+          "confidence": 0.9
+        }
+      ],
+      "n_violations": 8,
+      "n_rebuttals": 7
+    }
+  ],
+  "final_verdict": {
+    "at_t": 284.13795084299636,
+    "reason": "session_end",
+    "wall_ms": 4854,
+    "overall_verdict": "mixed",
+    "overall_severity": "medium",
+    "headline": "Officers acted within tactical necessity for apprehension but exhibited unprofessional communication and procedural delays.",
+    "summary": "The officers' use of force and initial detention were justified by the exigencies of a suspected burglary in progress. However, the officer's verbal conduct was unnecessarily aggressive, and the failure to provide timely procedural notifications remains a point of concern. While the tactical search was legally permissible under the circumstances, the lack of professional de-escalation is noted.",
+    "rulings": [
+      {
+        "rule_id": "IT-COST-13",
+        "title": "Inviolabilità della Libertà Personale",
+        "verdict": "violation_dismissed",
+        "final_severity": "none",
+        "reasoning": "The detention was a necessary tactical measure in response to a suspected crime in progress. Under Italian law, police possess the authority to restrict liberty in urgent situations, subject to later validation.",
+        "key_utterances": [
+          4,
+          10
+        ],
+        "prosecution_weight": 0.4,
+        "defense_weight": 0.8,
+        "confidence": 0.85
+      },
+      {
+        "rule_id": "IT-COST-13-VIOLENZA",
+        "title": "Punizione di Ogni Violenza Fisica e Morale",
+        "verdict": "violation_mitigated",
+        "final_severity": "low",
+        "reasoning": "The physical force applied was consistent with standard restraint techniques for a non-compliant suspect. While the officer's tone was harsh, it did not reach the threshold of criminal violence or torture.",
+        "key_utterances": [
+          4,
+          26,
+          27,
+          28
+        ],
+        "prosecution_weight": 0.5,
+        "defense_weight": 0.7,
+        "confidence": 0.75
+      },
+      {
+        "rule_id": "IT-COST-24",
+        "title": "Diritto di Difesa",
+        "verdict": "violation_mitigated",
+        "final_severity": "low",
+        "reasoning": "While rights were not read immediately, the incident was in the initial tactical phase. The delay is common in field apprehensions, though officers should aim to inform suspects as soon as the scene is secured.",
+        "key_utterances": [
+          0,
+          39
+        ],
+        "prosecution_weight": 0.6,
+        "defense_weight": 0.6,
+        "confidence": 0.7
+      },
+      {
+        "rule_id": "IT-CPP-64",
+        "title": "Regole Generali dell'Interrogatorio",
+        "verdict": "violation_dismissed",
+        "final_severity": "none",
+        "reasoning": "The interaction was a tactical apprehension rather than a formal interrogation. Commands issued were for scene control and safety, not for eliciting a confession.",
+        "key_utterances": [
+          28
+        ],
+        "prosecution_weight": 0.3,
+        "defense_weight": 0.9,
+        "confidence": 0.85
+      },
+      {
+        "rule_id": "IT-CPP-386",
+        "title": "Doveri della PG dopo Arresto",
+        "verdict": "violation_mitigated",
+        "final_severity": "low",
+        "reasoning": "Procedural notifications are required, but the footage captures only the immediate field response. The violation is mitigated by the fact that the scene was still active and not yet at the booking stage.",
+        "key_utterances": [
+          0,
+          39
+        ],
+        "prosecution_weight": 0.7,
+        "defense_weight": 0.5,
+        "confidence": 0.7
+      },
+      {
+        "rule_id": "IT-CP-606",
+        "title": "Arresto Illegale",
+        "verdict": "violation_dismissed",
+        "final_severity": "none",
+        "reasoning": "The officers had reasonable suspicion of a crime in progress (burglary), which provides sufficient legal basis for an initial detention and investigation.",
+        "key_utterances": [
+          29,
+          38
+        ],
+        "prosecution_weight": 0.4,
+        "defense_weight": 0.8,
+        "confidence": 0.8
+      },
+      {
+        "rule_id": "IT-CPP-352",
+        "title": "Perquisizioni d'Iniziativa della Polizia Giudiziaria",
+        "verdict": "violation_dismissed",
+        "final_severity": "none",
+        "reasoning": "The search of the building was conducted under the 'flagranza' (in-the-act) doctrine, which allows for immediate investigative searches without a prior warrant.",
+        "key_utterances": [
+          38
+        ],
+        "prosecution_weight": 0.3,
+        "defense_weight": 0.9,
+        "confidence": 0.9
+      },
+      {
+        "rule_id": "EU-DEESCALATION",
+        "title": "Duty of De-escalation",
+        "verdict": "violation_upheld",
+        "final_severity": "medium",
+        "reasoning": "The officer's language was unnecessarily aggressive and failed to meet professional standards for de-escalation, even in a high-stress environment.",
+        "key_utterances": [
+          28
+        ],
+        "prosecution_weight": 0.9,
+        "defense_weight": 0.3,
+        "confidence": 0.9
+      }
+    ],
+    "n_violations": 8,
+    "n_rebuttals": 7
+  },
+  "events": [
+    {
+      "t": 0.002055380988167599,
+      "kind": "utterance",
+      "text": "Fermo la è forza.",
+      "speaker": "S1",
+      "t_start": 10.97,
+      "t_end": 12.35,
+      "utt_index": 0
+    },
+    {
+      "t": 0.0021507510100491345,
+      "kind": "router_skip",
+      "utt_index": 0,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 0.0021583059860859066,
+      "kind": "utterance",
+      "text": "Alza i mani.",
+      "speaker": "S1",
+      "t_start": 13.64,
+      "t_end": 14.42,
+      "utt_index": 1
+    },
+    {
+      "t": 0.00222125300206244,
+      "kind": "router_skip",
+      "utt_index": 1,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 0.0022261329868342727,
+      "kind": "utterance",
+      "text": "Alza i. Le mani.",
+      "speaker": "S1",
+      "t_start": 15.71,
+      "t_end": 16.73,
+      "utt_index": 2
+    },
+    {
+      "t": 0.002278380998177454,
+      "kind": "router_skip",
+      "utt_index": 2,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 0.0022821479942649603,
+      "kind": "utterance",
+      "text": "Alza le mani.",
+      "speaker": "S1",
+      "t_start": 17.75,
+      "t_end": 18.71,
+      "utt_index": 3
+    },
+    {
+      "t": 0.0023301480105146766,
+      "kind": "router_skip",
+      "utt_index": 3,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 0.0023334340075962245,
+      "kind": "utterance",
+      "text": "Alza le mani. Stai fermo. Alza le mani. Ti ho detto in terra Che faccia a terra.",
+      "speaker": "S1",
+      "t_start": 19.85,
+      "t_end": 24.83,
+      "utt_index": 4
+    },
+    {
+      "t": 10.744807000999572,
+      "kind": "router_skip",
+      "utt_index": 4,
+      "classification": "escalation",
+      "reason": "prosecution_no_alert",
+      "atom_ms": 10742
+    },
+    {
+      "t": 10.744820466003148,
+      "kind": "utterance",
+      "text": "Oh, tranquillo.",
+      "speaker": "S2",
+      "t_start": 25.85,
+      "t_end": 27.14,
+      "utt_index": 5
+    },
+    {
+      "t": 10.74491919099819,
+      "kind": "router_skip",
+      "utt_index": 5,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 10.744925092003541,
+      "kind": "utterance",
+      "text": "Che.",
+      "speaker": "S1",
+      "t_start": 29.12,
+      "t_end": 29.27,
+      "utt_index": 6
+    },
+    {
+      "t": 10.744977180002024,
+      "kind": "router_skip",
+      "utt_index": 6,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 10.74498419300653,
+      "kind": "utterance",
+      "text": "Sai, tienilo qua. Stai fermo.",
+      "speaker": "S2",
+      "t_start": 29.81,
+      "t_end": 31.1,
+      "utt_index": 7
+    },
+    {
+      "t": 15.355338547989959,
+      "kind": "router_skip",
+      "utt_index": 7,
+      "classification": "escalation",
+      "reason": "prosecution_no_alert",
+      "atom_ms": 4610
+    },
+    {
+      "t": 15.355357472988544,
+      "kind": "utterance",
+      "text": "Che non li..",
+      "speaker": "S1",
+      "t_start": 31.37,
+      "t_end": 31.79,
+      "utt_index": 8
+    },
+    {
+      "t": 15.355509610002628,
+      "kind": "router_skip",
+      "utt_index": 8,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 15.355518897005823,
+      "kind": "utterance",
+      "text": "La.",
+      "speaker": "S2",
+      "t_start": 34.85,
+      "t_end": 34.97,
+      "utt_index": 9
+    },
+    {
+      "t": 15.3556246359949,
+      "kind": "router_skip",
+      "utt_index": 9,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 15.35563438400277,
+      "kind": "deep_scan_started",
+      "triggers": [
+        "+10_utts"
+      ],
+      "utterances": 10
+    },
+    {
+      "t": 15.35567255699425,
+      "kind": "utterance",
+      "text": "Fermo.",
+      "speaker": "S1",
+      "t_start": 77.48,
+      "t_end": 77.9,
+      "utt_index": 10
+    },
+    {
+      "t": 15.355770389985992,
+      "kind": "router_skip",
+      "utt_index": 10,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 15.355779536999762,
+      "kind": "utterance",
+      "text": "Gli.",
+      "speaker": "S1",
+      "t_start": 82.25,
+      "t_end": 82.64,
+      "utt_index": 11
+    },
+    {
+      "t": 15.355848145991331,
+      "kind": "router_skip",
+      "utt_index": 11,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 15.355856651993236,
+      "kind": "utterance",
+      "text": "Quattro.",
+      "speaker": "S2",
+      "t_start": 83.57,
+      "t_end": 84.02,
+      "utt_index": 12
+    },
+    {
+      "t": 15.355939959001262,
+      "kind": "router_skip",
+      "utt_index": 12,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 15.355946250987472,
+      "kind": "utterance",
+      "text": "Alzati.",
+      "speaker": "S1",
+      "t_start": 88.13,
+      "t_end": 88.49,
+      "utt_index": 13
+    },
+    {
+      "t": 15.356017593992874,
+      "kind": "router_skip",
+      "utt_index": 13,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 15.35602371598361,
+      "kind": "utterance",
+      "text": "Il telefono.",
+      "speaker": "S2",
+      "t_start": 89.48,
+      "t_end": 89.99,
+      "utt_index": 14
+    },
+    {
+      "t": 15.356093627982773,
+      "kind": "router_skip",
+      "utt_index": 14,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 15.356098877004115,
+      "kind": "utterance",
+      "text": "Guarda.",
+      "speaker": "S2",
+      "t_start": 92.81,
+      "t_end": 93.32,
+      "utt_index": 15
+    },
+    {
+      "t": 15.356167485995684,
+      "kind": "router_skip",
+      "utt_index": 15,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 15.356174448999809,
+      "kind": "utterance",
+      "text": "Prendiamo a.",
+      "speaker": "S1",
+      "t_start": 95.57,
+      "t_end": 96.05,
+      "utt_index": 16
+    },
+    {
+      "t": 15.356254649988841,
+      "kind": "router_skip",
+      "utt_index": 16,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 15.356261804001406,
+      "kind": "utterance",
+      "text": "Per bene. Il bar.",
+      "speaker": "S1",
+      "t_start": 97.61,
+      "t_end": 98.15,
+      "utt_index": 17
+    },
+    {
+      "t": 15.356341512990184,
+      "kind": "router_skip",
+      "utt_index": 17,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 15.356348726985743,
+      "kind": "utterance",
+      "text": "Non corro, ragazzi. Mica.",
+      "speaker": "S2",
+      "t_start": 110.63,
+      "t_end": 112.49,
+      "utt_index": 18
+    },
+    {
+      "t": 15.356443955010036,
+      "kind": "router_skip",
+      "utt_index": 18,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 15.356449937011348,
+      "kind": "utterance",
+      "text": "Niente. Per favore. Il telefonino alla tasca.",
+      "speaker": "S2",
+      "t_start": 113.69,
+      "t_end": 115.31,
+      "utt_index": 19
+    },
+    {
+      "t": 16.61603127399576,
+      "kind": "router_skip",
+      "utt_index": 19,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 16.6160409419972,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+10_utts"
+      ]
+    },
+    {
+      "t": 16.61604942800477,
+      "kind": "utterance",
+      "text": "Non nella sua Nella mia.",
+      "speaker": "S2",
+      "t_start": 118.25,
+      "t_end": 119.57,
+      "utt_index": 20
+    },
+    {
+      "t": 17.867153192986734,
+      "kind": "router_skip",
+      "utt_index": 20,
+      "classification": "none",
+      "confidence": 0.9
+    },
+    {
+      "t": 17.867161839007167,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+11_utts"
+      ]
+    },
+    {
+      "t": 17.86717079600203,
+      "kind": "utterance",
+      "text": "Tasca mia.",
+      "speaker": "S1",
+      "t_start": 120.23,
+      "t_end": 120.71,
+      "utt_index": 21
+    },
+    {
+      "t": 17.867249233007897,
+      "kind": "router_skip",
+      "utt_index": 21,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 17.86725216798368,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+12_utts"
+      ]
+    },
+    {
+      "t": 17.86725580500206,
+      "kind": "utterance",
+      "text": "Perché?",
+      "speaker": "S2",
+      "t_start": 121.04,
+      "t_end": 121.37,
+      "utt_index": 22
+    },
+    {
+      "t": 17.867310517991427,
+      "kind": "router_skip",
+      "utt_index": 22,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 17.867312891990878,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+13_utts"
+      ]
+    },
+    {
+      "t": 17.86731579800835,
+      "kind": "utterance",
+      "text": "Perché sì.",
+      "speaker": "S1",
+      "t_start": 121.64,
+      "t_end": 122.18,
+      "utt_index": 23
+    },
+    {
+      "t": 17.867366213991772,
+      "kind": "router_skip",
+      "utt_index": 23,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 17.867380148993107,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+14_utts"
+      ]
+    },
+    {
+      "t": 17.86738374599372,
+      "kind": "utterance",
+      "text": "Come si.",
+      "speaker": "S2",
+      "t_start": 123.5,
+      "t_end": 123.95,
+      "utt_index": 24
+    },
+    {
+      "t": 17.867433039005846,
+      "kind": "router_skip",
+      "utt_index": 24,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 17.867435332998866,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+15_utts"
+      ]
+    },
+    {
+      "t": 17.86743801800185,
+      "kind": "utterance",
+      "text": "Perché sì.",
+      "speaker": "S1",
+      "t_start": 124.55,
+      "t_end": 125.12,
+      "utt_index": 25
+    },
+    {
+      "t": 17.86748394399183,
+      "kind": "router_skip",
+      "utt_index": 25,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 17.867486369010294,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+16_utts"
+      ]
+    },
+    {
+      "t": 17.86748955398798,
+      "kind": "utterance",
+      "text": "Con lo scappo da nessuna parte. Non mi può tenere così.",
+      "speaker": "S2",
+      "t_start": 126.8,
+      "t_end": 130.1,
+      "utt_index": 26
+    },
+    {
+      "t": 19.812919355987106,
+      "kind": "router_skip",
+      "utt_index": 26,
+      "classification": "escalation",
+      "reason": "prosecution_no_alert",
+      "atom_ms": 1945
+    },
+    {
+      "t": 19.81292878399836,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+17_utts"
+      ]
+    },
+    {
+      "t": 19.812939433992142,
+      "kind": "utterance",
+      "text": "Non faccio niente. Non scappo.",
+      "speaker": "S2",
+      "t_start": 131.72,
+      "t_end": 133.04,
+      "utt_index": 27
+    },
+    {
+      "t": 21.11393111900543,
+      "kind": "router_skip",
+      "utt_index": 27,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 21.113939323986415,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+18_utts"
+      ]
+    },
+    {
+      "t": 21.113948732003337,
+      "kind": "utterance",
+      "text": "Fai quello che dico io. Vito Io. Zitto.",
+      "speaker": "S1",
+      "t_start": 133.31,
+      "t_end": 136.58,
+      "utt_index": 28
+    },
+    {
+      "t": 25.79526691400679,
+      "kind": "rapid_alert",
+      "rule_id": "EU-DEESCALATION",
+      "rule_title": "Duty of De-escalation",
+      "rule_source": "UN Basic Principles on the Use of Force (1990), Principles 4–5; Council of Europe Code of Police Ethics, Articles 35–37",
+      "severity": "medium",
+      "subject": "officer",
+      "confidence": 0.85,
+      "one_liner": "Officer uses aggressive, commanding language ('Do what I say', 'Shut up') instead of de-escalation techniques.",
+      "triggering_quote": "Fai quello che dico io. Vito Io. Zitto.",
+      "classification": "officer_violation",
+      "region": "it",
+      "retrieval_scores": [
+        {
+          "rule_id": "EU-DEESCALATION",
+          "score": 0.563
+        },
+        {
+          "rule_id": "EU-CIT-ASSAULT",
+          "score": 0.534
+        },
+        {
+          "rule_id": "EU-CIT-THREAT",
+          "score": 0.518
+        }
+      ],
+      "model_used": "google/gemma-4-26B-A4B-it",
+      "latency_ms": 3419.2,
+      "utt_index": 28,
+      "t_utterance": 133.31,
+      "atom_ms": 4681
+    },
+    {
+      "t": 25.795295157004148,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+19_utts"
+      ]
+    },
+    {
+      "t": 25.79530520600383,
+      "kind": "utterance",
+      "text": "Chi ci sta dentro.",
+      "speaker": "S1",
+      "t_start": 146.15,
+      "t_end": 147.08,
+      "utt_index": 29
+    },
+    {
+      "t": 25.79542100400431,
+      "kind": "router_skip",
+      "utt_index": 29,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 25.79542640398722,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+20_utts"
+      ]
+    },
+    {
+      "t": 25.795431673992425,
+      "kind": "utterance",
+      "text": "Non.",
+      "speaker": "S2",
+      "t_start": 147.32,
+      "t_end": 147.41,
+      "utt_index": 30
+    },
+    {
+      "t": 25.795483630994568,
+      "kind": "router_skip",
+      "utt_index": 30,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 25.795486868009903,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+21_utts"
+      ]
+    },
+    {
+      "t": 25.79549091498484,
+      "kind": "utterance",
+      "text": "Abbiamo preso, Eh?",
+      "speaker": "S1",
+      "t_start": 151.7,
+      "t_end": 152.45,
+      "utt_index": 31
+    },
+    {
+      "t": 25.795588637993205,
+      "kind": "router_skip",
+      "utt_index": 31,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 25.795592595997732,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+22_utts"
+      ]
+    },
+    {
+      "t": 25.79559706398868,
+      "kind": "utterance",
+      "text": "Vai. Vai. Vai. Ti. Chiamo. Quando ho fatto la carica in macchina. No, per ora no. Vai.",
+      "speaker": "S1",
+      "t_start": 154.52,
+      "t_end": 161.78,
+      "utt_index": 32
+    },
+    {
+      "t": 27.039364349999232,
+      "kind": "router_skip",
+      "utt_index": 32,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 27.0393841569894,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+23_utts"
+      ]
+    },
+    {
+      "t": 27.03939557800186,
+      "kind": "utterance",
+      "text": "Uno, Uno. Uno. E ciò da sempre, da dentro, però. Vai già. Ciao, ciao.",
+      "speaker": "S1",
+      "t_start": 163.31,
+      "t_end": 168.26,
+      "utt_index": 33
+    },
+    {
+      "t": 28.404565618984634,
+      "kind": "router_skip",
+      "utt_index": 33,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 28.404572944011306,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+24_utts"
+      ]
+    },
+    {
+      "t": 28.40458249198855,
+      "kind": "utterance",
+      "text": "No. Vieni qua con la vieni? Vicino.",
+      "speaker": "S1",
+      "t_start": 172.58,
+      "t_end": 174.29,
+      "utt_index": 34
+    },
+    {
+      "t": 29.78346244301065,
+      "kind": "router_skip",
+      "utt_index": 34,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 29.783470066991867,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+25_utts"
+      ]
+    },
+    {
+      "t": 29.78347920498345,
+      "kind": "utterance",
+      "text": "Le.",
+      "speaker": "S1",
+      "t_start": 175.82,
+      "t_end": 176.0,
+      "utt_index": 35
+    },
+    {
+      "t": 29.783551219996298,
+      "kind": "router_skip",
+      "utt_index": 35,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 29.78355614899192,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+26_utts"
+      ]
+    },
+    {
+      "t": 29.78356126899598,
+      "kind": "utterance",
+      "text": "Nessuno.",
+      "speaker": "S2",
+      "t_start": 178.07,
+      "t_end": 178.58,
+      "utt_index": 36
+    },
+    {
+      "t": 29.783636679989286,
+      "kind": "router_skip",
+      "utt_index": 36,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 29.783639305009274,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+27_utts"
+      ]
+    },
+    {
+      "t": 29.783643091999693,
+      "kind": "utterance",
+      "text": "Leva la. Mettiamo dietro.",
+      "speaker": "S1",
+      "t_start": 180.47,
+      "t_end": 181.73,
+      "utt_index": 37
+    },
+    {
+      "t": 29.783697614009725,
+      "kind": "router_skip",
+      "utt_index": 37,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 29.783699697989505,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+28_utts"
+      ]
+    },
+    {
+      "t": 29.783702151995385,
+      "kind": "utterance",
+      "text": "Ma fai. Guarda. Controllare Dentro.",
+      "speaker": "S1",
+      "t_start": 197.21,
+      "t_end": 198.83,
+      "utt_index": 38
+    },
+    {
+      "t": 31.072852862998843,
+      "kind": "router_skip",
+      "utt_index": 38,
+      "classification": "none",
+      "confidence": 0.9
+    },
+    {
+      "t": 31.072862030006945,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+29_utts"
+      ]
+    },
+    {
+      "t": 31.072872038988862,
+      "kind": "utterance",
+      "text": "Ho. Guarda quanto. Il. Vengo tranquillo da solo.",
+      "speaker": "S2",
+      "t_start": 201.95,
+      "t_end": 205.13,
+      "utt_index": 39
+    },
+    {
+      "t": 32.33011794500635,
+      "kind": "router_skip",
+      "utt_index": 39,
+      "classification": "none",
+      "confidence": 0.9
+    },
+    {
+      "t": 32.33012525798404,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+30_utts"
+      ]
+    },
+    {
+      "t": 32.33013807199313,
+      "kind": "session_finalizing"
+    },
+    {
+      "t": 48.39345716999378,
+      "kind": "verdict_update",
+      "at_t": 48.393451768992236,
+      "reason": "debounced",
+      "wall_ms": 13561,
+      "overall_verdict": "officer_at_fault",
+      "overall_severity": "medium",
+      "headline": "Officer failed to de-escalate and used aggressive language towards a compliant suspect.",
+      "summary": "The prosecution alleged that the officer violated the duty of de-escalation by using aggressive and commanding language. The transcript confirms that while the suspect was compliant and repeatedly stated they were not trying to flee, the officer responded with dismissive ('Perché sì') and aggressive ('Fai quello che dico io. Zitto') language. In the absence of any defense rebuttal, the prosecution's claim is fully supported by the evidence.",
+      "rulings": [
+        {
+          "rule_id": "EU-DEESCALATION",
+          "title": "Duty of De-escalation",
+          "verdict": "violation_upheld",
+          "final_severity": "medium",
+          "reasoning": "The officer responded to a calm and compliant suspect with aggressive commands ('Zitto', 'Fai quello che dico io') and dismissive answers ('Perché sì'). Without any defense rebuttal, the prosecution's assertion that the officer failed to employ de-escalation techniques is upheld.",
+          "key_utterances": [
+            23,
+            25,
+            26,
+            27,
+            28
+          ],
+          "prosecution_weight": 0.95,
+          "defense_weight": 0.0,
+          "confidence": 0.95
+        }
+      ],
+      "n_violations": 1,
+      "n_rebuttals": 0
+    },
+    {
+      "t": 71.63013064398547,
+      "kind": "visual_context_ready",
+      "force_observed": true,
+      "restraints_visible": true,
+      "restraints_timing": 24.0,
+      "weapons_drawn": true,
+      "subject_compliance": "mixed",
+      "key_moments": 6,
+      "summary": "Officers apprehend a suspect on the street at night, forcing him to the ground and handcuffing him. The officers then conduct a thorough search of a nearby dark commercial building, with one officer d",
+      "model_used": "gemini-3.1-pro-preview",
+      "latency_ms": 38318.0
+    },
+    {
+      "t": 148.3585561249929,
+      "kind": "deep_scan_completed",
+      "wall_ms": 76726,
+      "violations": 3,
+      "rebuttals": 3,
+      "prosecution_verdict": "violations_found",
+      "overall_severity": "critical"
+    },
+    {
+      "t": 148.35862022498623,
+      "kind": "deep_scan_started",
+      "triggers": [
+        "session_end"
+      ],
+      "utterances": 40
+    },
+    {
+      "t": 153.88890620600432,
+      "kind": "verdict_update",
+      "at_t": 153.88890034498763,
+      "reason": "debounced",
+      "wall_ms": 3027,
+      "overall_verdict": "mixed",
+      "overall_severity": "low",
+      "headline": "Officers acted within tactical norms for suspect apprehension, though communication standards were suboptimal.",
+      "summary": "The physical force used to secure the suspect was consistent with standard police procedures for a high-risk night-time apprehension involving suspected burglary. While the officer's tone was aggressive, it did not cross the threshold into criminal violence or private violence under Italian law. The lack of immediate Miranda-style warnings is mitigated by the operational necessity of securing the scene before formal processing.",
+      "rulings": [
+        {
+          "rule_id": "IT-COST-13-VIOLENZA",
+          "title": "Punizione di Ogni Violenza Fisica e Morale",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The physical force applied at t=24.0s was a necessary tactical maneuver to secure a suspect who exhibited delayed compliance in a high-risk environment. It does not constitute prohibited violence, but rather a standard use of force for apprehension.",
+          "key_utterances": [
+            4
+          ],
+          "prosecution_weight": 0.4,
+          "defense_weight": 0.85,
+          "confidence": 0.8
+        },
+        {
+          "rule_id": "IT-CP-610",
+          "title": "Violenza Privata",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The commands issued were within the scope of legitimate police authority during an arrest. There is no evidence of private violence, as the officer was acting in an official capacity to maintain control of the scene.",
+          "key_utterances": [
+            4,
+            28
+          ],
+          "prosecution_weight": 0.3,
+          "defense_weight": 0.8,
+          "confidence": 0.75
+        },
+        {
+          "rule_id": "IT-COST-24",
+          "title": "Diritto di Difesa",
+          "verdict": "violation_mitigated",
+          "final_severity": "low",
+          "reasoning": "While the suspect was not immediately informed of his rights, this occurred during the initial 'securing' phase of a dynamic field operation. The violation is mitigated by the immediate need to search the building for potential accomplices or threats.",
+          "key_utterances": [],
+          "prosecution_weight": 0.6,
+          "defense_weight": 0.6,
+          "confidence": 0.65
+        },
+        {
+          "rule_id": "EU-DEESCALATION",
+          "title": "Duty of De-escalation",
+          "verdict": "violation_upheld",
+          "final_severity": "low",
+          "reasoning": "The officer's language in utterance 28 ('Fai quello che dico io', 'Zitto') is unnecessarily aggressive and fails to meet professional standards for de-escalation, even in a high-stress situation.",
+          "key_utterances": [
+            28
+          ],
+          "prosecution_weight": 0.85,
+          "defense_weight": 0.4,
+          "confidence": 0.8
+        }
+      ],
+      "n_violations": 4,
+      "n_rebuttals": 3
+    },
+    {
+      "t": 279.2833729319973,
+      "kind": "deep_scan_completed",
+      "wall_ms": 130924,
+      "violations": 7,
+      "rebuttals": 7,
+      "prosecution_verdict": "violations_found",
+      "overall_severity": "critical"
+    },
+    {
+      "t": 284.13795407899306,
+      "kind": "verdict_update",
+      "at_t": 284.13795084299636,
+      "reason": "session_end",
+      "wall_ms": 4854,
+      "overall_verdict": "mixed",
+      "overall_severity": "medium",
+      "headline": "Officers acted within tactical necessity for apprehension but exhibited unprofessional communication and procedural delays.",
+      "summary": "The officers' use of force and initial detention were justified by the exigencies of a suspected burglary in progress. However, the officer's verbal conduct was unnecessarily aggressive, and the failure to provide timely procedural notifications remains a point of concern. While the tactical search was legally permissible under the circumstances, the lack of professional de-escalation is noted.",
+      "rulings": [
+        {
+          "rule_id": "IT-COST-13",
+          "title": "Inviolabilità della Libertà Personale",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The detention was a necessary tactical measure in response to a suspected crime in progress. Under Italian law, police possess the authority to restrict liberty in urgent situations, subject to later validation.",
+          "key_utterances": [
+            4,
+            10
+          ],
+          "prosecution_weight": 0.4,
+          "defense_weight": 0.8,
+          "confidence": 0.85
+        },
+        {
+          "rule_id": "IT-COST-13-VIOLENZA",
+          "title": "Punizione di Ogni Violenza Fisica e Morale",
+          "verdict": "violation_mitigated",
+          "final_severity": "low",
+          "reasoning": "The physical force applied was consistent with standard restraint techniques for a non-compliant suspect. While the officer's tone was harsh, it did not reach the threshold of criminal violence or torture.",
+          "key_utterances": [
+            4,
+            26,
+            27,
+            28
+          ],
+          "prosecution_weight": 0.5,
+          "defense_weight": 0.7,
+          "confidence": 0.75
+        },
+        {
+          "rule_id": "IT-COST-24",
+          "title": "Diritto di Difesa",
+          "verdict": "violation_mitigated",
+          "final_severity": "low",
+          "reasoning": "While rights were not read immediately, the incident was in the initial tactical phase. The delay is common in field apprehensions, though officers should aim to inform suspects as soon as the scene is secured.",
+          "key_utterances": [
+            0,
+            39
+          ],
+          "prosecution_weight": 0.6,
+          "defense_weight": 0.6,
+          "confidence": 0.7
+        },
+        {
+          "rule_id": "IT-CPP-64",
+          "title": "Regole Generali dell'Interrogatorio",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The interaction was a tactical apprehension rather than a formal interrogation. Commands issued were for scene control and safety, not for eliciting a confession.",
+          "key_utterances": [
+            28
+          ],
+          "prosecution_weight": 0.3,
+          "defense_weight": 0.9,
+          "confidence": 0.85
+        },
+        {
+          "rule_id": "IT-CPP-386",
+          "title": "Doveri della PG dopo Arresto",
+          "verdict": "violation_mitigated",
+          "final_severity": "low",
+          "reasoning": "Procedural notifications are required, but the footage captures only the immediate field response. The violation is mitigated by the fact that the scene was still active and not yet at the booking stage.",
+          "key_utterances": [
+            0,
+            39
+          ],
+          "prosecution_weight": 0.7,
+          "defense_weight": 0.5,
+          "confidence": 0.7
+        },
+        {
+          "rule_id": "IT-CP-606",
+          "title": "Arresto Illegale",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The officers had reasonable suspicion of a crime in progress (burglary), which provides sufficient legal basis for an initial detention and investigation.",
+          "key_utterances": [
+            29,
+            38
+          ],
+          "prosecution_weight": 0.4,
+          "defense_weight": 0.8,
+          "confidence": 0.8
+        },
+        {
+          "rule_id": "IT-CPP-352",
+          "title": "Perquisizioni d'Iniziativa della Polizia Giudiziaria",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The search of the building was conducted under the 'flagranza' (in-the-act) doctrine, which allows for immediate investigative searches without a prior warrant.",
+          "key_utterances": [
+            38
+          ],
+          "prosecution_weight": 0.3,
+          "defense_weight": 0.9,
+          "confidence": 0.9
+        },
+        {
+          "rule_id": "EU-DEESCALATION",
+          "title": "Duty of De-escalation",
+          "verdict": "violation_upheld",
+          "final_severity": "medium",
+          "reasoning": "The officer's language was unnecessarily aggressive and failed to meet professional standards for de-escalation, even in a high-stress environment.",
+          "key_utterances": [
+            28
+          ],
+          "prosecution_weight": 0.9,
+          "defense_weight": 0.3,
+          "confidence": 0.9
+        }
+      ],
+      "n_violations": 8,
+      "n_rebuttals": 7
+    }
+  ],
+  "stats": {
+    "total_utterances": 40,
+    "rapid_alerts": 1,
+    "deep_violations": 7,
+    "rebuttals": 7,
+    "verdict_snapshots": 3,
+    "router_skips": 39
+  }
+}

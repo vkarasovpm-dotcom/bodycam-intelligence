@@ -1,0 +1,134 @@
+# SENTINEL Frontend — Claude Code Instructions
+
+You are working on the **frontend** of SENTINEL, an adversarial AI court for police
+bodycam analysis. Backend is **complete and frozen** in `/opt/sentinel/`.
+
+## Read first
+- `/opt/sentinel/README.md` — product context, sponsor roles
+- `/opt/sentinel/results/live/us_video3_session.json` — canonical session shape
+- `/opt/sentinel/main.py` — SSE endpoints `/api/live/sessions`, `/api/live/replay/{id}`
+- `./public/samples/*.json` — 5 demo sessions (mirrored from backend)
+
+## Tech stack (fixed)
+Next.js 16 App Router · TypeScript · Tailwind v4 · shadcn/ui · Zustand
+· Framer Motion · lucide-react · native EventSource for SSE. No TanStack Query,
+no wavesurfer, no particles. Always-dark theme.
+
+## Design language
+Corporate-restrained, not flashy. Reference: Linear, Stripe Atlas, Vercel.
+- Background: deep graphite, not pure black
+- Primary: emerald `#00B86B` (slightly darker than the typical AI-startup neon)
+- Role colors: prosecution red, defense blue, judge gold, transcription teal
+- Glass effect ONLY on overlay surfaces (VerdictCard, LiveBanner, modals, nav).
+  NEVER on transcript or long lists — readability first.
+- Sans: Geist. Mono: Geist Mono. No serif.
+- Motion: spring(200, 22) for entries, ease-out 300ms for micro. No infinite anims.
+
+## Pages
+- `/` — Landing: hero (split-screen bidirectional), stat band, architecture
+  diagram, jurisdictions tiles, sponsor strip, footer
+- `/demo` — picker grid of 5 demo cases, `us_video3` featured
+- `/demo/[sessionId]` — main artifact. Three columns: BodycamPlayer +
+  TranscriptPane (left), VerdictCard + VisionCard + AlertsFeed + DeepScanFeed
+  (right). LiveBanner absolute top.
+- `/methodology` — technical explainer (P2)
+
+## Key behaviors
+- SSE via `EventSource` to `${NEXT_PUBLIC_API_BASE}/api/live/replay/{id}`
+- Deep link: `/demo/us_video3?autoplay=instant&speed=10`
+- Sponsor `(?)` tooltips on each major component citing model/provider
+- BodycamPlayer uses HTML5 `<video>` from `/media/{session_id}.mp4`,
+  gracefully hides if 404
+- LiveBanner colored by `ruleSubject(rule_id)` — officer=red, citizen=gold,
+  mutual=blue
+
+## Demo sessions (in public/samples/)
+- us_video3 — officer_at_fault HIGH (1A retaliation, Vision flipped verdict) ★featured
+- us_aggression — officer_justified low (citizen drags officer)
+- us_video2_vision — officer_justified none (drugs, probable cause)
+- us_video1 — officer_justified none (force justified)
+- it_domestic — officer_justified none (EU jurisdiction)
+
+## Do NOT
+- No auth, no upload UI, no admin panel
+- No mobile layout for /demo (desktop only, show hint on mobile)
+- No light theme toggle
+- No analytics, no cookies banner
+- No serif fonts, no emoji as load-bearing UI (only as labels like 🎥 for Vision)
+
+## File structure expected
+See full spec in repo README. Key folders:
+- `app/` — routes
+- `components/{shared,marketing,demo-picker,audit}/`
+- `lib/{types,stores,hooks}/`
+- `public/{samples,logos,media}/`
+
+## Workflow
+1. Generate TypeScript types from `public/samples/us_video3_session.json` into
+   `lib/types/session.ts` — this is the single source of truth.
+2. Build Zustand store + SSE hook.
+3. Build `/demo/[sessionId]` with mock data first (read JSON directly), THEN
+   wire SSE.
+4. Build Landing.
+5. Build Demo Picker.
+6. Polish, deploy.
+
+Always run `npm run dev` to verify each change. When TS errors appear, fix
+them before moving on. Don't accumulate broken state.
+
+## Architecture model — three temporal layers
+
+The right column visualizes three layers operating at different cadences.
+UI must make hierarchy visible: Verdict dominates.
+
+- Layer 1 — Rapid Alerts (sub-second, per utterance). AlertsFeed + LiveBanner.
+- Layer 2 — Deep Scans (every 10 utt OR 60s). DeepScanFeed, expandable items.
+- Layer 3 — Live Verdict (debounced ~2-3s). VerdictCard, HERO position.
+
+Visual weight: VerdictCard > LiveBanner > DeepScanFeed > AlertsFeed.
+Never render all four with equal weight.
+
+## Data types
+
+All session/event types are defined in `lib/types/session.ts`, generated
+from real backend JSON. NEVER redefine — always `import type` from there.
+Field names are snake_case and frozen. Never camelCase, never invent fields.
+
+## Demo UX
+
+- `/demo/[sessionId]` autostarts replay on mount (no button click).
+- Speed via `?speed=` query (1|2|4|10|instant), default 10.
+- "Replay · pre-computed session" badge top-left (honest disclosure).
+- Featured: `us_video3` (officer_at_fault HIGH, vision flipped verdict).
+
+## Bidirectional UX (political safety)
+
+- Picker shows ≥2 `officer_justified` cases alongside `officer_at_fault`.
+- Never "catches misconduct" / "police misconduct AI" — use "audit layer",
+  "adversarial review", "both sides".
+- Verdict labels stay neutral: `officer_at_fault`, not `officer_guilty`.
+- Alert border color: red=officer, gold=citizen, blue=mutual.
+
+## Sponsor attribution
+
+Each major component (VerdictCard, AlertsFeed, DeepScanFeed, VisionCard,
+TranscriptPane) has a small (?) icon top-right opening a glass-light
+tooltip. Exact tooltip text provided per-component in task prompts.
+Footer: "Built on Speechmatics · Featherless · Google Gemini · Vultr".
+
+## Responsive
+
+- `/` and `/demo` picker — mobile-first (375 / 768 / 1280).
+- `/demo/[sessionId]` — desktop only. Show overlay below 1280px:
+  "SENTINEL Demo requires a desktop browser (≥1280px)."
+
+## Anti-patterns — DO NOT
+
+- No gradient text (bg-clip-text). Use solid colors with weight contrast.
+- No glassmorphism on dense content (transcript, feeds). Solid surfaces.
+- No pulsing/glowing CTAs.
+- No auto-playing background video on landing.
+- No "AI-powered" copy. Show, don't tell.
+- No light-mode toggle.
+- No emojis in headings/CTAs (only functional labels: ⚖️ 🎥).
+- No confetti, no cookie banners, no "Made with ❤️".

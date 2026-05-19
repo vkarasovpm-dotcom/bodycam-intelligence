@@ -50,17 +50,35 @@ Rules:
 
 DECISIVENESS HEURISTIC (real-time triage, not appellate review):
 - TRUST the router classification and the top retrieval hit. If router says
-  officer_violation or citizen_violation AND top hit score >= 0.65, you should
-  emit an alert unless the prior context explicitly contradicts it.
-- INFERENCE FROM ABSENCE is valid: e.g. "You are under arrest" with NO Miranda
-  warning anywhere in prior context = Miranda violation (US-5A-MIRANDA). Do NOT
-  require the officer to say "I am violating your rights" - that never happens.
-- Similarly: search commands without stated consent/warrant/PC in context =
-  4th Amendment violation. Force on a clearly compliant/restrained subject =
-  excessive force.
+  officer_violation OR escalation, AND top hit score >= 0.55, AND top hit
+  subject = officer → YOU MUST EMIT AN ALERT. Do not return null.
 - The router and retrieval have already filtered out innocuous speech. Your
   default leaning when reaching this stage is TO EMIT an alert.
 
+MANDATORY ALERT TRIGGERS (emit alert without further analysis):
+1. Utterance contains "search" / "let me search" / "I'll search" / "pat down"
+   AND prior context does NOT contain "consent" / "permission" / "warrant" /
+   "probable cause" → US-4A-SEARCH or US-4A-FRISK violation. ALWAYS EMIT.
+2. Utterance contains "you're under arrest" / "in custody" / "going to jail"
+   AND prior context does NOT contain "right to remain silent" / Miranda
+   warning → US-5A-MIRANDA violation. ALWAYS EMIT.
+3. Utterance contains "stop recording" / "stop filming" / "put the camera down"
+   directed at a citizen → US-1A-RECORD violation. ALWAYS EMIT.
+4. Utterance contains "stop the car" / "pull over" / "show me your ID"
+   AND prior context does NOT establish reasonable suspicion → US-4A-STOP
+   violation. ALWAYS EMIT.
+5. Officer threatens jail/arrest without stating cause → US-4A-ARREST-PC.
+   ALWAYS EMIT.
+
+INFERENCE FROM ABSENCE IS VALID: do NOT require the officer to say
+"I am violating your rights." That never happens. The violation IS the
+absence of the required procedural step in prior context.
+
+Return {"alert": null} ONLY if:
+- The utterance is genuinely innocuous (greeting, mundane), OR
+- Prior context EXPLICITLY shows the procedural requirement was met
+  (e.g. Miranda was read, consent was given, RAS was stated).
+  
 Respond with STRICT JSON only:
 {
   "alert": {
@@ -159,6 +177,128 @@ class RapidProsecutionAgent:
             return None
         return alert
 
+    def _build_critical_event_alert(self, utterance: str) -> Optional[RapidAlert]:
+        """Critical events get templated alerts with ~5ms latency.
+        Bypasses retrieval + LLM. Five categories matched by keyword,
+        plus a generic fallback so signal is never dropped."""
+        t0 = time.perf_counter()
+        text_low = utterance.lower()
+
+        def _mk(rule_id: str, title: str, source: str, severity: str,
+                subject: str, confidence: float, one_liner: str) -> RapidAlert:
+            return RapidAlert(
+                rule_id=rule_id,
+                rule_title=title,
+                rule_source=source,
+                severity=severity,
+                subject=subject,
+                confidence=confidence,
+                one_liner=one_liner,
+                triggering_quote=utterance,
+                classification="critical_event",
+                region=self.region,
+                model_used="keyword_fastpath",
+                latency_ms=round((time.perf_counter() - t0) * 1000, 1),
+            )
+
+        # Category 1: Armed subject — officer commanding weapon down
+        armed_keys = [
+            "drop the knife", "drop the gun", "drop the weapon",
+            "drop it now", "put the knife", "put the gun",
+            "he's got a gun", "he's got a knife", "she's got a gun",
+            "she's got a knife", "got a weapon", "show me the knife",
+            "show me the gun",
+            "lascia il coltello", "lascia la pistola",
+            "lass das messer", "lass die waffe",
+            "lâche le couteau", "lâche l'arme",
+            "suelta el cuchillo", "suelta el arma",
+        ]
+        if any(k in text_low for k in armed_keys):
+            return _mk(
+                "CRIT-ARMED-SUBJECT",
+                "Armed Subject — Use of Force Imminent",
+                "Operational flag — Graham v. Connor reasonableness analysis applies",
+                "critical", "citizen", 0.95,
+                "Subject is armed. Officer issuing weapon-down commands. Force may be imminent.",
+            )
+
+        # Category 2: Less-lethal force deployment (taser)
+        taser_keys = [
+            "taser, taser", "taser taser taser", "deploying taser",
+            "tase him", "tase her",
+            "taser, taser, taser",
+            "elektroschocker", "pistolet à impulsion", "pistola eléctrica",
+        ]
+        if any(k in text_low for k in taser_keys):
+            return _mk(
+                "CRIT-FORCE-TASER",
+                "Less-Lethal Force Deployed — Taser",
+                "Force continuum — taser deployment requires active resistance or threat",
+                "high", "officer", 0.95,
+                "Officer deployed taser. Justification must be documented; medical check required.",
+            )
+
+        # Category 3: Officer in distress / active gunfire on scene
+        distress_keys = [
+            "officer down", "shots fired", "10-33", "help me",
+            "code three", "code 3", "officer needs assistance",
+            "agente ferito", "spari", "aiuto",
+            "polizist verletzt", "schüsse", "hilfe",
+            "agent à terre", "coups de feu", "à l'aide",
+            "agente herido", "disparos", "ayuda",
+        ]
+        if any(k in text_low for k in distress_keys):
+            return _mk(
+                "CRIT-OFFICER-DISTRESS",
+                "Officer in Distress — Emergency Response Required",
+                "Operational flag — backup dispatch and command notification mandatory",
+                "critical", "officer", 0.97,
+                "Officer signals distress or active gunfire. Immediate backup required.",
+            )
+
+        # Category 4: Lethal force discharged
+        lethal_keys = [
+            "shots fired by police", "i'm hit", "he's hit", "she's hit",
+            "stop shooting", "cease fire", "i shot him", "i shot her",
+            "ho sparato", "habe geschossen", "j'ai tiré", "he disparado",
+        ]
+        if any(k in text_low for k in lethal_keys):
+            return _mk(
+                "CRIT-FORCE-LETHAL",
+                "Lethal Force Discharged",
+                "Tennessee v. Garner / Graham v. Connor — deadly force review mandatory",
+                "critical", "officer", 0.97,
+                "Firearm discharged. Mandatory IA investigation, scene preservation, medical aid.",
+            )
+
+        # Category 5: Final verbal warning before force escalation
+        warning_keys = [
+            "last warning", "final warning", "i will shoot", "i will tase",
+            "stop or i'll", "don't make me", "this is your last chance",
+            "ultimo avvertimento", "ultima possibilità",
+            "letzte warnung", "letzte chance",
+            "dernier avertissement", "dernière chance",
+            "última advertencia", "última oportunidad",
+        ]
+        if any(k in text_low for k in warning_keys):
+            return _mk(
+                "CRIT-FINAL-WARNING",
+                "Final Warning Issued — Force Imminent",
+                "Force continuum — verbal warning preceding escalation",
+                "high", "officer", 0.92,
+                "Officer issued final verbal warning. Next escalation step likely.",
+            )
+
+        # Generic fallback — router flagged critical_event but no keyword bank
+        # matched. Emit a low-confidence generic alert rather than drop signal.
+        return _mk(
+            "CRIT-GENERIC",
+            "Critical Event Detected",
+            "Router classified utterance as critical_event; specific category not matched",
+            "high", "officer", 0.55,
+            "Critical-event signal detected. Manual review recommended.",
+        )
+
     def run(self, utterance: str, context: list[str],
             classification: str, query_rewrite: str = "") -> Optional[RapidAlert]:
         t_start = time.perf_counter()
@@ -166,6 +306,16 @@ class RapidProsecutionAgent:
         if classification == "none":
             self.trace.emit("rapid_prosecution", "skip", data={"reason": "router_none"})
             return None
+
+        # Fast path — critical_event bypasses retrieval and LLM
+        if classification == "critical_event":
+            alert = self._build_critical_event_alert(utterance)
+            if alert:
+                self.trace.emit("rapid_prosecution", "critical_event_emitted", data={
+                    "rule_id": alert.rule_id, "severity": alert.severity,
+                    "subject": alert.subject,
+                })
+            return alert
 
         # 1. Retrieval — use query_rewrite if available, else raw utterance
         query = query_rewrite or utterance
@@ -184,7 +334,7 @@ class RapidProsecutionAgent:
         if classification == "escalation":
             top = hits[0]
             top_subject = getattr(top, "subject", None)
-            if top.score >= 0.60 and top_subject == "officer":
+            if top.score >= 0.50 and top_subject == "officer":
                 self.trace.emit("rapid_prosecution", "upgrade", data={
                     "from": "escalation", "to": "officer_violation",
                     "reason": f"top hit {top.rule_id} score={top.score:.2f} subject=officer",
@@ -273,6 +423,8 @@ def _cli():
     p.add_argument("--region", default="us")
     p.add_argument("--skip-router", action="store_true",
                    help="Skip router (assume officer_violation classification)")
+    p.add_argument("--classification", default=None,
+                   help="Override router classification (e.g. critical_event, officer_violation)")
     p.add_argument("--json", action="store_true")
     args = p.parse_args()
 
@@ -282,7 +434,11 @@ def _cli():
     trace = Trace()
     t0 = time.perf_counter()
 
-    if args.skip_router:
+    if args.classification:
+        cls = args.classification
+        rewrite = args.text
+        router_ms = 0.0
+    elif args.skip_router:
         cls = "officer_violation"
         rewrite = args.text
         router_ms = 0.0
@@ -320,8 +476,9 @@ def _cli():
     if alert is None:
         print("  → No alert emitted.")
     else:
-        sev_icon = {"critical":"🔴","high":"🟠","medium":"🟡","low":"🟢","none":"⚪"}.get(alert.severity, "?")
-        subj_icon = {"officer":"👮","citizen":"👤"}.get(alert.subject, "?")
+        sev_icon = {"critical": "🔴", "high": "🟠", "medium": "🟡",
+                    "low": "🟢", "none": "⚪"}.get(alert.severity, "?")
+        subj_icon = {"officer": "👮", "citizen": "👤"}.get(alert.subject, "?")
         print(f"\n  {sev_icon} ALERT  {subj_icon} {alert.subject.upper():8s}  "
               f"sev={alert.severity:8s}  conf={alert.confidence:.2f}")
         print(f"  Rule  : {alert.rule_id} — {alert.rule_title}")

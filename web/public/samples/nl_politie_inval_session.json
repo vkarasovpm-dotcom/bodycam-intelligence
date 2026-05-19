@@ -1,0 +1,375 @@
+{
+  "session_id": "nl_politie_inval",
+  "region": "eu",
+  "vertical": "police",
+  "meta": {
+    "session_id": "nl_politie_inval",
+    "region": "eu",
+    "vertical": "police",
+    "started_at": 1779178352.2550313,
+    "transcript_path": "results/standard/nl_politie_inval_transcript.json",
+    "total_utterances": 2
+  },
+  "rapid_alerts": [],
+  "visual_context": {
+    "video_path": "recordings/eu/nl_politie_inval.mp4",
+    "duration_sec": 39.241723,
+    "subjects_visible": 1,
+    "officers_visible": 3,
+    "environment": "indoor apartment",
+    "restraints_visible": false,
+    "restraints_timing": null,
+    "weapons_drawn_by_officer": true,
+    "weapon_type": "firearm",
+    "subject_armed": true,
+    "force_observed": true,
+    "force_description": "Officers discharge firearms at the subject.",
+    "injuries_visible": false,
+    "subject_compliance": "active_resistance",
+    "officer_misconduct_indicators": [
+      "Rapid escalation to lethal force"
+    ],
+    "citizen_violation_indicators": [
+      "Subject appears to hold a firearm while turning towards officers"
+    ],
+    "key_moments": [
+      {
+        "t_seconds": 0.0,
+        "description": "Officer uses a key to unlock the apartment door.",
+        "significance": "neutral"
+      },
+      {
+        "t_seconds": 11.0,
+        "description": "Officers open the door and enter, shouting commands.",
+        "significance": "neutral"
+      },
+      {
+        "t_seconds": 24.0,
+        "description": "Officers approach a subject lying on a couch under a blanket.",
+        "significance": "neutral"
+      },
+      {
+        "t_seconds": 26.0,
+        "description": "Subject sits up and turns towards officers, holding what appears to be a handgun.",
+        "significance": "violation_indicator"
+      },
+      {
+        "t_seconds": 27.0,
+        "description": "Officers discharge their firearms at the subject.",
+        "significance": "concerning"
+      }
+    ],
+    "summary": "Officers enter an apartment using a key and announce themselves while moving inside. They encounter a subject sleeping on a couch. As the subject wakes and turns towards the officers, they are seen holding a firearm, prompting officers to discharge their weapons.",
+    "model_used": "gemini-3.1-pro-preview",
+    "latency_ms": 24611.0
+  },
+  "deep_violations": [
+    {
+      "rule_id": "EU-ECHR-2",
+      "title": "Right to Life",
+      "source": "ECHR Article 2; McCann and Others v United Kingdom (1995)",
+      "severity": "critical",
+      "cited_utterances": [
+        0,
+        1
+      ],
+      "rationale": "The transcript contains only brief, non‑directive statements from the subject, showing no clear indication that officers issued a specific warning to drop the weapon before firing. The rapid transition from entry to shooting suggests lethal force may not have been \"absolutely necessary\" under Article 2.",
+      "confidence": 0.65
+    },
+    {
+      "rule_id": "EU-PROPORTIONALITY",
+      "title": "Proportionality of Police Use of Force",
+      "source": "ECHR Articles 2 and 3; UN Basic Principles on the Use of Force and Firearms (1990)",
+      "severity": "high",
+      "cited_utterances": [
+        0,
+        1
+      ],
+      "rationale": "Given the limited verbal exchange captured ([0] \"Hoe.\", [1] \"Ga.\"), there is no evidence of attempts to secure compliance through lesser means. Discharging firearms at a subject who had only just risen and turned with a visible gun may exceed the level of force strictly required to protect life.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "EU-DEESCALATION",
+      "title": "Duty of De‑escalation",
+      "source": "UN Basic Principles on the Use of Force (1990); Council of Europe Code of Police Ethics",
+      "severity": "medium",
+      "cited_utterances": [
+        0,
+        1
+      ],
+      "rationale": "The transcript shows no substantive attempt by officers to verbally negotiate or give the subject a chance to comply before lethal force was employed, indicating a breach of the duty to de‑escalate wherever feasible.",
+      "confidence": 0.6
+    }
+  ],
+  "rebuttals": [
+    {
+      "challenges_rule_id": "EU-ECHR-2",
+      "stance": "rebut",
+      "counter_argument": "Lethal force was absolutely necessary as the subject was observed holding a handgun and turning toward officers [26.0s]. In a high-tension tactical entry, the immediate presence of a firearm constitutes an imminent threat to life, justifying the use of force to prevent unlawful violence.",
+      "counter_utterances": [],
+      "proposed_severity_adjustment": "critical → null",
+      "confidence": 0.9
+    },
+    {
+      "challenges_rule_id": "EU-PROPORTIONALITY",
+      "stance": "rebut",
+      "counter_argument": "The force used was proportionate to the threat. The subject was armed with a firearm and actively turning toward the officers [26.0s], creating a situation where any delay in response would have likely resulted in officer casualties.",
+      "counter_utterances": [],
+      "proposed_severity_adjustment": "high → null",
+      "confidence": 0.9
+    },
+    {
+      "challenges_rule_id": "EU-DEESCALATION",
+      "stance": "mitigate",
+      "counter_argument": "De-escalation is required 'where feasible'. It is not feasible to negotiate when a subject suddenly wakes up and turns toward officers while already holding a firearm [26.0s]. The officers had already announced themselves upon entry [11.0s], and the subject's immediate armed posture precluded further verbal warnings.",
+      "counter_utterances": [],
+      "proposed_severity_adjustment": "medium → low",
+      "confidence": 0.85
+    }
+  ],
+  "verdict_timeline": [
+    {
+      "at_t": 102.58484987998963,
+      "reason": "session_end",
+      "wall_ms": 3578,
+      "overall_verdict": "officer_justified",
+      "overall_severity": "none",
+      "headline": "Use of lethal force ruled justified due to immediate, lethal threat posed by armed subject.",
+      "summary": "The judicial review finds that the officers' actions were a direct response to an imminent threat to life. Visual evidence confirms the subject was holding a firearm and turning toward officers at the moment of engagement. Under the circumstances of an active, armed confrontation, the requirement for de-escalation and verbal warnings is superseded by the necessity to neutralize an immediate lethal threat.",
+      "rulings": [
+        {
+          "rule_id": "EU-ECHR-2",
+          "title": "Right to Life",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The subject's act of turning toward officers while armed with a firearm created an immediate, objective threat to life. Under Article 2, the use of force is permitted when it is absolutely necessary to defend any person from unlawful violence; the presence of a firearm in the subject's hand satisfies this threshold.",
+          "key_utterances": [
+            0,
+            1
+          ],
+          "prosecution_weight": 0.3,
+          "defense_weight": 0.9,
+          "confidence": 0.95
+        },
+        {
+          "rule_id": "EU-PROPORTIONALITY",
+          "title": "Proportionality of Police Use of Force",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "Proportionality is measured against the threat presented. Given the subject was armed and actively turning toward the officers, the use of lethal force was proportionate to the lethal threat posed by the subject's firearm.",
+          "key_utterances": [
+            0,
+            1
+          ],
+          "prosecution_weight": 0.3,
+          "defense_weight": 0.9,
+          "confidence": 0.9
+        },
+        {
+          "rule_id": "EU-DEESCALATION",
+          "title": "Duty of De-escalation",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The duty to de-escalate is contingent upon feasibility. When a subject is encountered in an armed state and initiates a movement toward officers, the window for verbal negotiation closes, rendering further de-escalation attempts non-feasible and potentially fatal to the officers.",
+          "key_utterances": [
+            0,
+            1
+          ],
+          "prosecution_weight": 0.4,
+          "defense_weight": 0.85,
+          "confidence": 0.85
+        }
+      ],
+      "n_violations": 3,
+      "n_rebuttals": 3
+    }
+  ],
+  "final_verdict": {
+    "at_t": 102.58484987998963,
+    "reason": "session_end",
+    "wall_ms": 3578,
+    "overall_verdict": "officer_justified",
+    "overall_severity": "none",
+    "headline": "Use of lethal force ruled justified due to immediate, lethal threat posed by armed subject.",
+    "summary": "The judicial review finds that the officers' actions were a direct response to an imminent threat to life. Visual evidence confirms the subject was holding a firearm and turning toward officers at the moment of engagement. Under the circumstances of an active, armed confrontation, the requirement for de-escalation and verbal warnings is superseded by the necessity to neutralize an immediate lethal threat.",
+    "rulings": [
+      {
+        "rule_id": "EU-ECHR-2",
+        "title": "Right to Life",
+        "verdict": "violation_dismissed",
+        "final_severity": "none",
+        "reasoning": "The subject's act of turning toward officers while armed with a firearm created an immediate, objective threat to life. Under Article 2, the use of force is permitted when it is absolutely necessary to defend any person from unlawful violence; the presence of a firearm in the subject's hand satisfies this threshold.",
+        "key_utterances": [
+          0,
+          1
+        ],
+        "prosecution_weight": 0.3,
+        "defense_weight": 0.9,
+        "confidence": 0.95
+      },
+      {
+        "rule_id": "EU-PROPORTIONALITY",
+        "title": "Proportionality of Police Use of Force",
+        "verdict": "violation_dismissed",
+        "final_severity": "none",
+        "reasoning": "Proportionality is measured against the threat presented. Given the subject was armed and actively turning toward the officers, the use of lethal force was proportionate to the lethal threat posed by the subject's firearm.",
+        "key_utterances": [
+          0,
+          1
+        ],
+        "prosecution_weight": 0.3,
+        "defense_weight": 0.9,
+        "confidence": 0.9
+      },
+      {
+        "rule_id": "EU-DEESCALATION",
+        "title": "Duty of De-escalation",
+        "verdict": "violation_dismissed",
+        "final_severity": "none",
+        "reasoning": "The duty to de-escalate is contingent upon feasibility. When a subject is encountered in an armed state and initiates a movement toward officers, the window for verbal negotiation closes, rendering further de-escalation attempts non-feasible and potentially fatal to the officers.",
+        "key_utterances": [
+          0,
+          1
+        ],
+        "prosecution_weight": 0.4,
+        "defense_weight": 0.85,
+        "confidence": 0.85
+      }
+    ],
+    "n_violations": 3,
+    "n_rebuttals": 3
+  },
+  "events": [
+    {
+      "t": 0.0005669349920935929,
+      "kind": "utterance",
+      "text": "Hoe.",
+      "speaker": "S1",
+      "t_start": 13.5,
+      "t_end": 13.86,
+      "utt_index": 0
+    },
+    {
+      "t": 0.0006466250051744282,
+      "kind": "router_skip",
+      "utt_index": 0,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 0.0006540890026371926,
+      "kind": "utterance",
+      "text": "Ga.",
+      "speaker": "S1",
+      "t_start": 21.78,
+      "t_end": 22.14,
+      "utt_index": 1
+    },
+    {
+      "t": 0.0007014670118223876,
+      "kind": "router_skip",
+      "utt_index": 1,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 0.000713159010047093,
+      "kind": "session_finalizing"
+    },
+    {
+      "t": 0.0007152429898269475,
+      "kind": "deep_scan_started",
+      "triggers": [
+        "session_end"
+      ],
+      "utterances": 2
+    },
+    {
+      "t": 25.843180819007102,
+      "kind": "visual_context_ready",
+      "force_observed": true,
+      "restraints_visible": false,
+      "restraints_timing": null,
+      "weapons_drawn": true,
+      "subject_compliance": "active_resistance",
+      "key_moments": 5,
+      "summary": "Officers enter an apartment using a key and announce themselves while moving inside. They encounter a subject sleeping on a couch. As the subject wakes and turns towards the officers, they are seen ho",
+      "model_used": "gemini-3.1-pro-preview",
+      "latency_ms": 24611.0
+    },
+    {
+      "t": 99.0062077770126,
+      "kind": "deep_scan_completed",
+      "wall_ms": 73161,
+      "violations": 3,
+      "rebuttals": 3,
+      "prosecution_verdict": "violations_found",
+      "overall_severity": "high"
+    },
+    {
+      "t": 102.58485748400562,
+      "kind": "verdict_update",
+      "at_t": 102.58484987998963,
+      "reason": "session_end",
+      "wall_ms": 3578,
+      "overall_verdict": "officer_justified",
+      "overall_severity": "none",
+      "headline": "Use of lethal force ruled justified due to immediate, lethal threat posed by armed subject.",
+      "summary": "The judicial review finds that the officers' actions were a direct response to an imminent threat to life. Visual evidence confirms the subject was holding a firearm and turning toward officers at the moment of engagement. Under the circumstances of an active, armed confrontation, the requirement for de-escalation and verbal warnings is superseded by the necessity to neutralize an immediate lethal threat.",
+      "rulings": [
+        {
+          "rule_id": "EU-ECHR-2",
+          "title": "Right to Life",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The subject's act of turning toward officers while armed with a firearm created an immediate, objective threat to life. Under Article 2, the use of force is permitted when it is absolutely necessary to defend any person from unlawful violence; the presence of a firearm in the subject's hand satisfies this threshold.",
+          "key_utterances": [
+            0,
+            1
+          ],
+          "prosecution_weight": 0.3,
+          "defense_weight": 0.9,
+          "confidence": 0.95
+        },
+        {
+          "rule_id": "EU-PROPORTIONALITY",
+          "title": "Proportionality of Police Use of Force",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "Proportionality is measured against the threat presented. Given the subject was armed and actively turning toward the officers, the use of lethal force was proportionate to the lethal threat posed by the subject's firearm.",
+          "key_utterances": [
+            0,
+            1
+          ],
+          "prosecution_weight": 0.3,
+          "defense_weight": 0.9,
+          "confidence": 0.9
+        },
+        {
+          "rule_id": "EU-DEESCALATION",
+          "title": "Duty of De-escalation",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The duty to de-escalate is contingent upon feasibility. When a subject is encountered in an armed state and initiates a movement toward officers, the window for verbal negotiation closes, rendering further de-escalation attempts non-feasible and potentially fatal to the officers.",
+          "key_utterances": [
+            0,
+            1
+          ],
+          "prosecution_weight": 0.4,
+          "defense_weight": 0.85,
+          "confidence": 0.85
+        }
+      ],
+      "n_violations": 3,
+      "n_rebuttals": 3
+    }
+  ],
+  "stats": {
+    "total_utterances": 2,
+    "rapid_alerts": 0,
+    "deep_violations": 3,
+    "rebuttals": 3,
+    "verdict_snapshots": 1,
+    "router_skips": 2
+  }
+}

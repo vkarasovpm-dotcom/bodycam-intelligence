@@ -27,6 +27,7 @@ from speechmatics.rt import (
     AudioFormat,
     AudioEncoding,
     TranscriptionConfig as RTConfig,
+    TranslationConfig,                   # <-- Новый отдельный конфиг для перевода
     TranscriptResult,
     ServerMessageType,
     ConversationConfig,
@@ -136,22 +137,26 @@ class TranscriptionAgent:
     
     # ---------- RT pass ----------
     
-    def _build_rt_config(self) -> RTConfig:
-        kwargs = {
-            "language": self.language,
-            "max_delay": 0.7,
-            "enable_partials": True,
-            "diarization": "speaker",
-            "conversation_config": ConversationConfig(
+    def _build_rt_configs(self) -> tuple[RTConfig, Optional[TranslationConfig]]:
+        """Возвращает кортеж из TranscriptionConfig и TranslationConfig."""
+        t_config = RTConfig(
+            language=self.language,
+            max_delay=0.7,
+            enable_partials=True,
+            diarization="speaker",
+            conversation_config=ConversationConfig(
                 end_of_utterance_silence_trigger=0.5,
-            ),
-        }
+            )
+        )
+        
+        tl_config = None
         if self.enable_translation and self.target_language and self.target_language != self.language:
-            kwargs["translation_config"] = {
-                "target_languages": [self.target_language],
-                "enable_partials": True,
-            }
-        return RTConfig(**kwargs)
+            tl_config = TranslationConfig(
+                target_languages=[self.target_language],
+                enable_partials=True
+            )
+            
+        return t_config, tl_config
     
     def _handle_partial(self, msg) -> None:
         try:
@@ -193,7 +198,6 @@ class TranscriptionAgent:
             logger.warning(f"final parse: {e}")
     
     def _emit_utterance(self, speaker, words, start, end, confs):
-        # join words with smart spacing around punctuation
         text = ""
         for w in words:
             if w in ",.!?;:":
@@ -239,7 +243,7 @@ class TranscriptionAgent:
             sample_rate=16000,
             chunk_size=4096,
         )
-        config = self._build_rt_config()
+        transcription_cfg, translation_cfg = self._build_rt_configs()
         
         async with RTClient(api_key=self.api_key) as client:
             
@@ -256,10 +260,16 @@ class TranscriptionAgent:
                 if evt is not None:
                     client.on(evt)(lambda m: self._handle_translation(m))
             
-            await client.start_session(
-                transcription_config=config,
-                audio_format=audio_format,
-            )
+            # Передаем translation_config как отдельный аргумент для новых версий SDK
+            kwargs = {
+                "transcription_config": transcription_cfg,
+                "audio_format": audio_format,
+            }
+            if translation_cfg:
+                kwargs["translation_config"] = translation_cfg
+                
+            await client.start_session(**kwargs)
+            
             await _stream_file(client, audio_bytes,
                                chunk_size=4096,
                                realtime_factor=self.realtime_factor)

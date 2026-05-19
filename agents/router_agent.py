@@ -9,6 +9,9 @@ Classifications:
   - citizen_violation : citizen crime (threats, assault, resisting, fleeing)
   - escalation        : tension rising, commands being issued
   - de_escalation     : positive action by officer
+  - critical_event    : armed subject visible, force deployment (taser/firearm),
+                        officer reports active assault, or final lethal warning.
+                        Not a violation — an operationally critical moment.
 
 Also produces a `query_rewrite` for retrieval — converts colloquial utterance
 into legally-targeted query so retrieval lands on correct rules.
@@ -29,10 +32,53 @@ from agents.base import Trace, featherless_client, MODELS
 # Keyword banks (fast, local)
 # ---------------------------------------------------------------------------
 
+# HIGHEST PRIORITY — matched before all other banks.
+# Routes directly to rapid_prosecution._build_critical_event_alert (fastpath).
+CRITICAL_EVENT_KEYWORDS = {
+    # Armed subject — weapon-down commands
+    "drop the knife", "drop the gun", "drop the weapon", "drop it now",
+    "put the knife down", "put the gun down", "put down the knife",
+    "put down the gun", "he's got a gun", "he's got a knife",
+    "she's got a gun", "she's got a knife", "got a weapon",
+    "show me the knife", "show me the gun",
+    # Taser deployment announcement
+    "taser, taser", "taser taser taser", "deploying taser",
+    "tase him", "tase her",
+    # Lethal force discharged / officer hit
+    "shots fired", "shots fired by police", "i'm hit", "he's hit",
+    "she's hit", "stop shooting", "cease fire", "i shot him", "i shot her",
+    # Officer in distress
+    "officer down", "10-33", "officer needs assistance",
+    "code three", "code 3",
+    # Final lethal warning
+    "last warning", "final warning", "i will shoot", "i will tase",
+    "stop or i'll shoot", "stop or i'll fire",
+    # Italian
+    "lascia il coltello", "lascia la pistola", "agente ferito",
+    "spari", "ho sparato", "ultimo avvertimento",
+    # German
+    "lass das messer", "lass die waffe", "polizist verletzt",
+    "schüsse", "habe geschossen", "letzte warnung",
+    # French
+    "lâche le couteau", "lâche l'arme", "agent à terre",
+    "coups de feu", "j'ai tiré", "dernier avertissement",
+    # Spanish
+    "suelta el cuchillo", "suelta el arma", "agente herido",
+    "disparos", "he disparado", "última advertencia",
+    "suelta el arma", "suelta el cuchillo", "manos arriba", "al suelo",
+    "de rodillas", "no te muevas", "quieto", "estás detenido",
+    "pon las manos atrás", "boca abajo",
+    # Dutch (Netherlands / Belgium)
+    "handen omhoog", "laat het mes vallen", "laat het wapen vallen",
+    "sta stil", "blijf staan", "politie sta stil",
+    "op de grond", "op je knieën", "ga liggen",
+    "je bent aangehouden", "doe je handen op je rug",
+    "laat los", "blijf liggen", "niet bewegen",
+}
+
 OFFICER_VIOLATION_KEYWORDS = {
     "under arrest", "you're arrested", "you are arrested", "you are under arrest",
     "in custody", "cuff him", "cuff her", "put your hands behind",
-    "tase", "taser", "shoot", "fire", "drew his weapon", "drew her weapon", "gun out",
     "strike", "hit him", "hit her", "punch", "knee on",
     "search the", "pat down", "frisk", "empty your pockets", "step out of the car",
     "i'll jail you", "going to jail", "get on the ground", "get down now",
@@ -58,9 +104,9 @@ CITIZEN_VIOLATION_KEYWORDS = {
 }
 
 ESCALATION_KEYWORDS = {
-    "stop resisting", "stop fighting", "back up", "drop it", "drop the",
+    "stop resisting", "stop fighting", "back up", "drop it",
     "put it down", "show me your hands", "hands up", "hands where i can see",
-    "i said stop", "last warning", "final warning", "stop the vehicle",
+    "i said stop", "stop the vehicle",
 }
 
 TRIVIAL_PATTERNS = [
@@ -68,7 +114,10 @@ TRIVIAL_PATTERNS = [
     re.compile(r"^\s*(thank you|thanks|please|sorry)\s*[.!?]?\s*$", re.I),
 ]
 
-VALID_CLASSES = {"none", "officer_violation", "citizen_violation", "escalation", "de_escalation"}
+VALID_CLASSES = {
+    "none", "officer_violation", "citizen_violation",
+    "escalation", "de_escalation", "critical_event",
+}
 
 
 # ---------------------------------------------------------------------------
@@ -101,6 +150,9 @@ Classify the CURRENT utterance into ONE of:
 - citizen_violation : citizen committed a crime (threats, assault on officer, resisting, fleeing)
 - escalation        : tension rising, commands issued, but no clear violation yet
 - de_escalation     : officer calming, advising rights properly, attempting non-force resolution
+- critical_event    : armed subject visible, force deployment (taser/firearm),
+                      officer in distress, or final lethal warning. NOT a violation —
+                      an operationally critical moment requiring supervisor awareness.
 
 Rules:
 - Profanity from a citizen ALONE is protected speech, NOT citizen_violation.
@@ -108,6 +160,10 @@ Rules:
 - An officer giving a lawful command with cause is "escalation" or "none", not "officer_violation".
 
 CRITICAL DISTINCTIONS (override the above when these apply):
+- "Drop the knife/gun/weapon" / "Taser, taser, taser" / "Officer down" /
+  "Shots fired" / "Last warning before I shoot" → critical_event (not
+  officer_violation; these are lawful protective actions or distress signals
+  warranting supervisor awareness).
 - "You're under arrest" / "in custody" WITHOUT a prior Miranda warning in context
   → officer_violation (Miranda v. Arizona, 5th Amendment).
 - Force, shouting, or commands directed at a HANDCUFFED / RESTRAINED / COMPLIANT subject
@@ -116,13 +172,14 @@ CRITICAL DISTINCTIONS (override the above when these apply):
   → officer_violation (coerced confession; ECHR Art. 3 Gäfgen).
 - Search without consent/warrant/probable cause stated → officer_violation (4th Amendment).
 - "Show me your hands! Last warning!" at an ARMED or ACTIVELY THREATENING subject
-  → escalation (lawful command, no violation yet).
+  → critical_event (lawful protective command, force imminent).
 
-escalation = tension rising, no specific legal duty breached yet.
+escalation = tension rising, no specific legal duty breached yet, no weapon involved.
 officer_violation = a specific legal duty has ALREADY been breached in this utterance.
+critical_event = weapon present, force used, or officer distress — operational, not legal.
 
 ALSO produce a SHORT (8-15 words) legally-targeted query rewrite that describes
-the LEGAL situation, not the literal words. This query feeds a semantic search
+the LEGAL or OPERATIONAL situation, not the literal words. This query feeds a semantic search
 over case law. Examples:
   - Utterance "you're under arrest get in the car"
     → "officer announces arrest without prior Miranda warning"
@@ -130,6 +187,8 @@ over case law. Examples:
     → "citizen physically resisting lawful arrest"
   - Utterance "we'll hurt you bad if you don't tell us"
     → "officer threatens harm during interrogation to coerce statement"
+  - Utterance "Drop the knife! Drop it now!"
+    → "officer commanding armed subject to disarm, force imminent"
   - Utterance "Sir, please calm down."
     → "officer attempting verbal de-escalation"
 
@@ -171,6 +230,15 @@ class RouterAgent:
             if pat.match(text):
                 return RouterClassification(classification="none", confidence=0.95, stage="trivial",
                                             query_rewrite="")
+
+        # PRIORITY 1: critical_event — matched first, bypasses everything.
+        crit = self._match(text, CRITICAL_EVENT_KEYWORDS)
+        if crit:
+            return RouterClassification(
+                classification="critical_event", confidence=0.92,
+                matched_keywords=crit, stage="keyword",
+                query_rewrite="critical operational event — armed subject, force deployment, or officer distress",
+            )
 
         cit = self._match(text, CITIZEN_VIOLATION_KEYWORDS)
         off = self._match(text, OFFICER_VIOLATION_KEYWORDS)
@@ -257,8 +325,10 @@ class RouterAgent:
                 rewrite = m.group(1).strip()
             m = re.search(r'"confidence"\s*:\s*([0-9.]+)', clean)
             if m:
-                try: conf = float(m.group(1))
-                except: pass
+                try:
+                    conf = float(m.group(1))
+                except Exception:
+                    pass
 
         if label not in VALID_CLASSES:
             label = "none"
@@ -315,9 +385,14 @@ def _cli():
         print(json.dumps(result.to_dict(), indent=2, ensure_ascii=False))
         return
 
-    icon = {"none":"·", "officer_violation":"⚠ OFF",
-            "citizen_violation":"⚠ CIT", "escalation":"↑ ESC",
-            "de_escalation":"✓ DE"}.get(result.classification, "?")
+    icon = {
+        "none": "·",
+        "officer_violation": "⚠ OFF",
+        "citizen_violation": "⚠ CIT",
+        "escalation": "↑ ESC",
+        "de_escalation": "✓ DE",
+        "critical_event": "🚨 CRIT",
+    }.get(result.classification, "?")
     print("=" * 70)
     print(f"ROUTER  region={args.region}")
     print(f"  Text   : {args.text}")

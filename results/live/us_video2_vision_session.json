@@ -6,50 +6,19 @@
     "session_id": "us_video2_vision",
     "region": "us",
     "vertical": "police",
-    "started_at": 1779091428.2212625,
+    "started_at": 1779169524.3683836,
     "transcript_path": "results/council/video2_violation_council.json",
     "total_utterances": 28
   },
   "rapid_alerts": [
-    {
-      "rule_id": "US-4A-FRISK",
-      "rule_title": "Terry Frisk — Limited Pat-Down",
-      "rule_source": "Terry v. Ohio, 392 U.S. 1 (1968); Minnesota v. Dickerson, 508 U.S. 366 (1993)",
-      "severity": "medium",
-      "subject": "officer",
-      "confidence": 0.85,
-      "one_liner": "Officer attempting to search for evidence ('concealed inside') beyond a limited protective frisk for weapons.",
-      "triggering_quote": "Hurt me. Got anything? Concealed inside. You know.",
-      "classification": "escalation",
-      "region": "us",
-      "retrieval_scores": [
-        {
-          "rule_id": "US-4A-FRISK",
-          "score": 0.551
-        },
-        {
-          "rule_id": "US-IDENTIFY",
-          "score": 0.509
-        },
-        {
-          "rule_id": "US-4A-SEARCH",
-          "score": 0.477
-        }
-      ],
-      "model_used": "google/gemma-4-26B-A4B-it",
-      "latency_ms": 3195.7,
-      "utt_index": 11,
-      "t_utterance": 106.4,
-      "atom_ms": 4457
-    },
     {
       "rule_id": "US-4A-SEARCH",
       "rule_title": "Fourth Amendment — Warrantless Search",
       "rule_source": "U.S. Const. amend. IV; Katz v. United States, 389 U.S. 347 (1967)",
       "severity": "high",
       "subject": "officer",
-      "confidence": 0.85,
-      "one_liner": "Officer initiates a search of the subject without stated consent, warrant, or probable cause.",
+      "confidence": 1.0,
+      "one_liner": "Officer declares intent to search without establishing consent, warrant, or probable cause in prior context.",
       "triggering_quote": "Okay, let me search. You.",
       "classification": "officer_violation",
       "region": "us",
@@ -68,77 +37,13 @@
         }
       ],
       "model_used": "google/gemma-4-26B-A4B-it",
-      "latency_ms": 3827.8,
+      "latency_ms": 4420.6,
       "utt_index": 12,
       "t_utterance": 125.84,
-      "atom_ms": 5413
+      "atom_ms": 5991
     }
   ],
-  "visual_context": {
-    "video_path": "recordings/video2_violation.mp4",
-    "duration_sec": 620.948027,
-    "subjects_visible": 2,
-    "officers_visible": 3,
-    "environment": "roadside",
-    "restraints_visible": true,
-    "restraints_timing": 0.0,
-    "weapons_drawn_by_officer": false,
-    "weapon_type": null,
-    "subject_armed": false,
-    "force_observed": false,
-    "force_description": "",
-    "injuries_visible": false,
-    "subject_compliance": "compliant",
-    "officer_misconduct_indicators": [],
-    "citizen_violation_indicators": [
-      "possession of suspected controlled substances"
-    ],
-    "key_moments": [
-      {
-        "t_seconds": 0.0,
-        "description": "Officer exits vehicle and approaches a male subject already in handcuffs.",
-        "significance": "neutral"
-      },
-      {
-        "t_seconds": 45.0,
-        "description": "Officer searches the center console of a vehicle and retrieves a baggie of suspected narcotics.",
-        "significance": "neutral"
-      },
-      {
-        "t_seconds": 105.0,
-        "description": "Officer discusses the need for a full search of the vehicle with another officer.",
-        "significance": "neutral"
-      },
-      {
-        "t_seconds": 145.0,
-        "description": "Officer performs a pat-down search of the male subject.",
-        "significance": "neutral"
-      },
-      {
-        "t_seconds": 230.0,
-        "description": "Officer reads Miranda rights to the male subject.",
-        "significance": "neutral"
-      },
-      {
-        "t_seconds": 335.0,
-        "description": "Officer speaks with a female subject standing near a patrol vehicle.",
-        "significance": "neutral"
-      },
-      {
-        "t_seconds": 418.0,
-        "description": "Officer begins a search of the trunk of the vehicle.",
-        "significance": "neutral"
-      },
-      {
-        "t_seconds": 805.0,
-        "description": "Officer searches a purse found in the trunk.",
-        "significance": "neutral"
-      }
-    ],
-    "summary": "Officers conducted a search of a vehicle following a traffic stop. During the search, they discovered suspected narcotics in the center console and trunk. The male subject was already in handcuffs upon the start of the recording, and both subjects remained compliant throughout the encounter.",
-    "model_used": "gemini-3.1-flash-lite",
-    "latency_ms": 67719.0
-  },
+  "visual_context": null,
   "deep_violations": [
     {
       "rule_id": "US-5A-MIRANDA",
@@ -155,8 +60,8 @@
         18,
         19
       ],
-      "rationale": "Officer S2 asks the suspect \"Do you have anything on you?\" (utterances 9‑12) before delivering Miranda warnings, which are only provided later (utterances 16‑19). This constitutes an unlawful custodial interrogation without proper warning.",
-      "confidence": 0.86
+      "rationale": "Officer asked the suspect \"Do you have anything on you?\" and proceeded with a search before reciting the Miranda rights at utterances 16‑19, constituting custodial interrogation without proper warning.",
+      "confidence": 0.95
     },
     {
       "rule_id": "US-4A-SEARCH",
@@ -164,12 +69,13 @@
       "source": "U.S. Const. amend. IV; Katz v. United States, 389 U.S. 347 (1967)",
       "severity": "high",
       "cited_utterances": [
+        12,
+        15,
         5,
-        6,
-        8
+        6
       ],
-      "rationale": "Officer declares a need for a \"full search\" of the vehicle (utterances 5‑6) and proceeds to search the center console and trunk without articulating any probable cause, consent, or applicable exception, violating the warrant requirement.",
-      "confidence": 0.74
+      "rationale": "Officer declared \"Okay, let me search\" and inspected the suspect’s clothing and belongings without consent, a warrantless search lacking any recognized exception.",
+      "confidence": 0.85
     },
     {
       "rule_id": "US-4A-FRISK",
@@ -177,111 +83,97 @@
       "source": "Terry v. Ohio, 392 U.S. 1 (1968); Minnesota v. Dickerson, 508 U.S. 366 (1993)",
       "severity": "medium",
       "cited_utterances": [
-        5,
-        6,
-        7
+        9,
+        10,
+        11,
+        12
       ],
-      "rationale": "The officer performs a pat‑down (visual cue at 145 s) and remarks \"I think he's got something up\" (utterance 7) without expressing a specific, articulable suspicion that the suspect is armed, exceeding the permissible scope of a Terry frisk.",
-      "confidence": 0.62
+      "rationale": "The officer performed a full-body search and examined pockets without articulable suspicion that the suspect was armed, exceeding the permissible scope of a protective frisk.",
+      "confidence": 0.75
     },
     {
       "rule_id": "US-4A-STOP",
       "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
       "source": "U.S. Const. amend. IV; Terry v. Ohio, 392 U.S. 1 (1968)",
       "severity": "high",
-      "cited_utterances": [],
-      "rationale": "The visual context describes an \"investigatory stop\" lacking any articulated suspicion of wrongdoing; no transcript excerpt provides justification for the initial detention, suggesting the stop may have been unreasonable.",
-      "confidence": 0.55
+      "cited_utterances": [
+        9
+      ],
+      "rationale": "The transcript provides no indication of any articulable suspicion justifying the initial stop; the officer proceeds directly to questioning, suggesting an unreasonable seizure.",
+      "confidence": 0.6
     }
   ],
   "rebuttals": [
     {
       "challenges_rule_id": "US-5A-MIRANDA",
       "stance": "mitigate",
-      "counter_argument": "The questions 'Do you have anything on you?' (utterances 9-11) are routine safety/inventory inquiries intended to ensure officer safety during a search, not an attempt to elicit incriminating statements for the purpose of investigation. Miranda warnings were delivered immediately thereafter (utterances 16-19) before any investigative interrogation took place.",
+      "counter_argument": "The questions asked at utterances 9-11 ('Do you have anything on you?') are routine booking or safety questions rather than a custodial interrogation designed to elicit incriminating statements about the crime. Furthermore, the officer promptly administered the warnings at utterance 16 once formal questioning was to begin.",
       "counter_utterances": [
         9,
         10,
         11,
-        16,
-        17,
-        18,
-        19
+        16
       ],
       "proposed_severity_adjustment": "high → low",
-      "confidence": 0.8
+      "confidence": 0.7
     },
     {
       "challenges_rule_id": "US-4A-SEARCH",
       "stance": "rebut",
-      "counter_argument": "The search of the vehicle was lawful under the automobile exception. Officers had already discovered 'meth chunks' and 'heroin' in the center console (utterances 2-5), which provides clear probable cause to search the remainder of the vehicle for additional contraband.",
+      "counter_argument": "The search was a lawful search incident to arrest. The officer had already discovered 'meth chunks' and 'heroin' in the center console (utterances 3-5), providing clear probable cause for the arrest and a subsequent search of the suspect's person for further contraband or weapons.",
       "counter_utterances": [
         2,
         3,
         4,
-        5
+        5,
+        12
       ],
-      "proposed_severity_adjustment": null,
-      "confidence": 0.95
+      "proposed_severity_adjustment": "high → null",
+      "confidence": 0.9
     },
     {
       "challenges_rule_id": "US-4A-FRISK",
       "stance": "rebut",
-      "counter_argument": "The pat-down was justified by reasonable suspicion. The officer noted the suspect was 'clenching his butt' and believed 'he's got something up' (utterances 6-7), which, combined with the discovery of narcotics in the vehicle, justifies a search for weapons or concealed contraband for officer safety.",
+      "counter_argument": "The search exceeded a simple Terry frisk because it was a full search incident to arrest based on the probable cause established by the narcotics found in the vehicle. Additionally, the officer noted the suspect was 'clenching' (utterance 6), suggesting the concealment of contraband, justifying a more thorough search.",
       "counter_utterances": [
-        6,
-        7
+        3,
+        4,
+        5,
+        6
       ],
-      "proposed_severity_adjustment": null,
-      "confidence": 0.75
+      "proposed_severity_adjustment": "medium → null",
+      "confidence": 0.85
     },
     {
       "challenges_rule_id": "US-4A-STOP",
       "stance": "rebut",
-      "counter_argument": "The prosecution's claim is based on a lack of transcript evidence for the initial stop, but the visual context and transcript confirm the discovery of narcotics (utterances 2-5). The presence of controlled substances provides retroactive justification for the detention and probable cause for the subsequent arrest.",
+      "counter_argument": "While the initial stop is not depicted, the transcript reveals the officer found a significant amount of illegal narcotics in the vehicle's center console (utterances 2-5). This evidence confirms that the stop was based on reasonable suspicion that evolved into probable cause, validating the seizure.",
       "counter_utterances": [
         2,
         3,
         4,
         5
       ],
-      "proposed_severity_adjustment": null,
-      "confidence": 0.6
+      "proposed_severity_adjustment": "high → null",
+      "confidence": 0.8
     }
   ],
   "verdict_timeline": [
     {
-      "at_t": 67.99981976299023,
+      "at_t": 73.08410007198108,
       "reason": "debounced",
-      "wall_ms": 17240,
+      "wall_ms": 13132,
       "overall_verdict": "officer_justified",
       "overall_severity": "none",
-      "headline": "The officer's search was justified by probable cause after discovering narcotics in the vehicle.",
-      "summary": "The prosecution alleges that the officer conducted an unlawful search and exceeded the scope of a Terry frisk. However, the transcript reveals that the officer had already discovered significant quantities of suspected narcotics, including methamphetamine and heroin, in the vehicle's center console. This discovery established clear probable cause for an arrest, making the subsequent full search of the subject's person a lawful search incident to arrest. Therefore, both alleged violations are dismissed.",
+      "headline": "The warrantless search was justified as a search incident to arrest following the discovery of narcotics.",
+      "summary": "The prosecution alleged a Fourth Amendment violation for a warrantless search of the suspect. However, the transcript clearly indicates that officers had already discovered suspected meth, heroin, and carfentanyl in the vehicle's center console. This discovery established probable cause for an arrest, thereby justifying a search of the suspect's person incident to arrest. The officers also articulated specific reasons to suspect the individual was concealing additional contraband.",
       "rulings": [
-        {
-          "rule_id": "US-4A-FRISK",
-          "title": "Terry Frisk — Limited Pat-Down",
-          "verdict": "violation_dismissed",
-          "final_severity": "none",
-          "reasoning": "The prosecution incorrectly characterizes the interaction as a Terry frisk. Because the officer had already found narcotics in the vehicle, establishing probable cause for arrest, a full search for evidence (including items 'concealed inside') was legally permissible as a search incident to arrest.",
-          "key_utterances": [
-            2,
-            3,
-            4,
-            5,
-            11
-          ],
-          "prosecution_weight": 0.1,
-          "defense_weight": 0.9,
-          "confidence": 0.95
-        },
         {
           "rule_id": "US-4A-SEARCH",
           "title": "Fourth Amendment — Warrantless Search",
           "verdict": "violation_dismissed",
           "final_severity": "none",
-          "reasoning": "The prosecution claims the search lacked probable cause, but the transcript directly contradicts this. Utterances 2 through 5 show the officer found 'meth chunks' and 'heroin' in the center console, providing clear probable cause for a warrantless search incident to arrest.",
+          "reasoning": "The prosecution's claim that the search lacked probable cause is contradicted by the transcript. Utterances 2 through 5 show officers finding significant quantities of illegal narcotics in the vehicle prior to the search of the person, providing clear probable cause for arrest and a subsequent search incident to arrest.",
           "key_utterances": [
             2,
             3,
@@ -294,96 +186,31 @@
           "confidence": 0.95
         }
       ],
-      "n_violations": 2,
+      "n_violations": 1,
       "n_rebuttals": 0
     },
     {
-      "at_t": 197.31611963899923,
+      "at_t": 173.23208937098389,
       "reason": "debounced",
-      "wall_ms": 15685,
+      "wall_ms": 22163,
       "overall_verdict": "officer_justified",
       "overall_severity": "none",
-      "headline": "The officer's actions were justified by the discovery of narcotics, establishing probable cause for arrest and search.",
-      "summary": "The prosecution's claims of Fourth Amendment violations fail to account for the clear evidence of narcotics discovered in the suspect's vehicle prior to the search of his person. The transcript confirms the officers found methamphetamine, heroin, and carfentanyl in the center console, which provided overwhelming probable cause for a custodial arrest. Consequently, the subsequent pat-down and full search were lawful as a search incident to arrest. The defense successfully rebutted all alleged violations.",
-      "rulings": [
-        {
-          "rule_id": "US-4A-STOP",
-          "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
-          "verdict": "violation_dismissed",
-          "final_severity": "none",
-          "reasoning": "The transcript explicitly details the discovery of methamphetamine, heroin, and suspected carfentanyl in the vehicle's center console. This discovery provided clear probable cause for the seizure, rendering the prosecution's claim of an unreasonable stop without articulable facts invalid.",
-          "key_utterances": [
-            2,
-            3,
-            4,
-            5
-          ],
-          "prosecution_weight": 0.1,
-          "defense_weight": 0.9,
-          "confidence": 0.95
-        },
-        {
-          "rule_id": "US-4A-FRISK",
-          "title": "Terry Frisk — Limited Pat‑Down",
-          "verdict": "violation_dismissed",
-          "final_severity": "none",
-          "reasoning": "The prosecution incorrectly frames the interaction as a Terry frisk requiring reasonable suspicion that the suspect is armed. Given the discovery of significant narcotics, the search was justified as a search incident to a lawful arrest, making the Terry standard inapplicable.",
-          "key_utterances": [
-            3,
-            5,
-            9
-          ],
-          "prosecution_weight": 0.1,
-          "defense_weight": 0.9,
-          "confidence": 0.95
-        },
-        {
-          "rule_id": "US-4A-SEARCH",
-          "title": "Fourth Amendment — Warrantless Search",
-          "verdict": "violation_dismissed",
-          "final_severity": "none",
-          "reasoning": "The warrantless search of the suspect's person was a lawful search incident to arrest, supported by the probable cause established by the narcotics found in the vehicle. Furthermore, the officer articulated specific behavioral indicators, such as the suspect 'clenching his butt,' justifying a thorough search for concealed contraband.",
-          "key_utterances": [
-            2,
-            3,
-            5,
-            6,
-            7
-          ],
-          "prosecution_weight": 0.1,
-          "defense_weight": 0.9,
-          "confidence": 0.95
-        }
-      ],
-      "n_violations": 3,
-      "n_rebuttals": 3
-    },
-    {
-      "at_t": 282.9550076099986,
-      "reason": "session_end",
-      "wall_ms": 19447,
-      "overall_verdict": "officer_justified",
-      "overall_severity": "none",
-      "headline": "Officers acted lawfully based on probable cause from discovered narcotics, and safety questions did not violate Miranda.",
-      "summary": "The audit reveals that the officers' actions were largely justified by the discovery of narcotics in the vehicle, which provided probable cause for the vehicle search and the search of the suspect. The pre-Miranda questions were strictly limited to officer safety prior to a physical search, which is a recognized exception. The legality of the initial stop cannot be determined as the recording begins after the stop was initiated, resulting in an inconclusive finding for that specific claim.",
+      "headline": "Officers acted lawfully; searches and safety questions were justified by the discovery of narcotics.",
+      "summary": "The audit reveals no constitutional violations by the officers. The discovery of severe narcotics in the vehicle provided clear probable cause for the suspect's detention and subsequent search incident to arrest. The pre-Miranda questions were limited to standard officer safety inquiries prior to a physical search, which is permissible. The legality of the initial stop cannot be determined from this truncated transcript, but no evidence suggests it was unlawful.",
       "rulings": [
         {
           "rule_id": "US-5A-MIRANDA",
           "title": "Fifth Amendment — Miranda Warning",
           "verdict": "violation_dismissed",
           "final_severity": "none",
-          "reasoning": "The officer's questions about whether the suspect had anything on them that could hurt the officer (utterances 9-11) fall under the standard officer safety exception to Miranda. Substantive Miranda warnings were provided immediately after (utterances 16-19) and before any investigative questioning occurred.",
+          "reasoning": "The questions asked prior to the Miranda warning were strictly related to officer safety during a search ('Hurt me?'). This falls under standard safety exceptions and does not constitute a custodial interrogation designed to elicit incriminating evidence.",
           "key_utterances": [
             9,
             10,
-            11,
-            16,
-            17,
-            18,
-            19
+            11
           ],
-          "prosecution_weight": 0.2,
-          "defense_weight": 0.9,
+          "prosecution_weight": 0.15,
+          "defense_weight": 0.95,
           "confidence": 0.95
         },
         {
@@ -391,7 +218,7 @@
           "title": "Fourth Amendment — Warrantless Search",
           "verdict": "violation_dismissed",
           "final_severity": "none",
-          "reasoning": "The transcript clearly indicates the officers had already found 'meth chunks' and 'heroin' in the center console (utterances 2-5). This discovery establishes probable cause to search the entire vehicle under the automobile exception, rendering the warrantless search lawful.",
+          "reasoning": "The transcript clearly establishes that officers had already discovered significant quantities of narcotics in the vehicle's center console. This provided ample probable cause for an arrest and justified a full search of the suspect's person incident to that arrest.",
           "key_utterances": [
             2,
             3,
@@ -400,33 +227,101 @@
           ],
           "prosecution_weight": 0.1,
           "defense_weight": 0.95,
-          "confidence": 0.95
-        },
-        {
-          "rule_id": "US-4A-FRISK",
-          "title": "Terry Frisk — Limited Pat-Down",
-          "verdict": "violation_dismissed",
-          "final_severity": "none",
-          "reasoning": "The discovery of significant quantities of narcotics in the vehicle provided probable cause for arrest, justifying a full search incident to arrest rather than a mere Terry frisk. The officer's observation of the suspect 'clenching his butt' (utterances 6-7) further justified a search for concealed contraband.",
-          "key_utterances": [
-            5,
-            6,
-            7
-          ],
-          "prosecution_weight": 0.2,
-          "defense_weight": 0.85,
-          "confidence": 0.9
+          "confidence": 0.98
         },
         {
           "rule_id": "US-4A-STOP",
           "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
           "verdict": "inconclusive",
           "final_severity": "none",
-          "reasoning": "The recording begins with the suspect already in handcuffs, and the transcript provides no context regarding the initial reason for the traffic stop. While the defense's claim of 'retroactive justification' is legally invalid, there is insufficient evidence on the record to determine if the initial stop was unlawful.",
-          "key_utterances": [],
-          "prosecution_weight": 0.4,
-          "defense_weight": 0.2,
-          "confidence": 0.85
+          "reasoning": "The transcript begins mid-incident, after the stop has occurred and drugs have been found. There is insufficient evidence in this specific recording to evaluate the legality of the initial stop, making the prosecution's claim speculative.",
+          "key_utterances": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "prosecution_weight": 0.2,
+          "defense_weight": 0.8,
+          "confidence": 0.9
+        }
+      ],
+      "n_violations": 3,
+      "n_rebuttals": 3
+    },
+    {
+      "at_t": 263.7527796609793,
+      "reason": "session_end",
+      "wall_ms": 22781,
+      "overall_verdict": "officer_justified",
+      "overall_severity": "none",
+      "headline": "Officer's actions were fully justified by probable cause established by the discovery of narcotics in the vehicle.",
+      "summary": "The transcript clearly indicates that officers had already discovered significant quantities of narcotics, including meth and heroin, in the vehicle's center console prior to the search of the suspect. This discovery provided probable cause for an arrest and a subsequent full search incident to arrest, negating the Fourth Amendment claims regarding the search and frisk. The pre-Miranda questions were limited to standard safety inquiries prior to a physical search, which do not constitute custodial interrogation. Furthermore, the initial stop's justification cannot be contested merely because it occurred prior to the start of the recording.",
+      "rulings": [
+        {
+          "rule_id": "US-5A-MIRANDA",
+          "title": "Fifth Amendment — Miranda Warning",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The officer's questions prior to the Miranda warning were limited to safety inquiries ('Hurt me? Got anything? Concealed inside.') before conducting a physical search. These fall under routine safety exceptions and do not constitute an interrogation designed to elicit incriminating statements about the crime. Miranda was properly administered before formal questioning began.",
+          "key_utterances": [
+            9,
+            10,
+            11,
+            16
+          ],
+          "prosecution_weight": 0.1,
+          "defense_weight": 0.9,
+          "confidence": 0.95
+        },
+        {
+          "rule_id": "US-4A-SEARCH",
+          "title": "Fourth Amendment — Warrantless Search",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The officers had already discovered meth, heroin, and suspected carfentanyl in the vehicle's center console (utterances 2-5). This provided clear probable cause for an arrest and a lawful full search incident to arrest, making a warrant unnecessary.",
+          "key_utterances": [
+            2,
+            3,
+            4,
+            5,
+            12
+          ],
+          "prosecution_weight": 0.05,
+          "defense_weight": 0.95,
+          "confidence": 0.98
+        },
+        {
+          "rule_id": "US-4A-FRISK",
+          "title": "Terry Frisk — Limited Pat-Down",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "Because the officers had probable cause to arrest the suspect based on the narcotics found in the vehicle, they were legally permitted to conduct a full search incident to arrest. The search was not limited to the scope of a Terry frisk for weapons, especially given the suspicion that the suspect was concealing contraband.",
+          "key_utterances": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "prosecution_weight": 0.05,
+          "defense_weight": 0.95,
+          "confidence": 0.98
+        },
+        {
+          "rule_id": "US-4A-STOP",
+          "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The transcript begins after the initial stop has occurred and after drugs have already been found. The absence of the initial stop in the recording does not render it unreasonable, and the presence of narcotics clearly justifies the ongoing seizure.",
+          "key_utterances": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "prosecution_weight": 0.0,
+          "defense_weight": 0.95,
+          "confidence": 0.95
         }
       ],
       "n_violations": 4,
@@ -434,30 +329,27 @@
     }
   ],
   "final_verdict": {
-    "at_t": 282.9550076099986,
+    "at_t": 263.7527796609793,
     "reason": "session_end",
-    "wall_ms": 19447,
+    "wall_ms": 22781,
     "overall_verdict": "officer_justified",
     "overall_severity": "none",
-    "headline": "Officers acted lawfully based on probable cause from discovered narcotics, and safety questions did not violate Miranda.",
-    "summary": "The audit reveals that the officers' actions were largely justified by the discovery of narcotics in the vehicle, which provided probable cause for the vehicle search and the search of the suspect. The pre-Miranda questions were strictly limited to officer safety prior to a physical search, which is a recognized exception. The legality of the initial stop cannot be determined as the recording begins after the stop was initiated, resulting in an inconclusive finding for that specific claim.",
+    "headline": "Officer's actions were fully justified by probable cause established by the discovery of narcotics in the vehicle.",
+    "summary": "The transcript clearly indicates that officers had already discovered significant quantities of narcotics, including meth and heroin, in the vehicle's center console prior to the search of the suspect. This discovery provided probable cause for an arrest and a subsequent full search incident to arrest, negating the Fourth Amendment claims regarding the search and frisk. The pre-Miranda questions were limited to standard safety inquiries prior to a physical search, which do not constitute custodial interrogation. Furthermore, the initial stop's justification cannot be contested merely because it occurred prior to the start of the recording.",
     "rulings": [
       {
         "rule_id": "US-5A-MIRANDA",
         "title": "Fifth Amendment — Miranda Warning",
         "verdict": "violation_dismissed",
         "final_severity": "none",
-        "reasoning": "The officer's questions about whether the suspect had anything on them that could hurt the officer (utterances 9-11) fall under the standard officer safety exception to Miranda. Substantive Miranda warnings were provided immediately after (utterances 16-19) and before any investigative questioning occurred.",
+        "reasoning": "The officer's questions prior to the Miranda warning were limited to safety inquiries ('Hurt me? Got anything? Concealed inside.') before conducting a physical search. These fall under routine safety exceptions and do not constitute an interrogation designed to elicit incriminating statements about the crime. Miranda was properly administered before formal questioning began.",
         "key_utterances": [
           9,
           10,
           11,
-          16,
-          17,
-          18,
-          19
+          16
         ],
-        "prosecution_weight": 0.2,
+        "prosecution_weight": 0.1,
         "defense_weight": 0.9,
         "confidence": 0.95
       },
@@ -466,42 +358,49 @@
         "title": "Fourth Amendment — Warrantless Search",
         "verdict": "violation_dismissed",
         "final_severity": "none",
-        "reasoning": "The transcript clearly indicates the officers had already found 'meth chunks' and 'heroin' in the center console (utterances 2-5). This discovery establishes probable cause to search the entire vehicle under the automobile exception, rendering the warrantless search lawful.",
+        "reasoning": "The officers had already discovered meth, heroin, and suspected carfentanyl in the vehicle's center console (utterances 2-5). This provided clear probable cause for an arrest and a lawful full search incident to arrest, making a warrant unnecessary.",
         "key_utterances": [
           2,
           3,
           4,
-          5
+          5,
+          12
         ],
-        "prosecution_weight": 0.1,
+        "prosecution_weight": 0.05,
         "defense_weight": 0.95,
-        "confidence": 0.95
+        "confidence": 0.98
       },
       {
         "rule_id": "US-4A-FRISK",
         "title": "Terry Frisk — Limited Pat-Down",
         "verdict": "violation_dismissed",
         "final_severity": "none",
-        "reasoning": "The discovery of significant quantities of narcotics in the vehicle provided probable cause for arrest, justifying a full search incident to arrest rather than a mere Terry frisk. The officer's observation of the suspect 'clenching his butt' (utterances 6-7) further justified a search for concealed contraband.",
+        "reasoning": "Because the officers had probable cause to arrest the suspect based on the narcotics found in the vehicle, they were legally permitted to conduct a full search incident to arrest. The search was not limited to the scope of a Terry frisk for weapons, especially given the suspicion that the suspect was concealing contraband.",
         "key_utterances": [
+          3,
+          4,
           5,
-          6,
-          7
+          6
         ],
-        "prosecution_weight": 0.2,
-        "defense_weight": 0.85,
-        "confidence": 0.9
+        "prosecution_weight": 0.05,
+        "defense_weight": 0.95,
+        "confidence": 0.98
       },
       {
         "rule_id": "US-4A-STOP",
         "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
-        "verdict": "inconclusive",
+        "verdict": "violation_dismissed",
         "final_severity": "none",
-        "reasoning": "The recording begins with the suspect already in handcuffs, and the transcript provides no context regarding the initial reason for the traffic stop. While the defense's claim of 'retroactive justification' is legally invalid, there is insufficient evidence on the record to determine if the initial stop was unlawful.",
-        "key_utterances": [],
-        "prosecution_weight": 0.4,
-        "defense_weight": 0.2,
-        "confidence": 0.85
+        "reasoning": "The transcript begins after the initial stop has occurred and after drugs have already been found. The absence of the initial stop in the recording does not render it unreasonable, and the presence of narcotics clearly justifies the ongoing seizure.",
+        "key_utterances": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "prosecution_weight": 0.0,
+        "defense_weight": 0.95,
+        "confidence": 0.95
       }
     ],
     "n_violations": 4,
@@ -509,7 +408,7 @@
   },
   "events": [
     {
-      "t": 0.0017881189996842295,
+      "t": 0.0018253379967063665,
       "kind": "utterance",
       "text": "Uh. I've been a. Put one on him.",
       "speaker": "S1",
@@ -518,14 +417,14 @@
       "utt_index": 0
     },
     {
-      "t": 2.5921509089967003,
+      "t": 2.777893675985979,
       "kind": "router_skip",
       "utt_index": 0,
       "classification": "none",
-      "confidence": 0.85
+      "confidence": 0.9
     },
     {
-      "t": 2.5921716680022655,
+      "t": 2.77791707997676,
       "kind": "utterance",
       "text": "All right.",
       "speaker": "S1",
@@ -534,14 +433,14 @@
       "utt_index": 1
     },
     {
-      "t": 2.5922442139999475,
+      "t": 2.778023528982885,
       "kind": "router_skip",
       "utt_index": 1,
       "classification": "none",
       "confidence": 0.75
     },
     {
-      "t": 2.5922503659967333,
+      "t": 2.778030020999722,
       "kind": "utterance",
       "text": "Huh. I don't know. What? I got all this out of the center console, hidden under here.",
       "speaker": "S1",
@@ -550,14 +449,14 @@
       "utt_index": 2
     },
     {
-      "t": 3.8750389859924326,
+      "t": 4.039135992992669,
       "kind": "router_skip",
       "utt_index": 2,
       "classification": "none",
       "confidence": 0.95
     },
     {
-      "t": 3.875054244999774,
+      "t": 4.039151180972112,
       "kind": "utterance",
       "text": "I don't know what this is. Kind of looks like a carfentanyl. Yeah, like that. Great. It's like gray death. Here, you got",
       "speaker": "S1",
@@ -566,14 +465,14 @@
       "utt_index": 3
     },
     {
-      "t": 5.0750161329924595,
+      "t": 5.276469039992662,
       "kind": "router_skip",
       "utt_index": 3,
       "classification": "none",
       "confidence": 0.95
     },
     {
-      "t": 5.075029478990473,
+      "t": 5.276480370986974,
       "kind": "utterance",
       "text": "meth.",
       "speaker": "S1",
@@ -582,14 +481,14 @@
       "utt_index": 4
     },
     {
-      "t": 5.075080784998136,
+      "t": 5.276540322985966,
       "kind": "router_skip",
       "utt_index": 4,
       "classification": "none",
       "confidence": 0.95
     },
     {
-      "t": 5.075085923992447,
+      "t": 5.276545272994554,
       "kind": "utterance",
       "text": "Big old meth chunks. Heroin. In a funnel. All right, I'll. Know he needs full search. Full search? Yeah, he's",
       "speaker": "S1",
@@ -598,14 +497,14 @@
       "utt_index": 5
     },
     {
-      "t": 6.32879191399843,
+      "t": 6.757727205986157,
       "kind": "router_skip",
       "utt_index": 5,
       "classification": "none",
       "confidence": 0.95
     },
     {
-      "t": 6.3288034059951315,
+      "t": 6.757738677988527,
       "kind": "utterance",
       "text": "clenching his butt. He's already searched him, but he, uh.",
       "speaker": "S1",
@@ -614,14 +513,14 @@
       "utt_index": 6
     },
     {
-      "t": 7.5543649879982695,
+      "t": 8.091129921987886,
       "kind": "router_skip",
       "utt_index": 6,
       "classification": "none",
-      "confidence": 0.9
+      "confidence": 0.95
     },
     {
-      "t": 7.5543765899928985,
+      "t": 8.09114161398611,
       "kind": "utterance",
       "text": "I think he's got something up.",
       "speaker": "S1",
@@ -630,15 +529,15 @@
       "utt_index": 7
     },
     {
-      "t": 15.210701952004456,
+      "t": 22.68784251398756,
       "kind": "router_skip",
       "utt_index": 7,
       "classification": "escalation",
       "reason": "prosecution_no_alert",
-      "atom_ms": 7656
+      "atom_ms": 14596
     },
     {
-      "t": 15.21073559600336,
+      "t": 22.687855146999937,
       "kind": "utterance",
       "text": "Car. Just one second.",
       "speaker": "S1",
@@ -647,14 +546,14 @@
       "utt_index": 8
     },
     {
-      "t": 15.210835703997873,
+      "t": 22.687971975974506,
       "kind": "router_skip",
       "utt_index": 8,
       "classification": "none",
       "confidence": 0.75
     },
     {
-      "t": 15.210840683997958,
+      "t": 22.687978337984532,
       "kind": "utterance",
       "text": "So I asked him. Do you have anything on you? Hurt me? Anything. Anything. In.",
       "speaker": "S2",
@@ -663,15 +562,15 @@
       "utt_index": 9
     },
     {
-      "t": 17.745350259996485,
+      "t": 24.895570410997607,
       "kind": "router_skip",
       "utt_index": 9,
       "classification": "escalation",
       "reason": "prosecution_no_alert",
-      "atom_ms": 2534
+      "atom_ms": 2207
     },
     {
-      "t": 17.745358604996,
+      "t": 24.895583855977748,
       "kind": "deep_scan_started",
       "triggers": [
         "+10_utts"
@@ -679,7 +578,7 @@
       "utterances": 10
     },
     {
-      "t": 17.74539322000055,
+      "t": 24.89564501098357,
       "kind": "utterance",
       "text": "You got anything on you?",
       "speaker": "S1",
@@ -688,14 +587,14 @@
       "utt_index": 10
     },
     {
-      "t": 19.030626343999757,
+      "t": 26.25469543298823,
       "kind": "router_skip",
       "utt_index": 10,
       "classification": "none",
       "confidence": 0.95
     },
     {
-      "t": 19.03064107199316,
+      "t": 26.254709538974566,
       "kind": "utterance",
       "text": "Hurt me. Got anything? Concealed inside. You know.",
       "speaker": "S1",
@@ -704,40 +603,15 @@
       "utt_index": 11
     },
     {
-      "t": 23.488321946992073,
-      "kind": "rapid_alert",
-      "rule_id": "US-4A-FRISK",
-      "rule_title": "Terry Frisk — Limited Pat-Down",
-      "rule_source": "Terry v. Ohio, 392 U.S. 1 (1968); Minnesota v. Dickerson, 508 U.S. 366 (1993)",
-      "severity": "medium",
-      "subject": "officer",
-      "confidence": 0.85,
-      "one_liner": "Officer attempting to search for evidence ('concealed inside') beyond a limited protective frisk for weapons.",
-      "triggering_quote": "Hurt me. Got anything? Concealed inside. You know.",
-      "classification": "escalation",
-      "region": "us",
-      "retrieval_scores": [
-        {
-          "rule_id": "US-4A-FRISK",
-          "score": 0.551
-        },
-        {
-          "rule_id": "US-IDENTIFY",
-          "score": 0.509
-        },
-        {
-          "rule_id": "US-4A-SEARCH",
-          "score": 0.477
-        }
-      ],
-      "model_used": "google/gemma-4-26B-A4B-it",
-      "latency_ms": 3195.7,
+      "t": 28.434171871980652,
+      "kind": "router_skip",
       "utt_index": 11,
-      "t_utterance": 106.4,
-      "atom_ms": 4457
+      "classification": "escalation",
+      "reason": "prosecution_no_alert",
+      "atom_ms": 2179
     },
     {
-      "t": 23.488355078996392,
+      "t": 28.434184806974372,
       "kind": "utterance",
       "text": "Okay, let me search. You.",
       "speaker": "S1",
@@ -746,15 +620,15 @@
       "utt_index": 12
     },
     {
-      "t": 28.901827103996766,
+      "t": 34.425471001974074,
       "kind": "rapid_alert",
       "rule_id": "US-4A-SEARCH",
       "rule_title": "Fourth Amendment — Warrantless Search",
       "rule_source": "U.S. Const. amend. IV; Katz v. United States, 389 U.S. 347 (1967)",
       "severity": "high",
       "subject": "officer",
-      "confidence": 0.85,
-      "one_liner": "Officer initiates a search of the subject without stated consent, warrant, or probable cause.",
+      "confidence": 1.0,
+      "one_liner": "Officer declares intent to search without establishing consent, warrant, or probable cause in prior context.",
       "triggering_quote": "Okay, let me search. You.",
       "classification": "officer_violation",
       "region": "us",
@@ -773,13 +647,13 @@
         }
       ],
       "model_used": "google/gemma-4-26B-A4B-it",
-      "latency_ms": 3827.8,
+      "latency_ms": 4420.6,
       "utt_index": 12,
       "t_utterance": 125.84,
-      "atom_ms": 5413
+      "atom_ms": 5991
     },
     {
-      "t": 28.90185995599313,
+      "t": 34.425514132977696,
       "kind": "utterance",
       "text": "I know.",
       "speaker": "S1",
@@ -788,14 +662,14 @@
       "utt_index": 13
     },
     {
-      "t": 28.901932572000078,
+      "t": 34.42566256198916,
       "kind": "router_skip",
       "utt_index": 13,
       "classification": "none",
       "confidence": 0.75
     },
     {
-      "t": 28.901937800997985,
+      "t": 34.425671367993345,
       "kind": "utterance",
       "text": "Like there.",
       "speaker": "S3",
@@ -804,14 +678,14 @@
       "utt_index": 14
     },
     {
-      "t": 28.9019836679945,
+      "t": 34.42575358299655,
       "kind": "router_skip",
       "utt_index": 14,
       "classification": "none",
       "confidence": 0.75
     },
     {
-      "t": 28.901987674995326,
+      "t": 34.42576159798773,
       "kind": "utterance",
       "text": "That ain't your underwear. Yeah.",
       "speaker": "S1",
@@ -820,14 +694,14 @@
       "utt_index": 15
     },
     {
-      "t": 30.091101976999198,
+      "t": 35.877744591998635,
       "kind": "router_skip",
       "utt_index": 15,
       "classification": "none",
       "confidence": 0.95
     },
     {
-      "t": 30.091115442002774,
+      "t": 35.87775653498829,
       "kind": "utterance",
       "text": "All right, listen, Kyle. Any questions? I gotta read your rights. So you know what they are. All right. Just point entertain. You're not free to go. Alright? You have",
       "speaker": "S1",
@@ -836,15 +710,15 @@
       "utt_index": 16
     },
     {
-      "t": 32.438050950993784,
+      "t": 38.88730133898207,
       "kind": "router_skip",
       "utt_index": 16,
       "classification": "de_escalation",
       "reason": "prosecution_no_alert",
-      "atom_ms": 2346
+      "atom_ms": 3009
     },
     {
-      "t": 32.43806379499438,
+      "t": 38.88731445299345,
       "kind": "utterance",
       "text": "right to remain silent. Anything you say can and will be used against you in a court of law. You have the right to talk to a lawyer and have him or her.",
       "speaker": "S1",
@@ -853,15 +727,15 @@
       "utt_index": 17
     },
     {
-      "t": 34.34634760499466,
+      "t": 41.566813352983445,
       "kind": "router_skip",
       "utt_index": 17,
       "classification": "de_escalation",
       "reason": "prosecution_no_alert",
-      "atom_ms": 1908
+      "atom_ms": 2679
     },
     {
-      "t": 34.346364967001136,
+      "t": 41.566827359987656,
       "kind": "utterance",
       "text": "With you while you're being questioned. You cannot afford to hire a lawyer. One will be appointed to represent you before any questioning. If you wish, you can decide at any",
       "speaker": "S1",
@@ -870,15 +744,15 @@
       "utt_index": 18
     },
     {
-      "t": 37.08645968599012,
+      "t": 44.2210284069879,
       "kind": "router_skip",
       "utt_index": 18,
       "classification": "de_escalation",
       "reason": "prosecution_no_alert",
-      "atom_ms": 2740
+      "atom_ms": 2654
     },
     {
-      "t": 37.08647424299852,
+      "t": 44.22104248299729,
       "kind": "utterance",
       "text": "time. Exercise your rights and not answer any questions or make any statements. Do you understand? Each of these rights over 20th? Yes. Okay. All right. Have a seat in the",
       "speaker": "S1",
@@ -887,15 +761,15 @@
       "utt_index": 19
     },
     {
-      "t": 38.99978205800289,
+      "t": 46.735230967984535,
       "kind": "router_skip",
       "utt_index": 19,
       "classification": "de_escalation",
       "reason": "prosecution_no_alert",
-      "atom_ms": 1913
+      "atom_ms": 2514
     },
     {
-      "t": 38.99979352999071,
+      "t": 46.735244131996296,
       "kind": "deep_scan_skipped",
       "reason": "previous_still_running",
       "triggers": [
@@ -903,7 +777,7 @@
       ]
     },
     {
-      "t": 38.999802345992066,
+      "t": 46.73525412098388,
       "kind": "utterance",
       "text": "car. I got a bunch of testing and stuff. I got the new.",
       "speaker": "S1",
@@ -912,14 +786,14 @@
       "utt_index": 20
     },
     {
-      "t": 40.33257460000459,
+      "t": 48.44101643198519,
       "kind": "router_skip",
       "utt_index": 20,
       "classification": "none",
       "confidence": 0.95
     },
     {
-      "t": 40.332583335999516,
+      "t": 48.44102460698923,
       "kind": "deep_scan_skipped",
       "reason": "previous_still_running",
       "triggers": [
@@ -927,7 +801,7 @@
       ]
     },
     {
-      "t": 40.33259150099184,
+      "t": 48.44103231097688,
       "kind": "utterance",
       "text": "Is it going up for. You.",
       "speaker": "S2",
@@ -936,14 +810,14 @@
       "utt_index": 21
     },
     {
-      "t": 41.5795209689968,
+      "t": 50.0906188209774,
       "kind": "router_skip",
       "utt_index": 21,
       "classification": "none",
       "confidence": 0.95
     },
     {
-      "t": 41.579527861991664,
+      "t": 50.09062675599125,
       "kind": "deep_scan_skipped",
       "reason": "previous_still_running",
       "triggers": [
@@ -951,7 +825,7 @@
       ]
     },
     {
-      "t": 41.579536427991115,
+      "t": 50.0906363039976,
       "kind": "utterance",
       "text": "All right, give me a second.",
       "speaker": "S2",
@@ -960,14 +834,14 @@
       "utt_index": 22
     },
     {
-      "t": 42.91923887099256,
+      "t": 51.85356518498156,
       "kind": "router_skip",
       "utt_index": 22,
       "classification": "none",
       "confidence": 0.95
     },
     {
-      "t": 42.91924511299294,
+      "t": 51.853571896994254,
       "kind": "deep_scan_skipped",
       "reason": "previous_still_running",
       "triggers": [
@@ -975,7 +849,7 @@
       ]
     },
     {
-      "t": 42.91925305800396,
+      "t": 51.853579670976615,
       "kind": "utterance",
       "text": "I. Try to stick your face close to here, bro.",
       "speaker": "S2",
@@ -984,15 +858,14 @@
       "utt_index": 23
     },
     {
-      "t": 45.12338118099433,
+      "t": 53.661561671993695,
       "kind": "router_skip",
       "utt_index": 23,
-      "classification": "escalation",
-      "reason": "prosecution_no_alert",
-      "atom_ms": 2204
+      "classification": "none",
+      "confidence": 0.95
     },
     {
-      "t": 45.123388584994245,
+      "t": 53.66157330299029,
       "kind": "deep_scan_skipped",
       "reason": "previous_still_running",
       "triggers": [
@@ -1000,7 +873,7 @@
       ]
     },
     {
-      "t": 45.123396579991095,
+      "t": 53.661583433975466,
       "kind": "utterance",
       "text": "That's the best I can do, man.",
       "speaker": "S2",
@@ -1009,14 +882,14 @@
       "utt_index": 24
     },
     {
-      "t": 46.422386328995344,
+      "t": 55.56747130697477,
       "kind": "router_skip",
       "utt_index": 24,
       "classification": "none",
       "confidence": 0.95
     },
     {
-      "t": 46.42239307099953,
+      "t": 55.56747898098547,
       "kind": "deep_scan_skipped",
       "reason": "previous_still_running",
       "triggers": [
@@ -1024,7 +897,7 @@
       ]
     },
     {
-      "t": 46.42240058600146,
+      "t": 55.56748715598951,
       "kind": "utterance",
       "text": "Oh.",
       "speaker": "S2",
@@ -1033,14 +906,14 @@
       "utt_index": 25
     },
     {
-      "t": 46.422454486993956,
+      "t": 55.56753506697714,
       "kind": "router_skip",
       "utt_index": 25,
       "classification": "none",
       "confidence": 0.95
     },
     {
-      "t": 46.42245857499074,
+      "t": 55.56753751100041,
       "kind": "deep_scan_skipped",
       "reason": "previous_still_running",
       "triggers": [
@@ -1048,7 +921,7 @@
       ]
     },
     {
-      "t": 46.422463032999076,
+      "t": 55.567540856980486,
       "kind": "utterance",
       "text": "I got off of 211. Got check.",
       "speaker": "S3",
@@ -1057,14 +930,14 @@
       "utt_index": 26
     },
     {
-      "t": 48.257615787995746,
+      "t": 57.43593547400087,
       "kind": "router_skip",
       "utt_index": 26,
       "classification": "none",
-      "confidence": 0.4
+      "confidence": 0.95
     },
     {
-      "t": 48.25762248999672,
+      "t": 57.43594223697437,
       "kind": "deep_scan_skipped",
       "reason": "previous_still_running",
       "triggers": [
@@ -1072,7 +945,7 @@
       ]
     },
     {
-      "t": 48.25763033499243,
+      "t": 57.4359595089918,
       "kind": "utterance",
       "text": "I'll try.",
       "speaker": "S2",
@@ -1081,14 +954,14 @@
       "utt_index": 27
     },
     {
-      "t": 48.25769496599969,
+      "t": 57.436039207997965,
       "kind": "router_skip",
       "utt_index": 27,
       "classification": "none",
       "confidence": 0.75
     },
     {
-      "t": 48.25769800199487,
+      "t": 57.436043335997965,
       "kind": "deep_scan_skipped",
       "reason": "previous_still_running",
       "triggers": [
@@ -1096,43 +969,26 @@
       ]
     },
     {
-      "t": 48.25770802999614,
+      "t": 57.436052733974066,
       "kind": "session_finalizing"
     },
     {
-      "t": 67.99982463200286,
+      "t": 73.08410646297853,
       "kind": "verdict_update",
-      "at_t": 67.99981976299023,
+      "at_t": 73.08410007198108,
       "reason": "debounced",
-      "wall_ms": 17240,
+      "wall_ms": 13132,
       "overall_verdict": "officer_justified",
       "overall_severity": "none",
-      "headline": "The officer's search was justified by probable cause after discovering narcotics in the vehicle.",
-      "summary": "The prosecution alleges that the officer conducted an unlawful search and exceeded the scope of a Terry frisk. However, the transcript reveals that the officer had already discovered significant quantities of suspected narcotics, including methamphetamine and heroin, in the vehicle's center console. This discovery established clear probable cause for an arrest, making the subsequent full search of the subject's person a lawful search incident to arrest. Therefore, both alleged violations are dismissed.",
+      "headline": "The warrantless search was justified as a search incident to arrest following the discovery of narcotics.",
+      "summary": "The prosecution alleged a Fourth Amendment violation for a warrantless search of the suspect. However, the transcript clearly indicates that officers had already discovered suspected meth, heroin, and carfentanyl in the vehicle's center console. This discovery established probable cause for an arrest, thereby justifying a search of the suspect's person incident to arrest. The officers also articulated specific reasons to suspect the individual was concealing additional contraband.",
       "rulings": [
-        {
-          "rule_id": "US-4A-FRISK",
-          "title": "Terry Frisk — Limited Pat-Down",
-          "verdict": "violation_dismissed",
-          "final_severity": "none",
-          "reasoning": "The prosecution incorrectly characterizes the interaction as a Terry frisk. Because the officer had already found narcotics in the vehicle, establishing probable cause for arrest, a full search for evidence (including items 'concealed inside') was legally permissible as a search incident to arrest.",
-          "key_utterances": [
-            2,
-            3,
-            4,
-            5,
-            11
-          ],
-          "prosecution_weight": 0.1,
-          "defense_weight": 0.9,
-          "confidence": 0.95
-        },
         {
           "rule_id": "US-4A-SEARCH",
           "title": "Fourth Amendment — Warrantless Search",
           "verdict": "violation_dismissed",
           "final_severity": "none",
-          "reasoning": "The prosecution claims the search lacked probable cause, but the transcript directly contradicts this. Utterances 2 through 5 show the officer found 'meth chunks' and 'heroin' in the center console, providing clear probable cause for a warrantless search incident to arrest.",
+          "reasoning": "The prosecution's claim that the search lacked probable cause is contradicted by the transcript. Utterances 2 through 5 show officers finding significant quantities of illegal narcotics in the vehicle prior to the search of the person, providing clear probable cause for arrest and a subsequent search incident to arrest.",
           "key_utterances": [
             2,
             3,
@@ -1145,33 +1001,20 @@
           "confidence": 0.95
         }
       ],
-      "n_violations": 2,
+      "n_violations": 1,
       "n_rebuttals": 0
     },
     {
-      "t": 116.92580547499529,
-      "kind": "visual_context_ready",
-      "force_observed": false,
-      "restraints_visible": true,
-      "restraints_timing": 0.0,
-      "weapons_drawn": false,
-      "subject_compliance": "compliant",
-      "key_moments": 8,
-      "summary": "Officers conducted a search of a vehicle following a traffic stop. During the search, they discovered suspected narcotics in the center console and trunk. The male subject was already in handcuffs upo",
-      "model_used": "gemini-3.1-flash-lite",
-      "latency_ms": 67719.0
-    },
-    {
-      "t": 179.128223873995,
+      "t": 148.56565641597263,
       "kind": "deep_scan_completed",
-      "wall_ms": 85869,
+      "wall_ms": 91129,
       "violations": 3,
       "rebuttals": 3,
       "prosecution_verdict": "violations_found",
       "overall_severity": "high"
     },
     {
-      "t": 179.12829859399062,
+      "t": 148.56574322999222,
       "kind": "deep_scan_started",
       "triggers": [
         "session_end"
@@ -1179,105 +1022,29 @@
       "utterances": 28
     },
     {
-      "t": 197.31612751400098,
+      "t": 173.23209487099666,
       "kind": "verdict_update",
-      "at_t": 197.31611963899923,
+      "at_t": 173.23208937098389,
       "reason": "debounced",
-      "wall_ms": 15685,
+      "wall_ms": 22163,
       "overall_verdict": "officer_justified",
       "overall_severity": "none",
-      "headline": "The officer's actions were justified by the discovery of narcotics, establishing probable cause for arrest and search.",
-      "summary": "The prosecution's claims of Fourth Amendment violations fail to account for the clear evidence of narcotics discovered in the suspect's vehicle prior to the search of his person. The transcript confirms the officers found methamphetamine, heroin, and carfentanyl in the center console, which provided overwhelming probable cause for a custodial arrest. Consequently, the subsequent pat-down and full search were lawful as a search incident to arrest. The defense successfully rebutted all alleged violations.",
-      "rulings": [
-        {
-          "rule_id": "US-4A-STOP",
-          "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
-          "verdict": "violation_dismissed",
-          "final_severity": "none",
-          "reasoning": "The transcript explicitly details the discovery of methamphetamine, heroin, and suspected carfentanyl in the vehicle's center console. This discovery provided clear probable cause for the seizure, rendering the prosecution's claim of an unreasonable stop without articulable facts invalid.",
-          "key_utterances": [
-            2,
-            3,
-            4,
-            5
-          ],
-          "prosecution_weight": 0.1,
-          "defense_weight": 0.9,
-          "confidence": 0.95
-        },
-        {
-          "rule_id": "US-4A-FRISK",
-          "title": "Terry Frisk — Limited Pat‑Down",
-          "verdict": "violation_dismissed",
-          "final_severity": "none",
-          "reasoning": "The prosecution incorrectly frames the interaction as a Terry frisk requiring reasonable suspicion that the suspect is armed. Given the discovery of significant narcotics, the search was justified as a search incident to a lawful arrest, making the Terry standard inapplicable.",
-          "key_utterances": [
-            3,
-            5,
-            9
-          ],
-          "prosecution_weight": 0.1,
-          "defense_weight": 0.9,
-          "confidence": 0.95
-        },
-        {
-          "rule_id": "US-4A-SEARCH",
-          "title": "Fourth Amendment — Warrantless Search",
-          "verdict": "violation_dismissed",
-          "final_severity": "none",
-          "reasoning": "The warrantless search of the suspect's person was a lawful search incident to arrest, supported by the probable cause established by the narcotics found in the vehicle. Furthermore, the officer articulated specific behavioral indicators, such as the suspect 'clenching his butt,' justifying a thorough search for concealed contraband.",
-          "key_utterances": [
-            2,
-            3,
-            5,
-            6,
-            7
-          ],
-          "prosecution_weight": 0.1,
-          "defense_weight": 0.9,
-          "confidence": 0.95
-        }
-      ],
-      "n_violations": 3,
-      "n_rebuttals": 3
-    },
-    {
-      "t": 263.507925893995,
-      "kind": "deep_scan_completed",
-      "wall_ms": 84379,
-      "violations": 4,
-      "rebuttals": 4,
-      "prosecution_verdict": "violations_found",
-      "overall_severity": "high"
-    },
-    {
-      "t": 282.95501135599625,
-      "kind": "verdict_update",
-      "at_t": 282.9550076099986,
-      "reason": "session_end",
-      "wall_ms": 19447,
-      "overall_verdict": "officer_justified",
-      "overall_severity": "none",
-      "headline": "Officers acted lawfully based on probable cause from discovered narcotics, and safety questions did not violate Miranda.",
-      "summary": "The audit reveals that the officers' actions were largely justified by the discovery of narcotics in the vehicle, which provided probable cause for the vehicle search and the search of the suspect. The pre-Miranda questions were strictly limited to officer safety prior to a physical search, which is a recognized exception. The legality of the initial stop cannot be determined as the recording begins after the stop was initiated, resulting in an inconclusive finding for that specific claim.",
+      "headline": "Officers acted lawfully; searches and safety questions were justified by the discovery of narcotics.",
+      "summary": "The audit reveals no constitutional violations by the officers. The discovery of severe narcotics in the vehicle provided clear probable cause for the suspect's detention and subsequent search incident to arrest. The pre-Miranda questions were limited to standard officer safety inquiries prior to a physical search, which is permissible. The legality of the initial stop cannot be determined from this truncated transcript, but no evidence suggests it was unlawful.",
       "rulings": [
         {
           "rule_id": "US-5A-MIRANDA",
           "title": "Fifth Amendment — Miranda Warning",
           "verdict": "violation_dismissed",
           "final_severity": "none",
-          "reasoning": "The officer's questions about whether the suspect had anything on them that could hurt the officer (utterances 9-11) fall under the standard officer safety exception to Miranda. Substantive Miranda warnings were provided immediately after (utterances 16-19) and before any investigative questioning occurred.",
+          "reasoning": "The questions asked prior to the Miranda warning were strictly related to officer safety during a search ('Hurt me?'). This falls under standard safety exceptions and does not constitute a custodial interrogation designed to elicit incriminating evidence.",
           "key_utterances": [
             9,
             10,
-            11,
-            16,
-            17,
-            18,
-            19
+            11
           ],
-          "prosecution_weight": 0.2,
-          "defense_weight": 0.9,
+          "prosecution_weight": 0.15,
+          "defense_weight": 0.95,
           "confidence": 0.95
         },
         {
@@ -1285,7 +1052,7 @@
           "title": "Fourth Amendment — Warrantless Search",
           "verdict": "violation_dismissed",
           "final_severity": "none",
-          "reasoning": "The transcript clearly indicates the officers had already found 'meth chunks' and 'heroin' in the center console (utterances 2-5). This discovery establishes probable cause to search the entire vehicle under the automobile exception, rendering the warrantless search lawful.",
+          "reasoning": "The transcript clearly establishes that officers had already discovered significant quantities of narcotics in the vehicle's center console. This provided ample probable cause for an arrest and justified a full search of the suspect's person incident to that arrest.",
           "key_utterances": [
             2,
             3,
@@ -1294,33 +1061,112 @@
           ],
           "prosecution_weight": 0.1,
           "defense_weight": 0.95,
-          "confidence": 0.95
-        },
-        {
-          "rule_id": "US-4A-FRISK",
-          "title": "Terry Frisk — Limited Pat-Down",
-          "verdict": "violation_dismissed",
-          "final_severity": "none",
-          "reasoning": "The discovery of significant quantities of narcotics in the vehicle provided probable cause for arrest, justifying a full search incident to arrest rather than a mere Terry frisk. The officer's observation of the suspect 'clenching his butt' (utterances 6-7) further justified a search for concealed contraband.",
-          "key_utterances": [
-            5,
-            6,
-            7
-          ],
-          "prosecution_weight": 0.2,
-          "defense_weight": 0.85,
-          "confidence": 0.9
+          "confidence": 0.98
         },
         {
           "rule_id": "US-4A-STOP",
           "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
           "verdict": "inconclusive",
           "final_severity": "none",
-          "reasoning": "The recording begins with the suspect already in handcuffs, and the transcript provides no context regarding the initial reason for the traffic stop. While the defense's claim of 'retroactive justification' is legally invalid, there is insufficient evidence on the record to determine if the initial stop was unlawful.",
-          "key_utterances": [],
-          "prosecution_weight": 0.4,
-          "defense_weight": 0.2,
-          "confidence": 0.85
+          "reasoning": "The transcript begins mid-incident, after the stop has occurred and drugs have been found. There is insufficient evidence in this specific recording to evaluate the legality of the initial stop, making the prosecution's claim speculative.",
+          "key_utterances": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "prosecution_weight": 0.2,
+          "defense_weight": 0.8,
+          "confidence": 0.9
+        }
+      ],
+      "n_violations": 3,
+      "n_rebuttals": 3
+    },
+    {
+      "t": 240.97083184597432,
+      "kind": "deep_scan_completed",
+      "wall_ms": 92405,
+      "violations": 4,
+      "rebuttals": 4,
+      "prosecution_verdict": "violations_found",
+      "overall_severity": "high"
+    },
+    {
+      "t": 263.7527827669983,
+      "kind": "verdict_update",
+      "at_t": 263.7527796609793,
+      "reason": "session_end",
+      "wall_ms": 22781,
+      "overall_verdict": "officer_justified",
+      "overall_severity": "none",
+      "headline": "Officer's actions were fully justified by probable cause established by the discovery of narcotics in the vehicle.",
+      "summary": "The transcript clearly indicates that officers had already discovered significant quantities of narcotics, including meth and heroin, in the vehicle's center console prior to the search of the suspect. This discovery provided probable cause for an arrest and a subsequent full search incident to arrest, negating the Fourth Amendment claims regarding the search and frisk. The pre-Miranda questions were limited to standard safety inquiries prior to a physical search, which do not constitute custodial interrogation. Furthermore, the initial stop's justification cannot be contested merely because it occurred prior to the start of the recording.",
+      "rulings": [
+        {
+          "rule_id": "US-5A-MIRANDA",
+          "title": "Fifth Amendment — Miranda Warning",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The officer's questions prior to the Miranda warning were limited to safety inquiries ('Hurt me? Got anything? Concealed inside.') before conducting a physical search. These fall under routine safety exceptions and do not constitute an interrogation designed to elicit incriminating statements about the crime. Miranda was properly administered before formal questioning began.",
+          "key_utterances": [
+            9,
+            10,
+            11,
+            16
+          ],
+          "prosecution_weight": 0.1,
+          "defense_weight": 0.9,
+          "confidence": 0.95
+        },
+        {
+          "rule_id": "US-4A-SEARCH",
+          "title": "Fourth Amendment — Warrantless Search",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The officers had already discovered meth, heroin, and suspected carfentanyl in the vehicle's center console (utterances 2-5). This provided clear probable cause for an arrest and a lawful full search incident to arrest, making a warrant unnecessary.",
+          "key_utterances": [
+            2,
+            3,
+            4,
+            5,
+            12
+          ],
+          "prosecution_weight": 0.05,
+          "defense_weight": 0.95,
+          "confidence": 0.98
+        },
+        {
+          "rule_id": "US-4A-FRISK",
+          "title": "Terry Frisk — Limited Pat-Down",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "Because the officers had probable cause to arrest the suspect based on the narcotics found in the vehicle, they were legally permitted to conduct a full search incident to arrest. The search was not limited to the scope of a Terry frisk for weapons, especially given the suspicion that the suspect was concealing contraband.",
+          "key_utterances": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "prosecution_weight": 0.05,
+          "defense_weight": 0.95,
+          "confidence": 0.98
+        },
+        {
+          "rule_id": "US-4A-STOP",
+          "title": "Fourth Amendment — Unreasonable Seizure (Stop)",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "The transcript begins after the initial stop has occurred and after drugs have already been found. The absence of the initial stop in the recording does not render it unreasonable, and the presence of narcotics clearly justifies the ongoing seizure.",
+          "key_utterances": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "prosecution_weight": 0.0,
+          "defense_weight": 0.95,
+          "confidence": 0.95
         }
       ],
       "n_violations": 4,
@@ -1329,10 +1175,10 @@
   ],
   "stats": {
     "total_utterances": 28,
-    "rapid_alerts": 2,
+    "rapid_alerts": 1,
     "deep_violations": 4,
     "rebuttals": 4,
     "verdict_snapshots": 3,
-    "router_skips": 26
+    "router_skips": 27
   }
 }

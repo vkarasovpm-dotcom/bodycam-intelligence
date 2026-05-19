@@ -1,0 +1,20 @@
+[0;1;32m●[0m nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (]8;;file://sentinel-prod/usr/lib/systemd/system/nginx.service\/usr/lib/systemd/system/nginx.service]8;;\; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Tue 2026-05-19 09:32:46 UTC; 9ms ago
+ Invocation: 6d06625490b9492eb461633fd09eae48
+       Docs: ]8;;man:nginx(8)\man:nginx(8)]8;;\
+    Process: 105896 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+    Process: 105898 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+   Main PID: 105899 (nginx)
+      Tasks: 5[0;38:5:245m (limit: 6227)[0m
+     Memory: 5.1M (peak: 5.3M)
+        CPU: 27ms
+     CGroup: /system.slice/nginx.service
+             ├─[0;38:5:245m105899 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"[0m
+             ├─[0;38:5:245m105900 "nginx: worker process"[0m
+             ├─[0;38:5:245m105901 "nginx: worker process"[0m
+             ├─[0;38:5:245m105902 "nginx: worker process"[0m
+             └─[0;38:5:245m105903 "nginx: worker process"[0m
+
+May 19 09:32:46 sentinel-prod systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
+May 19 09:32:46 sentinel-prod systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.

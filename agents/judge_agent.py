@@ -228,10 +228,13 @@ class JudgeAgent:
                                         primary_label="gemini-3.1-pro",
                                         fallback_label="gemini-3.1-flash-lite")
         self.trace.emit("judge", "model_response",
-                        data={"model": model_used, "chars": len(raw)})
+                        data={"model": model_used, "chars": len(raw or "")})
 
         try:
-            parsed = _parse_json(raw)
+            try:
+                parsed = _parse_json(raw or "")
+            except Exception as e:
+                parsed = {"overall_verdict": "unclear", "overall_severity": "none", "rulings": [], "headline": "Judge consolidation error", "summary": "LLM returned invalid JSON."}
         except (ValueError, json.JSONDecodeError) as e:
             self.trace.emit("judge", "json_parse_error",
                             data={"error": str(e), "raw_head": raw[:300]})

@@ -1,0 +1,3282 @@
+{
+  "session_id": "es_robbery_shootout",
+  "region": "eu",
+  "vertical": "police",
+  "meta": {
+    "session_id": "es_robbery_shootout",
+    "region": "eu",
+    "vertical": "police",
+    "started_at": 1779179817.9323702,
+    "transcript_path": "results/standard/es_robbery_shootout_transcript.json",
+    "total_utterances": 93
+  },
+  "rapid_alerts": [
+    {
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "En el instante en que la gente se acercó. El hombre sacó el arma de repente, ese acto provocó que sus tres hijos lo perdieran para",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 7,
+      "t_utterance": 62.66,
+      "atom_ms": 1440
+    },
+    {
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "siempre. Como el sospechoso estaba armado, la policía se vio obligada a retroceder detrás del coche y advertir en voz alta.",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 8,
+      "t_utterance": 69.94,
+      "atom_ms": 1753
+    },
+    {
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "En la. En cámara lenta se puede ver que después de que la policía disparó, el hombre solo se sacudió la manga y giró sobre sí",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 12,
+      "t_utterance": 92.54,
+      "atom_ms": 1754
+    },
+    {
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "compañero retrocedió detrás del coche y en seguida ambas partes comenzaron a disparar.",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 17,
+      "t_utterance": 130.14,
+      "atom_ms": 1765
+    },
+    {
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "A pesar de caer al suelo, el hombre siguió disparando contra la policía e incluso hizo estallar un neumático.",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 20,
+      "t_utterance": 144.94,
+      "atom_ms": 0
+    },
+    {
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "Después de unos dos minutos de enfrentamiento. Las fuerzas de apoyo llegaron a tiempo. En ese momento, los nervios de la gente",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 21,
+      "t_utterance": 159.38,
+      "atom_ms": 1345
+    },
+    {
+      "rule_id": "CRIT-OFFICER-DISTRESS",
+      "rule_title": "Officer in Distress — Emergency Response Required",
+      "rule_source": "Operational flag — backup dispatch and command notification mandatory",
+      "severity": "critical",
+      "subject": "officer",
+      "confidence": 0.97,
+      "one_liner": "Officer signals distress or active gunfire. Immediate backup required.",
+      "triggering_quote": "ello, en muchos casos relacionados con disparos, se concede licencia administrativa para que los implicados tengan tiempo de",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 26,
+      "t_utterance": 191.54,
+      "atom_ms": 0
+    },
+    {
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "11 heridas en su cuerpo. Seis balas atravesaron su cuerpo y fueron la causa de muerte. El arma que portaba Kevin era un revólver con balas",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 40,
+      "t_utterance": 287.74,
+      "atom_ms": 2133
+    },
+    {
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "Gun I. With you. I want you to shoot. Me don't.",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 43,
+      "t_utterance": 309.78,
+      "atom_ms": 1753
+    },
+    {
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "William de repente metió la mano en el bolsillo de la chaqueta. Resultó que escondía un arma en su interior.",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 57,
+      "t_utterance": 405.1,
+      "atom_ms": 1769
+    },
+    {
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "Como no es. Taba claro. Si William aún podía resistirse. Eric rápidamente se cubrió detrás del coche patrulla, recargó el arma y se preparó",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 61,
+      "t_utterance": 426.94,
+      "atom_ms": 1810
+    },
+    {
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "We help rather. Through the gun away.",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 63,
+      "t_utterance": 446.22,
+      "atom_ms": 1454
+    },
+    {
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "William, through the gun away.",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 65,
+      "t_utterance": 453.86,
+      "atom_ms": 1752
+    },
+    {
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "Recibe. Subjects Down. Firearm on his left ip reached for it. I can't see it now.",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 66,
+      "t_utterance": 459.54,
+      "atom_ms": 1837
+    },
+    {
+      "rule_id": "CRIT-OFFICER-DISTRESS",
+      "rule_title": "Officer in Distress — Emergency Response Required",
+      "rule_source": "Operational flag — backup dispatch and command notification mandatory",
+      "severity": "critical",
+      "subject": "officer",
+      "confidence": 0.97,
+      "one_liner": "Officer signals distress or active gunfire. Immediate backup required.",
+      "triggering_quote": "William fue alcanzado por varios disparos y cayó al suelo inconsciente. Aún así, el agente Eric se mantuvo extremadamente cauteloso y",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 68,
+      "t_utterance": 475.3,
+      "atom_ms": 0
+    },
+    {
+      "rule_id": "CRIT-OFFICER-DISTRESS",
+      "rule_title": "Officer in Distress — Emergency Response Required",
+      "rule_source": "Operational flag — backup dispatch and command notification mandatory",
+      "severity": "critical",
+      "subject": "officer",
+      "confidence": 0.97,
+      "one_liner": "Officer signals distress or active gunfire. Immediate backup required.",
+      "triggering_quote": "William recibió múltiples disparos. Estaba gravemente herido. E inconsciente. El arma caída en el suelo era la que William llevaba",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 74,
+      "t_utterance": 508.86,
+      "atom_ms": 0
+    },
+    {
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "The Middle of the last be right in front of you. I got a gunpoint. He hasn't moved. I've got eyes on the weapon.",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 77,
+      "t_utterance": 525.06,
+      "atom_ms": 1756
+    },
+    {
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "William, I want. Help body. But I need you know you don't have another gun.",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 78,
+      "t_utterance": 534.7,
+      "atom_ms": 1696
+    },
+    {
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "William. Shake your leg. If you can still hear me. Guns right Here. Brandon.",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 80,
+      "t_utterance": 547.18,
+      "atom_ms": 1412
+    },
+    {
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "William. Can you hear me?",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 81,
+      "t_utterance": 554.98,
+      "atom_ms": 1464
+    },
+    {
+      "rule_id": "CRIT-OFFICER-DISTRESS",
+      "rule_title": "Officer in Distress — Emergency Response Required",
+      "rule_source": "Operational flag — backup dispatch and command notification mandatory",
+      "severity": "critical",
+      "subject": "officer",
+      "confidence": 0.97,
+      "one_liner": "Officer signals distress or active gunfire. Immediate backup required.",
+      "triggering_quote": "Con la cobertura de Eric, otro agente se acercó para esposar a William. Aunque William había recibido múltiples disparos y estaba",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 84,
+      "t_utterance": 561.9,
+      "atom_ms": 0
+    },
+    {
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "inconsciente. Los procedimientos aún debían llevarse a cabo por completo.",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 85,
+      "t_utterance": 569.18,
+      "atom_ms": 1725
+    },
+    {
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "Right before he tried to draw the pistol. He said you're just like you're gonna I want you can feel me or something like that. And then he had I",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 91,
+      "t_utterance": 617.22,
+      "atom_ms": 1861
+    }
+  ],
+  "visual_context": {
+    "video_path": "recordings/eu/es_robbery_shootout.mp4",
+    "duration_sec": 764.168707,
+    "subjects_visible": 2,
+    "officers_visible": 5,
+    "environment": "street / road",
+    "restraints_visible": true,
+    "restraints_timing": 235.0,
+    "weapons_drawn_by_officer": true,
+    "weapon_type": "firearm",
+    "subject_armed": true,
+    "force_observed": true,
+    "force_description": "Officers discharged firearms at subjects who drew weapons.",
+    "injuries_visible": true,
+    "subject_compliance": "active_resistance",
+    "officer_misconduct_indicators": [],
+    "citizen_violation_indicators": [
+      "Drawing a firearm on officers",
+      "Refusing commands to drop weapon",
+      "Discharging firearm at officers"
+    ],
+    "key_moments": [
+      {
+        "t_seconds": 65.0,
+        "description": "Subject 1 draws a firearm while approached by an officer.",
+        "significance": "violation_indicator"
+      },
+      {
+        "t_seconds": 93.0,
+        "description": "Officer fires at Subject 1 after repeated commands to drop the weapon.",
+        "significance": "concerning"
+      },
+      {
+        "t_seconds": 135.0,
+        "description": "Subject 1 fires back at officers from behind a vehicle.",
+        "significance": "violation_indicator"
+      },
+      {
+        "t_seconds": 235.0,
+        "description": "Subject 1 is handcuffed and receives medical aid.",
+        "significance": "neutral"
+      },
+      {
+        "t_seconds": 308.0,
+        "description": "Subject 2 draws a firearm during a nighttime encounter.",
+        "significance": "violation_indicator"
+      },
+      {
+        "t_seconds": 423.0,
+        "description": "Officer fires at Subject 2 after he draws the weapon again.",
+        "significance": "concerning"
+      },
+      {
+        "t_seconds": 566.0,
+        "description": "Subject 2 is handcuffed while on the ground.",
+        "significance": "neutral"
+      }
+    ],
+    "summary": "The video shows two separate incidents where police officers encounter armed individuals. In both cases, the subjects draw firearms and ignore commands to drop them, leading officers to use lethal force. Both subjects are subsequently handcuffed and receive medical attention.",
+    "model_used": "gemini-3.1-pro-preview",
+    "latency_ms": 39792.0
+  },
+  "deep_violations": [
+    {
+      "rule_id": "EU-ECHR-2",
+      "title": "Right to Life",
+      "source": "ECHR Article 2; McCann and Others v United Kingdom (1995)",
+      "severity": "critical",
+      "cited_utterances": [
+        31,
+        68,
+        70
+      ],
+      "rationale": "Officers discharged firearms at the suspect after he was already wounded and fell unconscious, indicating the lethal force was not absolutely necessary to protect life.",
+      "confidence": 0.85
+    },
+    {
+      "rule_id": "EU-PROPORTIONALITY",
+      "title": "Proportionality of Police Use of Force",
+      "source": "ECHR Articles 2 and 3; UN Basic Principles on the Use of Force and Firearms (1990)",
+      "severity": "high",
+      "cited_utterances": [
+        31,
+        68,
+        70
+      ],
+      "rationale": "The continuation of shooting a severely injured, unconscious suspect demonstrates a lack of proportionality between the threat posed and the force used.",
+      "confidence": 0.82
+    },
+    {
+      "rule_id": "EU-ECHR-3-INHUMAN",
+      "title": "Inhuman or Degrading Treatment",
+      "source": "ECHR Article 3; Bouyid v Belgium (2015)",
+      "severity": "critical",
+      "cited_utterances": [
+        68,
+        70,
+        84
+      ],
+      "rationale": "Applying further gunfire and handcuffing an unconscious individual amounts to inhuman treatment of a person deprived of liberty.",
+      "confidence": 0.8
+    },
+    {
+      "rule_id": "EU-ECHR-3-CONDITIONS",
+      "title": "Conditions of Detention",
+      "source": "ECHR Article 3; Kudła v Poland (2000)",
+      "severity": "high",
+      "cited_utterances": [
+        86,
+        39,
+        40
+      ],
+      "rationale": "After being shot, the suspect received delayed medical assistance; the officer left the scene while the victim remained critically injured, contributing to his death.",
+      "confidence": 0.75
+    },
+    {
+      "rule_id": "EU-DEESCALATION",
+      "title": "Duty of De-escalation",
+      "source": "UN Basic Principles on the Use of Force (1990); Council of Europe Code of Police Ethics",
+      "severity": "medium",
+      "cited_utterances": [
+        12,
+        31
+      ],
+      "rationale": "Although officers issued a loud warning, there is no evidence of genuine negotiation or alternative non‑lethal measures before opening fire.",
+      "confidence": 0.6
+    },
+    {
+      "rule_id": "EU-ECHR-5-INFORM",
+      "title": "Right to Be Informed of Arrest Reasons",
+      "source": "ECHR Article 5(2); Conka v Belgium (2002)",
+      "severity": "medium",
+      "cited_utterances": [],
+      "rationale": "The transcript contains no indication that the suspect was informed promptly of the reasons for his arrest or detention.",
+      "confidence": 0.4
+    },
+    {
+      "rule_id": "EU-ECHR-5-JUDGE",
+      "title": "Prompt Production Before a Judge",
+      "source": "ECHR Article 5(3); Brogan v UK (1988)",
+      "severity": "high",
+      "cited_utterances": [],
+      "rationale": "There is no reference to the suspect being presented before a judicial authority within the legally required timeframe.",
+      "confidence": 0.3
+    },
+    {
+      "rule_id": "EU-IDENTIFY",
+      "title": "Officer Identification Requirement",
+      "source": "Council of Europe European Code of Police Ethics (2001); ECHR Article 3 procedural limb",
+      "severity": "medium",
+      "cited_utterances": [],
+      "rationale": "The video transcript provides no indication that officers displayed identifying badges or disclosed their names/numbers during the incident.",
+      "confidence": 0.3
+    }
+  ],
+  "rebuttals": [
+    {
+      "challenges_rule_id": "EU-ECHR-2",
+      "stance": "rebut",
+      "counter_argument": "The use of force was absolutely necessary as the subject continued to fire at officers even after falling [20]. The visual context confirms the subject fired back from behind a vehicle [135.0s], justifying continued engagement to neutralize the threat.",
+      "counter_utterances": [
+        20
+      ],
+      "proposed_severity_adjustment": "critical → null",
+      "confidence": 0.9
+    },
+    {
+      "challenges_rule_id": "EU-PROPORTIONALITY",
+      "stance": "rebut",
+      "counter_argument": "Force was proportionate to the threat of a Magnum revolver capable of penetrating bulletproof vests [41]. The subject's active resistance and discharge of a firearm [135.0s] necessitated lethal force to prevent officer casualties.",
+      "counter_utterances": [
+        41
+      ],
+      "proposed_severity_adjustment": "high → null",
+      "confidence": 0.9
+    },
+    {
+      "challenges_rule_id": "EU-ECHR-3-INHUMAN",
+      "stance": "rebut",
+      "counter_argument": "Handcuffing an unconscious suspect is a standard safety procedure to ensure they do not regain consciousness and reach for a weapon [85]. This is a security necessity, not an attempt to inflict suffering.",
+      "counter_utterances": [
+        85
+      ],
+      "proposed_severity_adjustment": "critical → null",
+      "confidence": 0.85
+    },
+    {
+      "challenges_rule_id": "EU-ECHR-3-CONDITIONS",
+      "stance": "mitigate",
+      "counter_argument": "Medical assistance was provided once the scene was secured [35]. The officer's departure from the immediate vicinity [86] occurred only after the emergency medical team arrived and took over care.",
+      "counter_utterances": [
+        35,
+        86
+      ],
+      "proposed_severity_adjustment": "high → low",
+      "confidence": 0.7
+    },
+    {
+      "challenges_rule_id": "EU-DEESCALATION",
+      "stance": "rebut",
+      "counter_argument": "Officers attempted de-escalation by taking cover and issuing loud warnings [8]. In the second incident, the officer explicitly urged the suspect to throw the gun away and offered help [63, 64, 65] before force was used.",
+      "counter_utterances": [
+        8,
+        63,
+        64,
+        65
+      ],
+      "proposed_severity_adjustment": "medium → null",
+      "confidence": 0.9
+    },
+    {
+      "challenges_rule_id": "EU-ECHR-5-INFORM",
+      "stance": "mitigate",
+      "counter_argument": "The suspects were in active shootouts or unconscious; prompt notification of arrest reasons is practically impossible during a lethal encounter. Notification occurs once the subject is stabilized and secured.",
+      "counter_utterances": [],
+      "proposed_severity_adjustment": "medium → low",
+      "confidence": 0.6
+    },
+    {
+      "challenges_rule_id": "EU-ECHR-5-JUDGE",
+      "stance": "rebut",
+      "counter_argument": "The provided transcript covers the immediate tactical encounter. There is no evidence that the legal timeframe for judicial production was exceeded; the prosecution is speculating on events outside the footage.",
+      "counter_utterances": [],
+      "proposed_severity_adjustment": "high → null",
+      "confidence": 0.8
+    },
+    {
+      "challenges_rule_id": "EU-IDENTIFY",
+      "stance": "mitigate",
+      "counter_argument": "In high-stress, life-threatening gunfights, immediate verbal identification is secondary to survival and neutralizing the threat. Identification is typically handled during the booking process.",
+      "counter_utterances": [],
+      "proposed_severity_adjustment": "medium → low",
+      "confidence": 0.7
+    }
+  ],
+  "verdict_timeline": [
+    {
+      "at_t": 124.22472671899595,
+      "reason": "debounced",
+      "wall_ms": 19115,
+      "overall_verdict": "officer_justified",
+      "overall_severity": "none",
+      "headline": "Automated flags were incorrectly triggered by documentary narration rather than officer misconduct.",
+      "summary": "The provided transcript is from a narrated program or documentary analyzing police bodycam footage, rather than raw operational audio. The prosecution's automated system flagged the narrator's descriptions of events as active critical incidents and officer distress. Because these utterances are post-hoc narrations of justified police actions against armed suspects, and do not represent any policy violations or active emergencies, all alleged violations against the officer are dismissed.",
+      "rulings": [
+        {
+          "rule_id": "CRIT-GENERIC",
+          "title": "Critical Event Detected",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "Utterance 7 is a narrator describing the moment a suspect suddenly drew a weapon. While this describes a critical event, it is a post-incident narration and does not indicate any policy violation, error, or misconduct by the officer.",
+          "key_utterances": [
+            7
+          ],
+          "prosecution_weight": 0.1,
+          "defense_weight": 0.9,
+          "confidence": 0.95
+        },
+        {
+          "rule_id": "CRIT-OFFICER-DISTRESS",
+          "title": "Officer in Distress — Emergency Response Required",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "Utterance 26 consists of a narrator explaining standard police procedure regarding administrative leave following an officer-involved shooting. It is not an active distress signal or a call for immediate backup from an officer in the field.",
+          "key_utterances": [
+            26
+          ],
+          "prosecution_weight": 0.05,
+          "defense_weight": 0.95,
+          "confidence": 0.99
+        }
+      ],
+      "n_violations": 2,
+      "n_rebuttals": 0
+    },
+    {
+      "at_t": 321.3740422849951,
+      "reason": "debounced",
+      "wall_ms": 40184,
+      "overall_verdict": "unclear",
+      "overall_severity": "none",
+      "headline": "Judge consolidation error",
+      "summary": "LLM returned invalid JSON.",
+      "rulings": [],
+      "n_violations": 8,
+      "n_rebuttals": 6
+    },
+    {
+      "at_t": 449.61259859299753,
+      "reason": "session_end",
+      "wall_ms": 40689,
+      "overall_verdict": "unclear",
+      "overall_severity": "none",
+      "headline": "Judge consolidation error",
+      "summary": "LLM returned invalid JSON.",
+      "rulings": [],
+      "n_violations": 10,
+      "n_rebuttals": 8
+    }
+  ],
+  "final_verdict": {
+    "at_t": 449.61259859299753,
+    "reason": "session_end",
+    "wall_ms": 40689,
+    "overall_verdict": "unclear",
+    "overall_severity": "none",
+    "headline": "Judge consolidation error",
+    "summary": "LLM returned invalid JSON.",
+    "rulings": [],
+    "n_violations": 10,
+    "n_rebuttals": 8
+  },
+  "events": [
+    {
+      "t": 0.008134850999340415,
+      "kind": "utterance",
+      "text": "26 de junio de 2022. Lugar Ciudad de Salisbury. Estado de Carolina del Norte. Alrededor de la",
+      "speaker": "S1",
+      "t_start": 14.7,
+      "t_end": 22.3,
+      "utt_index": 0
+    },
+    {
+      "t": 5.517276281985687,
+      "kind": "router_skip",
+      "utt_index": 0,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 5.517303923988948,
+      "kind": "utterance",
+      "text": "13:00 de la tarde, en un supermercado en la calle. Encasille tuvo lugar. Un robo a mano armada. Los ciudadanos lo llamaron en broma. Compras",
+      "speaker": "S1",
+      "t_start": 22.3,
+      "t_end": 30.26,
+      "utt_index": 1
+    },
+    {
+      "t": 6.8404657669889275,
+      "kind": "router_skip",
+      "utt_index": 1,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 6.840481786988676,
+      "kind": "utterance",
+      "text": "a 0 €. Cuando la policía llegó a la escena, identificaron rápidamente al sospechoso. Gracias a las cámaras de vigilancia,",
+      "speaker": "S1",
+      "t_start": 30.26,
+      "t_end": 38.22,
+      "utt_index": 2
+    },
+    {
+      "t": 8.192674462974537,
+      "kind": "router_skip",
+      "utt_index": 2,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 8.192688678973354,
+      "kind": "utterance",
+      "text": "ya que acababa de marcharse poco antes. Los agentes de inmediato se subieron al coche para perseguirlo. Afortunadamente, el",
+      "speaker": "S1",
+      "t_start": 38.26,
+      "t_end": 45.7,
+      "utt_index": 3
+    },
+    {
+      "t": 9.517949926987058,
+      "kind": "router_skip",
+      "utt_index": 3,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 9.517965215985896,
+      "kind": "utterance",
+      "text": "sospechoso no había ido lejos. En solo unos momentos. Localizaron su posición.",
+      "speaker": "S1",
+      "t_start": 45.7,
+      "t_end": 50.78,
+      "utt_index": 4
+    },
+    {
+      "t": 10.888771042984445,
+      "kind": "router_skip",
+      "utt_index": 4,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 10.888785730989184,
+      "kind": "utterance",
+      "text": "De.",
+      "speaker": "S2",
+      "t_start": 57.42,
+      "t_end": 57.5,
+      "utt_index": 5
+    },
+    {
+      "t": 10.888843788998201,
+      "kind": "router_skip",
+      "utt_index": 5,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 10.88884900897392,
+      "kind": "utterance",
+      "text": "Hans.",
+      "speaker": "S2",
+      "t_start": 61.86,
+      "t_end": 62.34,
+      "utt_index": 6
+    },
+    {
+      "t": 10.88888859297731,
+      "kind": "router_skip",
+      "utt_index": 6,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 10.888892640999984,
+      "kind": "utterance",
+      "text": "En el instante en que la gente se acercó. El hombre sacó el arma de repente, ese acto provocó que sus tres hijos lo perdieran para",
+      "speaker": "S1",
+      "t_start": 62.66,
+      "t_end": 69.94,
+      "utt_index": 7
+    },
+    {
+      "t": 12.329458326974418,
+      "kind": "rapid_alert",
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "En el instante en que la gente se acercó. El hombre sacó el arma de repente, ese acto provocó que sus tres hijos lo perdieran para",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 7,
+      "t_utterance": 62.66,
+      "atom_ms": 1440
+    },
+    {
+      "t": 12.32949659897713,
+      "kind": "utterance",
+      "text": "siempre. Como el sospechoso estaba armado, la policía se vio obligada a retroceder detrás del coche y advertir en voz alta.",
+      "speaker": "S1",
+      "t_start": 69.94,
+      "t_end": 77.34,
+      "utt_index": 8
+    },
+    {
+      "t": 14.08278441298171,
+      "kind": "rapid_alert",
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "siempre. Como el sospechoso estaba armado, la policía se vio obligada a retroceder detrás del coche y advertir en voz alta.",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 8,
+      "t_utterance": 69.94,
+      "atom_ms": 1753
+    },
+    {
+      "t": 14.082815621979535,
+      "kind": "utterance",
+      "text": "Sin embargo, el hombre siguió caminando con calma, como si nada hubiera pasado.",
+      "speaker": "S1",
+      "t_start": 77.7,
+      "t_end": 82.5,
+      "utt_index": 9
+    },
+    {
+      "t": 15.350715328997467,
+      "kind": "router_skip",
+      "utt_index": 9,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 15.35072856399347,
+      "kind": "deep_scan_started",
+      "triggers": [
+        "+10_utts"
+      ],
+      "utterances": 10
+    },
+    {
+      "t": 15.350760323985014,
+      "kind": "utterance",
+      "text": "Hasta que.",
+      "speaker": "S2",
+      "t_start": 86.22,
+      "t_end": 86.46,
+      "utt_index": 10
+    },
+    {
+      "t": 15.350873636984034,
+      "kind": "router_skip",
+      "utt_index": 10,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 15.350881501974072,
+      "kind": "utterance",
+      "text": "El.",
+      "speaker": "S2",
+      "t_start": 87.78,
+      "t_end": 87.98,
+      "utt_index": 11
+    },
+    {
+      "t": 15.350933228997746,
+      "kind": "router_skip",
+      "utt_index": 11,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 15.350939350988483,
+      "kind": "utterance",
+      "text": "En la. En cámara lenta se puede ver que después de que la policía disparó, el hombre solo se sacudió la manga y giró sobre sí",
+      "speaker": "S1",
+      "t_start": 92.54,
+      "t_end": 100.42,
+      "utt_index": 12
+    },
+    {
+      "t": 17.10566940199351,
+      "kind": "rapid_alert",
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "En la. En cámara lenta se puede ver que después de que la policía disparó, el hombre solo se sacudió la manga y giró sobre sí",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 12,
+      "t_utterance": 92.54,
+      "atom_ms": 1754
+    },
+    {
+      "t": 17.105697784980293,
+      "kind": "utterance",
+      "text": "mismo.",
+      "speaker": "S1",
+      "t_start": 100.42,
+      "t_end": 101.06,
+      "utt_index": 13
+    },
+    {
+      "t": 17.105782263999572,
+      "kind": "router_skip",
+      "utt_index": 13,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 17.105787142994814,
+      "kind": "utterance",
+      "text": "En.",
+      "speaker": "S2",
+      "t_start": 113.58,
+      "t_end": 113.82,
+      "utt_index": 14
+    },
+    {
+      "t": 17.105824422993464,
+      "kind": "router_skip",
+      "utt_index": 14,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 17.10582792997593,
+      "kind": "utterance",
+      "text": "Desde el ángulo de otro agente, se puede ver que cuando intentó avanzar, se sobresaltó por el gesto del sospechoso. Antes de eso, el",
+      "speaker": "S1",
+      "t_start": 114.58,
+      "t_end": 122.26,
+      "utt_index": 15
+    },
+    {
+      "t": 18.330463329999475,
+      "kind": "router_skip",
+      "utt_index": 15,
+      "classification": "none",
+      "confidence": 0.9
+    },
+    {
+      "t": 18.330479159980314,
+      "kind": "utterance",
+      "text": "gerente del supermercado había informado a la policía que el hombre llevaba un arma. Cuando uno de los agentes pidió refuerzos. Su",
+      "speaker": "S1",
+      "t_start": 122.26,
+      "t_end": 130.14,
+      "utt_index": 16
+    },
+    {
+      "t": 19.753540623991285,
+      "kind": "router_skip",
+      "utt_index": 16,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 19.753557424992323,
+      "kind": "utterance",
+      "text": "compañero retrocedió detrás del coche y en seguida ambas partes comenzaron a disparar.",
+      "speaker": "S1",
+      "t_start": 130.14,
+      "t_end": 135.1,
+      "utt_index": 17
+    },
+    {
+      "t": 21.51930374998483,
+      "kind": "rapid_alert",
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "compañero retrocedió detrás del coche y en seguida ambas partes comenzaron a disparar.",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 17,
+      "t_utterance": 130.14,
+      "atom_ms": 1765
+    },
+    {
+      "t": 21.519343444000697,
+      "kind": "utterance",
+      "text": "Fired.",
+      "speaker": "S2",
+      "t_start": 140.58,
+      "t_end": 141.06,
+      "utt_index": 18
+    },
+    {
+      "t": 21.519453209999483,
+      "kind": "router_skip",
+      "utt_index": 18,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 21.51946103500086,
+      "kind": "utterance",
+      "text": "A.",
+      "speaker": "S2",
+      "t_start": 143.82,
+      "t_end": 143.9,
+      "utt_index": 19
+    },
+    {
+      "t": 21.519515146996127,
+      "kind": "router_skip",
+      "utt_index": 19,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 21.519523752998793,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+10_utts"
+      ]
+    },
+    {
+      "t": 21.519528631994035,
+      "kind": "utterance",
+      "text": "A pesar de caer al suelo, el hombre siguió disparando contra la policía e incluso hizo estallar un neumático.",
+      "speaker": "S1",
+      "t_start": 144.94,
+      "t_end": 151.14,
+      "utt_index": 20
+    },
+    {
+      "t": 21.51972712497809,
+      "kind": "rapid_alert",
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "A pesar de caer al suelo, el hombre siguió disparando contra la policía e incluso hizo estallar un neumático.",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 20,
+      "t_utterance": 144.94,
+      "atom_ms": 0
+    },
+    {
+      "t": 21.519742363976547,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+11_utts"
+      ]
+    },
+    {
+      "t": 21.519747853977606,
+      "kind": "utterance",
+      "text": "Después de unos dos minutos de enfrentamiento. Las fuerzas de apoyo llegaron a tiempo. En ese momento, los nervios de la gente",
+      "speaker": "S1",
+      "t_start": 159.38,
+      "t_end": 167.02,
+      "utt_index": 21
+    },
+    {
+      "t": 22.864805745979538,
+      "kind": "rapid_alert",
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "Después de unos dos minutos de enfrentamiento. Las fuerzas de apoyo llegaron a tiempo. En ese momento, los nervios de la gente",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 21,
+      "t_utterance": 159.38,
+      "atom_ms": 1345
+    },
+    {
+      "t": 22.86483600299107,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+12_utts"
+      ]
+    },
+    {
+      "t": 22.864849487988977,
+      "kind": "utterance",
+      "text": "estaban tensos como cuerdas.",
+      "speaker": "S1",
+      "t_start": 167.02,
+      "t_end": 168.78,
+      "utt_index": 22
+    },
+    {
+      "t": 22.864961027982645,
+      "kind": "router_skip",
+      "utt_index": 22,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 22.864965305983787,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+13_utts"
+      ]
+    },
+    {
+      "t": 22.864971657982096,
+      "kind": "utterance",
+      "text": "Y Get down. Get down. Down.",
+      "speaker": "S2",
+      "t_start": 174.06,
+      "t_end": 175.7,
+      "utt_index": 23
+    },
+    {
+      "t": 30.908312605984975,
+      "kind": "router_skip",
+      "utt_index": 23,
+      "classification": "escalation",
+      "reason": "prosecution_no_alert",
+      "atom_ms": 8043
+    },
+    {
+      "t": 30.90832098198007,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+14_utts"
+      ]
+    },
+    {
+      "t": 30.90833030900103,
+      "kind": "utterance",
+      "text": "Sigue.",
+      "speaker": "S2",
+      "t_start": 178.26,
+      "t_end": 178.7,
+      "utt_index": 24
+    },
+    {
+      "t": 30.90843283198774,
+      "kind": "router_skip",
+      "utt_index": 24,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 30.908436428988352,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+15_utts"
+      ]
+    },
+    {
+      "t": 30.908440205996158,
+      "kind": "utterance",
+      "text": "Hay que entender que disparar puede parecer sencillo en las películas, pero las consecuencias causan traumas en la mayoría de los agentes. Por",
+      "speaker": "S1",
+      "t_start": 183.54,
+      "t_end": 191.54,
+      "utt_index": 25
+    },
+    {
+      "t": 32.64655224897433,
+      "kind": "router_skip",
+      "utt_index": 25,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 32.64656087500043,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+16_utts"
+      ]
+    },
+    {
+      "t": 32.646571234974544,
+      "kind": "utterance",
+      "text": "ello, en muchos casos relacionados con disparos, se concede licencia administrativa para que los implicados tengan tiempo de",
+      "speaker": "S1",
+      "t_start": 191.54,
+      "t_end": 199.46,
+      "utt_index": 26
+    },
+    {
+      "t": 32.646741021977505,
+      "kind": "rapid_alert",
+      "rule_id": "CRIT-OFFICER-DISTRESS",
+      "rule_title": "Officer in Distress — Emergency Response Required",
+      "rule_source": "Operational flag — backup dispatch and command notification mandatory",
+      "severity": "critical",
+      "subject": "officer",
+      "confidence": 0.97,
+      "one_liner": "Officer signals distress or active gunfire. Immediate backup required.",
+      "triggering_quote": "ello, en muchos casos relacionados con disparos, se concede licencia administrativa para que los implicados tengan tiempo de",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 26,
+      "t_utterance": 191.54,
+      "atom_ms": 0
+    },
+    {
+      "t": 32.64676583898836,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+17_utts"
+      ]
+    },
+    {
+      "t": 32.64677008698345,
+      "kind": "utterance",
+      "text": "recuperarse psicológicamente. El agente que ves aquí es un ejemplo. Es posible. Que se sintiera culpable por pensar que no",
+      "speaker": "S1",
+      "t_start": 199.46,
+      "t_end": 207.22,
+      "utt_index": 27
+    },
+    {
+      "t": 33.96490515698679,
+      "kind": "router_skip",
+      "utt_index": 27,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 33.96491242098273,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+18_utts"
+      ]
+    },
+    {
+      "t": 33.964921807986684,
+      "kind": "utterance",
+      "text": "manejo bien la situación o simplemente que quedó traumatizado Por el momento en que el otro sacó el arma hasta el punto de romper a llorar del",
+      "speaker": "S1",
+      "t_start": 207.22,
+      "t_end": 214.86,
+      "utt_index": 28
+    },
+    {
+      "t": 35.22152093698969,
+      "kind": "router_skip",
+      "utt_index": 28,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 35.2215323089913,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+19_utts"
+      ]
+    },
+    {
+      "t": 35.221545302978484,
+      "kind": "utterance",
+      "text": "susto.",
+      "speaker": "S1",
+      "t_start": 214.86,
+      "t_end": 215.5,
+      "utt_index": 29
+    },
+    {
+      "t": 35.221687149984064,
+      "kind": "router_skip",
+      "utt_index": 29,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 35.221692729974166,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+20_utts"
+      ]
+    },
+    {
+      "t": 35.22170030398411,
+      "kind": "utterance",
+      "text": "Para. Atizar la seguridad. Muchos agentes usan el coche como escudo al acercarse. Afortunadamente, en ese momento el sospechoso ya",
+      "speaker": "S1",
+      "t_start": 218.58,
+      "t_end": 226.5,
+      "utt_index": 30
+    },
+    {
+      "t": 36.5312550959934,
+      "kind": "router_skip",
+      "utt_index": 30,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 36.53126205899753,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+21_utts"
+      ]
+    },
+    {
+      "t": 36.53127077498357,
+      "kind": "utterance",
+      "text": "estaba herido. Ya no representaba una amenaza.",
+      "speaker": "S1",
+      "t_start": 226.5,
+      "t_end": 229.42,
+      "utt_index": 31
+    },
+    {
+      "t": 37.88072516399552,
+      "kind": "router_skip",
+      "utt_index": 31,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 37.880734450998716,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+22_utts"
+      ]
+    },
+    {
+      "t": 37.88074518099893,
+      "kind": "utterance",
+      "text": "Al revisar encontraron documentos de identidad del hombre llamado Kevin Bolton de 45 años. Padre de tres",
+      "speaker": "S1",
+      "t_start": 240.02,
+      "t_end": 247.1,
+      "utt_index": 32
+    },
+    {
+      "t": 39.107886355981464,
+      "kind": "router_skip",
+      "utt_index": 32,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 39.10789337899769,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+23_utts"
+      ]
+    },
+    {
+      "t": 39.10790128298686,
+      "kind": "utterance",
+      "text": "hijos con una vida sumamente difícil. El. Robo de 0 € de ese día. Según la familia y",
+      "speaker": "S1",
+      "t_start": 247.1,
+      "t_end": 254.98,
+      "utt_index": 33
+    },
+    {
+      "t": 40.44781083500129,
+      "kind": "router_skip",
+      "utt_index": 33,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 40.44782030300121,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+24_utts"
+      ]
+    },
+    {
+      "t": 40.44783318697591,
+      "kind": "utterance",
+      "text": "las cámaras. Fue solo porque Kevin quería que sus hijos probaran una bolsa de patatas fritas del estante. Mientras la policía",
+      "speaker": "S1",
+      "t_start": 254.98,
+      "t_end": 262.94,
+      "utt_index": 34
+    },
+    {
+      "t": 41.85621688698302,
+      "kind": "router_skip",
+      "utt_index": 34,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 41.85622627497651,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+25_utts"
+      ]
+    },
+    {
+      "t": 41.85623671399662,
+      "kind": "utterance",
+      "text": "le atendía las heridas. Kevin seguía forcejeando incluso después de subir a la ambulancia. Aún afirmaba que no había cumplido con",
+      "speaker": "S1",
+      "t_start": 262.94,
+      "t_end": 270.74,
+      "utt_index": 35
+    },
+    {
+      "t": 43.170594984985655,
+      "kind": "router_skip",
+      "utt_index": 35,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 43.170624980994035,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+26_utts"
+      ]
+    },
+    {
+      "t": 43.17063481998048,
+      "kind": "utterance",
+      "text": "su deber de padre y se negó a recibir tratamiento.",
+      "speaker": "S1",
+      "t_start": 270.74,
+      "t_end": 273.78,
+      "utt_index": 36
+    },
+    {
+      "t": 44.462828700983664,
+      "kind": "router_skip",
+      "utt_index": 36,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 44.46283543299069,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+27_utts"
+      ]
+    },
+    {
+      "t": 44.46284426099737,
+      "kind": "utterance",
+      "text": "Ven?",
+      "speaker": "S2",
+      "t_start": 274.86,
+      "t_end": 275.22,
+      "utt_index": 37
+    },
+    {
+      "t": 44.46289777199854,
+      "kind": "router_skip",
+      "utt_index": 37,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 44.46290045697242,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+28_utts"
+      ]
+    },
+    {
+      "t": 44.462903712992556,
+      "kind": "utterance",
+      "text": "Trying to help stop.",
+      "speaker": "S2",
+      "t_start": 277.02,
+      "t_end": 278.82,
+      "utt_index": 38
+    },
+    {
+      "t": 44.46297420497285,
+      "kind": "router_skip",
+      "utt_index": 38,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 44.46297675999813,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+29_utts"
+      ]
+    },
+    {
+      "t": 44.462979926000116,
+      "kind": "utterance",
+      "text": "Pocos minutos después, aunque fue trasladado a urgencias, Kevin no sobrevivió. El informe forense registró un total de",
+      "speaker": "S1",
+      "t_start": 280.3,
+      "t_end": 287.74,
+      "utt_index": 39
+    },
+    {
+      "t": 45.804204674990615,
+      "kind": "router_skip",
+      "utt_index": 39,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 45.804211968992604,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+30_utts"
+      ]
+    },
+    {
+      "t": 45.804237065982306,
+      "kind": "utterance",
+      "text": "11 heridas en su cuerpo. Seis balas atravesaron su cuerpo y fueron la causa de muerte. El arma que portaba Kevin era un revólver con balas",
+      "speaker": "S1",
+      "t_start": 287.74,
+      "t_end": 295.5,
+      "utt_index": 40
+    },
+    {
+      "t": 47.937894260976464,
+      "kind": "rapid_alert",
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "11 heridas en su cuerpo. Seis balas atravesaron su cuerpo y fueron la causa de muerte. El arma que portaba Kevin era un revólver con balas",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 40,
+      "t_utterance": 287.74,
+      "atom_ms": 2133
+    },
+    {
+      "t": 47.9379174039932,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+31_utts"
+      ]
+    },
+    {
+      "t": 47.93792607099749,
+      "kind": "utterance",
+      "text": "Magnum. Munición capaz de perforar chalecos antibalas comunes. Que los dos agentes no resultaran heridos",
+      "speaker": "S1",
+      "t_start": 295.5,
+      "t_end": 303.14,
+      "utt_index": 41
+    },
+    {
+      "t": 49.29394881599001,
+      "kind": "router_skip",
+      "utt_index": 41,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 49.293956029985566,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+32_utts"
+      ]
+    },
+    {
+      "t": 49.293964936980046,
+      "kind": "utterance",
+      "text": "fue una suerte poco común.",
+      "speaker": "S1",
+      "t_start": 303.22,
+      "t_end": 304.94,
+      "utt_index": 42
+    },
+    {
+      "t": 50.66855197297991,
+      "kind": "router_skip",
+      "utt_index": 42,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 50.66855993799982,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+33_utts"
+      ]
+    },
+    {
+      "t": 50.66856989599182,
+      "kind": "utterance",
+      "text": "Gun I. With you. I want you to shoot. Me don't.",
+      "speaker": "S2",
+      "t_start": 309.78,
+      "t_end": 313.02,
+      "utt_index": 43
+    },
+    {
+      "t": 52.4219025769853,
+      "kind": "rapid_alert",
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "Gun I. With you. I want you to shoot. Me don't.",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 43,
+      "t_utterance": 309.78,
+      "atom_ms": 1753
+    },
+    {
+      "t": 52.42192666299525,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+34_utts"
+      ]
+    },
+    {
+      "t": 52.42193630000111,
+      "kind": "utterance",
+      "text": "Saludos, estimados espectadores. El 21 de abril de 2023 en el condado de Wood. Estado de. Wisconsin.",
+      "speaker": "S1",
+      "t_start": 318.78,
+      "t_end": 326.5,
+      "utt_index": 44
+    },
+    {
+      "t": 53.82781189098023,
+      "kind": "router_skip",
+      "utt_index": 44,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 53.827819844998885,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+35_utts"
+      ]
+    },
+    {
+      "t": 53.82782909297384,
+      "kind": "utterance",
+      "text": "El agente Eric patrullaba de noche cuando observó a un hombre con chaqueta blanca merodeando cerca de la avenida del aeropuerto.",
+      "speaker": "S1",
+      "t_start": 326.98,
+      "t_end": 334.66,
+      "utt_index": 45
+    },
+    {
+      "t": 55.216458836977836,
+      "kind": "router_skip",
+      "utt_index": 45,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 55.2164665319724,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+36_utts"
+      ]
+    },
+    {
+      "t": 55.21647648100043,
+      "kind": "utterance",
+      "text": "Al ver su comportamiento sospechoso, el agente se acercó de inmediato para verificar su identidad.",
+      "speaker": "S1",
+      "t_start": 334.66,
+      "t_end": 340.14,
+      "utt_index": 46
+    },
+    {
+      "t": 56.50544654298574,
+      "kind": "router_skip",
+      "utt_index": 46,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 56.50545701399096,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+37_utts"
+      ]
+    },
+    {
+      "t": 56.505468524992466,
+      "kind": "utterance",
+      "text": "Si.",
+      "speaker": "S2",
+      "t_start": 342.54,
+      "t_end": 342.94,
+      "utt_index": 47
+    },
+    {
+      "t": 56.50554093098617,
+      "kind": "router_skip",
+      "utt_index": 47,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 56.50554552898393,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+38_utts"
+      ]
+    },
+    {
+      "t": 56.50555080900085,
+      "kind": "utterance",
+      "text": "You. Were you saying that?",
+      "speaker": "S2",
+      "t_start": 345.34,
+      "t_end": 347.62,
+      "utt_index": 48
+    },
+    {
+      "t": 57.78535731797456,
+      "kind": "router_skip",
+      "utt_index": 48,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 57.785363939998206,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+39_utts"
+      ]
+    },
+    {
+      "t": 57.78537330799736,
+      "kind": "utterance",
+      "text": "Naples Hotel.",
+      "speaker": "S2",
+      "t_start": 351.98,
+      "t_end": 352.82,
+      "utt_index": 49
+    },
+    {
+      "t": 57.78545236698119,
+      "kind": "router_skip",
+      "utt_index": 49,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 57.78545573397423,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+40_utts"
+      ]
+    },
+    {
+      "t": 57.785459299979266,
+      "kind": "utterance",
+      "text": "Hard. Because we've been looking for you. What for for. Boil jumping jumping. Yeah. What did I do?",
+      "speaker": "S2",
+      "t_start": 357.3,
+      "t_end": 364.86,
+      "utt_index": 50
+    },
+    {
+      "t": 60.12050189697766,
+      "kind": "router_skip",
+      "utt_index": 50,
+      "classification": "escalation",
+      "reason": "prosecution_no_alert",
+      "atom_ms": 2335
+    },
+    {
+      "t": 60.12050919097965,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+41_utts"
+      ]
+    },
+    {
+      "t": 60.12051736598369,
+      "kind": "utterance",
+      "text": "Cuando el agente Eric se acercó al hombre, reconoció de inmediato que se trataba de William Walker, quien estaba siendo buscado por la policía",
+      "speaker": "S1",
+      "t_start": 365.26,
+      "t_end": 373.02,
+      "utt_index": 51
+    },
+    {
+      "t": 61.37057427398395,
+      "kind": "router_skip",
+      "utt_index": 51,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 61.370581907976884,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+42_utts"
+      ]
+    },
+    {
+      "t": 61.370592567982385,
+      "kind": "utterance",
+      "text": "local. Anteriormente En febrero de 2023. William había sido arrestado por agredir a su esposa. Luego fue",
+      "speaker": "S1",
+      "t_start": 373.02,
+      "t_end": 380.78,
+      "utt_index": 52
+    },
+    {
+      "t": 62.71581687597791,
+      "kind": "router_skip",
+      "utt_index": 52,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 62.715823958977126,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+43_utts"
+      ]
+    },
+    {
+      "t": 62.71583261498017,
+      "kind": "utterance",
+      "text": "liberado tras pagar la fianza. Sin embargo, no se presentó al juicio y desapareció durante su fuga.",
+      "speaker": "S1",
+      "t_start": 380.78,
+      "t_end": 387.3,
+      "utt_index": 53
+    },
+    {
+      "t": 64.06608258699998,
+      "kind": "router_skip",
+      "utt_index": 53,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 64.06608980099554,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+44_utts"
+      ]
+    },
+    {
+      "t": 64.06609821598977,
+      "kind": "utterance",
+      "text": "Y Never been back to the house I've.",
+      "speaker": "S2",
+      "t_start": 395.5,
+      "t_end": 397.34,
+      "utt_index": 54
+    },
+    {
+      "t": 65.37300678499741,
+      "kind": "router_skip",
+      "utt_index": 54,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 65.37301684397971,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+45_utts"
+      ]
+    },
+    {
+      "t": 65.37302777398145,
+      "kind": "utterance",
+      "text": "Ve been there.",
+      "speaker": "S2",
+      "t_start": 399.06,
+      "t_end": 399.78,
+      "utt_index": 55
+    },
+    {
+      "t": 65.37311809297535,
+      "kind": "router_skip",
+      "utt_index": 55,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 65.37312342299265,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+46_utts"
+      ]
+    },
+    {
+      "t": 65.37312877399381,
+      "kind": "utterance",
+      "text": "In the house on a second.",
+      "speaker": "S2",
+      "t_start": 400.86,
+      "t_end": 402.94,
+      "utt_index": 56
+    },
+    {
+      "t": 66.72986776198377,
+      "kind": "router_skip",
+      "utt_index": 56,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 66.72987812099745,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+47_utts"
+      ]
+    },
+    {
+      "t": 66.72989094498917,
+      "kind": "utterance",
+      "text": "William de repente metió la mano en el bolsillo de la chaqueta. Resultó que escondía un arma en su interior.",
+      "speaker": "S1",
+      "t_start": 405.1,
+      "t_end": 411.1,
+      "utt_index": 57
+    },
+    {
+      "t": 68.49895560799632,
+      "kind": "rapid_alert",
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "William de repente metió la mano en el bolsillo de la chaqueta. Resultó que escondía un arma en su interior.",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 57,
+      "t_utterance": 405.1,
+      "atom_ms": 1769
+    },
+    {
+      "t": 68.49897978399531,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+48_utts"
+      ]
+    },
+    {
+      "t": 68.4989886499825,
+      "kind": "utterance",
+      "text": "Y.",
+      "speaker": "S2",
+      "t_start": 414.3,
+      "t_end": 414.42,
+      "utt_index": 58
+    },
+    {
+      "t": 68.49903401499614,
+      "kind": "router_skip",
+      "utt_index": 58,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 68.49903648998588,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+49_utts"
+      ]
+    },
+    {
+      "t": 68.49903969597653,
+      "kind": "utterance",
+      "text": "William.",
+      "speaker": "S3",
+      "t_start": 417.9,
+      "t_end": 418.34,
+      "utt_index": 59
+    },
+    {
+      "t": 68.49910240498139,
+      "kind": "router_skip",
+      "utt_index": 59,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 68.49910465898574,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+50_utts"
+      ]
+    },
+    {
+      "t": 68.49910729398835,
+      "kind": "utterance",
+      "text": "Eric.",
+      "speaker": "S3",
+      "t_start": 420.34,
+      "t_end": 420.7,
+      "utt_index": 60
+    },
+    {
+      "t": 68.49914168799296,
+      "kind": "router_skip",
+      "utt_index": 60,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 68.49914370197803,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+51_utts"
+      ]
+    },
+    {
+      "t": 68.4991461269965,
+      "kind": "utterance",
+      "text": "Como no es. Taba claro. Si William aún podía resistirse. Eric rápidamente se cubrió detrás del coche patrulla, recargó el arma y se preparó",
+      "speaker": "S1",
+      "t_start": 426.94,
+      "t_end": 434.78,
+      "utt_index": 61
+    },
+    {
+      "t": 70.3096960229741,
+      "kind": "rapid_alert",
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "Como no es. Taba claro. Si William aún podía resistirse. Eric rápidamente se cubrió detrás del coche patrulla, recargó el arma y se preparó",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 61,
+      "t_utterance": 426.94,
+      "atom_ms": 1810
+    },
+    {
+      "t": 70.30972535797628,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+52_utts"
+      ]
+    },
+    {
+      "t": 70.3097376099904,
+      "kind": "utterance",
+      "text": "para la siguiente situación.",
+      "speaker": "S1",
+      "t_start": 434.78,
+      "t_end": 436.42,
+      "utt_index": 62
+    },
+    {
+      "t": 70.30985634299577,
+      "kind": "router_skip",
+      "utt_index": 62,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 70.30986129297526,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+53_utts"
+      ]
+    },
+    {
+      "t": 70.30986742398818,
+      "kind": "utterance",
+      "text": "We help rather. Through the gun away.",
+      "speaker": "S2",
+      "t_start": 446.22,
+      "t_end": 448.66,
+      "utt_index": 63
+    },
+    {
+      "t": 71.76388502999907,
+      "kind": "rapid_alert",
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "We help rather. Through the gun away.",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 63,
+      "t_utterance": 446.22,
+      "atom_ms": 1454
+    },
+    {
+      "t": 71.76391136899474,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+54_utts"
+      ]
+    },
+    {
+      "t": 71.76392257100088,
+      "kind": "utterance",
+      "text": "Grow the gun away. I need to get you some help.",
+      "speaker": "S2",
+      "t_start": 449.82,
+      "t_end": 452.18,
+      "utt_index": 64
+    },
+    {
+      "t": 74.33231916697696,
+      "kind": "router_skip",
+      "utt_index": 64,
+      "classification": "escalation",
+      "reason": "prosecution_no_alert",
+      "atom_ms": 2568
+    },
+    {
+      "t": 74.33232934697298,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+55_utts"
+      ]
+    },
+    {
+      "t": 74.33234123897273,
+      "kind": "utterance",
+      "text": "William, through the gun away.",
+      "speaker": "S2",
+      "t_start": 453.86,
+      "t_end": 456.06,
+      "utt_index": 65
+    },
+    {
+      "t": 76.08512057899497,
+      "kind": "rapid_alert",
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "William, through the gun away.",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 65,
+      "t_utterance": 453.86,
+      "atom_ms": 1752
+    },
+    {
+      "t": 76.08514493398252,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+56_utts",
+        "+60s"
+      ]
+    },
+    {
+      "t": 76.08515334999538,
+      "kind": "utterance",
+      "text": "Recibe. Subjects Down. Firearm on his left ip reached for it. I can't see it now.",
+      "speaker": "S2",
+      "t_start": 459.54,
+      "t_end": 467.3,
+      "utt_index": 66
+    },
+    {
+      "t": 77.92288816097425,
+      "kind": "rapid_alert",
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "Recibe. Subjects Down. Firearm on his left ip reached for it. I can't see it now.",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 66,
+      "t_utterance": 459.54,
+      "atom_ms": 1837
+    },
+    {
+      "t": 77.92291237597237,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+57_utts",
+        "+62s"
+      ]
+    },
+    {
+      "t": 77.92292162397644,
+      "kind": "utterance",
+      "text": "Role have them. Cage 30. Second Hand Grove. Notified three uno 300.",
+      "speaker": "S2",
+      "t_start": 467.34,
+      "t_end": 473.86,
+      "utt_index": 67
+    },
+    {
+      "t": 79.19193355398602,
+      "kind": "router_skip",
+      "utt_index": 67,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 79.19194098797743,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+58_utts",
+        "+63s"
+      ]
+    },
+    {
+      "t": 79.19194935398991,
+      "kind": "utterance",
+      "text": "William fue alcanzado por varios disparos y cayó al suelo inconsciente. Aún así, el agente Eric se mantuvo extremadamente cauteloso y",
+      "speaker": "S1",
+      "t_start": 475.3,
+      "t_end": 483.02,
+      "utt_index": 68
+    },
+    {
+      "t": 79.19208687197533,
+      "kind": "rapid_alert",
+      "rule_id": "CRIT-OFFICER-DISTRESS",
+      "rule_title": "Officer in Distress — Emergency Response Required",
+      "rule_source": "Operational flag — backup dispatch and command notification mandatory",
+      "severity": "critical",
+      "subject": "officer",
+      "confidence": 0.97,
+      "one_liner": "Officer signals distress or active gunfire. Immediate backup required.",
+      "triggering_quote": "William fue alcanzado por varios disparos y cayó al suelo inconsciente. Aún así, el agente Eric se mantuvo extremadamente cauteloso y",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 68,
+      "t_utterance": 475.3,
+      "atom_ms": 0
+    },
+    {
+      "t": 79.19210507697426,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+59_utts",
+        "+63s"
+      ]
+    },
+    {
+      "t": 79.19210949499393,
+      "kind": "utterance",
+      "text": "no se acercó. Temía que el sospechoso pudiera tener más armas escondidas. Decidió esperar refuerzos antes de proceder.",
+      "speaker": "S1",
+      "t_start": 483.02,
+      "t_end": 489.98,
+      "utt_index": 69
+    },
+    {
+      "t": 80.87552608299302,
+      "kind": "router_skip",
+      "utt_index": 69,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 80.87553758497234,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+60_utts",
+        "+65s"
+      ]
+    },
+    {
+      "t": 80.87555054898257,
+      "kind": "utterance",
+      "text": "William.",
+      "speaker": "S2",
+      "t_start": 496.02,
+      "t_end": 496.74,
+      "utt_index": 70
+    },
+    {
+      "t": 80.87568659498356,
+      "kind": "router_skip",
+      "utt_index": 70,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 80.87569197500125,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+61_utts",
+        "+65s"
+      ]
+    },
+    {
+      "t": 80.87569835799513,
+      "kind": "utterance",
+      "text": "No.",
+      "speaker": "S2",
+      "t_start": 499.06,
+      "t_end": 499.3,
+      "utt_index": 71
+    },
+    {
+      "t": 80.87576062398148,
+      "kind": "router_skip",
+      "utt_index": 71,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 80.87576422098209,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+62_utts",
+        "+65s"
+      ]
+    },
+    {
+      "t": 80.87576833899948,
+      "kind": "utterance",
+      "text": "Can you hear me?",
+      "speaker": "S2",
+      "t_start": 500.58,
+      "t_end": 501.54,
+      "utt_index": 72
+    },
+    {
+      "t": 80.87584284797776,
+      "kind": "router_skip",
+      "utt_index": 72,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 80.87584607498138,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+63_utts",
+        "+65s"
+      ]
+    },
+    {
+      "t": 80.87585074297385,
+      "kind": "utterance",
+      "text": "You can hear me? I want to get you some help. You have another gun.",
+      "speaker": "S2",
+      "t_start": 503.58,
+      "t_end": 507.66,
+      "utt_index": 73
+    },
+    {
+      "t": 83.47146240598522,
+      "kind": "router_skip",
+      "utt_index": 73,
+      "classification": "escalation",
+      "reason": "prosecution_no_alert",
+      "atom_ms": 2595
+    },
+    {
+      "t": 83.47146992999478,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+64_utts",
+        "+68s"
+      ]
+    },
+    {
+      "t": 83.47147871597554,
+      "kind": "utterance",
+      "text": "William recibió múltiples disparos. Estaba gravemente herido. E inconsciente. El arma caída en el suelo era la que William llevaba",
+      "speaker": "S1",
+      "t_start": 508.86,
+      "t_end": 516.1,
+      "utt_index": 74
+    },
+    {
+      "t": 83.47165945597226,
+      "kind": "rapid_alert",
+      "rule_id": "CRIT-OFFICER-DISTRESS",
+      "rule_title": "Officer in Distress — Emergency Response Required",
+      "rule_source": "Operational flag — backup dispatch and command notification mandatory",
+      "severity": "critical",
+      "subject": "officer",
+      "confidence": 0.97,
+      "one_liner": "Officer signals distress or active gunfire. Immediate backup required.",
+      "triggering_quote": "William recibió múltiples disparos. Estaba gravemente herido. E inconsciente. El arma caída en el suelo era la que William llevaba",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 74,
+      "t_utterance": 508.86,
+      "atom_ms": 0
+    },
+    {
+      "t": 83.47168239898747,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+65_utts",
+        "+68s"
+      ]
+    },
+    {
+      "t": 83.471687378973,
+      "kind": "utterance",
+      "text": "consigo.",
+      "speaker": "S1",
+      "t_start": 516.1,
+      "t_end": 516.94,
+      "utt_index": 75
+    },
+    {
+      "t": 83.4717570989742,
+      "kind": "router_skip",
+      "utt_index": 75,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 83.47176005499205,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+66_utts",
+        "+68s"
+      ]
+    },
+    {
+      "t": 83.47176487397519,
+      "kind": "utterance",
+      "text": "Hay.",
+      "speaker": "S2",
+      "t_start": 519.66,
+      "t_end": 520.06,
+      "utt_index": 76
+    },
+    {
+      "t": 83.47180372697767,
+      "kind": "router_skip",
+      "utt_index": 76,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 83.47180588098126,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+67_utts",
+        "+68s"
+      ]
+    },
+    {
+      "t": 83.47180886598653,
+      "kind": "utterance",
+      "text": "The Middle of the last be right in front of you. I got a gunpoint. He hasn't moved. I've got eyes on the weapon.",
+      "speaker": "S2",
+      "t_start": 525.06,
+      "t_end": 531.22,
+      "utt_index": 77
+    },
+    {
+      "t": 85.22875566297444,
+      "kind": "rapid_alert",
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "The Middle of the last be right in front of you. I got a gunpoint. He hasn't moved. I've got eyes on the weapon.",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 77,
+      "t_utterance": 525.06,
+      "atom_ms": 1756
+    },
+    {
+      "t": 85.22877817598055,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+68_utts",
+        "+69s"
+      ]
+    },
+    {
+      "t": 85.22878770297393,
+      "kind": "utterance",
+      "text": "William, I want. Help body. But I need you know you don't have another gun.",
+      "speaker": "S2",
+      "t_start": 534.7,
+      "t_end": 539.42,
+      "utt_index": 78
+    },
+    {
+      "t": 86.92493893500068,
+      "kind": "rapid_alert",
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "William, I want. Help body. But I need you know you don't have another gun.",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 78,
+      "t_utterance": 534.7,
+      "atom_ms": 1696
+    },
+    {
+      "t": 86.92496193898842,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+69_utts",
+        "+71s"
+      ]
+    },
+    {
+      "t": 86.92497062499751,
+      "kind": "utterance",
+      "text": "Will you Are you still with me, man? Shake your leg. If you can still hear me.",
+      "speaker": "S2",
+      "t_start": 540.54,
+      "t_end": 545.26,
+      "utt_index": 79
+    },
+    {
+      "t": 88.31300611898769,
+      "kind": "router_skip",
+      "utt_index": 79,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 88.31301548698684,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+70_utts",
+        "+72s"
+      ]
+    },
+    {
+      "t": 88.31302737898659,
+      "kind": "utterance",
+      "text": "William. Shake your leg. If you can still hear me. Guns right Here. Brandon.",
+      "speaker": "S2",
+      "t_start": 547.18,
+      "t_end": 551.66,
+      "utt_index": 80
+    },
+    {
+      "t": 89.72577929997351,
+      "kind": "rapid_alert",
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "William. Shake your leg. If you can still hear me. Guns right Here. Brandon.",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 80,
+      "t_utterance": 547.18,
+      "atom_ms": 1412
+    },
+    {
+      "t": 89.72583265998401,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+71_utts",
+        "+74s"
+      ]
+    },
+    {
+      "t": 89.7258452239912,
+      "kind": "utterance",
+      "text": "William. Can you hear me?",
+      "speaker": "S2",
+      "t_start": 554.98,
+      "t_end": 556.3,
+      "utt_index": 81
+    },
+    {
+      "t": 91.18986360399867,
+      "kind": "rapid_alert",
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "William. Can you hear me?",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 81,
+      "t_utterance": 554.98,
+      "atom_ms": 1464
+    },
+    {
+      "t": 91.18989440097357,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+72_utts",
+        "+75s"
+      ]
+    },
+    {
+      "t": 91.18990684498567,
+      "kind": "utterance",
+      "text": "You got cops?",
+      "speaker": "S2",
+      "t_start": 558.3,
+      "t_end": 559.06,
+      "utt_index": 82
+    },
+    {
+      "t": 91.19001105998177,
+      "kind": "router_skip",
+      "utt_index": 82,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 91.19001531798858,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+73_utts",
+        "+75s"
+      ]
+    },
+    {
+      "t": 91.19002089899732,
+      "kind": "utterance",
+      "text": "All right.",
+      "speaker": "S2",
+      "t_start": 560.34,
+      "t_end": 560.82,
+      "utt_index": 83
+    },
+    {
+      "t": 91.19009555899538,
+      "kind": "router_skip",
+      "utt_index": 83,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 91.19010058799176,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+74_utts",
+        "+75s"
+      ]
+    },
+    {
+      "t": 91.19010603797506,
+      "kind": "utterance",
+      "text": "Con la cobertura de Eric, otro agente se acercó para esposar a William. Aunque William había recibido múltiples disparos y estaba",
+      "speaker": "S1",
+      "t_start": 561.9,
+      "t_end": 569.18,
+      "utt_index": 84
+    },
+    {
+      "t": 91.19027621898567,
+      "kind": "rapid_alert",
+      "rule_id": "CRIT-OFFICER-DISTRESS",
+      "rule_title": "Officer in Distress — Emergency Response Required",
+      "rule_source": "Operational flag — backup dispatch and command notification mandatory",
+      "severity": "critical",
+      "subject": "officer",
+      "confidence": 0.97,
+      "one_liner": "Officer signals distress or active gunfire. Immediate backup required.",
+      "triggering_quote": "Con la cobertura de Eric, otro agente se acercó para esposar a William. Aunque William había recibido múltiples disparos y estaba",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 84,
+      "t_utterance": 561.9,
+      "atom_ms": 0
+    },
+    {
+      "t": 91.19029347097967,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+75_utts",
+        "+75s"
+      ]
+    },
+    {
+      "t": 91.1902999629965,
+      "kind": "utterance",
+      "text": "inconsciente. Los procedimientos aún debían llevarse a cabo por completo.",
+      "speaker": "S1",
+      "t_start": 569.18,
+      "t_end": 573.5,
+      "utt_index": 85
+    },
+    {
+      "t": 92.9153247869981,
+      "kind": "rapid_alert",
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "inconsciente. Los procedimientos aún debían llevarse a cabo por completo.",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 85,
+      "t_utterance": 569.18,
+      "atom_ms": 1725
+    },
+    {
+      "t": 92.91535378198023,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+76_utts",
+        "+77s"
+      ]
+    },
+    {
+      "t": 92.91536577499937,
+      "kind": "utterance",
+      "text": "Cuando llegó el equipo médico de emergencia, el agente Eric abandonó la escena, jadeando y tratando de calmarse porque lo ocurrido fue",
+      "speaker": "S1",
+      "t_start": 575.38,
+      "t_end": 583.1,
+      "utt_index": 86
+    },
+    {
+      "t": 95.04394972097361,
+      "kind": "router_skip",
+      "utt_index": 86,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 95.04395797598409,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+77_utts",
+        "+79s"
+      ]
+    },
+    {
+      "t": 95.04396727398853,
+      "kind": "utterance",
+      "text": "demasiado peligroso.",
+      "speaker": "S1",
+      "t_start": 583.1,
+      "t_end": 584.98,
+      "utt_index": 87
+    },
+    {
+      "t": 95.0440546280006,
+      "kind": "router_skip",
+      "utt_index": 87,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 95.04405730299186,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+78_utts",
+        "+79s"
+      ]
+    },
+    {
+      "t": 95.04406113998266,
+      "kind": "utterance",
+      "text": "Amén.",
+      "speaker": "S4",
+      "t_start": 586.26,
+      "t_end": 586.74,
+      "utt_index": 88
+    },
+    {
+      "t": 95.0441009249771,
+      "kind": "router_skip",
+      "utt_index": 88,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 95.04410340997856,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+79_utts",
+        "+79s"
+      ]
+    },
+    {
+      "t": 95.04410607498721,
+      "kind": "utterance",
+      "text": "En el lugar. De los hechos, el agente Eric rompió en llanto.",
+      "speaker": "S1",
+      "t_start": 595.14,
+      "t_end": 598.7,
+      "utt_index": 89
+    },
+    {
+      "t": 99.37200271899928,
+      "kind": "router_skip",
+      "utt_index": 89,
+      "classification": "none",
+      "confidence": 0.95
+    },
+    {
+      "t": 99.37201038299827,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+80_utts",
+        "+84s"
+      ]
+    },
+    {
+      "t": 99.37202045199228,
+      "kind": "utterance",
+      "text": "That on purpose.",
+      "speaker": "S2",
+      "t_start": 614.7,
+      "t_end": 615.62,
+      "utt_index": 90
+    },
+    {
+      "t": 99.37210150499595,
+      "kind": "router_skip",
+      "utt_index": 90,
+      "classification": "none",
+      "confidence": 0.75
+    },
+    {
+      "t": 99.3721045209968,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+81_utts",
+        "+84s"
+      ]
+    },
+    {
+      "t": 99.37210786697688,
+      "kind": "utterance",
+      "text": "Right before he tried to draw the pistol. He said you're just like you're gonna I want you can feel me or something like that. And then he had I",
+      "speaker": "S2",
+      "t_start": 617.22,
+      "t_end": 624.38,
+      "utt_index": 91
+    },
+    {
+      "t": 101.23378699200111,
+      "kind": "rapid_alert",
+      "rule_id": "CRIT-GENERIC",
+      "rule_title": "Critical Event Detected",
+      "rule_source": "Router classified utterance as critical_event; specific category not matched",
+      "severity": "high",
+      "subject": "officer",
+      "confidence": 0.55,
+      "one_liner": "Critical-event signal detected. Manual review recommended.",
+      "triggering_quote": "Right before he tried to draw the pistol. He said you're just like you're gonna I want you can feel me or something like that. And then he had I",
+      "classification": "critical_event",
+      "region": "eu",
+      "retrieval_scores": [],
+      "model_used": "keyword_fastpath",
+      "latency_ms": 0.0,
+      "utt_index": 91,
+      "t_utterance": 617.22,
+      "atom_ms": 1861
+    },
+    {
+      "t": 101.2338084729854,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+82_utts",
+        "+85s"
+      ]
+    },
+    {
+      "t": 101.2338181809755,
+      "kind": "utterance",
+      "text": "could just barely see the butts talk of it and",
+      "speaker": "S2",
+      "t_start": 624.38,
+      "t_end": 626.9,
+      "utt_index": 92
+    },
+    {
+      "t": 102.6074647839996,
+      "kind": "router_skip",
+      "utt_index": 92,
+      "classification": "none",
+      "confidence": 0.9
+    },
+    {
+      "t": 102.60747188798268,
+      "kind": "deep_scan_skipped",
+      "reason": "previous_still_running",
+      "triggers": [
+        "+83_utts",
+        "+87s"
+      ]
+    },
+    {
+      "t": 102.60748463199707,
+      "kind": "session_finalizing"
+    },
+    {
+      "t": 124.22475119499722,
+      "kind": "verdict_update",
+      "at_t": 124.22472671899595,
+      "reason": "debounced",
+      "wall_ms": 19115,
+      "overall_verdict": "officer_justified",
+      "overall_severity": "none",
+      "headline": "Automated flags were incorrectly triggered by documentary narration rather than officer misconduct.",
+      "summary": "The provided transcript is from a narrated program or documentary analyzing police bodycam footage, rather than raw operational audio. The prosecution's automated system flagged the narrator's descriptions of events as active critical incidents and officer distress. Because these utterances are post-hoc narrations of justified police actions against armed suspects, and do not represent any policy violations or active emergencies, all alleged violations against the officer are dismissed.",
+      "rulings": [
+        {
+          "rule_id": "CRIT-GENERIC",
+          "title": "Critical Event Detected",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "Utterance 7 is a narrator describing the moment a suspect suddenly drew a weapon. While this describes a critical event, it is a post-incident narration and does not indicate any policy violation, error, or misconduct by the officer.",
+          "key_utterances": [
+            7
+          ],
+          "prosecution_weight": 0.1,
+          "defense_weight": 0.9,
+          "confidence": 0.95
+        },
+        {
+          "rule_id": "CRIT-OFFICER-DISTRESS",
+          "title": "Officer in Distress — Emergency Response Required",
+          "verdict": "violation_dismissed",
+          "final_severity": "none",
+          "reasoning": "Utterance 26 consists of a narrator explaining standard police procedure regarding administrative leave following an officer-involved shooting. It is not an active distress signal or a call for immediate backup from an officer in the field.",
+          "key_utterances": [
+            26
+          ],
+          "prosecution_weight": 0.05,
+          "defense_weight": 0.95,
+          "confidence": 0.99
+        }
+      ],
+      "n_violations": 2,
+      "n_rebuttals": 0
+    },
+    {
+      "t": 143.4132833259937,
+      "kind": "visual_context_ready",
+      "force_observed": true,
+      "restraints_visible": true,
+      "restraints_timing": 235.0,
+      "weapons_drawn": true,
+      "subject_compliance": "active_resistance",
+      "key_moments": 7,
+      "summary": "The video shows two separate incidents where police officers encounter armed individuals. In both cases, the subjects draw firearms and ignore commands to drop them, leading officers to use lethal for",
+      "model_used": "gemini-3.1-pro-preview",
+      "latency_ms": 39792.0
+    },
+    {
+      "t": 278.6868861979747,
+      "kind": "deep_scan_completed",
+      "wall_ms": 135272,
+      "violations": 6,
+      "rebuttals": 6,
+      "prosecution_verdict": "violations_found",
+      "overall_severity": "high"
+    },
+    {
+      "t": 278.68694638099987,
+      "kind": "deep_scan_started",
+      "triggers": [
+        "session_end"
+      ],
+      "utterances": 93
+    },
+    {
+      "t": 321.37405040999874,
+      "kind": "verdict_update",
+      "at_t": 321.3740422849951,
+      "reason": "debounced",
+      "wall_ms": 40184,
+      "overall_verdict": "unclear",
+      "overall_severity": "none",
+      "headline": "Judge consolidation error",
+      "summary": "LLM returned invalid JSON.",
+      "rulings": [],
+      "n_violations": 8,
+      "n_rebuttals": 6
+    },
+    {
+      "t": 408.9230401189998,
+      "kind": "deep_scan_completed",
+      "wall_ms": 130236,
+      "violations": 8,
+      "rebuttals": 8,
+      "prosecution_verdict": "violations_found",
+      "overall_severity": "critical"
+    },
+    {
+      "t": 449.61260207998566,
+      "kind": "verdict_update",
+      "at_t": 449.61259859299753,
+      "reason": "session_end",
+      "wall_ms": 40689,
+      "overall_verdict": "unclear",
+      "overall_severity": "none",
+      "headline": "Judge consolidation error",
+      "summary": "LLM returned invalid JSON.",
+      "rulings": [],
+      "n_violations": 10,
+      "n_rebuttals": 8
+    }
+  ],
+  "stats": {
+    "total_utterances": 93,
+    "rapid_alerts": 23,
+    "deep_violations": 8,
+    "rebuttals": 8,
+    "verdict_snapshots": 3,
+    "router_skips": 70
+  }
+}
