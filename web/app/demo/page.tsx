@@ -63,13 +63,13 @@ const DEMOS = [
     badge: 'Officer justified',
   },
   {
-    id: 'it_domestic',
+    id: 'us_aggression',
     featured: false,
-    title: 'Radio Mobile call · control sample check',
-    jurisdiction: 'IT · Carabinieri',
-    flag: '🇮🇹',
-    blurb: 'Control pass utilizing highly fragmented audio dispatch log. Logs zero policy infractions across all pipeline tiers, proving model reliability against hallucinations.',
-    badge: 'No violations',
+    title: 'Fleeing vehicle stop · jail threat scrutinized',
+    jurisdiction: 'US · Police',
+    flag: '🇺🇸',
+    blurb: 'Suspect flees a vape shop and resists exiting the car. Layer 1 flags a critical "you\'re going to jail" warning; defense invokes Pennsylvania v. Mimms and the fleeing-suspect doctrine to dismiss all charges.',
+    badge: 'Officer justified · 1 → 0',
   },
 ];
 

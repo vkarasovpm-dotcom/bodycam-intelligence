@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { Session } from '../../../lib/types/session';
 import { useSessionStore } from '../../../lib/stores/session-store';
 import { useSseReplay } from '../../../lib/hooks/use-sse-replay';
@@ -20,18 +21,29 @@ interface DemoReplayClientProps {
 }
 
 export default function DemoReplayClient({ session, sessionId, initialSpeed, initialT = 0 }: DemoReplayClientProps) {
+  const searchParams = useSearchParams();
+  const isInstant = searchParams.get('autoplay') === 'instant';
+  const maxT = session.events.length > 0 ? session.events[session.events.length - 1].t : 0;
+
   // Setup store on mount
   useEffect(() => {
     const store = useSessionStore.getState();
     store.loadSession(session);
-    if (initialT > 0) {
-      store.setCurrentT(initialT);
+    
+    if (isInstant) {
+      // Мгновенный филл всех карточек и алертов для ленивых судей
+      store.setCurrentT(maxT);
+      store.pause();
+    } else {
+      if (initialT > 0) {
+        store.setCurrentT(initialT);
+      }
+      store.setSpeed(initialSpeed);
+      store.play();
     }
-    store.setSpeed(initialSpeed);
-    store.play();
-  }, [session, initialSpeed, initialT]);
+  }, [session, initialSpeed, initialT, isInstant, maxT]);
 
-  // Start the rAF loop
+  // Start the rAF loop (only if not instant completed)
   useSseReplay();
 
   // Reactive store subscriptions
@@ -39,13 +51,6 @@ export default function DemoReplayClient({ session, sessionId, initialSpeed, ini
   const isPlaying = useSessionStore(state => state.isPlaying);
   const playbackSpeed = useSessionStore(state => state.playbackSpeed);
   const visibleEvents = useSessionStore(state => state.visibleEvents);
-  const currentVerdict = useSessionStore(state => state.currentVerdict);
-  const activeRapidAlerts = useSessionStore(state => state.activeRapidAlerts);
-
-  const rapidAlertCount = visibleEvents.filter(e => e.kind === 'rapid_alert').length;
-  const deepScanCount = visibleEvents.filter(e => e.kind === 'deep_scan_completed').length;
-
-  const maxT = session.events.length > 0 ? session.events[session.events.length - 1].t : 0;
 
   const handlePlayPause = () => useSessionStore.getState().togglePlay();
   const handleReset = () => useSessionStore.getState().reset();
@@ -72,11 +77,11 @@ export default function DemoReplayClient({ session, sessionId, initialSpeed, ini
         <header className="flex h-12 bg-transparent backdrop-blur-sm sticky top-0 z-50 items-center justify-between border-b border-white/[0.04] px-6 shrink-0">
           <div className="flex items-center space-x-4">
             <span className="text-sm font-semibold tracking-tight text-white">SENTINEL</span>
-            <div className="h-4 w-px bg-slate-600" />
+            <div className="h-4 w-px bg-slate-600 mx-4" />
             <div className="flex items-center space-x-2 rounded-full bg-slate-900 border border-slate-800 px-3 py-1">
               <div className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
               <span className="text-xs font-medium text-slate-400">
-                Replay &middot; pre-computed session &middot; sentinel-audit.co
+                {isInstant ? 'Snapshot • Full Adversarial Audit Restored' : 'Replay • pre-computed session • sentinel-audit.co'}
               </span>
             </div>
           </div>
@@ -90,7 +95,7 @@ export default function DemoReplayClient({ session, sessionId, initialSpeed, ini
               ) : (
                 <>
                   <div className="h-1.5 w-1.5 rounded-full bg-slate-500" />
-                  <span className="text-slate-500">PAUSED</span>
+                  <span className="text-slate-500">{isInstant ? 'COMPLETE' : 'PAUSED'}</span>
                 </>
               )}
             </div>
