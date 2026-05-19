@@ -105,7 +105,7 @@ The entire stack — FastAPI backend, FAISS retrieval indexes, Speechmatics RT s
 | `us_video2_vision` | US | officer_justified | none | Warrantless search vindicated after vehicle console reveals hidden narcotics |
 | `it_carabinieri_arrest` | IT | mixed | medium | Night apprehension under Codice di Procedura Penale and de-escalation protocols |
 | `nl_politie_inval` | NL | officer_justified | none | Tactical room-clearing entry — Vision extracts hidden handgun threat, ECHR life protections held |
-| `es_robbery_shootout` | ES | officer_justified | none | Armed robbery tactical engagement — adversarial review filters 23 noisy alerts to zero violations under Echanted proportionality |
+| `es_robbery_shootout` | ES | officer_justified | none | Armed robbery tactical engagement — adversarial review filters 23 noisy alerts to zero violations under ECHR proportionality |
 
 Pre-computed sessions live in `results/live/*_session.json` and stream over SSE.
 
@@ -191,7 +191,7 @@ On a 5-10 minute bodycam recording:
 
 ## License
 
-MIT — see `LICENSE`.
+[MIT License](https://github.com/vkarasovpm-dotcom/bodycam-intelligence?tab=MIT-1-ov-file) — see `LICENSE` tab for details.
 
 Built at Milan AI Week 2026 Hackathon
 Powered by Vultr · Google Gemini · Featherless · Speechmatics
