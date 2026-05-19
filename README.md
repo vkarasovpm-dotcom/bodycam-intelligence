@@ -5,7 +5,7 @@ Adversarial AI Court for Police Bodycam
 sentinel-audit.co
 Milan AI Week 2026
 
-🎬 [Demo video](https://www.loom.com/share/REPLACE_WITH_REAL_ID) · 🌐 [Live demo](https://sentinel-audit.co/demo/us_video3?autoplay=instant&speed=10) · 📄 [Slides](REPLACE_WITH_REAL_URL)
+🌐 [Live demo](https://sentinel-audit.co/) · 📄 [Slides](https://storage.googleapis.com/lablab-static-eu/presentations/submissions/octgaogix566cpvjlul7vs5w/octgaogix566cpvjlul7vs5w-1779198324896_msejh8vwzkjwydufthllxv2t.pdf)
 
 ## 30-second tour
 
@@ -67,17 +67,13 @@ No black box. Every claim sourced to the recording. Reproducible. Discoverable i
 
 SENTINEL is built around `Speechmatics realtime WebSocket streaming` as its core capability. Within 500ms of each finalized utterance, the Router Agent triages it against region-specific case law. Detected violations — by officers `or` by citizens — trigger live alerts in the UI in under 2 seconds. This is not post-hoc audit; this is the live compliance layer for the highest-stakes recorded interactions in society.
 
-┌──────────────────────────────────────────────────────────────────┐
-│ TranscriptionAgent — Speechmatics (multi-feature pipeline)       │
-│                                                                  │
-│ 1. Realtime WebSocket streaming + partials → drives live UI      │
-│ 2. Speaker diarization (S1, S2, …) → council sees who said what  │
-│ 3. Real-time translation (IT/DE → EN) → EU/Italy jurisdictions   │
-│ 4. Sentiment per utterance → fed into Prosecution prompt as      │
-│    evidence of tone (aggressive / tense / neutral)               │
-│ 5. Topic detection → Router uses topics to pick the rule pack    │
-│ 6. Summarization → 2-sentence card in the dashboard              │
-└──────────────────────────────────────────────────────────────────┘
+* **TranscriptionAgent — Speechmatics (multi-feature pipeline):**
+  * **1. Realtime WebSocket streaming + partials** → drives live UI updates instantly.
+  * **2. Speaker diarization (S1, S2, ...)** → council agents see exactly who said what.
+  * **3. Real-time translation (IT/NL → EN)** → normalizes EU/Italy jurisdictions into English.
+  * **4. Sentiment per utterance** → fed into Prosecution prompt as evidence of tone (aggressive / tense / neutral).
+  * **5. Topic detection** → Router uses topics to dynamically pick the active rule pack.
+  * **6. Summarization** → generates the 2-sentence case card in the dashboard.
 
 All six features are wired into `agents/transcription_agent.py` and surface downstream: `prosecution_agent.py` literally cites `sentiment` per utterance when building its legal argument.
 
@@ -191,7 +187,7 @@ On a 5-10 minute bodycam recording:
 
 ## License
 
-MIT — see `LICENSE`.
+[MIT License](https://github.com/vkarasovpm-dotcom/bodycam-intelligence?tab=MIT-1-ov-file) — see `LICENSE` tab for details.
 
 Built at Milan AI Week 2026 Hackathon
 Powered by Vultr · Google Gemini · Featherless · Speechmatics
